@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="6/27/2022 4:55:51 PM"
@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="OCEAN_P02b"
   DTS:PackageType="5"
-  DTS:VersionBuild="252"
-  DTS:VersionGUID="{774B38B9-417D-42CD-B2F0-06AD912F644E}">
+  DTS:VersionBuild="253"
+  DTS:VersionGUID="{325DB3D2-C8DD-45F2-9843-A64B6A6B3932}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,6 +29,18 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel 1]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{27997018-31C9-46E0-8649-C63201CAB0B2}"
+      DTS:ObjectName="Administrador de conexiones con Excel 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Vicente_Moreno\OneDrive - MISTRAL BUSINESS SOLUTIONS\#Repository\DWH BAU Mistral-SVH\Data Sources\OCEAN\P02b\OCEAN_P02b_Peticiones_20230320.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[MBS-RJARA.SVH_DBO]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{EBAB74FA-3C17-4F1F-8F93-86BF8CB017AC}"
@@ -39,7 +51,12 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=Ronny;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvGdM0l5mikOFMd2Hu6rzXgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABXsAh62YPrtv9vGxdyPSEkC8mFW222uBG4gnkQjpMpMgAAAAAOgAAAAAIAACAAAAAeVKdoHoTMoz5u7XScjZIrVWUj4uSlgOJm5NY2ZbibORAAAABkbKQ4UsHrGcSBq5E35BpsQAAAAEXW7xSeB/jL0H8XIYZCgobY8tZ4US8llLeDAmgEBo7yR+Rru7Ciii4HgXcvjCInOvBXrZa7Se2WzA2bQcXyCpk</DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -53,7 +70,12 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=Ronny;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvGdM0l5mikOFMd2Hu6rzXgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACdyjdBNzQaF+oH4atZAdlgeRO46+Wl98bt1LBCrL8RVwAAAAAOgAAAAAIAACAAAABI24wzaKr5pkp94W/aZB2rGjtVpoQZzJRTsX8tBbtFihAAAAAd5JFhp6L1SoaUIsu845JnQAAAAE6SqhS5/C5aRKDZ+MZdFGXvI3EvzCpv1kxjRueGTO6KC7NkfwgFqNWtMaIcNE98MOad2HUHw5EQSsZesEIKAdU</DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -145,7 +167,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="F_CARGA">
       <DTS:VariableValue
-        DTS:DataType="7">3/30/2023 3:19:11 PM</DTS:VariableValue>
+        DTS:DataType="7">3/30/2023 4:35:55 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -154,7 +176,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="F_DATOS">
       <DTS:VariableValue
-        DTS:DataType="7">11/4/2022 12:25:53 PM</DTS:VariableValue>
+        DTS:DataType="7">11/4/2022 12:25:00 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -254,7 +276,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="var_moverFich">
       <DTS:VariableValue
-        DTS:DataType="8">C:\08_Python\moveFile.py C:\OCEAN\P02b C:\ORIGENES_PROCESADOS\P02b *OCEAN_P02b_Peticiones*</DTS:VariableValue>
+        DTS:DataType="8">C:\08_Python\moveFile.py C:\Users\Vicente_Moreno\OneDrive - MISTRAL BUSINESS SOLUTIONS\#Repository\DWH BAU Mistral-SVH\Data Sources\OCEAN\P02P02b C:\ORIGENES_PROCESADOS\P02b *OCEAN_P02b_Peticiones*</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -683,7 +705,7 @@
           <DTS:ObjectData>
             <ExecuteProcessData
               Executable="C:\Users\Ronny_Jara\AppData\Local\Microsoft\WindowsApps\python.exe"
-              Arguments="C:\08_Python\moveFile.py C:\OCEAN\P02b C:\ORIGENES_PROCESADOS\P02b *OCEAN_P02b_Peticiones*" />
+              Arguments="C:\08_Python\moveFile.py C:\Users\Vicente_Moreno\OneDrive - MISTRAL BUSINESS SOLUTIONS\#Repository\DWH BAU Mistral-SVH\Data Sources\OCEAN\P02P02b C:\ORIGENES_PROCESADOS\P02b *OCEAN_P02b_Peticiones*" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
@@ -968,7 +990,7 @@
             <DTS:ObjectData>
               <ForEachFileEnumeratorProperties>
                 <FEFEProperty
-                  Folder="C:\OCEAN\P02b" />
+                  Folder="C:\Users\Vicente_Moreno\OneDrive - MISTRAL BUSINESS SOLUTIONS\#Repository\DWH BAU Mistral-SVH\Data Sources\OCEAN\P02P02b" />
                 <FEFEProperty
                   FileSpec="*OCEAN_P02b_Peticiones*" />
                 <FEFEProperty
@@ -1403,8 +1425,8 @@
                       <connections>
                         <connection
                           refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Connections[OleDbConnection]"
-                          connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel]"
-                          connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                          connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel 1]"
+                          connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel 1]"
                           description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
                           name="OleDbConnection" />
                       </connections>
@@ -1606,8 +1628,7 @@
                               name="estado" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[fecha entrada]"
-                              dataType="wstr"
-                              length="255"
+                              dataType="date"
                               name="fecha entrada" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[fecha salida]"
@@ -1694,8 +1715,7 @@
                               name="estado" />
                             <outputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[fecha entrada]"
-                              dataType="wstr"
-                              length="255"
+                              dataType="date"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[fecha entrada]"
                               name="fecha entrada" />
                             <outputColumn
@@ -1976,27 +1996,27 @@
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="159,42"
+          Size="159.2,41.6"
           Id="Package\Load dbo to STG\Asigna Validaciones"
           TopLeft="69.9605693706377,409.466664009018" />
         <NodeLayout
-          Size="114,42"
+          Size="113.6,41.6"
           Id="Package\Load dbo to STG\CLOSE"
           TopLeft="91.1523443239098,326.066664153658" />
         <NodeLayout
-          Size="127,42"
+          Size="127.2,41.6"
           Id="Package\Load dbo to STG\INI -RunID"
           TopLeft="78.8666264666465,99.1333346488742" />
         <NodeLayout
-          Size="159,42"
+          Size="159.2,41.6"
           Id="Package\Load dbo to STG\load DBO to STG"
           TopLeft="64.4856787168807,18.3999950418767" />
         <NodeLayout
-          Size="163,42"
+          Size="163.2,41.6"
           Id="Package\Load dbo to STG\OpenLog Validaciones"
           TopLeft="62.4605696686607,173.499998140335" />
         <NodeLayout
-          Size="159,42"
+          Size="159.2,41.6"
           Id="Package\Load dbo to STG\Validaciones"
           TopLeft="63.2939029688802,243.033331218825" />
         <EdgeLayout
@@ -2112,28 +2132,28 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="287,524"
-          Size="287,567"
+          PanelSize="287.2,524"
+          Size="287.2,567.2"
           Id="Package\Load dbo to STG"
           TopLeft="932.499962945781,23.4000001859664" />
         <NodeLayout
-          Size="114,42"
+          Size="113.6,41.6"
           Id="Package\Load file log END\CLOSE"
           TopLeft="37.1666664679846,400.599999986224" />
         <NodeLayout
-          Size="173,42"
+          Size="172.8,41.6"
           Id="Package\Load file log END\DaysOfDeleteDays"
           TopLeft="5.50000000000003,209.5" />
         <NodeLayout
-          Size="157,42"
+          Size="156.8,41.6"
           Id="Package\Load file log END\Delete Old Files"
           TopLeft="13.5,311.5" />
         <NodeLayout
-          Size="149,42"
+          Size="148.8,41.6"
           Id="Package\Load file log END\Mover Fichero"
           TopLeft="17.5,107.5" />
         <NodeLayout
-          Size="155,42"
+          Size="155.2,41.6"
           Id="Package\Load file log END\TotalRowCount"
           TopLeft="14.5,5.5" />
         <EdgeLayout
@@ -2233,16 +2253,16 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="184,499"
-          Size="184,542"
+          PanelSize="184,499.2"
+          Size="184,542.4"
           Id="Package\Load file log END"
           TopLeft="646.531762810925,13.4658714877983" />
         <NodeLayout
-          Size="127,42"
+          Size="127.2,41.6"
           Id="Package\Load file log START\INI -RunID"
           TopLeft="19.3939394270531,50.045453099049" />
         <NodeLayout
-          Size="121,42"
+          Size="120.8,41.6"
           Id="Package\Load file log START\OpenLog"
           TopLeft="29.3333330021963,159.833332127995" />
         <EdgeLayout
@@ -2270,20 +2290,20 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="195,409"
-          Size="195,452"
+          PanelSize="195.2,408.8"
+          Size="195.2,452"
           Id="Package\Load file log START"
           TopLeft="58.9523826695627,17.3246013336338" />
         <NodeLayout
-          Size="193,42"
+          Size="192.8,41.6"
           Id="Package\Load file to DBO\Eliminar fila de campos"
           TopLeft="35.999999900659,389.16666601234" />
         <NodeLayout
-          Size="135,42"
+          Size="135.2,41.6"
           Id="Package\Load file to DBO\Search and load file\load to DBO"
           TopLeft="42.7499996357494,81.1333333264458" />
         <NodeLayout
-          Size="127,42"
+          Size="127.2,41.6"
           Id="Package\Load file to DBO\Search and load file\Source file"
           TopLeft="47.0000000000001,11.9999999999999" />
         <EdgeLayout
@@ -2311,12 +2331,12 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="234,179"
-          Size="234,222"
+          PanelSize="233.6,179.2"
+          Size="233.6,222.4"
           Id="Package\Load file to DBO\Search and load file"
           TopLeft="17.9999995032947,106.633333326446" />
         <NodeLayout
-          Size="145,42"
+          Size="144.8,41.6"
           Id="Package\Load file to DBO\Truncate table"
           TopLeft="63.1666657063696,25.8666666735543" />
         <EdgeLayout
@@ -2366,8 +2386,8 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="266,564"
-          Size="266,607"
+          PanelSize="265.6,564"
+          Size="265.6,607.2"
           Id="Package\Load file to DBO"
           TopLeft="304.289682350462,11.2666664265822" />
         <EdgeLayout
@@ -2517,39 +2537,31 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="168,42"
+          Size="156.8,41.6"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel"
+          TopLeft="334.000002185504,125.733333347109" />
+        <NodeLayout
+          Size="175.2,41.6"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
+          TopLeft="326.833334094948,378.266666652891" />
+        <NodeLayout
+          Size="168,41.6"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
           TopLeft="324.499999900659,255" />
-        <NodeLayout
-          Size="157,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel"
-          TopLeft="389,124" />
         <EdgeLayout
-          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de Excel]"
-          TopLeft="467.5,166">
+          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de columna derivada]"
+          TopLeft="411.466666997804,296.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-59.000000099341,89"
+              EndConnector="0,81.6666666528913"
               Start="0,0"
-              End="-59.000000099341,81.5">
+              End="0,74.1666666528913">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,40.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,40.5"
-                    Point2="0,44.5"
-                    Point3="-4,44.5" />
-                  <mssgle:LineSegment
-                    End="-55.000000099341,44.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-55.000000099341,44.5"
-                    Point2="-59.000000099341,44.5"
-                    Point3="-59.000000099341,48.5" />
-                  <mssgle:LineSegment
-                    End="-59.000000099341,81.5" />
+                    End="0,74.1666666528913" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2558,36 +2570,20 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="175,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
-          TopLeft="346,380" />
         <EdgeLayout
-          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de columna derivada]"
-          TopLeft="408.499999900659,297">
+          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de Excel]"
+          TopLeft="410.450001043081,167.333333347109">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="25.000000099341,83"
+              EndConnector="0,87.6666666528914"
               Start="0,0"
-              End="25.000000099341,75.5">
+              End="0,80.1666666528914">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,37.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,37.5"
-                    Point2="0,41.5"
-                    Point3="4,41.5" />
-                  <mssgle:LineSegment
-                    End="21.000000099341,41.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="21.000000099341,41.5"
-                    Point2="25.000000099341,41.5"
-                    Point3="25.000000099341,45.5" />
-                  <mssgle:LineSegment
-                    End="25.000000099341,75.5" />
+                    End="0,80.1666666528914" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
