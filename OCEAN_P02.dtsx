@@ -5,57 +5,35 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="MBS-RALVARO"
   DTS:CreatorName="MBS-RALVARO\Ricardo_Alvaro"
-  DTS:DTSID="{61572EFB-FED6-4C66-A778-85BB0796143A}"
+  DTS:DTSID="{315719EB-C5A1-4207-9C6F-D0E04D345DDF}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.180"
   DTS:LocaleID="3082"
   DTS:ObjectName="OCEAN_P02"
   DTS:PackageType="5"
-  DTS:VersionBuild="239"
-  DTS:VersionGUID="{7394129A-8A5D-4B11-96FE-4A935B68D9F3}">
+  DTS:VersionBuild="270"
+  DTS:VersionGUID="{55515B92-DE9C-498E-9868-29FA0CC69116}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
       DTS:CreationName="EXCEL"
-      DTS:DTSID="{9D5F3A44-8CF4-40C1-982A-A2687FA74C18}"
+      DTS:DTSID="{D2B3FCE3-1193-4E9D-BAE1-B149008BA400}"
       DTS:ObjectName="Administrador de conexiones con Excel">
+      <DTS:PropertyExpression
+        DTS:Name="ExcelFilePath">@[User::FilePath]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Ronny_Jara\OneDrive\OneDrive - MISTRAL BUSINESS SOLUTIONS\Desktop\SVH\08_Vicente\OCEAN_P02_Peticiones_20230322.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel 1]"
-      DTS:CreationName="EXCEL"
-      DTS:DTSID="{7E67D824-BEED-45A3-A7F1-10B9782088B1}"
-      DTS:ObjectName="Administrador de conexiones con Excel 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="0"
-          DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Vicente_Moreno\OneDrive - MISTRAL BUSINESS SOLUTIONS\#Repository\DWH BAU Mistral-SVH\Data Sources\OCEAN\P02\OCEAN_P02_Peticiones_20230320.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES;IMEX=1&quot;;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel 2]"
-      DTS:CreationName="EXCEL"
-      DTS:DTSID="{D4240D3C-2ECE-40CF-B637-C8F208D96269}"
-      DTS:ObjectName="Administrador de conexiones con Excel 2">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="0"
-          DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Vicente_Moreno\OneDrive - MISTRAL BUSINESS SOLUTIONS\#Repository\DWH BAU Mistral-SVH\Data Sources\OCEAN\P02\OCEAN_P02_Peticiones_20230320.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=OCEAN_P02_Peticiones_20230320.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=NO;IMEX=1&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[MBS-RJARA.SVH_DBO]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{AF0B71B2-9783-445E-A9ED-4654BC73661E}"
+      DTS:DTSID="{73F5C74D-A45E-4CBC-9AB5-11A7BBE2B475}"
       DTS:ObjectName="MBS-RJARA.SVH_DBO">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[$Project::Conn_BBDD_DBO]</DTS:PropertyExpression>
@@ -63,18 +41,18 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=Ronny;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvGdM0l5mikOFMd2Hu6rzXgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD6ElM5RWsf+P34gGt+jNuS4huZPhAisAnUXe/79wVwlQAAAAAOgAAAAAIAACAAAACOhqLf98obbVyXcEATwFa2wOFntAZtpvuNuXDQqeKAdxAAAADN+wII4HvjUkAgjRUwewBOQAAAABZ5LUdhO6c/kBfOZCfun5RDIV6dxfJfQpHqx1CXI5dkUfbDi4hHmumcVrwO287PfddgR8Lg6eIWD2kAEcAGBgE</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAu+G2xGj1+k6CSnk+YOwSuwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABll4PudYCH6Bz0iMcNPdVyO+96Lov9M3r5594wTMNQzAAAAAAOgAAAAAIAACAAAAC48PAI1QTzi/WVYkW3OmAdwoz8csG2xPdR3aTUp+IYQCAAAAB8KKZHyYAF5OAx8W/8ACw+2yub6G9wZbG5uGqIzWx3lkAAAACKvrmm4gkMOM56a7uWUScpmOTHVI6QroMsO4BgcM1lFYD2c2OmLAuyTgm+tIBL32gLa2yONbDm4dVXXQCi3VSC</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[MBS-RJARA.SVH_STG]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{F802C6B4-92A8-4E2A-8FFF-E6358C98D48C}"
+      DTS:DTSID="{1DEA6638-D711-4661-96B6-13708DC30040}"
       DTS:ObjectName="MBS-RJARA.SVH_STG">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[$Project::Conn_BBDD_STG]</DTS:PropertyExpression>
@@ -82,11 +60,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=Ronny;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvGdM0l5mikOFMd2Hu6rzXgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABNs8diIx765kQuKTM3LLFvQnPsJgswOEY1Jli4ATzkSAAAAAAOgAAAAAIAACAAAABNsDnPCxvBpND7BYskY8WVgoaICARXVjjjxZyiygG6hxAAAADDuet+9SY7vRZ2fDlDu8tPQAAAAMg6jrUXjOSbed1Gt7cGWI6ajtGpTHCc7E5Oc/3th3ob7ziQBw5up3VeFAVQG7SIFdKS/YE+k2xRbgWcJ5a4MLw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAu+G2xGj1+k6CSnk+YOwSuwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC6V9j0jgwa1X4qdUgORh5qRLs6rw0AIZfYwkwB7qKt+QAAAAAOgAAAAAIAACAAAAAf6yPwrTErPaRnxIFPVrKDwAYzTm+SdqAexrW6PCWocyAAAADANAj/HjNVQGd5HPjkEy02yEfayPnahsGSkSyrMum60kAAAADM8bxABbYEAZVBG+/F9kK23mPkdxIy1J4clgY7I/nJiv2J5K3ad/6yQuose984IYYwlPzNWVkuuHYhZUplKec2</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -95,7 +73,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{851B84A8-3BAC-47A1-BCD3-5B653ADD2EB7}"
+      DTS:DTSID="{67603549-E88F-4379-B9B7-A0AE9335EDE2}"
       DTS:ObjectName="Name">
       <DTS:Property
         DTS:DataType="8"
@@ -104,7 +82,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{D0CC4E67-9C6E-445A-9A81-5BD7D9A881A7}"
+      DTS:DTSID="{A8ACF6B6-CFCF-4FE1-B28C-8D78379F545B}"
       DTS:ObjectName="PackageName">
       <DTS:Property
         DTS:DataType="8"
@@ -113,7 +91,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{5BE7030D-80A5-4EAF-932F-0037C33B99AE}"
+      DTS:DTSID="{839A3A49-BC85-44DD-95B1-18973C48C135}"
       DTS:ObjectName="par_RunGUID">
       <DTS:Property
         DTS:DataType="8"
@@ -123,7 +101,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{E0B8D248-79EB-4510-A6BC-DBF26360A5DE}"
+      DTS:DTSID="{52BE67DC-7089-47AA-B430-82AE27EFF0A0}"
       DTS:ObjectName="ReportingPeriod">
       <DTS:Property
         DTS:DataType="8"
@@ -133,17 +111,16 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{4D4ADDE3-9141-45E9-B93B-0BD7D90FE75E}"
+      DTS:DTSID="{B11AA184-16AD-4851-BE60-A36C1B713986}"
       DTS:ObjectName="ruta_carpeta">
       <DTS:Property
         DTS:DataType="8"
-        DTS:Name="ParameterValue"
-        xml:space="preserve"></DTS:Property>
+        DTS:Name="ParameterValue">P02</DTS:Property>
     </DTS:PackageParameter>
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{FFEF1089-FC44-4665-8A37-1560219DF0AB}"
+      DTS:DTSID="{0A9D4F66-1F40-482B-8A4B-022FF74C0F9C}"
       DTS:ObjectName="var_ficheroEsperado">
       <DTS:Property
         DTS:DataType="8"
@@ -153,38 +130,38 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{96B56AD8-F2C7-486C-AA8C-89729544F010}"
+      DTS:DTSID="{5D4B11EA-419C-4221-B96C-C0C0E247E51D}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[User::FilePath]"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="FichBuscar">
       <DTS:VariableValue
-        DTS:DataType="8">.xlsxOCEAN_P02_Peticiones_20230320</DTS:VariableValue>
+        DTS:DataType="8">OCEAN_P02_Peticiones_20230320.xlsx</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{67EE64F6-3C41-4561-868C-D2165E2AA585}"
+      DTS:DTSID="{1EF9A245-9D3A-4C7F-B9E4-B95288F21917}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="FilePath">
       <DTS:VariableValue
-        DTS:DataType="8">.xlsxOCEAN_P02_Peticiones_20230320</DTS:VariableValue>
+        DTS:DataType="8">OCEAN_P02_Peticiones_20230320.xlsx</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{E46E0FEC-20A0-4F34-A773-8C875FFD2C0F}"
+      DTS:DTSID="{775DCB2C-5CCE-46CB-AD06-3C4D5A3B4140}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="getdate()"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="F_CARGA">
       <DTS:VariableValue
-        DTS:DataType="7">3/30/2023 11:52:24 AM</DTS:VariableValue>
+        DTS:DataType="7">3/31/2023 12:07:14 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{542257D3-3586-4D4A-ABF6-B961B968166F}"
+      DTS:DTSID="{89D761E1-DD8A-4DDB-92A5-A7997A088948}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="F_DATOS">
@@ -193,7 +170,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{B4801A35-7630-4ABD-973A-75221718B577}"
+      DTS:DTSID="{E21E07A4-CAC7-4D5A-A025-39C20E6F2E91}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="RunGUID">
@@ -203,7 +180,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{1A9806E4-2D7B-4D87-AD6F-8665379BBE8D}"
+      DTS:DTSID="{5B1C5FC9-06A5-43D5-8230-4FD611E74090}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="RunID">
@@ -213,7 +190,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{CF17CBC4-42CC-44B0-BC56-50B526A1E3CF}"
+      DTS:DTSID="{3AAA0F55-8EB1-49EF-8BB7-D3D790BD8777}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="TotalRowCount">
@@ -222,7 +199,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{A1D2EC54-4B2B-4967-B4D2-85E7995E90AE}"
+      DTS:DTSID="{8626EC7C-3BCA-4A6E-A6A3-60ED870FEBF7}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="var_DATOS">
@@ -231,7 +208,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{1AB51A0F-AAE7-48EE-923C-A68813DDBD78}"
+      DTS:DTSID="{B4A58B6A-5402-4814-B6B4-3A6198ED1AF8}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="var_DaysDeleteOldFile">
@@ -241,7 +218,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{EC451BC8-1417-47A1-AA68-DC0F15B07C21}"
+      DTS:DTSID="{BAC92252-7A86-4000-848E-B7430D8EC733}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[$Project::par_deleteOldFile] +&quot; &quot;+@[$Project::par_ruta_Procesados]+&quot; &quot;+@[User::var_DaysDeleteOldFile]"
       DTS:IncludeInDebugDump="2345"
@@ -252,7 +229,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{4954D8CE-654D-4CA5-91BD-B366F476FB60}"
+      DTS:DTSID="{08906C2B-4156-4706-A00E-1AAC2D105279}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="var_FICHERO_ORIGEN">
@@ -262,7 +239,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{7690358E-F156-4965-8F76-9B6801D2E17D}"
+      DTS:DTSID="{20DFC106-FD13-403A-A9F8-286FE9E5FE4B}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="var_F_CARGA">
@@ -272,7 +249,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{CFD66F2C-959E-409B-87A2-967BEE72241D}"
+      DTS:DTSID="{B95F287B-9F2C-4461-B356-8A775CF48CBA}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="var_F_DATOS">
@@ -282,14 +259,14 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{083D02FB-A3C1-4278-B130-09864A183FEF}"
+      DTS:DTSID="{1A7121DE-DD8B-4E89-B656-1AE00A4D2485}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[$Project::par_moveFich] +&quot; &quot;+@[$Project::Ruta]+ @[$Package::ruta_carpeta] +&quot; &quot;+ @[$Project::par_ruta_Procesados]+ @[$Package::ruta_carpeta] +&quot; &quot;+@[$Package::var_ficheroEsperado]"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="var_moverFich">
       <DTS:VariableValue
-        DTS:DataType="8">C:\08_Python\moveFile.py C:\Users\Vicente_Moreno\OneDrive - MISTRAL BUSINESS SOLUTIONS\#Repository\DWH BAU Mistral-SVH\Data Sources\OCEAN\P02 C:\ORIGENES_PROCESADOS\ *OCEAN_P02_Peticiones*</DTS:VariableValue>
+        DTS:DataType="8">C:\08_Python\moveFile.py C:\OCEAN\P02 C:\ORIGENES_PROCESADOS\P02 *OCEAN_P02_Peticiones*</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -297,7 +274,7 @@
       DTS:refId="Package\Load dbo to STG"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Contenedor de secuencias"
-      DTS:DTSID="{A728BE62-D6D8-4305-8816-8BF8EB1998A5}"
+      DTS:DTSID="{7DAABBA8-3015-4FE9-8AC0-A2D4165BFB29}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Load dbo to STG">
@@ -307,7 +284,7 @@
           DTS:refId="Package\Load dbo to STG\Asigna Validaciones"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{5af5d1cc-3bb5-4dc9-a97e-a66f7ce89ed7}"
+          DTS:DTSID="{6C6015D9-8C3D-4040-B46E-26497741AF99}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Asigna Validaciones"
@@ -315,7 +292,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{F802C6B4-92A8-4E2A-8FFF-E6358C98D48C}"
+              SQLTask:Connection="{1DEA6638-D711-4661-96B6-13708DC30040}"
               SQLTask:SqlStatementSource="EXECUTE [SVH_STG].[dbo].[p_Asigna_Validaciones]&#xA;@PackageName=?,&#xA;@RUNID=?&#xA;                    " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -336,7 +313,7 @@
           DTS:refId="Package\Load dbo to STG\CLOSE"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{53e74096-9c9e-4d6a-88af-b18f5601ed8d}"
+          DTS:DTSID="{88F92C60-24F9-478B-A6AA-20EB6223CAEA}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="CLOSE"
@@ -344,7 +321,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{F802C6B4-92A8-4E2A-8FFF-E6358C98D48C}"
+              SQLTask:Connection="{1DEA6638-D711-4661-96B6-13708DC30040}"
               SQLTask:SqlStatementSource="EXECUTE [SVH_STG].[dbo].[CloseLog]&#xA;@PackageName=?,       &#xA;@RunID = ? , &#xA;@PackageRunResult = ?,&#xA;@TotalRowCount  = ?,&#xA;@ExecPeriod  = ? &#xA;                    " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -383,7 +360,7 @@
           DTS:refId="Package\Load dbo to STG\INI -RunID"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{2603957d-7a24-40f3-bb3c-b544472656ee}"
+          DTS:DTSID="{D3AB77D5-1F15-48AE-840E-664DEC4C11E1}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="INI -RunID"
@@ -393,7 +370,7 @@
             <DTS:EventHandler
               DTS:refId="Package\Load dbo to STG\INI -RunID.EventHandlers[OnError]"
               DTS:CreationName="OnError"
-              DTS:DTSID="{c0c81214-c827-4631-9b6c-73e1f948d730}"
+              DTS:DTSID="{70C17093-4D6E-4ACD-851B-421B4D2A7740}"
               DTS:EventID="0"
               DTS:EventName="OnError"
               DTS:LocaleID="-1">
@@ -401,7 +378,7 @@
                 <DTS:Variable
                   DTS:CreationName=""
                   DTS:Description="La propiedad de propagación del evento"
-                  DTS:DTSID="{06870d7c-8c9d-46a1-8bae-d9f44d0a21f6}"
+                  DTS:DTSID="{545F206D-9758-40B8-95E8-5ACE6D73B6E7}"
                   DTS:IncludeInDebugDump="6789"
                   DTS:Namespace="System"
                   DTS:ObjectName="Propagate">
@@ -414,7 +391,7 @@
                   DTS:refId="Package\Load dbo to STG\INI -RunID.EventHandlers[OnError]\ERROR RunID"
                   DTS:CreationName="Microsoft.ExecuteSQLTask"
                   DTS:Description="Tarea Ejecutar SQL"
-                  DTS:DTSID="{f5785222-c442-48b7-b4d9-41af849fb2c7}"
+                  DTS:DTSID="{DC4AE6B5-8549-42AD-B75A-D641016D6CD2}"
                   DTS:ExecutableType="Microsoft.ExecuteSQLTask"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="ERROR RunID"
@@ -444,7 +421,7 @@
           </DTS:EventHandlers>
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{F802C6B4-92A8-4E2A-8FFF-E6358C98D48C}"
+              SQLTask:Connection="{1DEA6638-D711-4661-96B6-13708DC30040}"
               SQLTask:SqlStatementSource="SELECT max(RunID)  RunID FROM [SVH_DBO].[dbo].[Workflow_Logging]"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -463,7 +440,7 @@
           DTS:refId="Package\Load dbo to STG\load DBO to STG"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{bcdf9869-fd65-4654-a76e-26530e5c620b}"
+          DTS:DTSID="{7314FB0D-73E4-4A3D-8359-154CDACBF5E9}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="load DBO to STG"
@@ -471,7 +448,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{F802C6B4-92A8-4E2A-8FFF-E6358C98D48C}"
+              SQLTask:Connection="{1DEA6638-D711-4661-96B6-13708DC30040}"
               SQLTask:SqlStatementSource="EXECUTE [SVH_DBO].[dbo].[p_Load_DBO_to_STG]&#xA;@Name=?,&#xA;@PackageName=?,&#xA;@Proceso  = 'P02'  &#xA;                    " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="1"
@@ -492,7 +469,7 @@
           DTS:refId="Package\Load dbo to STG\OpenLog Validaciones"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{6cf7d4b3-e0d7-492a-a0ca-9b6d14b8ebdf}"
+          DTS:DTSID="{2F75ADD5-2133-40BA-97CE-5212750F5406}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="OpenLog Validaciones"
@@ -500,7 +477,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{F802C6B4-92A8-4E2A-8FFF-E6358C98D48C}"
+              SQLTask:Connection="{1DEA6638-D711-4661-96B6-13708DC30040}"
               SQLTask:BypassPrepare="False"
               SQLTask:SqlStatementSource="EXECUTE  [SVH_STG].[DBO].[OpenLog]&#xA; @PackageName = ?,&#xA; @RunID = ?,&#xA;@Name=?,&#xA;@Descrip = 'Validaciones STG'&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
@@ -528,7 +505,7 @@
           DTS:refId="Package\Load dbo to STG\Validaciones"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{04ade606-9c97-43e9-891b-5eb13e99a44d}"
+          DTS:DTSID="{77A5565A-F6C3-4AB6-A030-711ADA9AD19D}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Validaciones"
@@ -536,7 +513,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{F802C6B4-92A8-4E2A-8FFF-E6358C98D48C}"
+              SQLTask:Connection="{1DEA6638-D711-4661-96B6-13708DC30040}"
               SQLTask:SqlStatementSource="EXECUTE [SVH_STG].[dbo].[p_PROCESO_VALIDACION]&#xA;@PackageName=?&#xA;                    " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -552,7 +529,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load dbo to STG.PrecedenceConstraints[Restricción]"
           DTS:CreationName=""
-          DTS:DTSID="{6D20F4DF-CA38-46F1-81CA-E5E25384FFE7}"
+          DTS:DTSID="{CE2EA4B9-E2EA-44AF-A557-C78718BE268B}"
           DTS:From="Package\Load dbo to STG\load DBO to STG"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción"
@@ -560,7 +537,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load dbo to STG.PrecedenceConstraints[Restricción 1]"
           DTS:CreationName=""
-          DTS:DTSID="{5F3C5E51-07E3-430B-B7C6-461B7E5B6BF2}"
+          DTS:DTSID="{D1A6FA67-7EFB-4CDD-B201-5359886BD109}"
           DTS:From="Package\Load dbo to STG\INI -RunID"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 1"
@@ -568,7 +545,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load dbo to STG.PrecedenceConstraints[Restricción 2]"
           DTS:CreationName=""
-          DTS:DTSID="{D3839E91-DAFE-4C72-9F8B-4B4C5F59E72A}"
+          DTS:DTSID="{63A9A8FC-A41A-46E9-AA53-1537F44B8817}"
           DTS:From="Package\Load dbo to STG\OpenLog Validaciones"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 2"
@@ -576,7 +553,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load dbo to STG.PrecedenceConstraints[Restricción 3]"
           DTS:CreationName=""
-          DTS:DTSID="{A8803DD8-41DB-451D-81E9-AC3A2D1DAF1F}"
+          DTS:DTSID="{BA98CCF9-332D-4522-A18F-822EDF6504E9}"
           DTS:From="Package\Load dbo to STG\Validaciones"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 3"
@@ -584,7 +561,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load dbo to STG.PrecedenceConstraints[Restricción 4]"
           DTS:CreationName=""
-          DTS:DTSID="{3A59400F-FBE2-47D0-9C02-BB0D8112B9DE}"
+          DTS:DTSID="{65993D08-9220-4789-A1D1-778443CA9C7B}"
           DTS:From="Package\Load dbo to STG\CLOSE"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 4"
@@ -595,7 +572,7 @@
       DTS:refId="Package\Load file log END"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Contenedor de secuencias"
-      DTS:DTSID="{CB4E9B93-36B7-4835-B13B-24B3698FBA4C}"
+      DTS:DTSID="{3EBC8331-C51B-4250-ACC8-2659F44739BB}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Load file log END">
@@ -605,7 +582,7 @@
           DTS:refId="Package\Load file log END\CLOSE"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{4D73C10C-D9CC-4024-9BA1-9261B73B5C28}"
+          DTS:DTSID="{A6E83363-8818-41E2-A81D-02420A9FFECF}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="CLOSE"
@@ -613,7 +590,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{F802C6B4-92A8-4E2A-8FFF-E6358C98D48C}"
+              SQLTask:Connection="{1DEA6638-D711-4661-96B6-13708DC30040}"
               SQLTask:SqlStatementSource="EXECUTE [SVH_DBO].[dbo].[CloseLog]&#xA;@PackageName=?,       &#xA;@RunID = ? , &#xA;@PackageRunResult = ?,&#xA;@TotalRowCount  = ?,&#xA;@ExecPeriod  = ? &#xA;                    " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -653,7 +630,7 @@
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
           DTS:Disabled="True"
-          DTS:DTSID="{855E7226-3A12-45C6-946E-C74965C350C5}"
+          DTS:DTSID="{54197673-DB2B-4132-A5BD-DBE9C2DD8F33}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="DaysOfDeleteDays"
@@ -662,7 +639,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{F802C6B4-92A8-4E2A-8FFF-E6358C98D48C}"
+              SQLTask:Connection="{1DEA6638-D711-4661-96B6-13708DC30040}"
               SQLTask:SqlStatementSource="select DAYS_DELET_OLD_FILES from [SVH_STG].[dbo].[INVENTARIO_PROCESOS] WHERE PROCESO = ?"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -682,7 +659,7 @@
           DTS:CreationName="Microsoft.ExecuteProcess"
           DTS:Description="Tarea Ejecutar proceso"
           DTS:Disabled="True"
-          DTS:DTSID="{E7AD649B-B21D-4A9B-AEB4-EC21444E57D8}"
+          DTS:DTSID="{31997E9C-0E7E-419F-9C25-B2F4CACE4E53}"
           DTS:ExecutableType="Microsoft.ExecuteProcess"
           DTS:LocaleID="-1"
           DTS:ObjectName="Delete Old Files"
@@ -704,7 +681,7 @@
           DTS:CreationName="Microsoft.ExecuteProcess"
           DTS:Description="Tarea Ejecutar proceso"
           DTS:Disabled="True"
-          DTS:DTSID="{AE7F7B26-3159-429C-9E53-4E9B37DB138B}"
+          DTS:DTSID="{962CC639-A199-49BB-A612-79FAF316F450}"
           DTS:ExecutableType="Microsoft.ExecuteProcess"
           DTS:LocaleID="-1"
           DTS:ObjectName="Mover Fichero"
@@ -718,14 +695,14 @@
           <DTS:ObjectData>
             <ExecuteProcessData
               Executable="C:\Users\Ronny_Jara\AppData\Local\Microsoft\WindowsApps\python.exe"
-              Arguments="C:\08_Python\moveFile.py C:\Users\Vicente_Moreno\OneDrive - MISTRAL BUSINESS SOLUTIONS\#Repository\DWH BAU Mistral-SVH\Data Sources\OCEAN\P02 C:\ORIGENES_PROCESADOS\ *OCEAN_P02_Peticiones*" />
+              Arguments="C:\08_Python\moveFile.py C:\OCEAN\P02 C:\ORIGENES_PROCESADOS\P02 *OCEAN_P02_Peticiones*" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
           DTS:refId="Package\Load file log END\TotalRowCount"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{23E2DA6B-9FEA-4F71-827C-FDFD564266D0}"
+          DTS:DTSID="{CF84D6EA-E947-4053-B07D-92F784F39F0E}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="TotalRowCount"
@@ -733,7 +710,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{F802C6B4-92A8-4E2A-8FFF-E6358C98D48C}"
+              SQLTask:Connection="{1DEA6638-D711-4661-96B6-13708DC30040}"
               SQLTask:SqlStatementSource="  EXECUTE [SVH_DBO].[dbo].[P_CONTEO_REGISTROS] &#xA; @PROCESO = ?,&#xA;@ENTORNO_BBDD=?"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -759,7 +736,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file log END.PrecedenceConstraints[Restricción]"
           DTS:CreationName=""
-          DTS:DTSID="{AE86AFCF-38CA-474C-983C-9D25C768409E}"
+          DTS:DTSID="{508B7277-25DF-4A05-9DF7-D46D1D2C5BD0}"
           DTS:From="Package\Load file log END\TotalRowCount"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción"
@@ -767,7 +744,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file log END.PrecedenceConstraints[Restricción 1]"
           DTS:CreationName=""
-          DTS:DTSID="{FF3870A7-EF0A-4C62-925B-1FC412FDA0D1}"
+          DTS:DTSID="{E888479E-1C25-4BA5-AB98-23779EA3705F}"
           DTS:From="Package\Load file log END\Delete Old Files"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 1"
@@ -776,7 +753,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file log END.PrecedenceConstraints[Restricción 2]"
           DTS:CreationName=""
-          DTS:DTSID="{7461CFF3-7329-4892-BCE1-4E1CA17520FD}"
+          DTS:DTSID="{368D08FE-628E-4245-9425-063D2BCB1B85}"
           DTS:From="Package\Load file log END\Mover Fichero"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 2"
@@ -785,7 +762,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file log END.PrecedenceConstraints[Restricción 3]"
           DTS:CreationName=""
-          DTS:DTSID="{C86149C4-EDA0-4BDE-887C-AF9506CE22F2}"
+          DTS:DTSID="{605FC9B0-A915-4EA4-9178-40C3FF945A3D}"
           DTS:From="Package\Load file log END\DaysOfDeleteDays"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 3"
@@ -797,14 +774,14 @@
       DTS:refId="Package\Load file log START"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Contenedor de secuencias"
-      DTS:DTSID="{16F1F3C1-DA0E-43AF-B5A2-EA6D728DEDAC}"
+      DTS:DTSID="{8F808DA6-0738-4EED-B37F-CD6C2FE93C3A}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Load file log START">
       <DTS:Variables>
         <DTS:Variable
           DTS:CreationName=""
-          DTS:DTSID="{180F7716-D8D5-4CDA-B0E0-CC8C2C3BE005}"
+          DTS:DTSID="{FDFE75AE-2E4C-430C-BA13-CE61C782FA2D}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="User"
           DTS:ObjectName="F_CARGA">
@@ -813,7 +790,7 @@
         </DTS:Variable>
         <DTS:Variable
           DTS:CreationName=""
-          DTS:DTSID="{9B63E312-77EF-4A38-A6E0-656C04CD3B57}"
+          DTS:DTSID="{25299032-DE6C-4CD4-BD5B-F42E2385ADAA}"
           DTS:IncludeInDebugDump="2345"
           DTS:Namespace="User"
           DTS:ObjectName="var_ROW_ID">
@@ -826,7 +803,7 @@
           DTS:refId="Package\Load file log START\INI -RunID"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{1B3CEAA5-4EEE-4A49-91E4-0C6D08C79E68}"
+          DTS:DTSID="{BC86AA4F-5855-465A-85E8-E1FB10226CAB}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="INI -RunID"
@@ -836,7 +813,7 @@
             <DTS:EventHandler
               DTS:refId="Package\Load file log START\INI -RunID.EventHandlers[OnError]"
               DTS:CreationName="OnError"
-              DTS:DTSID="{E684DBCB-C722-4E30-BE5B-37CD8F2FC51E}"
+              DTS:DTSID="{15470CB8-5248-47A5-AF24-3139DD87C863}"
               DTS:EventID="0"
               DTS:EventName="OnError"
               DTS:LocaleID="-1">
@@ -844,7 +821,7 @@
                 <DTS:Variable
                   DTS:CreationName=""
                   DTS:Description="La propiedad de propagación del evento"
-                  DTS:DTSID="{C3D2C471-BE3D-45C0-A5BC-20DB0EAF466F}"
+                  DTS:DTSID="{F183DEBC-337F-4B9A-ACEB-6EC81408BA7B}"
                   DTS:IncludeInDebugDump="6789"
                   DTS:Namespace="System"
                   DTS:ObjectName="Propagate">
@@ -857,7 +834,7 @@
                   DTS:refId="Package\Load file log START\INI -RunID.EventHandlers[OnError]\ERROR RunID"
                   DTS:CreationName="Microsoft.ExecuteSQLTask"
                   DTS:Description="Tarea Ejecutar SQL"
-                  DTS:DTSID="{973E55A2-B1DF-435F-A368-A25C260C4398}"
+                  DTS:DTSID="{561688AE-3DF9-4234-A51A-B5383A521C85}"
                   DTS:ExecutableType="Microsoft.ExecuteSQLTask"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="ERROR RunID"
@@ -887,7 +864,7 @@
           </DTS:EventHandlers>
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{F802C6B4-92A8-4E2A-8FFF-E6358C98D48C}"
+              SQLTask:Connection="{1DEA6638-D711-4661-96B6-13708DC30040}"
               SQLTask:SqlStatementSource="SELECT max(RunID)+1  RunID FROM [SVH_DBO].[dbo].[Workflow_Logging]"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -906,7 +883,7 @@
           DTS:refId="Package\Load file log START\OpenLog"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{F2709698-4EE6-4D7C-A000-6AF9EBA9DB98}"
+          DTS:DTSID="{54A4C3C5-BAF4-4BD0-95D6-ACB6A99D8F69}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="OpenLog"
@@ -914,7 +891,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{F802C6B4-92A8-4E2A-8FFF-E6358C98D48C}"
+              SQLTask:Connection="{1DEA6638-D711-4661-96B6-13708DC30040}"
               SQLTask:BypassPrepare="False"
               SQLTask:SqlStatementSource="EXECUTE  [SVH_DBO].[DBO].[OpenLog]&#xA; @PackageName = ?,&#xA; @RunID = ?,&#xA;@Name=?,&#xA;@Descrip = 'Carga de fichero excel a dbo'&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
@@ -943,7 +920,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file log START.PrecedenceConstraints[Restricción 2]"
           DTS:CreationName=""
-          DTS:DTSID="{49D1F4EE-7D67-4C8B-B203-3D0AB45C3FD8}"
+          DTS:DTSID="{F8E6A52F-CB72-4931-90DD-055614C21A51}"
           DTS:From="Package\Load file log START\INI -RunID"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 2"
@@ -954,7 +931,7 @@
       DTS:refId="Package\Load file to DBO"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Contenedor de secuencias"
-      DTS:DTSID="{A561DD3E-6392-473D-BEA3-58F53DEF9E5E}"
+      DTS:DTSID="{70FE3A6E-0906-4FE3-BF49-FA121D9EF3A2}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Load file to DBO">
@@ -964,7 +941,8 @@
           DTS:refId="Package\Load file to DBO\Eliminar fila de campos"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{65F6EF75-477D-48B8-9793-A03B59D173F7}"
+          DTS:Disabled="True"
+          DTS:DTSID="{C591CE57-72FA-49BC-A884-25B3049197F5}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Eliminar fila de campos"
@@ -972,8 +950,8 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{AF0B71B2-9783-445E-A9ED-4654BC73661E}"
-              SQLTask:SqlStatementSource="DELETE [SVH_DBO].[OCEAN].P02_Peticiones where  [Índice] is null " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              SQLTask:Connection="{73F5C74D-A45E-4CBC-9AB5-11A7BBE2B475}"
+              SQLTask:SqlStatementSource="DELETE [SVH_DBO].[OCEAN].P02_Peticiones where  [Índice] is null or [Índice] = 'Índice'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
                 SQLTask:DtsVariableName="$Package::Name"
@@ -987,13 +965,13 @@
           DTS:refId="Package\Load file to DBO\Search and load file"
           DTS:CreationName="STOCK:FOREACHLOOP"
           DTS:Description="Contenedor de bucles Foreach"
-          DTS:DTSID="{48210C30-4B20-4843-99BF-89A4493153D2}"
+          DTS:DTSID="{6CED2859-1F0B-4DD4-BACC-2ED4559C455A}"
           DTS:ExecutableType="STOCK:FOREACHLOOP"
           DTS:LocaleID="-1"
           DTS:ObjectName="Search and load file">
           <DTS:ForEachEnumerator
             DTS:CreationName="Microsoft.ForEachFileEnumerator"
-            DTS:DTSID="{62AB2017-3BA4-4263-9B7F-41A5BF1C15CD}"
+            DTS:DTSID="{3099A3C7-F13B-4256-A88D-8BB6298434B7}"
             DTS:ObjectName="{46BB39FE-F109-4863-8D19-B62A444433E6}">
             <DTS:PropertyExpression
               DTS:Name="Directory">@[$Project::Ruta]+ @[$Package::ruta_carpeta]</DTS:PropertyExpression>
@@ -1002,7 +980,7 @@
             <DTS:ObjectData>
               <ForEachFileEnumeratorProperties>
                 <FEFEProperty
-                  Folder="C:\Users\Vicente_Moreno\OneDrive - MISTRAL BUSINESS SOLUTIONS\#Repository\DWH BAU Mistral-SVH\Data Sources\OCEAN\P02" />
+                  Folder="C:\OCEAN\P02" />
                 <FEFEProperty
                   FileSpec="*OCEAN_P02_Peticiones*" />
                 <FEFEProperty
@@ -1019,7 +997,7 @@
               DTS:CreationName="Microsoft.Pipeline"
               DTS:DelayValidation="True"
               DTS:Description="Tarea Flujo de datos"
-              DTS:DTSID="{899D6ED8-5AB4-4667-80A5-C5C587956887}"
+              DTS:DTSID="{C3C02A62-35EA-4A3B-8897-C3EE9BECA786}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="load to DBO"
@@ -1175,19 +1153,19 @@
                           name="Entrada de destino de OLE DB">
                           <inputColumns>
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[índice]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[Índice]"
                               cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="índice"
+                              cachedLength="50"
+                              cachedName="Índice"
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[índice]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[índice]" />
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Índice]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[ID petición]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[Id Petición]"
                               cachedDataType="wstr"
                               cachedLength="255"
-                              cachedName="ID petición"
+                              cachedName="Id Petición"
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID petición]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ID petición]" />
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Id Petición]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[USUARIO]"
                               cachedDataType="wstr"
@@ -1232,7 +1210,8 @@
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Localidad]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[Num_Finca]"
-                              cachedDataType="r8"
+                              cachedDataType="wstr"
+                              cachedLength="50"
                               cachedName="Num_Finca"
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[Num_Finca]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Num_Finca]" />
@@ -1287,25 +1266,29 @@
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Tracto Solicitado]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[FECHA ENTRADA]"
-                              cachedDataType="date"
+                              cachedDataType="wstr"
+                              cachedLength="50"
                               cachedName="FECHA ENTRADA"
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[FECHA ENTRADA]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[FECHA ENTRADA]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[Fecha solicitud tracto a OPPLUS]"
-                              cachedDataType="date"
+                              cachedDataType="wstr"
+                              cachedLength="50"
                               cachedName="Fecha solicitud tracto a OPPLUS"
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha solicitud tracto a OPPLUS]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Fecha solicitud tracto a OPPLUS]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[Resolución tracto]"
-                              cachedDataType="date"
+                              cachedDataType="wstr"
+                              cachedLength="50"
                               cachedName="Resolución tracto"
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[Resolución tracto]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Resolución tracto]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[FECHA ENVIO AL SOLICITANTE]"
-                              cachedDataType="date"
+                              cachedDataType="wstr"
+                              cachedLength="50"
                               cachedName="FECHA ENVIO AL SOLICITANTE"
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[FECHA ENVIO AL SOLICITANTE]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[FECHA ENVIO AL SOLICITANTE]" />
@@ -1331,7 +1314,8 @@
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[MES ENTRADA]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[AÑO ENTRADA]"
-                              cachedDataType="r8"
+                              cachedDataType="wstr"
+                              cachedLength="50"
                               cachedName="AÑO ENTRADA"
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[AÑO ENTRADA]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[AÑO ENTRADA]" />
@@ -1358,13 +1342,15 @@
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ESTADO]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[Días en gestión]"
-                              cachedDataType="r8"
+                              cachedDataType="wstr"
+                              cachedLength="50"
                               cachedName="Días en gestión"
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[Días en gestión]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Días en gestión]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[Día cálculo]"
-                              cachedDataType="date"
+                              cachedDataType="wstr"
+                              cachedLength="255"
                               cachedName="Día cálculo"
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[Día cálculo]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Día cálculo]" />
@@ -1609,8 +1595,8 @@
                       <connections>
                         <connection
                           refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Connections[OleDbConnection]"
-                          connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel 1]"
-                          connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel 1]"
+                          connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                          connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
                           description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
                           name="OleDbConnection" />
                       </connections>
@@ -1619,287 +1605,6 @@
                           refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel]"
                           name="Salida de origen de Excel">
                           <outputColumns>
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[índice]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[índice]"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[índice]"
-                              name="índice"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ID petición]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[ID petición]"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ID petición]"
-                              name="ID petición"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[USUARIO]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[USUARIO]"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[USUARIO]"
-                              name="USUARIO"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[SOLICITANTE]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[SOLICITANTE]"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[SOLICITANTE]"
-                              name="SOLICITANTE"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[TIPO PETICIÓN]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[TIPO PETICIÓN]"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[TIPO PETICIÓN]"
-                              name="TIPO PETICIÓN"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ IDUFIR_CRU]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[ IDUFIR_CRU]"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ IDUFIR_CRU]"
-                              name=" IDUFIR_CRU"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Registro]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Registro]"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Registro]"
-                              name="Registro"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Localidad]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Localidad]"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Localidad]"
-                              name="Localidad"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Num_Finca]"
-                              dataType="r8"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Num_Finca]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Num_Finca]"
-                              name="Num_Finca"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Procedimiento]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Procedimiento]"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Procedimiento]"
-                              name="Procedimiento"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Cuenta de mora]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Cuenta de mora]"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Cuenta de mora]"
-                              name="Cuenta de mora"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Titular]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Titular]"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Titular]"
-                              name="Titular"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[CIF titular]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[CIF titular]"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[CIF titular]"
-                              name="CIF titular"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[LETRADO]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[LETRADO]"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[LETRADO]"
-                              name="LETRADO"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[CORREO]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[CORREO]"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[CORREO]"
-                              name="CORREO"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Tracto Solicitado]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Tracto Solicitado]"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Tracto Solicitado]"
-                              name="Tracto Solicitado"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[FECHA ENTRADA]"
-                              dataType="date"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[FECHA ENTRADA]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[FECHA ENTRADA]"
-                              name="FECHA ENTRADA"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Fecha solicitud tracto a OPPLUS]"
-                              dataType="date"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Fecha solicitud tracto a OPPLUS]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Fecha solicitud tracto a OPPLUS]"
-                              name="Fecha solicitud tracto a OPPLUS"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Resolución tracto]"
-                              dataType="date"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Resolución tracto]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Resolución tracto]"
-                              name="Resolución tracto"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[FECHA ENVIO AL SOLICITANTE]"
-                              dataType="date"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[FECHA ENVIO AL SOLICITANTE]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[FECHA ENVIO AL SOLICITANTE]"
-                              name="FECHA ENVIO AL SOLICITANTE"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[COMENTARIOS]"
-                              dataType="nText"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[COMENTARIOS]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[COMENTARIOS]"
-                              name="COMENTARIOS"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ASUNTO]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[ASUNTO]"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ASUNTO]"
-                              name="ASUNTO"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[MES ENTRADA]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[MES ENTRADA]"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[MES ENTRADA]"
-                              name="MES ENTRADA"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[AÑO ENTRADA]"
-                              dataType="r8"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[AÑO ENTRADA]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[AÑO ENTRADA]"
-                              name="AÑO ENTRADA"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[MES ENVIO]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[MES ENVIO]"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[MES ENVIO]"
-                              name="MES ENVIO"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[AÑO ENVIO]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[AÑO ENVIO]"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[AÑO ENVIO]"
-                              name="AÑO ENVIO"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ESTADO]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[ESTADO]"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ESTADO]"
-                              name="ESTADO"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Días en gestión]"
-                              dataType="r8"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Días en gestión]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Días en gestión]"
-                              name="Días en gestión"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Día cálculo]"
-                              dataType="date"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Día cálculo]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Día cálculo]"
-                              name="Día cálculo"
-                              truncationRowDisposition="FailComponent" />
                             <outputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F30]"
                               dataType="wstr"
@@ -1910,150 +1615,439 @@
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F30]"
                               name="F30"
                               truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Índice]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F1]"
+                              length="50"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Índice]"
+                              name="Índice"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Id Petición]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F2]"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Id Petición]"
+                              name="Id Petición"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[USUARIO]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F3]"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[USUARIO]"
+                              name="USUARIO"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[SOLICITANTE]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F4]"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[SOLICITANTE]"
+                              name="SOLICITANTE"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[TIPO PETICIÓN]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F5]"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[TIPO PETICIÓN]"
+                              name="TIPO PETICIÓN"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ IDUFIR_CRU]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F6]"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ IDUFIR_CRU]"
+                              name=" IDUFIR_CRU"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Registro]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F7]"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Registro]"
+                              name="Registro"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Localidad]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F8]"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Localidad]"
+                              name="Localidad"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Num_Finca]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F9]"
+                              length="50"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Num_Finca]"
+                              name="Num_Finca"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Procedimiento]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F10]"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Procedimiento]"
+                              name="Procedimiento"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Cuenta de mora]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F11]"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Cuenta de mora]"
+                              name="Cuenta de mora"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Titular]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F12]"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Titular]"
+                              name="Titular"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[CIF titular]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F13]"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[CIF titular]"
+                              name="CIF titular"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[LETRADO]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F14]"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[LETRADO]"
+                              name="LETRADO"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[CORREO]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F15]"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[CORREO]"
+                              name="CORREO"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Tracto Solicitado]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F16]"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Tracto Solicitado]"
+                              name="Tracto Solicitado"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[FECHA ENTRADA]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F17]"
+                              length="50"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[FECHA ENTRADA]"
+                              name="FECHA ENTRADA"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Fecha solicitud tracto a OPPLUS]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F18]"
+                              length="50"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Fecha solicitud tracto a OPPLUS]"
+                              name="Fecha solicitud tracto a OPPLUS"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Resolución tracto]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F19]"
+                              length="50"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Resolución tracto]"
+                              name="Resolución tracto"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[FECHA ENVIO AL SOLICITANTE]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F20]"
+                              length="50"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[FECHA ENVIO AL SOLICITANTE]"
+                              name="FECHA ENVIO AL SOLICITANTE"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[COMENTARIOS]"
+                              dataType="nText"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F21]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[COMENTARIOS]"
+                              name="COMENTARIOS"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ASUNTO]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F22]"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ASUNTO]"
+                              name="ASUNTO"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[MES ENTRADA]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F23]"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[MES ENTRADA]"
+                              name="MES ENTRADA"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[AÑO ENTRADA]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F24]"
+                              length="50"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[AÑO ENTRADA]"
+                              name="AÑO ENTRADA"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[MES ENVIO]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F25]"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[MES ENVIO]"
+                              name="MES ENVIO"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[AÑO ENVIO]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F26]"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[AÑO ENVIO]"
+                              name="AÑO ENVIO"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ESTADO]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F27]"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ESTADO]"
+                              name="ESTADO"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Días en gestión]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F28]"
+                              length="50"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Días en gestión]"
+                              name="Días en gestión"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Día cálculo]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F29]"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Día cálculo]"
+                              name="Día cálculo"
+                              truncationRowDisposition="FailComponent" />
                           </outputColumns>
                           <externalMetadataColumns
                             isUsed="True">
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[índice]"
-                              dataType="wstr"
-                              length="255"
-                              name="índice" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[ID petición]"
-                              dataType="wstr"
-                              length="255"
-                              name="ID petición" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[USUARIO]"
-                              dataType="wstr"
-                              length="255"
-                              name="USUARIO" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[SOLICITANTE]"
-                              dataType="wstr"
-                              length="255"
-                              name="SOLICITANTE" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[TIPO PETICIÓN]"
-                              dataType="wstr"
-                              length="255"
-                              name="TIPO PETICIÓN" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[ IDUFIR_CRU]"
-                              dataType="wstr"
-                              length="255"
-                              name=" IDUFIR_CRU" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Registro]"
-                              dataType="wstr"
-                              length="255"
-                              name="Registro" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Localidad]"
-                              dataType="wstr"
-                              length="255"
-                              name="Localidad" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Num_Finca]"
-                              dataType="r8"
-                              name="Num_Finca" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Procedimiento]"
-                              dataType="wstr"
-                              length="255"
-                              name="Procedimiento" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Cuenta de mora]"
-                              dataType="wstr"
-                              length="255"
-                              name="Cuenta de mora" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Titular]"
-                              dataType="wstr"
-                              length="255"
-                              name="Titular" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[CIF titular]"
-                              dataType="wstr"
-                              length="255"
-                              name="CIF titular" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[LETRADO]"
-                              dataType="wstr"
-                              length="255"
-                              name="LETRADO" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[CORREO]"
-                              dataType="wstr"
-                              length="255"
-                              name="CORREO" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Tracto Solicitado]"
-                              dataType="wstr"
-                              length="255"
-                              name="Tracto Solicitado" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[FECHA ENTRADA]"
-                              dataType="date"
-                              name="FECHA ENTRADA" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Fecha solicitud tracto a OPPLUS]"
-                              dataType="date"
-                              name="Fecha solicitud tracto a OPPLUS" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Resolución tracto]"
-                              dataType="date"
-                              name="Resolución tracto" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[FECHA ENVIO AL SOLICITANTE]"
-                              dataType="date"
-                              name="FECHA ENVIO AL SOLICITANTE" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[COMENTARIOS]"
-                              dataType="nText"
-                              name="COMENTARIOS" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[ASUNTO]"
-                              dataType="wstr"
-                              length="255"
-                              name="ASUNTO" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[MES ENTRADA]"
-                              dataType="wstr"
-                              length="255"
-                              name="MES ENTRADA" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[AÑO ENTRADA]"
-                              dataType="r8"
-                              name="AÑO ENTRADA" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[MES ENVIO]"
-                              dataType="wstr"
-                              length="255"
-                              name="MES ENVIO" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[AÑO ENVIO]"
-                              dataType="wstr"
-                              length="255"
-                              name="AÑO ENVIO" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[ESTADO]"
-                              dataType="wstr"
-                              length="255"
-                              name="ESTADO" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Días en gestión]"
-                              dataType="r8"
-                              name="Días en gestión" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Día cálculo]"
-                              dataType="date"
-                              name="Día cálculo" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F30]"
                               dataType="wstr"
                               length="255"
                               name="F30" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F1]"
+                              dataType="r8"
+                              name="F1" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F2]"
+                              dataType="wstr"
+                              length="255"
+                              name="F2" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F3]"
+                              dataType="wstr"
+                              length="255"
+                              name="F3" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F4]"
+                              dataType="wstr"
+                              length="255"
+                              name="F4" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F5]"
+                              dataType="wstr"
+                              length="255"
+                              name="F5" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F6]"
+                              dataType="wstr"
+                              length="255"
+                              name="F6" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F7]"
+                              dataType="wstr"
+                              length="255"
+                              name="F7" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F8]"
+                              dataType="wstr"
+                              length="255"
+                              name="F8" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F9]"
+                              dataType="r8"
+                              name="F9" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F10]"
+                              dataType="wstr"
+                              length="255"
+                              name="F10" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F11]"
+                              dataType="wstr"
+                              length="255"
+                              name="F11" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F12]"
+                              dataType="wstr"
+                              length="255"
+                              name="F12" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F13]"
+                              dataType="wstr"
+                              length="255"
+                              name="F13" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F14]"
+                              dataType="wstr"
+                              length="255"
+                              name="F14" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F15]"
+                              dataType="wstr"
+                              length="255"
+                              name="F15" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F16]"
+                              dataType="wstr"
+                              length="255"
+                              name="F16" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F17]"
+                              dataType="date"
+                              name="F17" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F18]"
+                              dataType="date"
+                              name="F18" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F19]"
+                              dataType="date"
+                              name="F19" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F20]"
+                              dataType="date"
+                              name="F20" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F21]"
+                              dataType="nText"
+                              name="F21" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F22]"
+                              dataType="wstr"
+                              length="255"
+                              name="F22" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F23]"
+                              dataType="wstr"
+                              length="255"
+                              name="F23" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F24]"
+                              dataType="r8"
+                              name="F24" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F25]"
+                              dataType="wstr"
+                              length="255"
+                              name="F25" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F26]"
+                              dataType="wstr"
+                              length="255"
+                              name="F26" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F27]"
+                              dataType="wstr"
+                              length="255"
+                              name="F27" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F28]"
+                              dataType="r8"
+                              name="F28" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F29]"
+                              dataType="wstr"
+                              length="255"
+                              name="F29" />
                           </externalMetadataColumns>
                         </output>
                         <output
@@ -2062,176 +2056,170 @@
                           name="Salida de error de origen de Excel">
                           <outputColumns>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[índice]"
-                              dataType="wstr"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[índice]"
-                              name="índice" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ID petición]"
-                              dataType="wstr"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ID petición]"
-                              name="ID petición" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[USUARIO]"
-                              dataType="wstr"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[USUARIO]"
-                              name="USUARIO" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[SOLICITANTE]"
-                              dataType="wstr"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[SOLICITANTE]"
-                              name="SOLICITANTE" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[TIPO PETICIÓN]"
-                              dataType="wstr"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[TIPO PETICIÓN]"
-                              name="TIPO PETICIÓN" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ IDUFIR_CRU]"
-                              dataType="wstr"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ IDUFIR_CRU]"
-                              name=" IDUFIR_CRU" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Registro]"
-                              dataType="wstr"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Registro]"
-                              name="Registro" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Localidad]"
-                              dataType="wstr"
-                              length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Localidad]"
-                              name="Localidad" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Num_Finca]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F1]"
                               dataType="r8"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Num_Finca]"
-                              name="Num_Finca" />
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F1]"
+                              name="F1" />
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Procedimiento]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F2]"
                               dataType="wstr"
                               length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Procedimiento]"
-                              name="Procedimiento" />
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F2]"
+                              name="F2" />
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Cuenta de mora]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F3]"
                               dataType="wstr"
                               length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Cuenta de mora]"
-                              name="Cuenta de mora" />
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F3]"
+                              name="F3" />
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Titular]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F4]"
                               dataType="wstr"
                               length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Titular]"
-                              name="Titular" />
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F4]"
+                              name="F4" />
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[CIF titular]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F5]"
                               dataType="wstr"
                               length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[CIF titular]"
-                              name="CIF titular" />
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F5]"
+                              name="F5" />
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[LETRADO]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F6]"
                               dataType="wstr"
                               length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[LETRADO]"
-                              name="LETRADO" />
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F6]"
+                              name="F6" />
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[CORREO]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F7]"
                               dataType="wstr"
                               length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[CORREO]"
-                              name="CORREO" />
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F7]"
+                              name="F7" />
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Tracto Solicitado]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F8]"
                               dataType="wstr"
                               length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Tracto Solicitado]"
-                              name="Tracto Solicitado" />
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F8]"
+                              name="F8" />
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[FECHA ENTRADA]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F9]"
+                              dataType="r8"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F9]"
+                              name="F9" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F10]"
+                              dataType="wstr"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F10]"
+                              name="F10" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F11]"
+                              dataType="wstr"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F11]"
+                              name="F11" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F12]"
+                              dataType="wstr"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F12]"
+                              name="F12" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F13]"
+                              dataType="wstr"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F13]"
+                              name="F13" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F14]"
+                              dataType="wstr"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F14]"
+                              name="F14" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F15]"
+                              dataType="wstr"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F15]"
+                              name="F15" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F16]"
+                              dataType="wstr"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F16]"
+                              name="F16" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F17]"
                               dataType="date"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[FECHA ENTRADA]"
-                              name="FECHA ENTRADA" />
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F17]"
+                              name="F17" />
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Fecha solicitud tracto a OPPLUS]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F18]"
                               dataType="date"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Fecha solicitud tracto a OPPLUS]"
-                              name="Fecha solicitud tracto a OPPLUS" />
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F18]"
+                              name="F18" />
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Resolución tracto]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F19]"
                               dataType="date"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Resolución tracto]"
-                              name="Resolución tracto" />
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F19]"
+                              name="F19" />
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[FECHA ENVIO AL SOLICITANTE]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F20]"
                               dataType="date"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[FECHA ENVIO AL SOLICITANTE]"
-                              name="FECHA ENVIO AL SOLICITANTE" />
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F20]"
+                              name="F20" />
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[COMENTARIOS]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F21]"
                               dataType="nText"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[COMENTARIOS]"
-                              name="COMENTARIOS" />
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F21]"
+                              name="F21" />
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ASUNTO]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F22]"
                               dataType="wstr"
                               length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ASUNTO]"
-                              name="ASUNTO" />
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F22]"
+                              name="F22" />
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[MES ENTRADA]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F23]"
                               dataType="wstr"
                               length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[MES ENTRADA]"
-                              name="MES ENTRADA" />
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F23]"
+                              name="F23" />
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[AÑO ENTRADA]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F24]"
                               dataType="r8"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[AÑO ENTRADA]"
-                              name="AÑO ENTRADA" />
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F24]"
+                              name="F24" />
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[MES ENVIO]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F25]"
                               dataType="wstr"
                               length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[MES ENVIO]"
-                              name="MES ENVIO" />
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F25]"
+                              name="F25" />
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[AÑO ENVIO]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F26]"
                               dataType="wstr"
                               length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[AÑO ENVIO]"
-                              name="AÑO ENVIO" />
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F26]"
+                              name="F26" />
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ESTADO]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F27]"
                               dataType="wstr"
                               length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ESTADO]"
-                              name="ESTADO" />
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F27]"
+                              name="F27" />
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Días en gestión]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F28]"
                               dataType="r8"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Días en gestión]"
-                              name="Días en gestión" />
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F28]"
+                              name="F28" />
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Día cálculo]"
-                              dataType="date"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Día cálculo]"
-                              name="Día cálculo" />
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F30]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F29]"
                               dataType="wstr"
                               length="255"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F30]"
-                              name="F30" />
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F29]"
+                              name="F29" />
                             <outputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ErrorCode]"
                               dataType="i4"
@@ -2244,6 +2232,12 @@
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ErrorColumn]"
                               name="ErrorColumn"
                               specialFlags="2" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F30]"
+                              dataType="wstr"
+                              length="255"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F30]"
+                              name="F30" />
                           </outputColumns>
                           <externalMetadataColumns />
                         </output>
@@ -2269,7 +2263,7 @@
               DTS:refId="Package\Load file to DBO\Search and load file\Source file"
               DTS:CreationName="Microsoft.ExecuteSQLTask"
               DTS:Description="Tarea Ejecutar SQL"
-              DTS:DTSID="{56E37CE7-FD64-416C-86CF-EE764531AF97}"
+              DTS:DTSID="{28794974-64EA-434B-BED0-40530BCC1B0B}"
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Source file"
@@ -2277,7 +2271,7 @@
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
-                  SQLTask:Connection="{AF0B71B2-9783-445E-A9ED-4654BC73661E}"
+                  SQLTask:Connection="{73F5C74D-A45E-4CBC-9AB5-11A7BBE2B475}"
                   SQLTask:SqlStatementSource="select ? FICHERO_ORIGEN"
                   SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
                   <SQLTask:ResultBinding
@@ -2297,7 +2291,7 @@
             <DTS:PrecedenceConstraint
               DTS:refId="Package\Load file to DBO\Search and load file.PrecedenceConstraints[Restricción]"
               DTS:CreationName=""
-              DTS:DTSID="{B6C0795C-81CE-47CD-B30C-F9A75098BFE2}"
+              DTS:DTSID="{D5C262FC-1B24-4F7C-9F47-FA356148E848}"
               DTS:From="Package\Load file to DBO\Search and load file\Source file"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Restricción"
@@ -2306,8 +2300,8 @@
           <DTS:ForEachVariableMappings>
             <DTS:ForEachVariableMapping
               DTS:CreationName=""
-              DTS:DTSID="{B4081372-E088-4CD4-9D99-8454095410D2}"
-              DTS:ObjectName="{B4081372-E088-4CD4-9D99-8454095410D2}"
+              DTS:DTSID="{129D02D8-0D64-4B82-BAF2-79AC52324B0C}"
+              DTS:ObjectName="{129D02D8-0D64-4B82-BAF2-79AC52324B0C}"
               DTS:ValueIndex="0"
               DTS:VariableName="User::FilePath" />
           </DTS:ForEachVariableMappings>
@@ -2316,7 +2310,7 @@
           DTS:refId="Package\Load file to DBO\Truncate table"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{B6BF2715-B764-4DC2-8A25-45B606C0E9A5}"
+          DTS:DTSID="{ABB8C9A7-09EB-46FF-BA3C-0B10C47B6DEB}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Truncate table"
@@ -2324,7 +2318,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{F802C6B4-92A8-4E2A-8FFF-E6358C98D48C}"
+              SQLTask:Connection="{1DEA6638-D711-4661-96B6-13708DC30040}"
               SQLTask:SqlStatementSource="truncate table SVH_DBO.OCEAN.P02_Peticiones" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -2333,7 +2327,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file to DBO.PrecedenceConstraints[Restricción]"
           DTS:CreationName=""
-          DTS:DTSID="{02530F3F-F8BA-47B9-8413-8C8F2F00B584}"
+          DTS:DTSID="{06A84801-F3BF-450A-97D3-E503EF7D6049}"
           DTS:From="Package\Load file to DBO\Truncate table"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción"
@@ -2341,7 +2335,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file to DBO.PrecedenceConstraints[Restricción 1]"
           DTS:CreationName=""
-          DTS:DTSID="{8D8A881A-D212-4467-AE63-18B5CEF133EF}"
+          DTS:DTSID="{879F6F5C-C76E-4543-A1EA-2F3D89C145D3}"
           DTS:From="Package\Load file to DBO\Search and load file"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 1"
@@ -2353,7 +2347,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
       DTS:CreationName=""
-      DTS:DTSID="{87A74EA1-AA53-47F7-A148-2C73A0652247}"
+      DTS:DTSID="{76D68A55-2F7A-45B5-B2AC-DF42C1C60B88}"
       DTS:From="Package\Load file log START"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 3"
@@ -2361,7 +2355,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción]"
       DTS:CreationName=""
-      DTS:DTSID="{3FD0CB1B-C21F-42B2-BB5D-30935421E00C}"
+      DTS:DTSID="{038A9B87-DABC-4756-B84C-B750A30946FE}"
       DTS:From="Package\Load file to DBO"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción"
@@ -2369,7 +2363,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
       DTS:CreationName=""
-      DTS:DTSID="{32B3E5B1-1582-422A-95E0-00B72F95A98D}"
+      DTS:DTSID="{583D20CB-E625-44B6-ABFB-A94924891611}"
       DTS:From="Package\Load file log END"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 1"
@@ -2379,7 +2373,7 @@
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnError]"
       DTS:CreationName="OnError"
-      DTS:DTSID="{EFA6921F-8FB7-44C9-A2E0-32857A895F8A}"
+      DTS:DTSID="{2B6330BD-E155-4927-9BD4-437A778CE1D0}"
       DTS:EventID="0"
       DTS:EventName="OnError"
       DTS:LocaleID="-1">
@@ -2387,7 +2381,7 @@
         <DTS:Variable
           DTS:CreationName=""
           DTS:Description="La propiedad de propagación del evento"
-          DTS:DTSID="{06DD512E-B0EF-4C49-9F47-93488577815C}"
+          DTS:DTSID="{E1018F55-FAF2-45A7-845C-19F334F1E588}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="System"
           DTS:ObjectName="Propagate">
@@ -2400,14 +2394,14 @@
           DTS:refId="Package.EventHandlers[OnError]\LogFail"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{7F18787A-8962-46D2-BC49-6D46CE2BFEE6}"
+          DTS:DTSID="{7847527A-8E10-45C3-AB8B-1D8F6510DAF6}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="LogFail">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{F802C6B4-92A8-4E2A-8FFF-E6358C98D48C}"
+              SQLTask:Connection="{1DEA6638-D711-4661-96B6-13708DC30040}"
               SQLTask:SqlStatementSource="BEGIN TRY&#xA;&#xA;EXECUTE [SVH_STG].[dbo].[CloseLog]&#xA;@PackageName=?,&#xA;@RunGUID = ? , &#xA;@PackageRunResult = ?,&#xA;@TotalRowCount  = ?, &#xA;@ExecPeriod  = ?, &#xA;@ErrorDescription = ?&#xA;&#xA;END TRY&#xA;&#xA;BEGIN CATCH&#xA;&#xA;EXEC [SVH_STG].[dbo].[PROCESO_LOG_ERRORES] &#xA;@p_PROCESO=?, &#xA;@RUNID=?,&#xA;@TIPO_ERROR =10&#xA;&#xA;RAISERROR ('Error en el objeto LogFail del paquete SISS' ,18,1);&#xA;&#xA;END CATCH" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -2476,27 +2470,27 @@
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="159.2,41.6"
+          Size="159,42"
           Id="Package\Load dbo to STG\Asigna Validaciones"
           TopLeft="69.9605693706377,409.466664009018" />
         <NodeLayout
-          Size="113.6,41.6"
+          Size="114,42"
           Id="Package\Load dbo to STG\CLOSE"
           TopLeft="91.1523443239098,326.066664153658" />
         <NodeLayout
-          Size="127.2,41.6"
+          Size="127,42"
           Id="Package\Load dbo to STG\INI -RunID"
           TopLeft="78.8666264666465,99.1333346488742" />
         <NodeLayout
-          Size="159.2,41.6"
+          Size="159,42"
           Id="Package\Load dbo to STG\load DBO to STG"
           TopLeft="64.4856787168807,18.3999950418767" />
         <NodeLayout
-          Size="163.2,41.6"
+          Size="163,42"
           Id="Package\Load dbo to STG\OpenLog Validaciones"
           TopLeft="62.4605696686607,173.499998140335" />
         <NodeLayout
-          Size="159.2,41.6"
+          Size="159,42"
           Id="Package\Load dbo to STG\Validaciones"
           TopLeft="63.2939029688802,243.033331218825" />
         <EdgeLayout
@@ -2612,28 +2606,28 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="287.2,524"
-          Size="287.2,567.2"
+          PanelSize="287,524"
+          Size="287,567"
           Id="Package\Load dbo to STG"
           TopLeft="932.499962945781,23.4000001859664" />
         <NodeLayout
-          Size="113.6,41.6"
+          Size="114,42"
           Id="Package\Load file log END\CLOSE"
           TopLeft="37.1666664679846,400.599999986224" />
         <NodeLayout
-          Size="172.8,41.6"
+          Size="173,42"
           Id="Package\Load file log END\DaysOfDeleteDays"
           TopLeft="5.50000000000003,209.5" />
         <NodeLayout
-          Size="156.8,41.6"
+          Size="157,42"
           Id="Package\Load file log END\Delete Old Files"
           TopLeft="13.5,311.5" />
         <NodeLayout
-          Size="148.8,41.6"
+          Size="149,42"
           Id="Package\Load file log END\Mover Fichero"
           TopLeft="17.5,107.5" />
         <NodeLayout
-          Size="155.2,41.6"
+          Size="155,42"
           Id="Package\Load file log END\TotalRowCount"
           TopLeft="14.5,5.5" />
         <EdgeLayout
@@ -2733,16 +2727,16 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="184,499.2"
-          Size="184,542.4"
+          PanelSize="184,499"
+          Size="184,542"
           Id="Package\Load file log END"
           TopLeft="646.531762810925,13.4658714877983" />
         <NodeLayout
-          Size="127.2,41.6"
+          Size="127,42"
           Id="Package\Load file log START\INI -RunID"
           TopLeft="19.3939394270531,50.045453099049" />
         <NodeLayout
-          Size="120.8,41.6"
+          Size="121,42"
           Id="Package\Load file log START\OpenLog"
           TopLeft="29.3333330021963,159.833332127995" />
         <EdgeLayout
@@ -2770,20 +2764,20 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="195.2,408.8"
-          Size="195.2,452"
+          PanelSize="195,409"
+          Size="195,452"
           Id="Package\Load file log START"
           TopLeft="58.9523826695627,17.3246013336338" />
         <NodeLayout
-          Size="192.8,41.6"
+          Size="193,42"
           Id="Package\Load file to DBO\Eliminar fila de campos"
           TopLeft="35.999999900659,389.16666601234" />
         <NodeLayout
-          Size="135.2,41.6"
+          Size="135,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO"
           TopLeft="42.7499996357494,81.1333333264458" />
         <NodeLayout
-          Size="127.2,41.6"
+          Size="127,42"
           Id="Package\Load file to DBO\Search and load file\Source file"
           TopLeft="47.0000000000001,11.9999999999999" />
         <EdgeLayout
@@ -2811,12 +2805,12 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="233.6,179.2"
-          Size="233.6,222.4"
+          PanelSize="234,179"
+          Size="234,222"
           Id="Package\Load file to DBO\Search and load file"
           TopLeft="17.9999995032947,106.633333326446" />
         <NodeLayout
-          Size="144.8,41.6"
+          Size="145,42"
           Id="Package\Load file to DBO\Truncate table"
           TopLeft="63.1666657063696,25.8666666735543" />
         <EdgeLayout
@@ -2866,8 +2860,8 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="265.6,564"
-          Size="265.6,607.2"
+          PanelSize="266,564"
+          Size="266,607"
           Id="Package\Load file to DBO"
           TopLeft="304.289682350462,11.2666664265822" />
         <EdgeLayout
@@ -3017,27 +3011,43 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="177.6,41.6"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1"
-          TopLeft="325.833320385881,349.266669442389" />
+          Size="152,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel"
+          TopLeft="336.666666401757,158.866666673555" />
         <NodeLayout
-          Size="168,41.6"
+          Size="178,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB 1"
+          TopLeft="312.499987582367,455.86667028957" />
+        <NodeLayout
+          Size="168,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
-          TopLeft="324.499999900659,255" />
+          TopLeft="312.833333697584,382.400001012484" />
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de Excel]"
-          TopLeft="409.699999900659,198.733333326446">
+          TopLeft="412.666666401757,200.466666673555">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,56.2666666735543"
+              EndConnector="-15.8333327041728,181.933334338929"
               Start="0,0"
-              End="0,48.7666666735543">
+              End="-15.8333327041728,174.433334338929">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,48.7666666735543" />
+                    End="0,86.9666671694646" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,86.9666671694646"
+                    Point2="0,90.9666671694646"
+                    Point3="-4,90.9666671694646" />
+                  <mssgle:LineSegment
+                    End="-11.8333327041728,90.9666671694646" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-11.8333327041728,90.9666671694646"
+                    Point2="-15.8333327041728,90.9666671694646"
+                    Point3="-15.8333327041728,94.9666671694646" />
+                  <mssgle:LineSegment
+                    End="-15.8333327041728,174.433334338929" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3048,18 +3058,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de columna derivada]"
-          TopLeft="411.56666014327,296.6">
+          TopLeft="399.066660639975,424.000001012484">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,52.6666694423888"
+              EndConnector="0,31.8666692770855"
               Start="0,0"
-              End="0,45.1666694423888">
+              End="0,24.3666692770855">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,45.1666694423888" />
+                    End="0,24.3666692770855" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3068,10 +3078,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="156.8,41.6"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel"
-          TopLeft="332.499999900659,157.133333326446" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
