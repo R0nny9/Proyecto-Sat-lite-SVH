@@ -11,25 +11,11 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="OCEAN_P15"
   DTS:PackageType="5"
-  DTS:VersionBuild="271"
-  DTS:VersionGUID="{45BDBE2B-0A4C-47DC-8D94-B4F08CF431BE}">
+  DTS:VersionBuild="307"
+  DTS:VersionGUID="{3A113749-F1D3-4D6E-9271-FA54575EDDDF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
-      DTS:CreationName="EXCEL"
-      DTS:DTSID="{3572B7E2-D7FE-4D73-B8CA-7718A46140CC}"
-      DTS:ObjectName="Administrador de conexiones con Excel">
-      <DTS:PropertyExpression
-        DTS:Name="ExcelFilePath">@[User::FilePath]</DTS:PropertyExpression>
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="0"
-          DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=.xlsxOCEAN_P02_Peticiones_20230320;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[MBS-RJARA.SVH_DBO]"
       DTS:CreationName="OLEDB"
@@ -41,11 +27,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=Ronny;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAu+G2xGj1+k6CSnk+YOwSuwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB147JZftCVAQlM2KN5JF6RUcdmA50AQxMmYBUa+Sp5qgAAAAAOgAAAAAIAACAAAADMEt0yX2Lq5I2oE07WE4D3UNRl8NOsh6tgwiDnMFUGrSAAAADhtIFAatzSqVIaMIkBM3qUTz2gP8nkx4StIYLktr1lp0AAAACY+dBqfNTXc2SoHwm0uSjnUeDwC2+XTAf/pdlggnS6UZx8L3bVImk7q+8PRlGu/KTBToYUJUksnup4cz5aKJO+</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAByFO7qouMKaMKn6xQ3WEScCbT5ZBWrpiHjPLAdVEwe/AAAAAAOgAAAAAIAACAAAACu6LjDZbYMcob3yJJW3gji3xoGbfLQjO+K3tDQfxUHBRAAAACdS6YKK9o+MAuV3fPYssQ7QAAAAGHcEeSU7Cz+90IuFHYxT4qj2N6XjCib8WQqLM9Arifdre3MccNxddKcu89hAtt6S/GDiqnk5LG9jk041ubEIUs</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -60,11 +46,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=Ronny;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAu+G2xGj1+k6CSnk+YOwSuwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACLUQkwXA3x8QXAr5MEUc11SjOF5MG3khCyUcJPYsgTAQAAAAAOgAAAAAIAACAAAADn7y/vHqewU9zz+eygGiPPZzxRuLip9BAaKqEqlI+2qCAAAAD0YXZWmmQdEKbS/2W3qonZFwyiJP67BymiJSMl9GBPkEAAAABLmRHF2N0unO9hsZuMca/tsaek95VEnDc6hgXpzK2XKEQjoUJWYimh7zrVB+dOqhqlDo2E8T7OiL4+Nn7flNob</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADvaLbLMedbWSdT6/MQ3vpWgvvsC+v7BF+y86F8nNWs4wAAAAAOgAAAAAIAACAAAADCEOhQ3hIt4gFTQ9uPguYcOrkta19p1k0xWa6JEoG3zhAAAABvdifoCy9itjadkqo8SPy4QAAAADvyZv71hV8yU2MQOWSShSJRLW9P+aSB8TxS8w5R7NDcHzRvMi71GLlbVKtuJsXU/Pmg/643T8YVmXvnDOrliGM</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -137,7 +123,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FichBuscar">
       <DTS:VariableValue
-        DTS:DataType="8">.xlsxOCEAN_P02_Peticiones_20230320</DTS:VariableValue>
+        DTS:DataType="8">OCEAN_P15_Peticiones_20220327.xlsx</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -146,7 +132,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FilePath">
       <DTS:VariableValue
-        DTS:DataType="8">.xlsxOCEAN_P02_Peticiones_20230320</DTS:VariableValue>
+        DTS:DataType="8">OCEAN_P15_Peticiones_20220327.xlsx</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -157,7 +143,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="F_CARGA">
       <DTS:VariableValue
-        DTS:DataType="7">3/31/2023 11:57:01 AM</DTS:VariableValue>
+        DTS:DataType="7">3/31/2023 1:18:34 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -266,7 +252,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="var_moverFich">
       <DTS:VariableValue
-        DTS:DataType="8">C:\08_Python\moveFile.py C:\OCEAN\P15 C:\ORIGENES_PROCESADOS\P15 *OCEAN_P15_Peticiones*</DTS:VariableValue>
+        DTS:DataType="8">C:\08_Python\moveFile.py C:\Users\Ronny_Jara\OneDrive\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\OCEAN\P15 C:\ORIGENES_PROCESADOS\P15 *OCEAN_P15_Peticiones*</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -695,7 +681,7 @@
           <DTS:ObjectData>
             <ExecuteProcessData
               Executable="C:\Users\Ronny_Jara\AppData\Local\Microsoft\WindowsApps\python.exe"
-              Arguments="C:\08_Python\moveFile.py C:\OCEAN\P15 C:\ORIGENES_PROCESADOS\P15 *OCEAN_P15_Peticiones*" />
+              Arguments="C:\08_Python\moveFile.py C:\Users\Ronny_Jara\OneDrive\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\OCEAN\P15 C:\ORIGENES_PROCESADOS\P15 *OCEAN_P15_Peticiones*" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
@@ -980,7 +966,7 @@
             <DTS:ObjectData>
               <ForEachFileEnumeratorProperties>
                 <FEFEProperty
-                  Folder="C:\OCEAN\P15" />
+                  Folder="C:\Users\Ronny_Jara\OneDrive\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\OCEAN\P15" />
                 <FEFEProperty
                   FileSpec="*OCEAN_P15_Peticiones*" />
                 <FEFEProperty
@@ -1019,25 +1005,18 @@
                           refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1.Inputs[Entrada de columna derivada]"
                           description="Entrada en la transformación Columna derivada"
                           name="Entrada de columna derivada">
-                          <externalMetadataColumns />
-                        </input>
-                      </inputs>
-                      <outputs>
-                        <output
-                          refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1.Outputs[Salida de columna derivada]"
-                          description="Salida predeterminada de la transformación Columna derivada"
-                          exclusionGroup="1"
-                          name="Salida de columna derivada"
-                          synchronousInputId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1.Inputs[Entrada de columna derivada]">
-                          <outputColumns>
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1.Outputs[Salida de columna derivada].Columns[F_DATOS]"
-                              dataType="date"
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1.Inputs[Entrada de columna derivada].Columns[F_DATOS]"
+                              cachedDataType="wstr"
+                              cachedLength="255"
+                              cachedName="F4"
                               errorOrTruncationOperation="Cálculo"
                               errorRowDisposition="FailComponent"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1.Outputs[Salida de columna derivada].Columns[F_DATOS]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\166:invalid"
                               name="F_DATOS"
-                              truncationRowDisposition="FailComponent">
+                              truncationRowDisposition="FailComponent"
+                              usageType="readWrite">
                               <properties>
                                 <property
                                   containsID="true"
@@ -1051,8 +1030,18 @@
                                   expressionType="Notify"
                                   name="FriendlyExpression">@[User::F_DATOS]</property>
                               </properties>
-                            </outputColumn>
-                          </outputColumns>
+                            </inputColumn>
+                          </inputColumns>
+                          <externalMetadataColumns />
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1.Outputs[Salida de columna derivada]"
+                          description="Salida predeterminada de la transformación Columna derivada"
+                          exclusionGroup="1"
+                          name="Salida de columna derivada"
+                          synchronousInputId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1.Inputs[Entrada de columna derivada]">
                           <externalMetadataColumns />
                         </output>
                         <output
@@ -1096,7 +1085,7 @@
                         <property
                           dataType="System.String"
                           description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
-                          name="OpenRowset">[OCEAN].[P15_Peticiones]</property>
+                          name="OpenRowset"></property>
                         <property
                           dataType="System.String"
                           description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
@@ -1118,7 +1107,7 @@
                           dataType="System.Int32"
                           description="Especifica el modo utilizado para obtener acceso a la base de datos."
                           name="AccessMode"
-                          typeConverter="AccessMode">3</property>
+                          typeConverter="AccessMode">0</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
@@ -1130,7 +1119,7 @@
                         <property
                           dataType="System.String"
                           description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
-                          name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                          name="FastLoadOptions"></property>
                         <property
                           dataType="System.Int32"
                           description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
@@ -1139,8 +1128,6 @@
                       <connections>
                         <connection
                           refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Connections[OleDbConnection]"
-                          connectionManagerID="Package.ConnectionManagers[MBS-RJARA.SVH_DBO]"
-                          connectionManagerRefId="Package.ConnectionManagers[MBS-RJARA.SVH_DBO]"
                           description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
                           name="OleDbConnection" />
                       </connections>
@@ -1151,730 +1138,8 @@
                           errorRowDisposition="FailComponent"
                           hasSideEffects="true"
                           name="Entrada de destino de OLE DB">
-                          <inputColumns>
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Id]"
-                              cachedDataType="r8"
-                              cachedName="Id"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Id]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Id]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[IUC]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="IUC"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[IUC]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[IUC]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[CIF_principal]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="CIF_principal"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CIF_principal]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[CIF_principal]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Nombre Titular Principal]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="Nombre Titular Principal"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nombre Titular Principal]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Nombre Titular Principal]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Dat_mod]"
-                              cachedDataType="date"
-                              cachedName="Dat_mod"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Dat_mod]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Dat_mod]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Permiter]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="Permiter"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Permiter]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Permiter]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[ID_Heracles_Heredado]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="ID_Heracles_Heredado"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_Heracles_Heredado]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ID_Heracles_Heredado]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Prioridad]"
-                              cachedDataType="r8"
-                              cachedName="Prioridad"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Prioridad]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Prioridad]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Taskrecurrente]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="Taskrecurrente"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Taskrecurrente]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Taskrecurrente]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[F_asig]"
-                              cachedDataType="date"
-                              cachedName="F_asig"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_asig]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F_asig]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[F_baja]"
-                              cachedDataType="date"
-                              cachedName="F_baja"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_baja]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F_baja]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[F_ini_Gest]"
-                              cachedDataType="date"
-                              cachedName="F_ini_Gest"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_ini_Gest]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F_ini_Gest]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[F_Fin_Gest]"
-                              cachedDataType="date"
-                              cachedName="F_Fin_Gest"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_Fin_Gest]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F_Fin_Gest]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Fisico_Digital]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="Fisico_Digital"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fisico_Digital]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Fisico_Digital]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Estado]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="Estado"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Estado]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Estado]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Resultado_rev]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="Resultado_rev"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Resultado_rev]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Resultado_rev]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[F_rev_p15]"
-                              cachedDataType="date"
-                              cachedName="F_rev_p15"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_rev_p15]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F_rev_p15]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Revisador]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="Revisador"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Revisador]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Revisador]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Tip_bloq]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="Tip_bloq"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Tip_bloq]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Tip_bloq]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[F_ini_bloq]"
-                              cachedDataType="date"
-                              cachedName="F_ini_bloq"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_ini_bloq]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F_ini_bloq]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[F_fin_bloq]"
-                              cachedDataType="date"
-                              cachedName="F_fin_bloq"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_fin_bloq]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F_fin_bloq]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Motiv_devol]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="Motiv_devol"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Motiv_devol]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Motiv_devol]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[F_devol]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="F_devol"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_devol]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F_devol]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Producto]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="Producto"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Producto]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Producto]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Rango]"
-                              cachedDataType="r8"
-                              cachedName="Rango"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Rango]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Rango]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[PGM]"
-                              cachedDataType="bool"
-                              cachedName="PGM"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[PGM]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[PGM]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Afecta_ley_inmob]"
-                              cachedDataType="bool"
-                              cachedName="Afecta_ley_inmob"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Afecta_ley_inmob]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Afecta_ley_inmob]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Cert_reg]"
-                              cachedDataType="bool"
-                              cachedName="Cert_reg"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Cert_reg]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Cert_reg]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Tracto]"
-                              cachedDataType="bool"
-                              cachedName="Tracto"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Tracto]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Tracto]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Proced_propuesto]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="Proced_propuesto"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Proced_propuesto]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Proced_propuesto]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Sobreseido]"
-                              cachedDataType="bool"
-                              cachedName="Sobreseido"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Sobreseido]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Sobreseido]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Doc OK]"
-                              cachedDataType="bool"
-                              cachedName="Doc OK"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Doc OK]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Doc OK]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Requerimiento]"
-                              cachedDataType="bool"
-                              cachedName="Requerimiento"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Requerimiento]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Requerimiento]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[OTROSI_Clau_abusiva]"
-                              cachedDataType="bool"
-                              cachedName="OTROSI_Clau_abusiva"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[OTROSI_Clau_abusiva]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[OTROSI_Clau_abusiva]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Fecha_sol_opplus]"
-                              cachedDataType="date"
-                              cachedName="Fecha_sol_opplus"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha_sol_opplus]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Fecha_sol_opplus]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[No_gestionadas]"
-                              cachedDataType="r8"
-                              cachedName="No_gestionadas"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[No_gestionadas]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[No_gestionadas]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Solicitadas]"
-                              cachedDataType="r8"
-                              cachedName="Solicitadas"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Solicitadas]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Solicitadas]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Gestionadas]"
-                              cachedDataType="r8"
-                              cachedName="Gestionadas"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Gestionadas]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Gestionadas]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Total_escrituras]"
-                              cachedDataType="r8"
-                              cachedName="Total_escrituras"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Total_escrituras]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Total_escrituras]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Fecha de cierre]"
-                              cachedDataType="date"
-                              cachedName="Fecha de cierre"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha de cierre]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Fecha de cierre]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[ÚltimoDeNum_Cuot]"
-                              cachedDataType="r8"
-                              cachedName="ÚltimoDeNum_Cuot"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ÚltimoDeNum_Cuot]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ÚltimoDeNum_Cuot]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[ÚltimoDeTotal]"
-                              cachedDataType="cy"
-                              cachedName="ÚltimoDeTotal"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ÚltimoDeTotal]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ÚltimoDeTotal]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Letrado]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="Letrado"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Letrado]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Letrado]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[F_entrega_letrad]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="F_entrega_letrad"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_entrega_letrad]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F_entrega_letrad]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[ID_PJ_Creado]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="ID_PJ_Creado"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_PJ_Creado]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ID_PJ_Creado]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[F_apertura_PJ]"
-                              cachedDataType="date"
-                              cachedName="F_apertura_PJ"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_apertura_PJ]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F_apertura_PJ]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[F_ini_P25]"
-                              cachedDataType="date"
-                              cachedName="F_ini_P25"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_ini_P25]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F_ini_P25]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[F_baja_P25]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="F_baja_P25"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_baja_P25]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F_baja_P25]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Letrado_P25]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="Letrado_P25"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Letrado_P25]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Letrado_P25]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[F_rem_P25]"
-                              cachedDataType="date"
-                              cachedName="F_rem_P25"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_rem_P25]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F_rem_P25]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[F_firm_dem]"
-                              cachedDataType="date"
-                              cachedName="F_firm_dem"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_firm_dem]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F_firm_dem]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[F_env_consulta_amistosa]"
-                              cachedDataType="date"
-                              cachedName="F_env_consulta_amistosa"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_env_consulta_amistosa]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F_env_consulta_amistosa]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[F_recep_consulta_amistosa]"
-                              cachedDataType="date"
-                              cachedName="F_recep_consulta_amistosa"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_recep_consulta_amistosa]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F_recep_consulta_amistosa]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[F_envio_Quipro]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="F_envio_Quipro"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_envio_Quipro]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F_envio_Quipro]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[F_recepcion_Quipro]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="F_recepcion_Quipro"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_recepcion_Quipro]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F_recepcion_Quipro]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Procu]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="Procu"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Procu]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Procu]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[F_env_procu]"
-                              cachedDataType="date"
-                              cachedName="F_env_procu"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_env_procu]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F_env_procu]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[F_copia_sell]"
-                              cachedDataType="date"
-                              cachedName="F_copia_sell"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_copia_sell]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F_copia_sell]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Tip_bloq_P25]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="Tip_bloq_P25"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Tip_bloq_P25]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Tip_bloq_P25]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[F_ini_bloq_P25]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="F_ini_bloq_P25"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_ini_bloq_P25]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F_ini_bloq_P25]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[F_fin_bloq_P25]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="F_fin_bloq_P25"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_fin_bloq_P25]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F_fin_bloq_P25]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Alerta]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="Alerta"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Alerta]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Alerta]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[F_DATOS]"
-                              cachedDataType="date"
-                              cachedName="F_DATOS"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_DATOS]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1.Outputs[Salida de columna derivada].Columns[F_DATOS]" />
-                          </inputColumns>
                           <externalMetadataColumns
-                            isUsed="True">
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Id]"
-                              dataType="wstr"
-                              length="255"
-                              name="Id" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[IUC]"
-                              dataType="wstr"
-                              length="255"
-                              name="IUC" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CIF_principal]"
-                              dataType="wstr"
-                              length="255"
-                              name="CIF_principal" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nombre Titular Principal]"
-                              dataType="wstr"
-                              length="255"
-                              name="Nombre Titular Principal" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Dat_mod]"
-                              dataType="wstr"
-                              length="255"
-                              name="Dat_mod" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Permiter]"
-                              dataType="wstr"
-                              length="255"
-                              name="Permiter" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_Heracles_Heredado]"
-                              dataType="wstr"
-                              length="255"
-                              name="ID_Heracles_Heredado" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Prioridad]"
-                              dataType="wstr"
-                              length="255"
-                              name="Prioridad" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Taskrecurrente]"
-                              dataType="wstr"
-                              length="255"
-                              name="Taskrecurrente" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_asig]"
-                              dataType="wstr"
-                              length="255"
-                              name="F_asig" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_baja]"
-                              dataType="wstr"
-                              length="255"
-                              name="F_baja" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_ini_Gest]"
-                              dataType="wstr"
-                              length="255"
-                              name="F_ini_Gest" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_Fin_Gest]"
-                              dataType="wstr"
-                              length="255"
-                              name="F_Fin_Gest" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fisico_Digital]"
-                              dataType="wstr"
-                              length="255"
-                              name="Fisico_Digital" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Estado]"
-                              dataType="wstr"
-                              length="255"
-                              name="Estado" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Resultado_rev]"
-                              dataType="wstr"
-                              length="255"
-                              name="Resultado_rev" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_rev_p15]"
-                              dataType="wstr"
-                              length="255"
-                              name="F_rev_p15" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Revisador]"
-                              dataType="wstr"
-                              length="255"
-                              name="Revisador" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Tip_bloq]"
-                              dataType="wstr"
-                              length="255"
-                              name="Tip_bloq" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_ini_bloq]"
-                              dataType="wstr"
-                              length="255"
-                              name="F_ini_bloq" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_fin_bloq]"
-                              dataType="wstr"
-                              length="255"
-                              name="F_fin_bloq" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Motiv_devol]"
-                              dataType="wstr"
-                              length="255"
-                              name="Motiv_devol" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_devol]"
-                              dataType="wstr"
-                              length="255"
-                              name="F_devol" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Producto]"
-                              dataType="wstr"
-                              length="255"
-                              name="Producto" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Rango]"
-                              dataType="wstr"
-                              length="255"
-                              name="Rango" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[PGM]"
-                              dataType="wstr"
-                              length="255"
-                              name="PGM" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Afecta_ley_inmob]"
-                              dataType="wstr"
-                              length="255"
-                              name="Afecta_ley_inmob" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Cert_reg]"
-                              dataType="wstr"
-                              length="255"
-                              name="Cert_reg" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Tracto]"
-                              dataType="wstr"
-                              length="255"
-                              name="Tracto" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Proced_propuesto]"
-                              dataType="wstr"
-                              length="255"
-                              name="Proced_propuesto" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Sobreseido]"
-                              dataType="wstr"
-                              length="255"
-                              name="Sobreseido" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Doc OK]"
-                              dataType="wstr"
-                              length="255"
-                              name="Doc OK" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Requerimiento]"
-                              dataType="wstr"
-                              length="255"
-                              name="Requerimiento" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[OTROSI_Clau_abusiva]"
-                              dataType="wstr"
-                              length="255"
-                              name="OTROSI_Clau_abusiva" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha_sol_opplus]"
-                              dataType="wstr"
-                              length="255"
-                              name="Fecha_sol_opplus" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[No_gestionadas]"
-                              dataType="wstr"
-                              length="255"
-                              name="No_gestionadas" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Solicitadas]"
-                              dataType="wstr"
-                              length="255"
-                              name="Solicitadas" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Gestionadas]"
-                              dataType="wstr"
-                              length="255"
-                              name="Gestionadas" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Total_escrituras]"
-                              dataType="wstr"
-                              length="255"
-                              name="Total_escrituras" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha de cierre]"
-                              dataType="wstr"
-                              length="255"
-                              name="Fecha de cierre" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ÚltimoDeNum_Cuot]"
-                              dataType="wstr"
-                              length="255"
-                              name="ÚltimoDeNum_Cuot" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ÚltimoDeTotal]"
-                              dataType="cy"
-                              name="ÚltimoDeTotal" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Letrado]"
-                              dataType="wstr"
-                              length="255"
-                              name="Letrado" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_entrega_letrad]"
-                              dataType="wstr"
-                              length="255"
-                              name="F_entrega_letrad" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_PJ_Creado]"
-                              dataType="wstr"
-                              length="255"
-                              name="ID_PJ_Creado" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_apertura_PJ]"
-                              dataType="wstr"
-                              length="255"
-                              name="F_apertura_PJ" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_ini_P25]"
-                              dataType="wstr"
-                              length="255"
-                              name="F_ini_P25" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_baja_P25]"
-                              dataType="wstr"
-                              length="255"
-                              name="F_baja_P25" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Letrado_P25]"
-                              dataType="wstr"
-                              length="255"
-                              name="Letrado_P25" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_rem_P25]"
-                              dataType="wstr"
-                              length="255"
-                              name="F_rem_P25" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_firm_dem]"
-                              dataType="wstr"
-                              length="255"
-                              name="F_firm_dem" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_env_consulta_amistosa]"
-                              dataType="wstr"
-                              length="255"
-                              name="F_env_consulta_amistosa" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_recep_consulta_amistosa]"
-                              dataType="wstr"
-                              length="255"
-                              name="F_recep_consulta_amistosa" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_envio_Quipro]"
-                              dataType="wstr"
-                              length="255"
-                              name="F_envio_Quipro" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_recepcion_Quipro]"
-                              dataType="wstr"
-                              length="255"
-                              name="F_recepcion_Quipro" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Procu]"
-                              dataType="wstr"
-                              length="255"
-                              name="Procu" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_env_procu]"
-                              dataType="wstr"
-                              length="255"
-                              name="F_env_procu" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_copia_sell]"
-                              dataType="wstr"
-                              length="255"
-                              name="F_copia_sell" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Tip_bloq_P25]"
-                              dataType="wstr"
-                              length="255"
-                              name="Tip_bloq_P25" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_ini_bloq_P25]"
-                              dataType="wstr"
-                              length="255"
-                              name="F_ini_bloq_P25" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_fin_bloq_P25]"
-                              dataType="wstr"
-                              length="255"
-                              name="F_fin_bloq_P25" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Alerta]"
-                              dataType="wstr"
-                              length="255"
-                              name="Alerta" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_DATOS]"
-                              dataType="wstr"
-                              length="255"
-                              name="F_DATOS" />
-                          </externalMetadataColumns>
+                            isUsed="True" />
                         </input>
                       </inputs>
                       <outputs>
@@ -1945,8 +1210,8 @@
                       <connections>
                         <connection
                           refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Connections[OleDbConnection]"
-                          connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel]"
-                          connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                          connectionManagerID="{BB4DDAA8-A26A-4CFB-9D10-C587072A7A55}:invalid"
+                          connectionManagerRefId="{BB4DDAA8-A26A-4CFB-9D10-C587072A7A55}:invalid"
                           description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
                           name="OleDbConnection" />
                       </connections>
@@ -3180,18 +2445,6 @@
                       </outputs>
                     </component>
                   </components>
-                  <paths>
-                    <path
-                      refId="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de columna derivada]"
-                      endId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
-                      name="Salida de columna derivada"
-                      startId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1.Outputs[Salida de columna derivada]" />
-                    <path
-                      refId="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de Excel]"
-                      endId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1.Inputs[Entrada de columna derivada]"
-                      name="Salida de origen de Excel"
-                      startId="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel.Outputs[Salida de origen de Excel]" />
-                  </paths>
                 </pipeline>
               </DTS:ObjectData>
             </DTS:Executable>
@@ -3945,105 +3198,24 @@
     design-time-name="Package\Load file to DBO\Search and load file\load to DBO">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel"
+          TopLeft="368,126" />
         <NodeLayout
           Size="168,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
           TopLeft="343.833333697584,256.400001012484" />
         <NodeLayout
-          Size="157,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel"
-          TopLeft="364,192" />
-        <EdgeLayout
-          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de Excel]"
-          TopLeft="521,213">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-9.16666630241599,64.400001012484"
-              Start="0,0"
-              End="-1.66666630241599,64.400001012484">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="18.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="18.5,0"
-                    Point2="22.5,0"
-                    Point3="22.5,4" />
-                  <mssgle:LineSegment
-                    End="22.5,60.400001012484" />
-                  <mssgle:CubicBezierSegment
-                    Point1="22.5,60.400001012484"
-                    Point2="22.5,64.400001012484"
-                    Point3="18.5,64.400001012484" />
-                  <mssgle:LineSegment
-                    End="-1.66666630241599,64.400001012484" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
           Size="175,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
-          TopLeft="392,393" />
-        <EdgeLayout
-          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de columna derivada]"
-          TopLeft="427.833333697584,298.400001012484">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="51.666666302416,94.599998987516"
-              Start="0,0"
-              End="51.666666302416,87.099998987516">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,43.299999493758" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,43.299999493758"
-                    Point2="0,47.299999493758"
-                    Point3="4,47.299999493758" />
-                  <mssgle:LineSegment
-                    End="47.666666302416,47.299999493758" />
-                  <mssgle:CubicBezierSegment
-                    Point1="47.666666302416,47.299999493758"
-                    Point2="51.666666302416,47.299999493758"
-                    Point3="51.666666302416,51.299999493758" />
-                  <mssgle:LineSegment
-                    End="51.666666302416,87.099998987516" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="491,214" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Load file to DBO\Search and load file\load to DBO\Origen de Excel">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
