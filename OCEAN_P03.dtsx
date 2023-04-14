@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="OCEAN_P03"
   DTS:PackageType="5"
-  DTS:VersionBuild="324"
-  DTS:VersionGUID="{B7C490E7-A6E1-45AD-B35D-510AC1FF448D}">
+  DTS:VersionBuild="326"
+  DTS:VersionGUID="{5D384E6D-0A7D-4D28-A5CE-CC09760AE5A5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,11 +27,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADjwZ+wpO03fkhs+N6BMUrmqlNrx0g7nsD0KY2wr6PPpAAAAAAOgAAAAAIAACAAAADcxuhKuCbfMNEW1S/dKKgeSpzMsn1uYmSR4iQsAMySgyAAAAA+lMYwWThWvaHleTyAfZFGsHmTiBytLL3U9La+iuBzDEAAAADfyPJetignTxjQxpiBEGQ6W7w3CpL45Rom0OIx61Sjg9KnFM+LOC9d19LanagtDqyLP2siAgoC7dSHaHtx3N1l</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABvFsfc+JwAYKzLmHg2vZ9wInmKORQZxDSXNHs66+Y9IwAAAAAOgAAAAAIAACAAAABzhszl7JwSEEEBStrOz+VOJMJQrpYOzSZjA2BscaNyEyAAAADaigjQ8Tx8EKCcFBCyw4SpYTGrcF2ZE8ssrIUwK22zakAAAAAILLz6EtEj+NUgHVPuUs1o5xRZAhSatyV4DJStigqew6J/Sle8j0C/44cKcsqxfp4bx9xYMi5/6XWw++1I1PDG</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,19 +46,19 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABR9pXjbZERC4aRPYexJ0E2MzI96fMtSnT4iDDnTLBv6AAAAAAOgAAAAAIAACAAAABXUPKFVYcbY+Im5quQznOmIC9mOiz23TaPOnyFaXkbJCAAAAD3XylkQ07vSLqiAgPQE1XHHqzQAD8tDn7rDj7EhLyU7kAAAABtCbQ81jnXFU+0zGRw86PndkiivUVayxtUCoEj7uV/Nud204SZxoc8wpsGgmOKsZ+IqOeuqBEcTSEM5aj9pOcI</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAJMxXY5n6k0mq8a6AJWWf4z9TZU5cX6D+JhMhp2AUOcAAAAAAOgAAAAAIAACAAAAB7FKWYqGgDF5f2rUHZR1N7jTnEALAeiDIWBqqT2yUBHyAAAABQPBKKTv2+rqfIu9G/Fh5y5Oaimae2uvtSHLLKqW41ckAAAADDpuOKCMaObEr/0YjSn4ntKJilPEnkRwjya6N8sTQOHgN4ZN1WfoiHq7ezExRJ8VEr0qkL9pb3EtaG2cQQi6Sq</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[P04]"
+      DTS:refId="Package.ConnectionManagers[P03]"
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{F552C819-9A13-42EA-8C77-966366BE9821}"
-      DTS:ObjectName="P04">
+      DTS:ObjectName="P03">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -671,7 +671,7 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{083EAE58-D438-4E29-8E5E-96A926AA06BB}"
-              SQLTask:SqlStatementSource="EXECUTE [SVH_DBO].[dbo].[p_Load_DBO_to_STG]&#xA;@Name=?,&#xA;@PackageName=?,&#xA;@Proceso  = 'P02'  &#xA;                    " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              SQLTask:SqlStatementSource="EXECUTE [SVH_DBO].[dbo].[p_Load_DBO_to_STG]&#xA;@Name=?,&#xA;@PackageName=?,&#xA;@Proceso  = 'P07'  &#xA;                    " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="1"
                 SQLTask:DtsVariableName="$Package::PackageName"
@@ -1162,6 +1162,7 @@
           DTS:refId="Package\Load file to DBO\Elimina _csv"
           DTS:CreationName="STOCK:FOREACHLOOP"
           DTS:Description="Contenedor de bucles Foreach"
+          DTS:Disabled="True"
           DTS:DTSID="{63D9E237-EDA8-4F5A-B3C3-3C310842A302}"
           DTS:ExecutableType="STOCK:FOREACHLOOP"
           DTS:LocaleID="-1"
@@ -2498,8 +2499,8 @@
                       <connections>
                         <connection
                           refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Connections[FlatFileConnection]"
-                          connectionManagerID="Package.ConnectionManagers[P04]"
-                          connectionManagerRefId="Package.ConnectionManagers[P04]"
+                          connectionManagerID="Package.ConnectionManagers[P03]"
+                          connectionManagerRefId="Package.ConnectionManagers[P03]"
                           name="FlatFileConnection" />
                       </connections>
                       <outputs>
@@ -4058,10 +4059,6 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="168,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
-          TopLeft="260.000000397364,314.400000599225" />
-        <NodeLayout
           Size="196,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"
           TopLeft="280,107" />
@@ -4069,6 +4066,14 @@
           Size="180,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
           TopLeft="307,205" />
+        <NodeLayout
+          Size="175,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
+          TopLeft="303,410" />
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
+          TopLeft="260.000000397364,314.400000599225" />
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de archivo plano]"
           TopLeft="378,149">
@@ -4137,10 +4142,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="175,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
-          TopLeft="303,410" />
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de columna derivada]"
           TopLeft="344.000000397364,356.400000599225">
