@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="OCEAN_P02b"
   DTS:PackageType="5"
-  DTS:VersionBuild="318"
-  DTS:VersionGUID="{8588158E-D80E-4C0B-BDE6-F3DD81D667EC}">
+  DTS:VersionBuild="319"
+  DTS:VersionGUID="{987F15ED-B205-4AF7-A765-5DDEBC81EC4D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,11 +27,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAA2oPzbl2TSdZED9ytLMq4QhKssT9h7gNFgOdv/NqPcQAAAAAOgAAAAAIAACAAAABiVCK/8uaEjA6o73QHDzMaicu1E6kUMbYjxz5cwfzUOSAAAAAIMngUXycJ4G2x8EK/cW2IjaddCB34QWVmFxEItS6U4kAAAAA74gLZdNtkcjiyZPnR2C3EHcRhrgIwWY8de4U+65N0KEF0n3kBK7PMr95Rj6osI7Fjs5Utuk6fL/3Yhxs9to24</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADVlHMyhmREucJsvlxDvZO5awBKj8ah3l19ZIl4+HvF0wAAAAAOgAAAAAIAACAAAAA8WNXYgbdvMoGk8FeYHWg9hNFS9gHXbBZp7y83MLnIMyAAAADvWhP+iz2HC6gqW16peUrfQiQ5wmeOyx00EL6V5Ltc/kAAAACIJIVJtMcJAQ5jHlRfBY1HY/KBGi+ZUzqAU87aOKui+l8ewP9pMQueAzMmB8wNYVZsFlIE/5tILzkyCmQUGA2a</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,11 +46,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABfnl/Tokjm+RsHCJm7KidhMOOmNcsj5xabPDugPWyF+QAAAAAOgAAAAAIAACAAAADOlsfMEzhNKb7yq5BRqApsUGwdl50AVm/B38JQOZi14CAAAABqHzu7cTUTzb+bu6gXgrvqM9jbbgmUwdD3d2t1HYMJ8UAAAABnlpYJOlPNF8+a9IXkI++JR2rip30t01pa9d3t0k64o+pl6JD3Au7jVegoZ19f7OZvdLAdUORHeWhRxY5hPvZO</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABek4Z+LVpSRIYKGN0KqcqTLe56Uy5ukBe4n+Oo1p8WKgAAAAAOgAAAAAIAACAAAACm3D/wjrA4gn6sFu9hS8DG6anRWS6RoEGPISX8yyLrySAAAABdb9X+0Ii+4EPQ7rThXyVKysH7CF4oASlc4bAtfYDoZkAAAADwVQK8QEpdjsGu24Cwrtfln3279Jssuv7JPlwizYx1u2qXCAkRoJFK7RbSkaMwPM04hxebzwFoQwZs7pbfE/9X</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -59,6 +59,8 @@
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{5D8700C2-19C1-4934-A0F3-0BF36F03B9AD}"
       DTS:ObjectName="P02b">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::FilePath]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -68,7 +70,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="C:\Users\Ronny_Jara\OneDrive\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\OCEAN\P02b\OCEAN_P02b_Peticiones_20230320.csv">
+          DTS:ConnectionString="OCEAN_P02b_Peticiones_20230320.xlsx">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -3442,6 +3444,10 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="180,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
+          TopLeft="314,189" />
+        <NodeLayout
           Size="168,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
           TopLeft="261.000000397364,315.400000599225" />
@@ -3450,9 +3456,43 @@
           Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"
           TopLeft="319,88" />
         <NodeLayout
-          Size="180,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
-          TopLeft="314,189" />
+          Size="175,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
+          TopLeft="333,383" />
+        <EdgeLayout
+          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de columna derivada]"
+          TopLeft="345.000000397364,357.400000599225">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="75.499999602636,25.599999400775"
+              Start="0,0"
+              End="75.499999602636,18.099999400775">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,8.7999997003875" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8.7999997003875"
+                    Point2="0,12.7999997003875"
+                    Point3="4,12.7999997003875" />
+                  <mssgle:LineSegment
+                    End="71.499999602636,12.7999997003875" />
+                  <mssgle:CubicBezierSegment
+                    Point1="71.499999602636,12.7999997003875"
+                    Point2="75.499999602636,12.7999997003875"
+                    Point3="75.499999602636,16.7999997003875" />
+                  <mssgle:LineSegment
+                    End="75.499999602636,18.099999400775" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de archivo plano]"
           TopLeft="417,130">
@@ -3513,44 +3553,6 @@
                     Point3="-58.999999602636,46.2000002996125" />
                   <mssgle:LineSegment
                     End="-58.999999602636,76.900000599225" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="175,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
-          TopLeft="333,383" />
-        <EdgeLayout
-          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de columna derivada]"
-          TopLeft="345.000000397364,357.400000599225">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="75.499999602636,25.599999400775"
-              Start="0,0"
-              End="75.499999602636,18.099999400775">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,8.7999997003875" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,8.7999997003875"
-                    Point2="0,12.7999997003875"
-                    Point3="4,12.7999997003875" />
-                  <mssgle:LineSegment
-                    End="71.499999602636,12.7999997003875" />
-                  <mssgle:CubicBezierSegment
-                    Point1="71.499999602636,12.7999997003875"
-                    Point2="75.499999602636,12.7999997003875"
-                    Point3="75.499999602636,16.7999997003875" />
-                  <mssgle:LineSegment
-                    End="75.499999602636,18.099999400775" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
