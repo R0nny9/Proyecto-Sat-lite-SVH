@@ -1,25 +1,25 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="6/27/2022 4:55:51 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="MBS-RALVARO"
   DTS:CreatorName="MBS-RALVARO\Ricardo_Alvaro"
-  DTS:DTSID="{E0998833-72D3-4EE4-B519-A64272DEA9E7}"
+  DTS:DTSID="{73935379-4172-47A7-8B66-62F7469B1ABA}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.180"
   DTS:LocaleID="3082"
   DTS:ObjectName="PUPPY_P02b"
   DTS:PackageType="5"
   DTS:VersionBuild="329"
-  DTS:VersionGUID="{D3AB4239-B485-40D7-A01D-81D165B119F5}">
+  DTS:VersionGUID="{FC5B74DB-F146-4CC7-BC57-9473BEA5391D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[MBS-RJARA.SVH_DBO]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{A24ACD29-6454-46AB-AEB6-73227293881D}"
+      DTS:DTSID="{E07050EC-5836-48B8-99C7-7B50A980FBF1}"
       DTS:ObjectName="MBS-RJARA.SVH_DBO">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[$Project::Conn_BBDD_DBO]</DTS:PropertyExpression>
@@ -38,7 +38,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[MBS-RJARA.SVH_STG]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{0FED5946-3198-4505-B5CB-DA9A6EA8541C}"
+      DTS:DTSID="{27E2EACE-4A5A-424D-860A-8F3550CA97B5}"
       DTS:ObjectName="MBS-RJARA.SVH_STG">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[$Project::Conn_BBDD_STG]</DTS:PropertyExpression>
@@ -57,7 +57,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[puppy_p02b]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{494BC8FB-1639-4780-BBFE-CF5DE40B8365}"
+      DTS:DTSID="{26EE4A44-2396-4C78-9B27-8D57E2497F59}"
       DTS:ObjectName="puppy_p02b">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::FilePath]</DTS:PropertyExpression>
@@ -79,7 +79,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="proceso"
-              DTS:DTSID="{A7441849-B36D-4F71-90BD-B64AF3B32CE1}"
+              DTS:DTSID="{27952483-D0C3-439E-A50E-42006332614B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -88,7 +88,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="cartera"
-              DTS:DTSID="{E7D8D264-D98F-484A-90BC-5C763C2CB498}"
+              DTS:DTSID="{420E477D-B257-4B18-96E3-BDBA14C4BFFE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -97,7 +97,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="cliente SVH"
-              DTS:DTSID="{EB62C7BF-25EC-4849-81DE-02AFE843BD35}"
+              DTS:DTSID="{A4C4DF07-B8F8-4450-82F7-9405E4AD5D8F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -106,7 +106,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="acreditado"
-              DTS:DTSID="{43475EF4-104C-4109-BA31-BB74BB0F97BC}"
+              DTS:DTSID="{51CAF4A8-8020-4FBE-9046-79D1BB1B7145}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -115,7 +115,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="procedimiento"
-              DTS:DTSID="{DED57CFC-8EE6-442B-9219-7672F26AAD21}"
+              DTS:DTSID="{20FB2D6F-A6FF-4F1B-962D-BAAB616CC651}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -124,7 +124,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Tipo"
-              DTS:DTSID="{8E197687-BD27-4665-826D-95302814B38B}"
+              DTS:DTSID="{90B57C13-9767-42CD-9ED7-A8E4E7516593}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -133,7 +133,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="tipo bloqueo"
-              DTS:DTSID="{26DD46E4-A8EB-49F6-8D2E-AE4229015E93}"
+              DTS:DTSID="{DE146688-9360-4574-8D9D-6B4DBEE28E65}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -142,7 +142,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="estado"
-              DTS:DTSID="{92FF1F22-E062-4693-9A1E-133914C7518A}"
+              DTS:DTSID="{BE8053BC-A3D2-4EED-A5FB-28B2C2854189}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -151,7 +151,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="fecha entrada"
-              DTS:DTSID="{51D5237D-7359-4630-9DC5-1A670D35ABE9}"
+              DTS:DTSID="{F0089AC8-5E4A-4F58-BFCA-CE5010BDFFC9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -160,7 +160,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="fecha salida"
-              DTS:DTSID="{CB4DE67B-05B6-49BA-A05C-1632469761B2}"
+              DTS:DTSID="{5015A5A6-AD54-4AD5-BB31-4CB56CB46212}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -169,7 +169,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="fecha inicio bloqueo"
-              DTS:DTSID="{C6399B97-8B5A-475A-9037-29892340284C}"
+              DTS:DTSID="{8D79C3A4-A95C-4258-BD7E-48EE4F605FEA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -178,7 +178,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="fecha fin bloqueo"
-              DTS:DTSID="{0BD20D06-E0B0-4279-A7FA-9F2B03F4A7F0}"
+              DTS:DTSID="{A453CB7F-97FC-4B23-8897-1BC6D21AFE7D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -187,7 +187,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha baja"
-              DTS:DTSID="{FC45C9E4-FF83-4622-B875-14B6F887D6CF}"
+              DTS:DTSID="{C0F487F7-5413-47F6-8372-89A0F03BB6A0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -196,7 +196,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="días gestión"
-              DTS:DTSID="{9A254642-C238-4971-950E-EB844A69A4AF}"
+              DTS:DTSID="{80BC836E-3A1E-4F64-B7EA-A71A626906DA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -205,7 +205,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Business Type"
-              DTS:DTSID="{BA5C3E66-7C91-4097-9F26-EE9C1DFB9163}"
+              DTS:DTSID="{C1A7E22D-8974-4AED-AE1F-2D4BDE185B34}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -216,7 +216,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{C3ED5A45-F65B-45DD-9A1B-F6CA540CA895}"
+      DTS:DTSID="{5D4132B8-52C6-4E72-B3A4-37F9A2F5E9F3}"
       DTS:ObjectName="Name">
       <DTS:Property
         DTS:DataType="8"
@@ -225,7 +225,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{5E8BD829-5861-40E4-92FA-AF4312CB1C81}"
+      DTS:DTSID="{0ADC4377-8C28-4A37-BF73-AC3D8DDFFB9F}"
       DTS:ObjectName="PackageName">
       <DTS:Property
         DTS:DataType="8"
@@ -234,7 +234,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{198F6650-9606-4A34-8825-3E3D42D31C61}"
+      DTS:DTSID="{354D7684-8DA4-4CCD-B455-33A509A1CDCB}"
       DTS:ObjectName="par_porfolio">
       <DTS:Property
         DTS:DataType="8"
@@ -243,7 +243,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{FAD99F84-111A-4B76-BC17-FB213A1A9E4A}"
+      DTS:DTSID="{DF7C3856-6807-49E9-88EF-C399A8640847}"
       DTS:ObjectName="par_RunGUID">
       <DTS:Property
         DTS:DataType="8"
@@ -253,7 +253,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{C86CD741-EDB8-436D-AB49-154A2C60F64C}"
+      DTS:DTSID="{F74EBA0E-9F6C-4A2F-8F04-465E6F7C0361}"
       DTS:ObjectName="par_rutaOLD">
       <DTS:Property
         DTS:DataType="8"
@@ -262,7 +262,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{F4F0FC48-525C-458C-8CD3-50A119C9985D}"
+      DTS:DTSID="{1AB19856-1D37-4F61-AEE3-99C8DA0A4246}"
       DTS:ObjectName="ReportingPeriod">
       <DTS:Property
         DTS:DataType="8"
@@ -272,7 +272,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{182B92B8-C031-40F5-A826-05A35BE46348}"
+      DTS:DTSID="{8E64C560-6329-4AF8-9C8C-ADA066D4B1C5}"
       DTS:ObjectName="ruta_carpeta">
       <DTS:Property
         DTS:DataType="8"
@@ -281,7 +281,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{7ED3873C-8AA9-4947-B0A0-D2F36C8B10D9}"
+      DTS:DTSID="{7079162B-EE5F-4849-81AC-88A7F051A5F6}"
       DTS:ObjectName="var_ficheroEsperado">
       <DTS:Property
         DTS:DataType="8"
@@ -291,7 +291,7 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{3E5033E6-3505-47D5-A7AC-681DA3AAC73B}"
+      DTS:DTSID="{C1A53BFC-BBEA-480D-883A-3B3E8DB71832}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[User::FilePath]"
       DTS:IncludeInDebugDump="2345"
@@ -302,7 +302,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{40FFD66C-4D28-4596-8EBA-9141EBF3813A}"
+      DTS:DTSID="{76EAC5A3-14B4-4250-A16C-81C84600C297}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="FilePath">
@@ -311,7 +311,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{76E5B550-6648-4B68-A034-3C753F118DE0}"
+      DTS:DTSID="{99C73960-D323-4E68-BE3D-492F4D368414}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="RunGUID">
@@ -321,7 +321,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{9011B8FB-A52B-4030-909A-72ABB4E9FEB4}"
+      DTS:DTSID="{DA9F01C9-D7E3-4375-9939-D35EDC2BA660}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="RunID">
@@ -331,7 +331,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{EA36C6D7-AB34-4E8E-ABB1-F0B3548DC021}"
+      DTS:DTSID="{EA3246B4-4A87-4EB6-AF52-5124F459F193}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="TotalRowCount">
@@ -340,7 +340,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{6374FC8B-55A4-4F83-A832-972CECFCC878}"
+      DTS:DTSID="{3E55F2B4-2018-49FD-99F0-464176D17C67}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="replace(@[$Project::par_convertcsv],&quot; &quot; ,&quot;\&quot; \&quot;&quot;)  +&quot; &quot;+replace(@[User::FilePath],&quot; &quot; ,&quot;\&quot; \&quot;&quot;)  +&quot; &quot;+replace(@[$Project::par_rutaExcel],&quot; &quot; ,&quot;\&quot; \&quot;&quot;)+ @[$Package::par_porfolio]+&quot;\\&quot;+ @[$Package::ruta_carpeta] +&quot;\\&quot;+@[$Package::par_rutaOLD]+&quot;\\&quot;"
       DTS:IncludeInDebugDump="2345"
@@ -351,7 +351,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{3CED8D33-ED1D-4362-9C53-0D3A4A467B69}"
+      DTS:DTSID="{C3C2F3AC-4700-4C04-A7A3-436CB193F17A}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="var_DATOS">
@@ -360,7 +360,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{CF6DD0D6-AE21-4368-B777-94FC901984DC}"
+      DTS:DTSID="{B991BC70-1330-43CA-AC26-6B14421E7265}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="var_DaysDeleteOldFile">
@@ -370,7 +370,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{AB2A6E34-88CC-403D-84EB-03FF388E3E0B}"
+      DTS:DTSID="{A7FE4C0E-96D3-446C-912D-2094DA987393}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="replace( @[$Project::par_deleteOldFile] ,&quot; &quot; ,&quot;\&quot; \&quot;&quot;) +&quot; &quot;+replace( @[User::FilePath] ,&quot; &quot; ,&quot;\&quot; \&quot;&quot;)"
       DTS:IncludeInDebugDump="2345"
@@ -381,7 +381,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{D7D2BD23-6BE7-4573-B03A-A37EB75B6E28}"
+      DTS:DTSID="{4C6A42E3-83A4-4E1A-9200-C7513880D93B}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="var_FICHERO_ORIGEN">
@@ -391,7 +391,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{2B48ACB9-E00A-4E1C-8223-3CEC3D094CD3}"
+      DTS:DTSID="{845689EE-2FE2-4903-8DF4-2847F0E80094}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="var_F_CARGA">
@@ -401,7 +401,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{1B1859AD-7F55-46E4-9611-7203BFAFF449}"
+      DTS:DTSID="{58AAA024-64F9-47BA-95FB-F00A325147C3}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="var_F_DATOS">
@@ -411,7 +411,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{3222F734-725F-4B15-9064-E92526C8B48E}"
+      DTS:DTSID="{CA8BD5AC-05AF-46BE-8318-FEF2E6152773}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[$Project::par_moveFich] +&quot; &quot;+@[$Project::Ruta]+ @[$Package::ruta_carpeta] +&quot; &quot;+ @[$Project::par_ruta_Procesados]+ @[$Package::ruta_carpeta] +&quot; &quot;+@[$Package::var_ficheroEsperado]"
       DTS:IncludeInDebugDump="2345"
@@ -426,7 +426,7 @@
       DTS:refId="Package\Load dbo to STG"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Contenedor de secuencias"
-      DTS:DTSID="{066929F4-8580-46B7-B14A-AC432404C82D}"
+      DTS:DTSID="{CC532467-B49C-4869-8ACE-5998BE8C613F}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Load dbo to STG">
@@ -436,7 +436,7 @@
           DTS:refId="Package\Load dbo to STG\Asigna Validaciones"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{922CB8F8-BA2D-422F-AB1D-7088BBAA33C7}"
+          DTS:DTSID="{A554DF5C-A16F-4617-B9BD-8E5ECBBF0693}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Asigna Validaciones"
@@ -444,7 +444,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{0FED5946-3198-4505-B5CB-DA9A6EA8541C}"
+              SQLTask:Connection="{27E2EACE-4A5A-424D-860A-8F3550CA97B5}"
               SQLTask:SqlStatementSource="EXECUTE [SVH_STG].[dbo].[p_Asigna_Validaciones]&#xA;@PackageName=?,&#xA;@RUNID=?&#xA;                    " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -465,7 +465,7 @@
           DTS:refId="Package\Load dbo to STG\CLOSE"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{071B3A56-B87B-4DE7-9967-6070831E3190}"
+          DTS:DTSID="{5C25AAA3-75EC-4C14-ABF8-4A3316F519F7}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="CLOSE"
@@ -473,7 +473,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{0FED5946-3198-4505-B5CB-DA9A6EA8541C}"
+              SQLTask:Connection="{27E2EACE-4A5A-424D-860A-8F3550CA97B5}"
               SQLTask:SqlStatementSource="EXECUTE [SVH_STG].[dbo].[CloseLog]&#xA;@PackageName=?,       &#xA;@RunID = ? , &#xA;@PackageRunResult = ?,&#xA;@TotalRowCount  = ?,&#xA;@ExecPeriod  = ? &#xA;                    " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -512,7 +512,7 @@
           DTS:refId="Package\Load dbo to STG\INI -RunID"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{73E4694D-15FC-4DB3-9780-7A53F1D29DE3}"
+          DTS:DTSID="{F650BF16-F6CB-46C8-A619-440562913FA3}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="INI -RunID"
@@ -522,7 +522,7 @@
             <DTS:EventHandler
               DTS:refId="Package\Load dbo to STG\INI -RunID.EventHandlers[OnError]"
               DTS:CreationName="OnError"
-              DTS:DTSID="{4F7E2872-F6EE-4065-8290-1A5FAF478B28}"
+              DTS:DTSID="{5E076D17-7EFF-42CD-A8A9-6EB1215184ED}"
               DTS:EventID="0"
               DTS:EventName="OnError"
               DTS:LocaleID="-1">
@@ -530,7 +530,7 @@
                 <DTS:Variable
                   DTS:CreationName=""
                   DTS:Description="La propiedad de propagación del evento"
-                  DTS:DTSID="{ED991389-40D0-48B5-8C2A-E7435F784227}"
+                  DTS:DTSID="{CFF23967-0DCE-4CFD-A7DD-45AF7FD2778B}"
                   DTS:IncludeInDebugDump="6789"
                   DTS:Namespace="System"
                   DTS:ObjectName="Propagate">
@@ -543,7 +543,7 @@
                   DTS:refId="Package\Load dbo to STG\INI -RunID.EventHandlers[OnError]\ERROR RunID"
                   DTS:CreationName="Microsoft.ExecuteSQLTask"
                   DTS:Description="Tarea Ejecutar SQL"
-                  DTS:DTSID="{225FE44A-6C0C-4086-8B2E-9800407AF745}"
+                  DTS:DTSID="{3F304C17-35FC-4972-8C0C-7FD50724B6CA}"
                   DTS:ExecutableType="Microsoft.ExecuteSQLTask"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="ERROR RunID"
@@ -551,7 +551,7 @@
                   <DTS:Variables />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
-                      SQLTask:Connection="{A24ACD29-6454-46AB-AEB6-73227293881D}"
+                      SQLTask:Connection="{E07050EC-5836-48B8-99C7-7B50A980FBF1}"
                       SQLTask:SqlStatementSource="EXEC [SVH_STG].[dbo].[PROCESO_LOG_ERRORES] &#xA;  @PROCESO=?,&#xA;  @RUNID=?,&#xA;  @TIPO_ERROR =1" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
                       <SQLTask:ParameterBinding
                         SQLTask:ParameterName="0"
@@ -573,7 +573,7 @@
           </DTS:EventHandlers>
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{0FED5946-3198-4505-B5CB-DA9A6EA8541C}"
+              SQLTask:Connection="{27E2EACE-4A5A-424D-860A-8F3550CA97B5}"
               SQLTask:SqlStatementSource="SELECT max(RunID)  RunID FROM [SVH_DBO].[dbo].[Workflow_Logging]"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -592,7 +592,7 @@
           DTS:refId="Package\Load dbo to STG\load DBO to STG"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{A70C5714-6DBA-4CB6-B248-62CDBE6F763A}"
+          DTS:DTSID="{A5E3F1AD-817C-4A20-8CA6-B160AC9A5F52}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="load DBO to STG"
@@ -600,7 +600,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{0FED5946-3198-4505-B5CB-DA9A6EA8541C}"
+              SQLTask:Connection="{27E2EACE-4A5A-424D-860A-8F3550CA97B5}"
               SQLTask:SqlStatementSource="EXECUTE [SVH_DBO].[dbo].[p_Load_DBO_to_STG]&#xA;@Name=?,&#xA;@PackageName=?,&#xA;@Proceso  = 'P02'  &#xA;                    " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="1"
@@ -621,7 +621,7 @@
           DTS:refId="Package\Load dbo to STG\OpenLog Validaciones"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{8A44A585-8F74-4403-A2EA-1FA279E8E4E4}"
+          DTS:DTSID="{C152ECEC-F6D0-4C6F-965D-69193D98B879}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="OpenLog Validaciones"
@@ -629,7 +629,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{0FED5946-3198-4505-B5CB-DA9A6EA8541C}"
+              SQLTask:Connection="{27E2EACE-4A5A-424D-860A-8F3550CA97B5}"
               SQLTask:BypassPrepare="False"
               SQLTask:SqlStatementSource="EXECUTE  [SVH_STG].[DBO].[OpenLog]&#xA; @PackageName = ?,&#xA; @RunID = ?,&#xA;@Name=?,&#xA;@Descrip = 'Validaciones STG'&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
@@ -657,7 +657,7 @@
           DTS:refId="Package\Load dbo to STG\Validaciones"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{B60E50F7-BC3E-4898-9E73-9FFEA0061636}"
+          DTS:DTSID="{3CBB1C69-91F7-49C6-857B-D351862FFFB8}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Validaciones"
@@ -665,7 +665,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{0FED5946-3198-4505-B5CB-DA9A6EA8541C}"
+              SQLTask:Connection="{27E2EACE-4A5A-424D-860A-8F3550CA97B5}"
               SQLTask:SqlStatementSource="EXECUTE [SVH_STG].[dbo].[p_PROCESO_VALIDACION]&#xA;@PackageName=?&#xA;                    " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -681,7 +681,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load dbo to STG.PrecedenceConstraints[Restricción]"
           DTS:CreationName=""
-          DTS:DTSID="{A15D021E-28B1-4C09-9AFE-3FE777196701}"
+          DTS:DTSID="{DB12044C-FDFB-4FEE-8FF2-A9CF12A11E1E}"
           DTS:From="Package\Load dbo to STG\load DBO to STG"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción"
@@ -689,7 +689,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load dbo to STG.PrecedenceConstraints[Restricción 1]"
           DTS:CreationName=""
-          DTS:DTSID="{9E9E9619-6274-495C-AB70-B033B816633B}"
+          DTS:DTSID="{E8A6DFA0-1F47-4883-8166-0F8560612ADF}"
           DTS:From="Package\Load dbo to STG\INI -RunID"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 1"
@@ -697,7 +697,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load dbo to STG.PrecedenceConstraints[Restricción 2]"
           DTS:CreationName=""
-          DTS:DTSID="{38F9C8D0-A2AD-4A05-96FE-451D6A691B14}"
+          DTS:DTSID="{9070E1DD-591C-4805-A75C-873742BA65CF}"
           DTS:From="Package\Load dbo to STG\OpenLog Validaciones"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 2"
@@ -705,7 +705,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load dbo to STG.PrecedenceConstraints[Restricción 3]"
           DTS:CreationName=""
-          DTS:DTSID="{76EB5B10-D722-4E97-AE30-7E12C41BDCA2}"
+          DTS:DTSID="{D5ED9B12-4A5C-45FD-87B8-58EFF5F1BF22}"
           DTS:From="Package\Load dbo to STG\Validaciones"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 3"
@@ -713,7 +713,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load dbo to STG.PrecedenceConstraints[Restricción 4]"
           DTS:CreationName=""
-          DTS:DTSID="{7B11D924-95A3-4CA7-ABE0-581B100C1508}"
+          DTS:DTSID="{AE2D2618-03D8-451F-A7CE-33094EAB11F0}"
           DTS:From="Package\Load dbo to STG\CLOSE"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 4"
@@ -724,7 +724,7 @@
       DTS:refId="Package\Load file log END"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Contenedor de secuencias"
-      DTS:DTSID="{E5FE3427-300F-4AA8-954B-A4262D1F9059}"
+      DTS:DTSID="{A2D50D3E-52C8-41ED-889A-9CEBBA218E30}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Load file log END">
@@ -734,7 +734,7 @@
           DTS:refId="Package\Load file log END\CLOSE"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{650FF56A-F574-4DD5-9BA6-51B5B0F68BE9}"
+          DTS:DTSID="{2D29066C-FCC6-41F1-A93F-A7198FC35380}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="CLOSE"
@@ -742,7 +742,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{0FED5946-3198-4505-B5CB-DA9A6EA8541C}"
+              SQLTask:Connection="{27E2EACE-4A5A-424D-860A-8F3550CA97B5}"
               SQLTask:SqlStatementSource="EXECUTE [SVH_DBO].[dbo].[CloseLog]&#xA;@PackageName=?,       &#xA;@RunID = ? , &#xA;@PackageRunResult = ?,&#xA;@TotalRowCount  = ?,&#xA;@ExecPeriod  = ? &#xA;                    " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -782,7 +782,7 @@
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
           DTS:Disabled="True"
-          DTS:DTSID="{EF4CC203-C3DF-4C71-A30F-D04CAC62658B}"
+          DTS:DTSID="{26D9D456-2A14-416A-B1E4-6DF3150E0A7E}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="DaysOfDeleteDays"
@@ -791,7 +791,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{0FED5946-3198-4505-B5CB-DA9A6EA8541C}"
+              SQLTask:Connection="{27E2EACE-4A5A-424D-860A-8F3550CA97B5}"
               SQLTask:SqlStatementSource="select DAYS_DELET_OLD_FILES from [SVH_STG].[dbo].[INVENTARIO_PROCESOS] WHERE PROCESO = ?"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -810,7 +810,7 @@
           DTS:refId="Package\Load file log END\TotalRowCount"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{3A27FAAB-836D-4FC6-B4E8-1AF7D81A305A}"
+          DTS:DTSID="{2C2DA625-36AD-4360-8497-C4E236736F24}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="TotalRowCount"
@@ -818,7 +818,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{0FED5946-3198-4505-B5CB-DA9A6EA8541C}"
+              SQLTask:Connection="{27E2EACE-4A5A-424D-860A-8F3550CA97B5}"
               SQLTask:SqlStatementSource="  EXECUTE [SVH_DBO].[dbo].[P_CONTEO_REGISTROS] &#xA; @PROCESO = ?,&#xA;@ENTORNO_BBDD=?"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -844,7 +844,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file log END.PrecedenceConstraints[Restricción]"
           DTS:CreationName=""
-          DTS:DTSID="{0BB076B0-4EB0-4F86-B541-2F01F378F6B8}"
+          DTS:DTSID="{05215540-CC2C-4786-B355-5C9E814EB921}"
           DTS:From="Package\Load file log END\TotalRowCount"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción"
@@ -852,7 +852,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file log END.PrecedenceConstraints[Restricción 1]"
           DTS:CreationName=""
-          DTS:DTSID="{02E8AE1D-A5E9-406C-8A58-8B2682E53535}"
+          DTS:DTSID="{8EC046A9-9CF0-4B77-961C-12B958518B9F}"
           DTS:From="Package\Load file log END\DaysOfDeleteDays"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 1"
@@ -863,14 +863,14 @@
       DTS:refId="Package\Load file log START"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Contenedor de secuencias"
-      DTS:DTSID="{DD330E53-EC18-4202-A9F6-CA519465B774}"
+      DTS:DTSID="{52E7394B-5010-497F-AE71-52142DAF4AFA}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Load file log START">
       <DTS:Variables>
         <DTS:Variable
           DTS:CreationName=""
-          DTS:DTSID="{021D177C-2EA7-43E3-98AB-C9BF35A4E942}"
+          DTS:DTSID="{AC334D7B-D0DD-4408-AC45-D9EBDAF5F405}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="User"
           DTS:ObjectName="F_CARGA">
@@ -879,7 +879,7 @@
         </DTS:Variable>
         <DTS:Variable
           DTS:CreationName=""
-          DTS:DTSID="{5D5F6033-3648-47AB-9032-01C1299E0699}"
+          DTS:DTSID="{EF3424AD-7AD6-4A91-A1CC-04BEA4721247}"
           DTS:IncludeInDebugDump="2345"
           DTS:Namespace="User"
           DTS:ObjectName="var_ROW_ID">
@@ -892,7 +892,7 @@
           DTS:refId="Package\Load file log START\INI -RunID"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{4E083575-4A79-4CEB-8447-732EA40B6578}"
+          DTS:DTSID="{3B6BCA4B-1987-45A3-B729-6A094399A63D}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="INI -RunID"
@@ -902,7 +902,7 @@
             <DTS:EventHandler
               DTS:refId="Package\Load file log START\INI -RunID.EventHandlers[OnError]"
               DTS:CreationName="OnError"
-              DTS:DTSID="{3E91F4C2-5EE4-4192-8A1F-A2BF84A437A1}"
+              DTS:DTSID="{D50B49A0-E9EB-4544-81F5-332ECE1AF9D7}"
               DTS:EventID="0"
               DTS:EventName="OnError"
               DTS:LocaleID="-1">
@@ -910,7 +910,7 @@
                 <DTS:Variable
                   DTS:CreationName=""
                   DTS:Description="La propiedad de propagación del evento"
-                  DTS:DTSID="{BC0F1103-A353-4FB2-9D94-56764BF9871B}"
+                  DTS:DTSID="{156C4648-5ECE-4333-842F-F472E61F06D4}"
                   DTS:IncludeInDebugDump="6789"
                   DTS:Namespace="System"
                   DTS:ObjectName="Propagate">
@@ -923,7 +923,7 @@
                   DTS:refId="Package\Load file log START\INI -RunID.EventHandlers[OnError]\ERROR RunID"
                   DTS:CreationName="Microsoft.ExecuteSQLTask"
                   DTS:Description="Tarea Ejecutar SQL"
-                  DTS:DTSID="{0E9A19CC-0FD9-4943-90B1-9CB15091EFB6}"
+                  DTS:DTSID="{56DA12AE-7A70-4F88-BC3F-C47D34DCD179}"
                   DTS:ExecutableType="Microsoft.ExecuteSQLTask"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="ERROR RunID"
@@ -931,7 +931,7 @@
                   <DTS:Variables />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
-                      SQLTask:Connection="{A24ACD29-6454-46AB-AEB6-73227293881D}"
+                      SQLTask:Connection="{E07050EC-5836-48B8-99C7-7B50A980FBF1}"
                       SQLTask:SqlStatementSource="EXEC [SVH_STG].[dbo].[PROCESO_LOG_ERRORES] &#xA;&#x9; @PROCESO=?,&#xA;&#x9; @RUNID=?,&#xA;&#x9; @TIPO_ERROR =1" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
                       <SQLTask:ParameterBinding
                         SQLTask:ParameterName="0"
@@ -953,7 +953,7 @@
           </DTS:EventHandlers>
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{0FED5946-3198-4505-B5CB-DA9A6EA8541C}"
+              SQLTask:Connection="{27E2EACE-4A5A-424D-860A-8F3550CA97B5}"
               SQLTask:SqlStatementSource="SELECT max(RunID)+1  RunID FROM [SVH_DBO].[dbo].[Workflow_Logging]"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -972,7 +972,7 @@
           DTS:refId="Package\Load file log START\OpenLog"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{6FC4A32F-2AD7-46EB-B63D-2BCA19C8E77A}"
+          DTS:DTSID="{376A71EB-61A4-4DF7-9B9C-D2DB0B74F5A3}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="OpenLog"
@@ -980,7 +980,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{0FED5946-3198-4505-B5CB-DA9A6EA8541C}"
+              SQLTask:Connection="{27E2EACE-4A5A-424D-860A-8F3550CA97B5}"
               SQLTask:BypassPrepare="False"
               SQLTask:SqlStatementSource="EXECUTE  [SVH_DBO].[DBO].[OpenLog]&#xA; @PackageName = ?,&#xA; @RunID = ?,&#xA;@Name=?,&#xA;@Descrip = 'Carga de fichero excel a dbo'&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
@@ -1009,7 +1009,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file log START.PrecedenceConstraints[Restricción 2]"
           DTS:CreationName=""
-          DTS:DTSID="{9C65D815-04B9-4637-A30D-9B96BE8DA1FE}"
+          DTS:DTSID="{DBF92D8C-B69F-40B5-AC17-543ECE4AD692}"
           DTS:From="Package\Load file log START\INI -RunID"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 2"
@@ -1020,7 +1020,7 @@
       DTS:refId="Package\Load file to DBO"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Contenedor de secuencias"
-      DTS:DTSID="{6C178543-61A7-4B43-8EA9-8FE1BED9162D}"
+      DTS:DTSID="{8013DFC3-8578-4FA1-8E37-78CD7F072872}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Load file to DBO">
@@ -1030,13 +1030,13 @@
           DTS:refId="Package\Load file to DBO\Convertir EXCEL - CSV"
           DTS:CreationName="STOCK:FOREACHLOOP"
           DTS:Description="Contenedor de bucles Foreach"
-          DTS:DTSID="{6762D20E-6668-43F6-9AD7-A5C4E4C6F538}"
+          DTS:DTSID="{AD521F78-4849-4561-B093-5B8C13434D26}"
           DTS:ExecutableType="STOCK:FOREACHLOOP"
           DTS:LocaleID="-1"
           DTS:ObjectName="Convertir EXCEL - CSV">
           <DTS:ForEachEnumerator
             DTS:CreationName="Microsoft.ForEachFileEnumerator"
-            DTS:DTSID="{8C4182E5-1EE9-4F1D-8ACF-63DD4B9D37DB}"
+            DTS:DTSID="{83348256-8C42-4217-ACE0-29BF5F9366F6}"
             DTS:ObjectName="{46BB39FE-F109-4863-8D19-B62A444433E6}">
             <DTS:PropertyExpression
               DTS:Name="Directory">@[$Project::Ruta]+ @[$Package::par_porfolio]+"\\"+@[$Package::ruta_carpeta]+"\\"</DTS:PropertyExpression>
@@ -1061,7 +1061,7 @@
               DTS:refId="Package\Load file to DBO\Convertir EXCEL - CSV\Convertir CSV"
               DTS:CreationName="Microsoft.ExecuteProcess"
               DTS:Description="Tarea Ejecutar proceso"
-              DTS:DTSID="{8A537C39-0304-4F7D-B8BA-A4B640696924}"
+              DTS:DTSID="{7A039429-CB5F-4A98-9E4F-FE73ED40789F}"
               DTS:ExecutableType="Microsoft.ExecuteProcess"
               DTS:LocaleID="-1"
               DTS:ObjectName="Convertir CSV"
@@ -1082,8 +1082,8 @@
           <DTS:ForEachVariableMappings>
             <DTS:ForEachVariableMapping
               DTS:CreationName=""
-              DTS:DTSID="{0577D44E-3E69-4EE8-B2C3-10C767CD45E6}"
-              DTS:ObjectName="{0577D44E-3E69-4EE8-B2C3-10C767CD45E6}"
+              DTS:DTSID="{E4D8333F-21D6-4BA1-B199-12AC47E9E73F}"
+              DTS:ObjectName="{E4D8333F-21D6-4BA1-B199-12AC47E9E73F}"
               DTS:ValueIndex="0"
               DTS:VariableName="User::FilePath" />
           </DTS:ForEachVariableMappings>
@@ -1092,13 +1092,13 @@
           DTS:refId="Package\Load file to DBO\Elimina _csv"
           DTS:CreationName="STOCK:FOREACHLOOP"
           DTS:Description="Contenedor de bucles Foreach"
-          DTS:DTSID="{ED0889DF-08AF-4512-8E41-D38C7C61F6E9}"
+          DTS:DTSID="{B0BEA2BB-BD8B-43F8-8870-2498C6F6710E}"
           DTS:ExecutableType="STOCK:FOREACHLOOP"
           DTS:LocaleID="-1"
           DTS:ObjectName="Elimina _csv">
           <DTS:ForEachEnumerator
             DTS:CreationName="Microsoft.ForEachFileEnumerator"
-            DTS:DTSID="{526F92A6-52AE-4176-85BC-F48FA08FAC22}"
+            DTS:DTSID="{1433032E-B051-4B45-A245-4AC3D9A991FF}"
             DTS:ObjectName="{46BB39FE-F109-4863-8D19-B62A444433E6}">
             <DTS:PropertyExpression
               DTS:Name="Directory">@[$Project::Ruta]+ @[$Package::par_porfolio] +"\\"+@[$Package::ruta_carpeta]+"\\"</DTS:PropertyExpression>
@@ -1123,7 +1123,7 @@
               DTS:refId="Package\Load file to DBO\Elimina _csv\Delete Old Files"
               DTS:CreationName="Microsoft.ExecuteProcess"
               DTS:Description="Tarea Ejecutar proceso"
-              DTS:DTSID="{BA675197-5883-45D2-BA7C-A192015DD4D7}"
+              DTS:DTSID="{C75B155E-0D81-4D46-BB19-4CBEF837ADE8}"
               DTS:ExecutableType="Microsoft.ExecuteProcess"
               DTS:LocaleID="-1"
               DTS:ObjectName="Delete Old Files"
@@ -1144,8 +1144,8 @@
           <DTS:ForEachVariableMappings>
             <DTS:ForEachVariableMapping
               DTS:CreationName=""
-              DTS:DTSID="{1752A7A8-4F43-472F-92CA-A126E5B80A05}"
-              DTS:ObjectName="{F0D932F1-DA60-4071-9E94-4A6BB8695173}"
+              DTS:DTSID="{16E17C9C-C57D-4BCE-880E-31D08E6C5093}"
+              DTS:ObjectName="{600BC73D-8522-4FFF-942F-45153D650FEA}"
               DTS:ValueIndex="0"
               DTS:VariableName="User::FilePath" />
           </DTS:ForEachVariableMappings>
@@ -1155,7 +1155,7 @@
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
           DTS:Disabled="True"
-          DTS:DTSID="{B2085D26-0C84-48FB-BC8D-A3273749965A}"
+          DTS:DTSID="{0EA4E795-FFEE-4ABC-A813-68B14FF0A698}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Eliminar fila de campos"
@@ -1163,7 +1163,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{A24ACD29-6454-46AB-AEB6-73227293881D}"
+              SQLTask:Connection="{E07050EC-5836-48B8-99C7-7B50A980FBF1}"
               SQLTask:SqlStatementSource="DELETE [SVH_DBO].[OCEAN].P02_Peticiones where  [Índice] is null or [Índice] = 'Índice'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -1178,13 +1178,13 @@
           DTS:refId="Package\Load file to DBO\Search and load file"
           DTS:CreationName="STOCK:FOREACHLOOP"
           DTS:Description="Contenedor de bucles Foreach"
-          DTS:DTSID="{B0EDB8B7-092D-4977-BCB1-187D3D7AC8E7}"
+          DTS:DTSID="{8B9D15B7-B2CD-4843-8409-B78509D62A38}"
           DTS:ExecutableType="STOCK:FOREACHLOOP"
           DTS:LocaleID="-1"
           DTS:ObjectName="Search and load file">
           <DTS:ForEachEnumerator
             DTS:CreationName="Microsoft.ForEachFileEnumerator"
-            DTS:DTSID="{ECBE6071-4A6A-47AB-9ED9-CECFFEC73807}"
+            DTS:DTSID="{9F289E7D-905F-46DD-8277-E32AA8119678}"
             DTS:ObjectName="{46BB39FE-F109-4863-8D19-B62A444433E6}">
             <DTS:PropertyExpression
               DTS:Name="Directory">@[$Project::Ruta]+ @[$Package::par_porfolio] +"\\"+@[$Package::ruta_carpeta]+"\\"</DTS:PropertyExpression>
@@ -1209,7 +1209,7 @@
               DTS:refId="Package\Load file to DBO\Search and load file\Fichero Origen"
               DTS:CreationName="Microsoft.ExecuteSQLTask"
               DTS:Description="Tarea Ejecutar SQL"
-              DTS:DTSID="{1E983AAE-9F4C-4E5D-AF87-2F97101A49E1}"
+              DTS:DTSID="{F0BBE6E9-7091-4483-B539-17A58BCA7A2D}"
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Fichero Origen"
@@ -1217,7 +1217,7 @@
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
-                  SQLTask:Connection="{A24ACD29-6454-46AB-AEB6-73227293881D}"
+                  SQLTask:Connection="{E07050EC-5836-48B8-99C7-7B50A980FBF1}"
                   SQLTask:SqlStatementSource="BEGIN&#xA;DECLARE  @F_DATOS NVARCHAR(255) = ?;&#xA;SET @F_DATOS = REPLACE(@F_DATOS,'.csv','')&#xA;SET @F_DATOS = SUBSTRING(@F_DATOS,LEN(@F_DATOS)-7,LEN(@F_DATOS ));&#xA;SELECT  @F_DATOS F_DATOS ;&#xA;END"
                   SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
                   <SQLTask:ResultBinding
@@ -1237,7 +1237,7 @@
               DTS:CreationName="Microsoft.Pipeline"
               DTS:DelayValidation="True"
               DTS:Description="Tarea Flujo de datos"
-              DTS:DTSID="{FF956684-3F7C-4438-8D62-B33655F196C1}"
+              DTS:DTSID="{3E8BF1BE-66A1-4EB9-B240-8402D2E21DEC}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="load to DBO"
@@ -2596,7 +2596,7 @@
               DTS:refId="Package\Load file to DBO\Search and load file\Source file"
               DTS:CreationName="Microsoft.ExecuteSQLTask"
               DTS:Description="Tarea Ejecutar SQL"
-              DTS:DTSID="{417547B3-ED14-4414-BA10-9375921922C2}"
+              DTS:DTSID="{B54C8567-0D7A-4EDD-AD00-FBB48A51D376}"
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Source file"
@@ -2604,7 +2604,7 @@
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
-                  SQLTask:Connection="{A24ACD29-6454-46AB-AEB6-73227293881D}"
+                  SQLTask:Connection="{E07050EC-5836-48B8-99C7-7B50A980FBF1}"
                   SQLTask:SqlStatementSource="select ? FICHERO_ORIGEN"
                   SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
                   <SQLTask:ResultBinding
@@ -2624,7 +2624,7 @@
             <DTS:PrecedenceConstraint
               DTS:refId="Package\Load file to DBO\Search and load file.PrecedenceConstraints[Restricción]"
               DTS:CreationName=""
-              DTS:DTSID="{5201AEE0-F084-4B9A-877A-E996ED8934CD}"
+              DTS:DTSID="{0B887C89-2B59-40EB-8ED3-550ADC5B2B1C}"
               DTS:From="Package\Load file to DBO\Search and load file\Source file"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Restricción"
@@ -2632,7 +2632,7 @@
             <DTS:PrecedenceConstraint
               DTS:refId="Package\Load file to DBO\Search and load file.PrecedenceConstraints[Restricción 1]"
               DTS:CreationName=""
-              DTS:DTSID="{DA344E67-EAD9-47A4-AF4A-CE2E9D9404D9}"
+              DTS:DTSID="{94E27B90-9615-48DE-B159-9604F6D942FD}"
               DTS:From="Package\Load file to DBO\Search and load file\Fichero Origen"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Restricción 1"
@@ -2641,8 +2641,8 @@
           <DTS:ForEachVariableMappings>
             <DTS:ForEachVariableMapping
               DTS:CreationName=""
-              DTS:DTSID="{F0D932F1-DA60-4071-9E94-4A6BB8695173}"
-              DTS:ObjectName="{F0D932F1-DA60-4071-9E94-4A6BB8695173}"
+              DTS:DTSID="{600BC73D-8522-4FFF-942F-45153D650FEA}"
+              DTS:ObjectName="{600BC73D-8522-4FFF-942F-45153D650FEA}"
               DTS:ValueIndex="0"
               DTS:VariableName="User::FilePath" />
           </DTS:ForEachVariableMappings>
@@ -2651,7 +2651,7 @@
           DTS:refId="Package\Load file to DBO\Truncate table"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{9644FAD9-E603-40B9-9B90-DA687B2E8BB0}"
+          DTS:DTSID="{6CDB9FF1-628E-43D8-AD88-AC0FFF7111F7}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Truncate table"
@@ -2659,7 +2659,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{0FED5946-3198-4505-B5CB-DA9A6EA8541C}"
+              SQLTask:Connection="{27E2EACE-4A5A-424D-860A-8F3550CA97B5}"
               SQLTask:SqlStatementSource="truncate table SVH_DBO.OCEAN.P02b_Peticiones" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -2668,7 +2668,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file to DBO.PrecedenceConstraints[Restricción]"
           DTS:CreationName=""
-          DTS:DTSID="{4C65AB5F-52D5-4650-ADEF-933324A3495F}"
+          DTS:DTSID="{30335B78-982A-4495-825A-EFFF4913263E}"
           DTS:From="Package\Load file to DBO\Truncate table"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción"
@@ -2676,7 +2676,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file to DBO.PrecedenceConstraints[Restricción 1]"
           DTS:CreationName=""
-          DTS:DTSID="{AE608047-1482-4B9F-B0B4-38157BD1A392}"
+          DTS:DTSID="{CD9802DA-AAFB-4006-9544-C17D20CE4EEA}"
           DTS:From="Package\Load file to DBO\Search and load file"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 1"
@@ -2684,7 +2684,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file to DBO.PrecedenceConstraints[Restricción 2]"
           DTS:CreationName=""
-          DTS:DTSID="{C057BEEE-E594-4AAF-8F4C-9C9D2285E0E8}"
+          DTS:DTSID="{F824C555-7C9C-408A-ADD2-0FB290B4FBBE}"
           DTS:From="Package\Load file to DBO\Convertir EXCEL - CSV"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 2"
@@ -2692,7 +2692,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file to DBO.PrecedenceConstraints[Restricción 3]"
           DTS:CreationName=""
-          DTS:DTSID="{1BAB7433-FB27-4B23-96BE-D81CC355DF19}"
+          DTS:DTSID="{5F624EB3-6290-4043-9741-A1470530A5AE}"
           DTS:From="Package\Load file to DBO\Elimina _csv"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 3"
@@ -2704,7 +2704,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
       DTS:CreationName=""
-      DTS:DTSID="{440EBA97-41DD-4ED2-99F1-62D11BFCFBE1}"
+      DTS:DTSID="{35AC6EA2-CFC2-4A12-8212-8CE439C47392}"
       DTS:From="Package\Load file log START"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 3"
@@ -2712,7 +2712,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción]"
       DTS:CreationName=""
-      DTS:DTSID="{DC9FA32B-5BE0-4151-A90F-53094D044356}"
+      DTS:DTSID="{7E0E0CAF-3E71-40D5-8878-BB73183881AD}"
       DTS:From="Package\Load file to DBO"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción"
@@ -2720,7 +2720,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
       DTS:CreationName=""
-      DTS:DTSID="{1E6CB945-EFB7-4D8C-BEF0-55F5C2A1F5BC}"
+      DTS:DTSID="{9FEC01F4-5D92-4743-A79E-ED57EE0A74B5}"
       DTS:From="Package\Load file log END"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 1"
@@ -2730,7 +2730,7 @@
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnError]"
       DTS:CreationName="OnError"
-      DTS:DTSID="{4075A39F-CD1A-437F-A290-8A9334DEB868}"
+      DTS:DTSID="{80D0BC7C-1D09-45D0-91AA-93651D941586}"
       DTS:EventID="0"
       DTS:EventName="OnError"
       DTS:LocaleID="-1">
@@ -2738,7 +2738,7 @@
         <DTS:Variable
           DTS:CreationName=""
           DTS:Description="La propiedad de propagación del evento"
-          DTS:DTSID="{CB453227-A7FD-4581-9131-A6F701912F40}"
+          DTS:DTSID="{088D8F2A-3209-489C-9E73-575DA505A828}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="System"
           DTS:ObjectName="Propagate">
@@ -2751,14 +2751,14 @@
           DTS:refId="Package.EventHandlers[OnError]\LogFail"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{D9C633CE-7DBA-4B91-BE59-26A745D0DAA2}"
+          DTS:DTSID="{80F9AE75-8F62-4CCD-B558-F3C269C78488}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="LogFail">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{0FED5946-3198-4505-B5CB-DA9A6EA8541C}"
+              SQLTask:Connection="{27E2EACE-4A5A-424D-860A-8F3550CA97B5}"
               SQLTask:SqlStatementSource="BEGIN TRY&#xA;&#xA;EXECUTE [SVH_STG].[dbo].[CloseLog]&#xA;@PackageName=?,&#xA;@RunGUID = ? , &#xA;@PackageRunResult = ?,&#xA;@TotalRowCount  = ?, &#xA;@ExecPeriod  = ?, &#xA;@ErrorDescription = ?&#xA;&#xA;END TRY&#xA;&#xA;BEGIN CATCH&#xA;&#xA;EXEC [SVH_STG].[dbo].[PROCESO_LOG_ERRORES] &#xA;@p_PROCESO=?, &#xA;@RUNID=?,&#xA;@TIPO_ERROR =10&#xA;&#xA;RAISERROR ('Error en el objeto LogFail del paquete SISS' ,18,1);&#xA;&#xA;END CATCH" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
