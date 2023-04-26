@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="PUPPY_P03"
   DTS:PackageType="5"
-  DTS:VersionBuild="333"
-  DTS:VersionGUID="{D6AA9549-E4BA-4B6E-B3CA-2EBF104B8F96}">
+  DTS:VersionBuild="334"
+  DTS:VersionGUID="{6B8117EA-0847-4C40-A955-E192899A81FD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,11 +27,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAArD8D955XfmersgJ/z+uZUOHAbvR1AI7G38bNhSXo22QAAAAAOgAAAAAIAACAAAABU1o8ziRy1Qu06NHaLqhf6YqpT+Y2/ZCYm3AJlGMgalyAAAADgUL2pMATBDxhb29kUitT7WzBAvg1vP1bSZrkZHGHpjEAAAABgSbrw3Tm7Pdc+gmUyktnic7E5KjNjFbwPyje87IHIhIRSCH4+IzqNu2GkDNZwg2cwRYh2+2M27trO/9jrWqHe</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAn28OTG2XVK6r72w5axQcUMOC+A516Xj3I3k02hlyu2AAAAAAOgAAAAAIAACAAAABf1AR2OQaniI+SqbO6uVgtD6NOZlkF33NxtJx1pDqXMyAAAABM7FLFXJVrRQhCHnsUAHsYJcGXYwlJv/oV5y7iP9xUN0AAAADKOjaMMQPg6f6O1Z2plsJybknjPTQXj6kl9oxsOC7g+RPfAD3ZBoT8B7Gj+COytq2DGhG4CoAcDRIIjVz/eJGf</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,11 +46,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADymo20ZVK4j7qM36LQQUb+UbL99HoWPxXhuNnKJqjhRgAAAAAOgAAAAAIAACAAAADAhmwqpg+C8m3l4YRqbA0uZwEM+8KkLZxnknk/HVsrRSAAAAAcfdZctwMTg4ksw4gsitBxTP3R1NgTESuucdRI1/6P3UAAAACzVqGXvC4aKieOaz3Y8N9booOr2UPbapNGHL9cTFqUflItJhoEMsBYokW9T7isq4KN1mwcDrwzAsB2sL6ZDgAl</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADxfG0f2U4DVqWVJeP0X0eFMC5S0UQ6HKONV137ZaK50AAAAAAOgAAAAAIAACAAAADVDdG5aU/2PKy1WR93qe0+eA8TDLmzmLnQfvu7MSHrBiAAAADURkkAUFevHJ6u1T8xDD44Kl3YknOR0sMforNvTyJqYUAAAAAA9BrCBm8eEjLzpFmmLQ+SyFd37oZ15LQEL/strTMdb+IOTjVL6Gmk5WYVh381OsCB+a44+jaG3G51AvIuNZ+K</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -2932,7 +2932,7 @@
                         <property
                           dataType="System.Boolean"
                           description="Especifica si las columnas de longitud cero se tratan como NULL."
-                          name="RetainNulls">false</property>
+                          name="RetainNulls">true</property>
                         <property
                           dataType="System.String"
                           description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
@@ -4764,7 +4764,7 @@
     design-time-name="Package\Load file to DBO\Search and load file\load to DBO">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="196,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"
@@ -4812,9 +4812,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4836,9 +4834,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4872,9 +4868,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

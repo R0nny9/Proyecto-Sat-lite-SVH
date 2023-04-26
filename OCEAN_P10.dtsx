@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="OCEAN_P10"
   DTS:PackageType="5"
-  DTS:VersionBuild="327"
-  DTS:VersionGUID="{D2F99360-5C63-4AF1-985E-63FDE649000C}">
+  DTS:VersionBuild="328"
+  DTS:VersionGUID="{1C90C097-D2A3-4C7E-B561-08EC8EA7F9D7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -31,7 +31,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABP226Pw1spMDH3O82ckVwXDDqd1Nqu8bGaqZ/TlgJZSAAAAAAOgAAAAAIAACAAAAD7hzDINK4s3VJ+muUlpMO2926aSYUEjL57YXadNP36ziAAAABQs3kOA5v6i4+p7czUplXCOXICtnkJtk1D/6bRTv5O30AAAADkYlKgGTQMxm8rWOxyxJweFSi38lbRjMlJjsP4ENu5DeBTAhWygxhBmFmjRj9boos8Y//cZQDZEpbJCgiOaBAv</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADVIl5/1S408q8s9YePhtxuv8DDRGbhC2M6xt9+oLdBfwAAAAAOgAAAAAIAACAAAAACtUdQY1p39twaqE/FNWzAPvOjz0kdEUInRMN4Gq+HpiAAAABH3FK5DF1ivUtIpu9fOHc05SBzLIk/VktG4maJz+oMt0AAAABVqk5JIFLFokoYkK/7C5kxXahV6rShHwMhtaH6T72aYD1rJRqL3yAAhPyQR+eYad5AMhkw4ANgd5ltdiVhnHK6</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -50,7 +50,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADnZ/5Yk9eDgnK1itvubfLfrVH0bZ4+dGZ0+o//Q8bnJwAAAAAOgAAAAAIAACAAAABPPbRF34BaLRaDoZv6j7RtMSud8I413dynK9wG2ZBpLiAAAAD4+bROWSu6/5RM1RMrEeVSKlcqEsbTlZk5JD/x+ciROUAAAAA7+DDVACOqHfGT8W9lfNf957qLQnLLEm1Y8QdbDYP+yDwInCEX6JeKeOurUpdVYYu+qmwZXoxDmrImtrYQal1m</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB12LKx8JyuE42UGOMrBYpyt88i/i9WQoSvQ82TQQkOOgAAAAAOgAAAAAIAACAAAAAce6WaTXZTQj4OJHpnPU5Z4wg4BmJjhkC09ISBTnxdCCAAAADwufV8qvpBJd4BsWQXW5GyOdTQrFaEBHkg7P3Dz3PRVEAAAAA2ygr5PVXvL8fEE8pJ81+J/khO+WWVf8vteXQ3iwwdh6F6GZqEBlTD9arsEltjB+2UhyUbTFoHQGXWNnAHborU</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -3616,7 +3616,7 @@
                         <property
                           dataType="System.Boolean"
                           description="Especifica si las columnas de longitud cero se tratan como NULL."
-                          name="RetainNulls">false</property>
+                          name="RetainNulls">true</property>
                         <property
                           dataType="System.String"
                           description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
@@ -5829,10 +5829,6 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="168,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
-          TopLeft="261.000000397364,315.400000599225" />
-        <NodeLayout
           Size="196,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"
           TopLeft="255,196" />
@@ -5844,6 +5840,10 @@
           Size="180,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
           TopLeft="278,262" />
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
+          TopLeft="261.000000397364,315.400000599225" />
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de archivo plano]"
           TopLeft="353,238">

@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="PUPPY_P14t"
   DTS:PackageType="5"
-  DTS:VersionBuild="348"
-  DTS:VersionGUID="{7DB877DD-1F9D-4095-92EE-AFD386800AEC}">
+  DTS:VersionBuild="349"
+  DTS:VersionGUID="{3CAC3311-56F3-4D0D-A153-263B8BA48215}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,11 +27,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADDo79UWPZ1dcK3koQZj/FZ1khS7ZlbCbHPyrMPGTG4+AAAAAAOgAAAAAIAACAAAAAwT728EMydzXX8Iui9aN+n+sKsrTQB8Ji5LPfo8Q4fkiAAAADDGFgxI/JjeW2+Q5Ng3sRG+zyfSUPHrdd8gdjLETmYKkAAAACGhVm0BsW8szSdylWk773m0rtYDw2RfUpqCcNy/HknpMS9Si2enlIKQEPXwtjD+M+nU7mtgWWjuelJGXVPaRVV</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAJAMnwEpHwUJAGeWKFUuNBv2CA+a1KgajngkTdYtFZpgAAAAAOgAAAAAIAACAAAAD3sx9fy8jjLC8zZEhPyBUDbJF6P8S5nd48JJtAK0qzziAAAAARDgbuuIJAaSn1zTbRza/cAcy2lo4ILqZcRJwJTPjZ6UAAAAASq8laoWWnpOiDBOPik5Q7MbRl3kghPYtj6v+uqKbTsosasiAmrFlc/Zemq7JUSSEbFVWzvs69/A+3ZTxaWadj</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,11 +46,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABj6PTzTohjwbqFO//MwRAjwLYLr4dPH85mXgefbNJMAQAAAAAOgAAAAAIAACAAAABGx7FTdXJvlL8RUaFDeyB/m5uPvOM2/nwo3t2LQtgvuiAAAAAYEsb9nTcLHexLvBeEIlpd1LZ+VpqNj76JemV8EXkRg0AAAADG2RCT87pFX+LyD4NBtxkFFmbq8ola+qYNOS1+0J5N9K5vAfxcWau8UANZ7Swwe8ZmhMWKhv2seHWMwJPk7+bN</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA9LVTNM9J1o5nn13Eq+KFov4RARhJKzlDiMkrDlmK6SQAAAAAOgAAAAAIAACAAAADKsiwFcoxgXborcMapfwie7R9CNj/27rIZFxhKXVtYDyAAAAAJDfM6n7NGsHHzv0RiA7PQtUwZUEBRuCiuPPUpsKY1WEAAAADaQfEw1n/KJrm7Be8+42U77tyYhwxRifmJ2GCe21398WihdBrEdk3gMI2EaGdpb97KxwLg0ZFH+4Ml3kYRH/Ae</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -4353,7 +4353,7 @@
                         <property
                           dataType="System.Boolean"
                           description="Especifica si las columnas de longitud cero se tratan como NULL."
-                          name="RetainNulls">false</property>
+                          name="RetainNulls">true</property>
                         <property
                           dataType="System.String"
                           description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."

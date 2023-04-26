@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="OCEAN_P11b"
   DTS:PackageType="5"
-  DTS:VersionBuild="326"
-  DTS:VersionGUID="{F6C6C079-2765-44C0-B1A8-EC81B0688F49}">
+  DTS:VersionBuild="327"
+  DTS:VersionGUID="{CBA566DD-30D7-4ABD-AD58-A64A54579F47}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -31,7 +31,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACTtfBa+3FBRrAQ1iDqxvknHCh8ZrEglqQwjtcqn9JLeQAAAAAOgAAAAAIAACAAAABGx1puRCYTVdPXC9+y5JzwRakLkIPSdg2uab+Se16IHyAAAAAuVoH23HP+laR1CuQ1Ea/1nTv0CkKOO+ilJ1zm/KogmEAAAADL3Q7Cdt9UefypIBYs66zP9rON71O2eQhyMeFiFGFJuIqfPswo8Glxms/oSxAcoMYG8pvIwA1kssyyequb6qjf</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABqU8xcKJzNHX2jSG/TWsyHSaZgChclaiy+0S4VcoAHCAAAAAAOgAAAAAIAACAAAAB8g3be4ZHcUcUELZE13XlU6nCfzwI/FBPTfp4BNqzkuCAAAAAYc9eN4DupTC2JrAaIXJ/8ahMdwas6KD5xm+HAc9OELkAAAAB2X3OvxdkWlmkta09O0n11yey6cisODmURJXnnxxjK47tenYkvMT5XjHY3mLPA4CayulfZEzRTrH8CvKFcbddd</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -50,7 +50,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB0KrCE08LFmIp/EWkbjUMIK1+IN4iEvHYkUFo5SAYJegAAAAAOgAAAAAIAACAAAACNsSVnloWYf+zsmdSb9KdL3VR4twJfuhHowR8g6MfwdiAAAAAc93DAEjMp/OYSNcCLw8g8umsSJfNtpZ/N/Id9Sh9B9kAAAADPSxkI9SOFNN/znWuanG3XzV8L9fx2a9E+yBrQNPIbf7JRiQktBCGL6/qLJZyROt5PE80QjfBOBarAmd4YvNeu</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADXtgLPinvrbXTkzGTLoHS6AVpWBetrptKqjQ3ZYnPMVwAAAAAOgAAAAAIAACAAAAALdZdZ6dgLPdP77ua3kvnliGPELo7bW3j3I4GBxlQIlyAAAABdcZ+zE03GX09StBAlqVM3TAtEA8N8CJgRSQBBeuHw/EAAAACy1XwHF6ebKkbzZAuy901ZhmIash0F8J6O1P6sm7euP6VoGHd2fi5igrweWgbqExKr1yYJGdLBfmDdc9W3OCPi</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -5823,7 +5823,7 @@
                         <property
                           dataType="System.Boolean"
                           description="Especifica si las columnas de longitud cero se tratan como NULL."
-                          name="RetainNulls">false</property>
+                          name="RetainNulls">true</property>
                         <property
                           dataType="System.String"
                           description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
@@ -9296,10 +9296,6 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="168,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
-          TopLeft="261.000000397364,315.400000599225" />
-        <NodeLayout
           Size="180,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
           TopLeft="215,146" />
@@ -9307,6 +9303,10 @@
           Size="175,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
           TopLeft="356,408" />
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
+          TopLeft="261.000000397364,315.400000599225" />
         <NodeLayout
           Size="196,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"

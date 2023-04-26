@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="PUPPY_P02"
   DTS:PackageType="5"
-  DTS:VersionBuild="330"
-  DTS:VersionGUID="{0EC68A83-3DEF-4844-8496-CE388C6D008D}">
+  DTS:VersionBuild="331"
+  DTS:VersionGUID="{7EE1C32E-D72D-4636-9462-F3DED25363B5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,11 +27,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAATSIT4NpJZf8lw9I/pDjzNQpsdPf1I8FCltbnFTDFmogAAAAAOgAAAAAIAACAAAAAnXK8DChoahYDa7KiDJZYwQGY517Y00k7ZYiODR2xvACAAAABO0SnBYUT7EymaxcfLZ0LCx90fZgxAmTHqjqyp+93zBUAAAABYJim4prFUhYnPkfeWEgflYzlVrdYNZN8DudzsAXMZnt5p76NLkAgViwpRtYNhGGtqo2YMlk1SMzAyRY63bX+p</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC4hYIFbEoDOOiLxNDEkCNPijG7dmKjqKWY9wnNTFbwsgAAAAAOgAAAAAIAACAAAADvbjxRVbJnF+6BbELZ5aKW/LAFB9wO5Wi+QyabVFR61CAAAADQcZMS/187EK5bOl+D+h0e0vKAJfYv/JtS/R5gntW/XUAAAACVxw/Ihej2SCH4tseUZlHiLknWGWQwZuJk9Xccs1cbHzhf4jEjTLi8UK6ywDOb/p7Slet7iPVAvBZp3t4oZLoU</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,11 +46,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAZRC4mAw3yv6BWxy07u73fpdpm8ptX/8P54+K+eHFz3QAAAAAOgAAAAAIAACAAAABJQaoHvIW+FjPxDrP2x+JVv68daBLI/DGG8hcRxluGASAAAABSDZMXsTMFPOHkPEyIfm4QEGhsNiOxSJIpR70jV9UTPEAAAADaB7GHBuhJDhnnEo32fvejQIomwFEl/M3EEriC3tpFnCsDSUfW1f3Zqgo3mZFzXmygrSHMVv/yvmoF7tCNyEDo</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAYQdNcONCRELCsza/pLTD94lg2NWI7SC8uXKNq6E4s2gAAAAAOgAAAAAIAACAAAACTXJktY+UmPFeXPx83Z/zk7zJFxXMXUHscMEzjz2mqXyAAAADka8XzTMArKYqYKJfuWuMhoKPrrDRRo4dLkMSzyfcHBUAAAABKfBerp7O4O+NM1jqkew+4MoINYPHfJGCbAb9+dycAzJd8M2odT6fsDtV+QUXlOwJeuC62b0JgpwkUPugyE/vs</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -3422,7 +3422,7 @@
                         <property
                           dataType="System.Boolean"
                           description="Especifica si las columnas de longitud cero se tratan como NULL."
-                          name="RetainNulls">false</property>
+                          name="RetainNulls">true</property>
                         <property
                           dataType="System.String"
                           description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
@@ -5284,50 +5284,6 @@
           Size="201,225"
           Id="Package\Load file to DBO\Search and load file"
           TopLeft="18.9999995032947,212.633333326446" />
-        <EdgeLayout
-          Id="Package\Load file to DBO.PrecedenceConstraints[Restricción 1]"
-          TopLeft="121.249999751647,437.633333326446">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,26.4999999999998"
-              Start="0,0"
-              End="0,18.9999999999998">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,18.9999999999998" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load file to DBO.PrecedenceConstraints[Restricción 3]"
-          TopLeft="122.74999995033,563.133333326446">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,34.0333326858942"
-              Start="0,0"
-              End="0,26.5333326858942">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.5333326858942" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
           Size="145,42"
           Id="Package\Load file to DBO\Truncate table"
@@ -5361,6 +5317,28 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Load file to DBO.PrecedenceConstraints[Restricción 1]"
+          TopLeft="121.249999751647,437.633333326446">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,26.4999999999998"
+              Start="0,0"
+              End="0,18.9999999999998">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.9999999999998" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Load file to DBO.PrecedenceConstraints[Restricción 2]"
           TopLeft="182.952382669563,190.133333326446">
           <EdgeLayout.Curve>
@@ -5380,6 +5358,28 @@
                     Point3="-63.452383166268,4" />
                   <mssgle:LineSegment
                     End="-63.452383166268,15" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load file to DBO.PrecedenceConstraints[Restricción 3]"
+          TopLeft="122.74999995033,563.133333326446">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,34.0333326858942"
+              Start="0,0"
+              End="0,26.5333326858942">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.5333326858942" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
