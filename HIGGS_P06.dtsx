@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="HIGGS_P06"
   DTS:PackageType="5"
-  DTS:VersionBuild="340"
-  DTS:VersionGUID="{4FC98A98-6BB4-4E81-AD79-3B6190DF6816}">
+  DTS:VersionBuild="344"
+  DTS:VersionGUID="{D22D72C1-D347-4BA8-B8CF-C7591B83B193}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,11 +27,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAByyynOBBtvCqWmdafBPEoz+jLTCFd4Goey4IwwmI3+OwAAAAAOgAAAAAIAACAAAAAj8bPBYt5x6xg58tRlSSy2y8eZfVzcjE9XKgWRQbvEWSAAAABcMljMH2o3VBiwJFXOkCdvasP9wnq0DPkIGPj2tUBIF0AAAADzsbImawAgXKXryGDfAWi7+x1lKjN7Z9517Z9fz7pGm657yQrq6zHh3OSDJzcgwYIh4+1EKjBa/qhriDJrEzA5</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAClRgdsxKb17nlP65A3+Aml0lCTaLZ0OVbS+08UcshyvgAAAAAOgAAAAAIAACAAAACpVk4/K8qa0chthaScIh0cUrLg3cZ8/1JSVGNRnWiGXSAAAACgjNm/QRnmqxDQoh41VLYLnzVi6CR3nxkeYQFDJO/5DkAAAAD9iWgIwo6Pj3dRF/X4VFpBjp8fpGg3idCOJq9633ut0WORwlUaTmQ4xGVXqPnxdcq6l92NG1/UqyE9Erupsm0+</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,19 +46,19 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAv8SL0hlE5ZFHWrAnq/JlQRaRDWaITC3XgfJw34PNejQAAAAAOgAAAAAIAACAAAAAFObB1EbN7oaFGkhSjDgMOr0SL6EsetTsblX15XQXOcCAAAAAo55O2pbK3/pwJsmP+YysuuHVqwP5Fi9mPgefVPLsiF0AAAACeA/P7PnaAkvva0mdbebwibTF8CEn1XCBIZhfxjlYGlgMos9mg1Y9axyD8ogveYaNkp7lVEOPbRWKLblzeN+an</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAKUw0tg3862C+He/Vmb4TCY3H/3Ll5dVEp8hRBs0BzHAAAAAAOgAAAAAIAACAAAADLl9QwtQkKz8zq6fYOvK7yyQVXOeNYm5Q9PgGoR0ElUCAAAAD8TSC6SeXssV+0W2TQSlfLAleFLMao0oVtth8YATrZk0AAAABhd9c8Ii8LGMGWDX8S4wUESEt+LOb0gZutdbAL3yA7Du6EcEGaciPCz9CjDxpIOzF5j+zyzQTZLE2XTecxXmES</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[p06_puppy]"
+      DTS:refId="Package.ConnectionManagers[p06]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{DA109EF0-165E-4846-9BB9-7A5E3F4EF831}"
-      DTS:ObjectName="p06_puppy">
+      DTS:DTSID="{8CFAC750-9D2C-4584-8298-62CB69AD2AC9}"
+      DTS:ObjectName="p06">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::FilePath]</DTS:PropertyExpression>
       <DTS:ObjectData>
@@ -74,309 +74,318 @@
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ID Petición"
-              DTS:DTSID="{E1EB2E67-CB52-4BCB-B4F4-999F089EFE6B}"
+              DTS:DTSID="{79718DB6-3345-406A-A77D-5AFD238C5EE3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ID SIREC"
-              DTS:DTSID="{2469DB98-B376-4B15-9144-EA6FEEAD7D8E}"
+              DTS:DTSID="{364372FB-BDCC-485D-88D2-F3DA08D27D35}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Contrato"
-              DTS:DTSID="{0578DF42-A093-4840-936F-ECE44315044C}"
+              DTS:DTSID="{A9C771E7-E1FC-4ACB-9EDA-0FF51B3582E7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Acreditado"
-              DTS:DTSID="{0241339D-D526-40CC-A23C-E179183745A3}"
+              DTS:DTSID="{72E9E8E4-B8D7-41BF-AAA5-7D0C41BDDA5F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ID Acreditado"
-              DTS:DTSID="{2698BB31-32AA-472C-AD82-3129C4E60E68}"
+              DTS:DTSID="{7A1F44AC-2FD4-4A83-A1D4-0B6D54A1EA5F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Operador asignado"
-              DTS:DTSID="{4858AD8C-7FA0-4169-8981-9E40A7B74CC8}"
+              DTS:DTSID="{53D1C36C-837F-4435-8FFB-CB03CE00B794}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Tipo petición"
-              DTS:DTSID="{80E7AB11-40D5-4B94-B267-DACEFD419E07}"
+              DTS:DTSID="{A7990004-644F-4D4F-8E08-66D83DD1CC44}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Estado"
-              DTS:DTSID="{C03B6240-EE6C-4B2F-9FC1-9EF967D30FEB}"
+              DTS:DTSID="{9B95B6AF-EB5C-438E-84EA-6DA3853D0469}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha registro petición"
-              DTS:DTSID="{4A0F117D-68F9-42B7-8DE7-48583848220A}"
+              DTS:DTSID="{3C7D6D4C-B73E-4903-9914-ED083A6946D0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha inicio petición"
-              DTS:DTSID="{8B822F54-578C-47FC-83B6-AFDF92FC7486}"
+              DTS:DTSID="{481953E4-9CA4-4973-AA4C-C75532ECD3CC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha registro fin petición"
-              DTS:DTSID="{8C6D471E-6CF6-49C1-8124-69C87C925923}"
+              DTS:DTSID="{1EB18B07-B9B6-4635-90A4-4A645C11FE71}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha fin petición"
-              DTS:DTSID="{6C003427-84EF-4391-BE8F-E172C3DA89ED}"
+              DTS:DTSID="{5FA3B964-5587-4AC4-9552-240BB9775ED0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha límite entrega"
-              DTS:DTSID="{7F20919E-F71C-4F4B-BC7B-A76015E1FDAD}"
+              DTS:DTSID="{D1295784-1657-4D14-9927-BCC7C520AB80}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Tipo bloqueo"
-              DTS:DTSID="{D0A4234B-7DF2-414C-9031-7498CA83FD9D}"
+              DTS:DTSID="{ED156B6C-0588-43A2-9C22-700ED8B729ED}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
-              DTS:MaximumWidth="400"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="4000"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Descripción bloqueo"
-              DTS:DTSID="{FE17894F-146A-4E3C-80F9-9A536EC9CE1D}"
+              DTS:DTSID="{2009C7BF-6FBD-4BC1-8496-F8E313844558}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Fecha incio bloqueo"
-              DTS:DTSID="{A1232802-7149-4798-B213-E1A2FD07E209}"
+              DTS:ObjectName="Fecha inicio bloqeuo"
+              DTS:DTSID="{0A37E205-33F6-4C49-8D14-145272E0BD8C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha fin bloqueo"
-              DTS:DTSID="{D86982BB-43BD-4D75-B46B-674CFBA431E8}"
+              DTS:DTSID="{EFCD83BD-AE1F-49EC-A777-08BEF49A6BC0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Nº incidencia ticket"
-              DTS:DTSID="{E970FAF0-A1A9-4F9C-9290-62C8B72D4F0C}"
+              DTS:DTSID="{057EDE6C-808E-4288-AEF3-9DA9E85B0EFF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Impulso bloqueo"
-              DTS:DTSID="{E1AD471A-BBE4-4ACD-BD1D-F9B08BF2D523}"
+              DTS:ObjectName="Impulsos bloqueo"
+              DTS:DTSID="{A3AD2269-6601-4B64-A241-9960CC9E4751}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha impulso bloqueo"
-              DTS:DTSID="{461B291B-A5EC-4243-A538-5B1CE86EEE41}"
+              DTS:DTSID="{559DB67A-7F6B-4015-9C31-6E33CC7367C9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="4000"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Observaciones Operador"
-              DTS:DTSID="{19CF7669-9817-4782-BA52-C8D894AE0788}"
+              DTS:DTSID="{5ECA0246-8601-406C-A9AB-F0E333E86F39}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha, usuario y motivo  baja"
-              DTS:DTSID="{72DC1EF9-DB94-49B5-9E5A-CC56405A4918}"
+              DTS:DTSID="{BB633E82-9429-44AC-8C79-5E6BF2AE5D30}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Origen de la petición"
-              DTS:DTSID="{FF52DF8D-7919-4B8B-AA23-B835253287DA}"
+              DTS:DTSID="{73EE84F0-3294-43B1-A427-C2F6CF1F3659}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Dirigido a SVH  ZIMA"
-              DTS:DTSID="{4BD8FED7-79CB-446E-AAC7-569C9D453851}"
+              DTS:DTSID="{45151CF1-EA12-4D16-8181-901948E2EB24}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="400"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Judicializado"
+              DTS:DTSID="{A946C0CC-2423-4002-B219-9CF41277177D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha envío burofax"
-              DTS:DTSID="{A9273433-4BB0-43B8-913E-7997E9181F9F}"
+              DTS:DTSID="{EF9C5AC2-8EEC-4AB2-8AC8-1347F290F9B9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha recepción acuse"
-              DTS:DTSID="{C353B117-3704-40B8-996C-8F06F49CCA9F}"
+              DTS:DTSID="{9E319F2D-7AFD-4200-AA76-89D1851354FF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ID Petición prisma"
-              DTS:DTSID="{F8A7DAA5-AF8E-4F5C-B3BA-32DEB3BB4A04}"
+              DTS:DTSID="{24B87B4C-7A15-485A-A8D3-46C1E5B51B8C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Excepción SLA"
-              DTS:DTSID="{15058F01-9005-4725-A1A2-7229713E588C}"
+              DTS:DTSID="{460A90B3-79FB-49A6-90FF-D2F22BF87A1B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha solicitud exención"
-              DTS:DTSID="{2A530FF4-3908-48F5-9673-0B22C8DACFB9}"
+              DTS:DTSID="{F114CB20-F54F-4F65-B334-F4105E10CC95}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Usuario solicita exención"
-              DTS:DTSID="{A4653CC2-E2B9-4180-B556-BF5F0388AB74}"
+              DTS:DTSID="{091B176D-7B42-4B21-A085-5A40964045AE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="4000"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Motivo exención"
-              DTS:DTSID="{9436E2DD-C56D-4DBE-9253-63390ADCF392}"
+              DTS:DTSID="{3C1CBAB5-FB07-42BB-B6F1-8EF863DA4FE5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha respuesta exención"
-              DTS:DTSID="{0C00EF85-FEB3-4F9E-86FB-DBEA9F26D582}"
+              DTS:DTSID="{6F021D0D-39A1-4D2D-BB1A-7A8022992B99}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Usuario SVH"
-              DTS:DTSID="{8F274AEA-81D4-49A1-B37F-7524B3A547F9}"
+              DTS:DTSID="{3DBD4C7C-25A1-4415-806B-F50B5E1DFE1B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Solicitante"
-              DTS:DTSID="{DF4AEB1F-6D83-471B-8C16-57CD416D237F}"
+              DTS:DTSID="{B6715D7B-6E3A-4E22-B51E-4B5B49E78E25}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -385,7 +394,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Business Type"
-              DTS:DTSID="{4C290680-FAE0-4FAF-A09B-F70C2D84F7AE}"
+              DTS:DTSID="{6EE4CFDB-2E2A-49DB-97E4-D40C61282A9E}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -1615,16 +1624,16 @@
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Descripción bloqueo]"
                               cachedCodepage="65001"
                               cachedDataType="str"
-                              cachedLength="400"
+                              cachedLength="4000"
                               cachedName="Descripción bloqueo"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Descripción bloqueo]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Fecha incio bloqueo]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Fecha inicio bloqeuo]"
                               cachedCodepage="65001"
                               cachedDataType="str"
                               cachedLength="400"
-                              cachedName="Fecha incio bloqueo"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha incio bloqueo]" />
+                              cachedName="Fecha inicio bloqeuo"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha inicio bloqeuo]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Fecha fin bloqueo]"
                               cachedCodepage="65001"
@@ -1640,12 +1649,12 @@
                               cachedName="Nº incidencia ticket"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Nº incidencia ticket]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Impulso bloqueo]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Impulsos bloqueo]"
                               cachedCodepage="65001"
                               cachedDataType="str"
                               cachedLength="400"
-                              cachedName="Impulso bloqueo"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Impulso bloqueo]" />
+                              cachedName="Impulsos bloqueo"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Impulsos bloqueo]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Fecha impulso bloqueo]"
                               cachedCodepage="65001"
@@ -1681,6 +1690,13 @@
                               cachedLength="400"
                               cachedName="Dirigido a SVH  ZIMA"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Dirigido a SVH  ZIMA]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Judicializado]"
+                              cachedCodepage="65001"
+                              cachedDataType="str"
+                              cachedLength="400"
+                              cachedName="Judicializado"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Judicializado]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Fecha envío burofax]"
                               cachedCodepage="65001"
@@ -2068,7 +2084,7 @@
                               dataType="wstr"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
-                              length="400"
+                              length="4000"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Descripción bloqueo]"
                               name="Copia de Descripción bloqueo"
                               truncationRowDisposition="FailComponent">
@@ -2085,20 +2101,20 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha incio bloqueo]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha inicio bloqeuo]"
                               dataType="wstr"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
                               length="400"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha incio bloqueo]"
-                              name="Copia de Fecha incio bloqueo"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha inicio bloqeuo]"
+                              name="Copia de Fecha inicio bloqeuo"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
                                   containsID="true"
                                   dataType="System.Int32"
                                   description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha incio bloqueo]}</property>
+                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha inicio bloqeuo]}</property>
                                 <property
                                   dataType="System.Boolean"
                                   description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -2148,20 +2164,20 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Impulso bloqueo]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Impulsos bloqueo]"
                               dataType="wstr"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
                               length="400"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Impulso bloqueo]"
-                              name="Copia de Impulso bloqueo"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Impulsos bloqueo]"
+                              name="Copia de Impulsos bloqueo"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
                                   containsID="true"
                                   dataType="System.Int32"
                                   description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Impulso bloqueo]}</property>
+                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Impulsos bloqueo]}</property>
                                 <property
                                   dataType="System.Boolean"
                                   description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -2267,6 +2283,27 @@
                                   dataType="System.Int32"
                                   description="Especifica la columna de entrada usada como origen de datos para la conversión."
                                   name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Dirigido a SVH  ZIMA]}</property>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                                  name="FastParse">false</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Judicializado]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              length="400"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Judicializado]"
+                              name="Copia de Judicializado"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Judicializado]}</property>
                                 <property
                                   dataType="System.Boolean"
                                   description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -2547,7 +2584,7 @@
                         <property
                           dataType="System.String"
                           description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
-                          name="OpenRowset">[PUPPY].[P06_Peticiones]</property>
+                          name="OpenRowset">[HIGGS].[P06_Peticiones]</property>
                         <property
                           dataType="System.String"
                           description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
@@ -2688,6 +2725,13 @@
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha envío burofax]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha envío burofax]" />
                             <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Judicializado]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Judicializado"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Judicializado]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Judicializado]" />
+                            <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Dirigido a SVH  ZIMA]"
                               cachedDataType="wstr"
                               cachedLength="400"
@@ -2723,12 +2767,12 @@
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha impulso bloqueo]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha impulso bloqueo]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Impulso bloqueo]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Impulsos bloqueo]"
                               cachedDataType="wstr"
                               cachedLength="400"
-                              cachedName="Copia de Impulso bloqueo"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Impulso bloqueo]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Impulso bloqueo]" />
+                              cachedName="Copia de Impulsos bloqueo"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Impulsos bloqueo]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Impulsos bloqueo]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Nº incidencia ticket]"
                               cachedDataType="wstr"
@@ -2744,16 +2788,16 @@
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha fin bloqueo]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha fin bloqueo]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Fecha incio bloqueo]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Fecha inicio bloqeuo]"
                               cachedDataType="wstr"
                               cachedLength="400"
-                              cachedName="Copia de Fecha incio bloqueo"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha incio bloqueo]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha incio bloqueo]" />
+                              cachedName="Copia de Fecha inicio bloqeuo"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha inicio bloqeuo]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha inicio bloqeuo]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Descripción bloqueo]"
                               cachedDataType="wstr"
-                              cachedLength="400"
+                              cachedLength="4000"
                               cachedName="Copia de Descripción bloqueo"
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Descripción bloqueo]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Descripción bloqueo]" />
@@ -2934,10 +2978,10 @@
                               length="400"
                               name="Descripción bloqueo" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha incio bloqueo]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha inicio bloqeuo]"
                               dataType="wstr"
                               length="400"
-                              name="Fecha incio bloqueo" />
+                              name="Fecha inicio bloqeuo" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha fin bloqueo]"
                               dataType="wstr"
@@ -2949,10 +2993,10 @@
                               length="400"
                               name="Nº incidencia ticket" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Impulso bloqueo]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Impulsos bloqueo]"
                               dataType="wstr"
                               length="400"
-                              name="Impulso bloqueo" />
+                              name="Impulsos bloqueo" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha impulso bloqueo]"
                               dataType="wstr"
@@ -2978,6 +3022,11 @@
                               dataType="wstr"
                               length="400"
                               name="Dirigido a SVH  ZIMA" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Judicializado]"
+                              dataType="wstr"
+                              length="400"
+                              name="Judicializado" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha envío burofax]"
                               dataType="wstr"
@@ -3088,8 +3137,8 @@
                       <connections>
                         <connection
                           refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Connections[FlatFileConnection]"
-                          connectionManagerID="Package.ConnectionManagers[p06_puppy]"
-                          connectionManagerRefId="Package.ConnectionManagers[p06_puppy]"
+                          connectionManagerID="Package.ConnectionManagers[p06]"
+                          connectionManagerRefId="Package.ConnectionManagers[p06]"
                           name="FlatFileConnection" />
                       </connections>
                       <outputs>
@@ -3412,7 +3461,7 @@
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Descripción bloqueo]"
-                              length="400"
+                              length="4000"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Descripción bloqueo]"
                               name="Descripción bloqueo"
                               truncationRowDisposition="FailComponent">
@@ -3428,15 +3477,15 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha incio bloqueo]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha inicio bloqeuo]"
                               codePage="65001"
                               dataType="str"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha incio bloqueo]"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha inicio bloqeuo]"
                               length="400"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha incio bloqueo]"
-                              name="Fecha incio bloqueo"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha inicio bloqeuo]"
+                              name="Fecha inicio bloqeuo"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
@@ -3494,15 +3543,15 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Impulso bloqueo]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Impulsos bloqueo]"
                               codePage="65001"
                               dataType="str"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Impulso bloqueo]"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Impulsos bloqueo]"
                               length="400"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Impulso bloqueo]"
-                              name="Impulso bloqueo"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Impulsos bloqueo]"
+                              name="Impulsos bloqueo"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
@@ -3613,6 +3662,28 @@
                               length="400"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Dirigido a SVH  ZIMA]"
                               name="Dirigido a SVH  ZIMA"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                                  name="FastParse">false</property>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indica si los datos están en formato binario."
+                                  name="UseBinaryFormat">false</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Judicializado]"
+                              codePage="65001"
+                              dataType="str"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Judicializado]"
+                              length="400"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Judicializado]"
+                              name="Judicializado"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
@@ -3958,14 +4029,14 @@
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Descripción bloqueo]"
                               codePage="65001"
                               dataType="str"
-                              length="400"
+                              length="4000"
                               name="Descripción bloqueo" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha incio bloqueo]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha inicio bloqeuo]"
                               codePage="65001"
                               dataType="str"
                               length="400"
-                              name="Fecha incio bloqueo" />
+                              name="Fecha inicio bloqeuo" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha fin bloqueo]"
                               codePage="65001"
@@ -3979,11 +4050,11 @@
                               length="400"
                               name="Nº incidencia ticket" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Impulso bloqueo]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Impulsos bloqueo]"
                               codePage="65001"
                               dataType="str"
                               length="400"
-                              name="Impulso bloqueo" />
+                              name="Impulsos bloqueo" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha impulso bloqueo]"
                               codePage="65001"
@@ -4014,6 +4085,12 @@
                               dataType="str"
                               length="400"
                               name="Dirigido a SVH  ZIMA" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Judicializado]"
+                              codePage="65001"
+                              dataType="str"
+                              length="400"
+                              name="Judicializado" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha envío burofax]"
                               codePage="65001"
@@ -5003,41 +5080,41 @@
         <NodeLayout
           Size="196,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"
-          TopLeft="258,106" />
+          TopLeft="248,152" />
         <NodeLayout
           Size="175,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
-          TopLeft="310,468" />
+          TopLeft="290,415" />
         <NodeLayout
           Size="180,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
-          TopLeft="306,196" />
+          TopLeft="235,231" />
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de archivo plano]"
-          TopLeft="356,148">
+          TopLeft="346,194">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="40,48"
+              EndConnector="-21,37"
               Start="0,0"
-              End="40,40.5">
+              End="-21,29.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20" />
+                    End="0,14.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20"
-                    Point2="0,24"
-                    Point3="4,24" />
+                    Point1="0,14.5"
+                    Point2="0,18.5"
+                    Point3="-4,18.5" />
                   <mssgle:LineSegment
-                    End="36,24" />
+                    End="-17,18.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="36,24"
-                    Point2="40,24"
-                    Point3="40,28" />
+                    Point1="-17,18.5"
+                    Point2="-21,18.5"
+                    Point3="-21,22.5" />
                   <mssgle:LineSegment
-                    End="40,40.5" />
+                    End="-21,29.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5048,30 +5125,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de conversión de datos]"
-          TopLeft="396,238">
+          TopLeft="325,273">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-50.999999602636,77.400000599225"
+              EndConnector="20.000000397364,42.400000599225"
               Start="0,0"
-              End="-50.999999602636,69.900000599225">
+              End="20.000000397364,34.900000599225">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,34.7000002996125" />
+                    End="0,17.2000002996125" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,34.7000002996125"
-                    Point2="0,38.7000002996125"
-                    Point3="-4,38.7000002996125" />
+                    Point1="0,17.2000002996125"
+                    Point2="0,21.2000002996125"
+                    Point3="4,21.2000002996125" />
                   <mssgle:LineSegment
-                    End="-46.999999602636,38.7000002996125" />
+                    End="16.000000397364,21.2000002996125" />
                   <mssgle:CubicBezierSegment
-                    Point1="-46.999999602636,38.7000002996125"
-                    Point2="-50.999999602636,38.7000002996125"
-                    Point3="-50.999999602636,42.7000002996125" />
+                    Point1="16.000000397364,21.2000002996125"
+                    Point2="20.000000397364,21.2000002996125"
+                    Point3="20.000000397364,25.2000002996125" />
                   <mssgle:LineSegment
-                    End="-50.999999602636,69.900000599225" />
+                    End="20.000000397364,34.900000599225" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5086,26 +5163,26 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="52.499999602636,110.599999400775"
+              EndConnector="32.499999602636,57.599999400775"
               Start="0,0"
-              End="52.499999602636,103.099999400775">
+              End="32.499999602636,50.099999400775">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,51.2999997003875" />
+                    End="0,24.7999997003875" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,51.2999997003875"
-                    Point2="0,55.2999997003875"
-                    Point3="4,55.2999997003875" />
+                    Point1="0,24.7999997003875"
+                    Point2="0,28.7999997003875"
+                    Point3="4,28.7999997003875" />
                   <mssgle:LineSegment
-                    End="48.499999602636,55.2999997003875" />
+                    End="28.499999602636,28.7999997003875" />
                   <mssgle:CubicBezierSegment
-                    Point1="48.499999602636,55.2999997003875"
-                    Point2="52.499999602636,55.2999997003875"
-                    Point3="52.499999602636,59.2999997003875" />
+                    Point1="28.499999602636,28.7999997003875"
+                    Point2="32.499999602636,28.7999997003875"
+                    Point3="32.499999602636,32.7999997003875" />
                   <mssgle:LineSegment
-                    End="52.499999602636,103.099999400775" />
+                    End="32.499999602636,50.099999400775" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
