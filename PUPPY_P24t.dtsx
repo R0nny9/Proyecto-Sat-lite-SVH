@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="PUPPY_P24t"
   DTS:PackageType="5"
-  DTS:VersionBuild="358"
-  DTS:VersionGUID="{E3C1971E-A8BF-4392-B3D9-3C739C918F58}">
+  DTS:VersionBuild="359"
+  DTS:VersionGUID="{B754CD3E-5D69-4FA0-B5D7-A52BB85E4B8B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -31,7 +31,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACQk5/e/c/SdX9cp51gYqWZnlED72F2Xj9u1laQR4BdngAAAAAOgAAAAAIAACAAAAC5POHzpgy/1bWWuOVoBvbdDM6KWP0JBukJVeckziMnXCAAAAAFOP64noC23it+DMB/cZy1HbyR5Lv4gURuQTijJ/Ap10AAAACsS46NR9QnztTJVOD9AzfLFLrG0YLN24v9BB3RgtrMIHal0m1sb5LCtyHsbMFgb/d5Kx5F2CtLdBSub+TGGj5p</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABYW36gbyoA5HYyBuGWj2ObJFzcU1rRWkmWkqm7NlMBlwAAAAAOgAAAAAIAACAAAACEUXGrPBiyCYqX7hak7WOry54Ppnu5ars6wdMwgdSCDiAAAAC21EisBEbSgMhSWDAG9+ve2uh2rUmBqcnyrUK6FBQbb0AAAABW+VnWUMnXil32tmM4CrXM8wFpnQoYzTyWZj9zpk5/1o//fzT6meO7kXgmyMpFv3Q2un0Vc5QhC+vEPLLb/1sD</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -50,7 +50,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABn/Vs5v6rZtG2DKNVRa1WOva9MexlQEswY8tRmD/ZVfgAAAAAOgAAAAAIAACAAAACHb7NH7zH5Xi2Nalr1RVJqH4UXAOtdsZYAaTqd12WUzSAAAACFabOLvCKAx6IwunbEUOAkZ7P+WUoBrnk7x6x/+WSz4UAAAAB2A8i85DwB5q5q+XFGRXGquDlp0v1SX5Cp+TF/3Tma5FJjvUm98bM9X8lAmXBmaP15clDRX3SE1u2a/FbKMvZt</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAnNXBETZTBfHa+Saa6hyVF/xG2dvueBy8LmvF0rzxj1wAAAAAOgAAAAAIAACAAAADr96eOUIYfoEml3i7wLNDXjhpELvmO0kKZOta56V4a4CAAAAA5gM2wkSyfTKnBPCRezqZ2sdVIsT9pjj/eWbO2cpJHLEAAAADZ6PYL/7RXDStprmlODQmJoFsYWYVtUryPHnTmOLvWnh+5r2MhGyaI76kAhYFOgq8jcuVPJtTC9ZPMQ+VCDZ7U</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -2099,7 +2099,7 @@
                         <property
                           dataType="System.Boolean"
                           description="Especifica si las columnas de longitud cero se tratan como NULL."
-                          name="RetainNulls">false</property>
+                          name="RetainNulls">true</property>
                         <property
                           dataType="System.String"
                           description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
@@ -3457,13 +3457,13 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="168,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
-          TopLeft="261.000000397364,315.400000599225" />
-        <NodeLayout
           Size="180,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
           TopLeft="373,169" />
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
+          TopLeft="261.000000397364,315.400000599225" />
         <NodeLayout
           Size="196,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"
@@ -3472,6 +3472,40 @@
           Size="175,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
           TopLeft="397,394" />
+        <EdgeLayout
+          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de columna derivada]"
+          TopLeft="345.000000397364,357.400000599225">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="139.499999602636,36.599999400775"
+              Start="0,0"
+              End="139.499999602636,29.099999400775">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.2999997003875" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.2999997003875"
+                    Point2="0,18.2999997003875"
+                    Point3="4,18.2999997003875" />
+                  <mssgle:LineSegment
+                    End="135.499999602636,18.2999997003875" />
+                  <mssgle:CubicBezierSegment
+                    Point1="135.499999602636,18.2999997003875"
+                    Point2="139.499999602636,18.2999997003875"
+                    Point3="139.499999602636,22.2999997003875" />
+                  <mssgle:LineSegment
+                    End="139.499999602636,29.099999400775" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de archivo plano]"
           TopLeft="527,88">
@@ -3532,40 +3566,6 @@
                     Point3="-117.999999602636,56.2000002996125" />
                   <mssgle:LineSegment
                     End="-117.999999602636,96.900000599225" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de columna derivada]"
-          TopLeft="345.000000397364,357.400000599225">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="139.499999602636,36.599999400775"
-              Start="0,0"
-              End="139.499999602636,29.099999400775">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,14.2999997003875" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,14.2999997003875"
-                    Point2="0,18.2999997003875"
-                    Point3="4,18.2999997003875" />
-                  <mssgle:LineSegment
-                    End="135.499999602636,18.2999997003875" />
-                  <mssgle:CubicBezierSegment
-                    Point1="135.499999602636,18.2999997003875"
-                    Point2="139.499999602636,18.2999997003875"
-                    Point3="139.499999602636,22.2999997003875" />
-                  <mssgle:LineSegment
-                    End="139.499999602636,29.099999400775" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
