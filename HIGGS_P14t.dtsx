@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="HIGGS_P14t"
   DTS:PackageType="5"
-  DTS:VersionBuild="353"
-  DTS:VersionGUID="{06CC00B0-C36B-4D8C-87E5-2A8153B87E6E}">
+  DTS:VersionBuild="358"
+  DTS:VersionGUID="{1BE627A1-D124-42F6-88E6-C046C75FF618}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,11 +27,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC6+HBKT/u44VXiFpwtJh6GE6Timi5qzIpS6DrU2yGFAwAAAAAOgAAAAAIAACAAAAD9NAUX1Wdr/JubDdy8ItB+yU8qlRRB7O971WwSpvb+7iAAAABuQG765yZcws1KDINU/SreylrodiU8kUuZGT+j1b6ePEAAAADeYjmc/wXU+xS4YscfcRZV/0ogfpqmXpT1sAkam64NM+5jm4AlUalskdg0SKm+/JjklaQcuL8Jm9dmCeOmWm7i</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD68krfBHBJe1iiUaMjshPck44Ocp4G8imzNPYnXAN71AAAAAAOgAAAAAIAACAAAAAZ14I1irx/JTHjZbBtNAsp0euUg/MBxh0yCTZVNyPGLyAAAADkuVpqqGIgk5ofSahC2RMcitpe59U2tWeSYPuXpjfG20AAAAAIIAybGjalXl7v8VHHl6QX1gfJ/5146n3C19Zn3s5ghW7AJgVpz5BUWGRl2aAbBksDhlS3/X306B12zJvNZQla</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,19 +46,19 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACtp9Pt1zbqVEsEEYbkWNgY2VtL0y5kDCjxJ3HPeBj5UAAAAAAOgAAAAAIAACAAAADHnIboxBOqDVJvDjf6w0x2WQ1djxCLbfSUPFldWDBfxyAAAABe6ro10sYlZYs2OK3nYs3+unPLipThqjGzVMhQOQQI9EAAAABSRqGfiQKUeYE0bZDJjGVpxqgumBomzQ3XdEO1AT0AmxWOYTInGsbayWA2WeeBH8dwUk6vhhvxgVt/SgoKAyNs</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADGTbGjIJ6cJ4EPwkSnWHgggb9df0BMiCWSkhjlP3izawAAAAAOgAAAAAIAACAAAAD5Vl/FEVwIqQEbp+TIdkyC2b0QrTgEVmn++/JCNZq2JiAAAAASlRCM4u/y4Yfy6g0QmHYmXrNF6Bys4rS2Fz1IfqOk1kAAAADUZhSkTbQUQKTvtUd+MwV6oz3FsibM3vkRNo8SJzXNVlAAHshuRkrtouozyPOXig2X+pirIZvpfBWcS/lhnoV/</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[p14t_puppy]"
+      DTS:refId="Package.ConnectionManagers[p14t]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{F6B0B925-4445-4AB2-A3BC-34943FF0073C}"
-      DTS:ObjectName="p14t_puppy">
+      DTS:DTSID="{A0F56136-4292-431A-92CB-F90DF947F59E}"
+      DTS:ObjectName="p14t">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::FilePath]</DTS:PropertyExpression>
       <DTS:ObjectData>
@@ -74,552 +74,552 @@
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ID Petición"
-              DTS:DTSID="{0428F9EE-975F-433D-A26B-4F091D127EB6}"
+              DTS:DTSID="{F394251B-D485-4CC2-B80C-26346D0A157A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ID Factura"
-              DTS:DTSID="{E22A8C6A-4934-46D6-B43E-883DC1F905FF}"
+              DTS:DTSID="{D01B3D96-C5CE-4D65-A3D9-D17A754185D5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ID Subpetición"
-              DTS:DTSID="{E7E5BAD6-8676-48BC-B70F-939E697E11A3}"
+              DTS:DTSID="{AC6CF51B-1052-4126-AD0B-2EE75E0DDE53}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Contrato"
-              DTS:DTSID="{037C694E-BD37-48C1-8DD9-8224BE6BDCA5}"
+              DTS:DTSID="{A73E8B05-F19C-46C3-B4EA-B56AD4D84C51}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Acreditado"
-              DTS:DTSID="{276D880C-820B-4F05-AD19-B2D1636E8E34}"
+              DTS:DTSID="{46D1EA8E-393D-4833-B89C-7C86F0BCEA73}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ID Acreditado"
-              DTS:DTSID="{E79D6CDB-7978-4352-A0A0-2E4E74D43527}"
+              DTS:DTSID="{020BBAC8-9623-4962-9BDF-2903D1B24AF9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Solicitante"
-              DTS:DTSID="{9695FFAA-9FE4-4DF4-8C14-EED454FC49CD}"
+              DTS:DTSID="{2C43B139-3557-4AAB-83E7-8FBE5D2D6B9F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Cliente del encargo"
-              DTS:DTSID="{339CCC0D-3AEF-48A8-9234-28F1A576A16B}"
+              DTS:DTSID="{DBF0663B-E353-426E-BECA-2620CE4CD522}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Operador asignado"
-              DTS:DTSID="{5597C6ED-09D6-42FE-86A3-920B145F13D4}"
+              DTS:DTSID="{E31C20C3-4B7C-4AD9-BF56-ABB05AF33A93}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Tipo petición (agrupado)"
-              DTS:DTSID="{A4178CA8-8351-4310-BFCB-7A273318DBA9}"
+              DTS:DTSID="{66AD6B25-ABF4-4DFB-8743-F76278EA4739}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Tipo petición"
-              DTS:DTSID="{1C00889C-2596-4B05-819F-4514BA1B5DFD}"
+              DTS:DTSID="{8D386165-DD4B-471B-8EF1-C3ABCF1F497C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Estado"
-              DTS:DTSID="{BFB9DC54-C2E4-4180-A4E1-6DDB6BCC0CFA}"
+              DTS:DTSID="{63248529-9661-48BD-A0C1-1B6019E247B5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Subestado"
-              DTS:DTSID="{CFCF62B5-74A3-49C5-849B-0B7772E9E5E6}"
+              DTS:DTSID="{C0D06BB2-4417-4410-B34D-33EA99EF7F48}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha registro petición"
-              DTS:DTSID="{C182EB81-EEA5-4704-9800-DE3FC8C0B4B8}"
+              DTS:DTSID="{78F2C31E-2649-48AC-AFC2-E5C4FB73ADEF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha inicio petición"
-              DTS:DTSID="{E0839594-36EE-4D99-B7BA-3B747B726436}"
+              DTS:DTSID="{DA4DBE93-7F47-4D6D-BB0E-A797E18C5E31}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha Vencimiento"
-              DTS:DTSID="{C2B68F27-1B9D-42AA-AAA3-27E8E06C8820}"
+              DTS:DTSID="{F51AFA63-C0AE-41E2-97A5-451105F4C674}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha envío Admon Operaciones (fin petición)"
-              DTS:DTSID="{68402EAB-7B34-4C81-9324-DED15D7936F5}"
+              DTS:DTSID="{AD8D6FC3-3BBD-420B-8F57-9A6D95DA1BE7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha envío buzón de pagos -seguimiento-"
-              DTS:DTSID="{28D375D3-72F4-40EB-BCFC-40142FF124F2}"
+              DTS:DTSID="{3530E40F-0CB3-4B30-9CA0-607374CDDEE4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
-              DTS:MaximumWidth="400"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="4000"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="UR"
-              DTS:DTSID="{0864FD85-389B-42E4-AE08-CF9503C10586}"
+              DTS:ObjectName="UR's"
+              DTS:DTSID="{E7579F83-D54C-49F7-9E9F-0092173BE578}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Características"
-              DTS:DTSID="{650AF2ED-20BF-407F-88F6-D3FC7F4E6327}"
+              DTS:DTSID="{14C8F07D-8F44-497E-A82A-C6547F108C33}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Juzgado"
-              DTS:DTSID="{1E480D99-80FF-46D4-9D22-CC34714A4F12}"
+              DTS:DTSID="{EF304E0C-1E60-4CF6-8389-32DF00CC43C5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Auto"
-              DTS:DTSID="{A0603E96-4447-40AF-BB9B-DBC57484A795}"
+              DTS:DTSID="{E71A0784-0188-47F5-A3D8-59C644A41F75}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="RP"
-              DTS:DTSID="{B1C7BF65-F00F-4E3C-A5CF-95EFA5212DB5}"
+              DTS:DTSID="{EF1F47C7-2314-4F31-9C0A-199AF361E9F8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Requiere envío comprobante pago (S N)"
-              DTS:DTSID="{2030DF6C-C9A5-4A7C-8D89-31292A148C9A}"
+              DTS:DTSID="{3C858E63-7804-46A7-BCC1-073FA12CC40D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Proveedor"
-              DTS:DTSID="{E1253A44-5329-4495-8FBA-E0927BA37DF4}"
+              DTS:DTSID="{391D3AB8-7B40-46F1-8BC7-04487CD69553}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Proveedor (NIF CIF) "
-              DTS:DTSID="{C8BFA766-1F73-4369-9585-3C10B0FF28E0}"
+              DTS:ObjectName="Proveedor (NIF CIF)"
+              DTS:DTSID="{10D7D86E-5835-4214-8F0C-A1304D349AB2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Nº proveedor SAP"
-              DTS:DTSID="{EB2E7AFF-AEC1-4161-B591-7F43334EBA54}"
+              DTS:DTSID="{7642CE6B-8874-4E11-96BF-BD6B4F0F3E5C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Nº Factura"
-              DTS:DTSID="{5C2039C5-C39F-4417-923C-BB97F1FB5E5B}"
+              DTS:DTSID="{5F1E02B8-EBD6-40DB-B7B2-A04D3581D97F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha emisión factura"
-              DTS:DTSID="{676ACB62-C3DB-4A66-9F88-123091137727}"
+              DTS:DTSID="{E3C011A7-BF0A-4648-8DF8-086A9F3CA136}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Base Imponible"
-              DTS:DTSID="{0DCBBBF4-B350-4E24-B728-3731D1C5E957}"
+              DTS:DTSID="{0E921A84-067B-4BFC-9363-8C90AC4DC6F5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="IVA"
-              DTS:DTSID="{2D865970-E554-4664-840F-B5575845E8B6}"
+              DTS:DTSID="{D9BB80E9-8333-4040-9902-E311D1CFA56C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="IGIC"
-              DTS:DTSID="{23CCE894-BDEC-4D5E-A868-932E465FF8EA}"
+              DTS:DTSID="{CAD58475-DA9F-41A2-B075-C2D6DC4B4DA1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Retención"
-              DTS:DTSID="{252F0B27-EC84-4FD8-8640-23D9E6EBF4EF}"
+              DTS:DTSID="{4DDAEA1C-C05C-4869-A07A-EC3602301E9F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Suplidos otros"
-              DTS:DTSID="{5BF789B1-F093-4182-9E9F-FFC52ACC4991}"
+              DTS:ObjectName="Suplidos otros conceptos"
+              DTS:DTSID="{2EC93262-F8EE-4650-8AB4-33C5E1D9285F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Otros suplidos"
-              DTS:DTSID="{5B2CA465-3459-4ED1-B968-E9B9A5C71009}"
+              DTS:ObjectName="Otros suplidos (fras adjuntas)"
+              DTS:DTSID="{0C3DD154-E045-4200-8615-31C29D804540}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName=" Provisión"
-              DTS:DTSID="{D17329D4-AF49-4B10-8C3A-E17F11B6477D}"
+              DTS:ObjectName="Provisión"
+              DTS:DTSID="{3A505754-326F-457B-9DB7-990C77CBE13C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Importe total"
-              DTS:DTSID="{9700E82C-FC15-49C0-872C-F1CF2C2DFF4E}"
+              DTS:DTSID="{8B39E018-64F8-4D7D-B1C9-06F44B00FE13}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PEP"
-              DTS:DTSID="{00F9B5F5-4485-47E7-9A20-79D63381EFFA}"
+              DTS:DTSID="{A969E0E2-904E-4AFE-9991-F1A7B996BAEB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ZBOL"
-              DTS:DTSID="{B6BD2CDD-0A40-44BE-A7A4-855952967AD3}"
+              DTS:DTSID="{E49994FB-24AC-46B7-8BEE-82E9DE7BA1F6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha revisión FRA"
-              DTS:DTSID="{B516DBDA-BD30-4BE7-A343-4D9CBF83EFBD}"
+              DTS:DTSID="{3A15FA72-5CA6-482E-95B3-65B7589AD96C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Auto factura"
-              DTS:DTSID="{D75CE309-D2D4-4168-93F0-F7EE28467767}"
+              DTS:DTSID="{1FAE5ED4-862A-45EA-A70F-1AD3D9D6B757}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Nº pedido"
-              DTS:DTSID="{6C8A3D7A-CA89-49BE-B66D-847812F14883}"
+              DTS:DTSID="{C8361F29-C62D-41FA-9A00-62895D706297}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Nº documento"
-              DTS:DTSID="{1B76535E-8302-4A4B-8CC5-7A10A35E3DC9}"
+              DTS:ObjectName="Nº Documento Aceptacion"
+              DTS:DTSID="{BC44C489-3100-49F9-827E-557EE21CCEEF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha pago SAP"
-              DTS:DTSID="{3C0E9010-00B3-4DD1-9D51-F40753314A05}"
+              DTS:DTSID="{04CFDD0F-837C-40B5-81AF-DB10D5FDBA2F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha envío comprobante"
-              DTS:DTSID="{47118916-975C-4A6D-AA11-28B202B2EB7D}"
+              DTS:DTSID="{4F682A73-0333-4CBC-BF69-F88D1FB2727F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
-              DTS:MaximumWidth="400"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Fecha refacturación"
-              DTS:DTSID="{A10B99F1-8BAD-47F1-BFEE-584725315E78}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Tipo bloqueo"
-              DTS:DTSID="{470FBFFD-264B-4A82-B354-5A7DB41D4BEB}"
+              DTS:DTSID="{DFA2233C-6559-4661-BD63-B39EF4E9857E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="4000"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Descripción bloqueo"
-              DTS:DTSID="{ED765E1A-E802-47F8-AFDB-B46141AB163D}"
+              DTS:DTSID="{EE4ECC58-B607-4EFE-A072-C825ECE2F316}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha inicio bloqueo"
-              DTS:DTSID="{ACCA8A36-880B-4183-89EF-1DC80DD8476F}"
+              DTS:DTSID="{516EC676-A52F-4203-A13B-E7D20CF3F030}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha fin bloqueo"
-              DTS:DTSID="{22941C86-D723-4923-B0DF-CD8659FC41BD}"
+              DTS:DTSID="{3CD72A8B-6332-4AE0-B8B5-502E86B7385A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
-              DTS:MaximumWidth="400"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="4000"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Baja petición motivo "
-              DTS:DTSID="{8A007E81-5AB3-47EA-B113-290BECF838E6}"
+              DTS:ObjectName="Motivo baja"
+              DTS:DTSID="{9B72597C-7288-4323-9AF7-CE0D29F57B0F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Excepción SLA"
-              DTS:DTSID="{E1FCEF9C-6633-4056-8E60-C6C3041F1FBB}"
+              DTS:DTSID="{1D6A1D87-5B6F-4C9E-8048-BBA79D6E68D7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha solicitud exención"
-              DTS:DTSID="{EF1DA07B-26A2-4799-A40D-5EFCA46E188E}"
+              DTS:DTSID="{E76DC366-096D-4ACD-AC25-056D692039B9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Usuario solicitante "
-              DTS:DTSID="{F4DA1098-182F-4060-A5B7-1EFFA2DBF3BB}"
+              DTS:ObjectName="Usuario solicitante"
+              DTS:DTSID="{8EF739F4-08E6-4896-9F3C-112537674F7B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="4000"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Motivo exención"
-              DTS:DTSID="{7D9ACC1A-7660-46E2-BF6A-9722F73F817C}"
+              DTS:DTSID="{231B6ABD-40AD-4F9E-86DE-D6896541FC6E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha respuesta exención"
-              DTS:DTSID="{7868020A-AD08-4D52-BF38-B901F13C7F55}"
+              DTS:DTSID="{E1CF726D-23FA-47B1-AF80-84C825646DAF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Usuario SVH "
-              DTS:DTSID="{410A8FFF-A0DF-4F9F-9743-013A668DBDF6}"
+              DTS:ObjectName="Usuario SVH  aprobador exención"
+              DTS:DTSID="{4F9E3DE9-4D60-4133-A026-F6F2F8A10E5E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Business Type"
-              DTS:DTSID="{35CEEB2A-3078-4ABE-B659-66F2D5AB113E}"
+              DTS:DTSID="{F78012C7-2D93-4339-8BED-DA509B335F5B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Origen"
-              DTS:DTSID="{2A33A818-A719-4873-BDC2-F4B2BE912D77}"
+              DTS:DTSID="{7B7DC054-A52C-4810-88D0-9EEF74EFEA58}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x0009_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="4000"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="OBSERVACIONES SC"
-              DTS:DTSID="{9DE965E0-B71F-4AF4-AC1A-7C1FFFF1FBC5}"
+              DTS:ObjectName="Comentarios SC"
+              DTS:DTSID="{0595131B-14FA-4B7C-8733-A39FA1AA8DA0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="400"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Otros SC"
+              DTS:DTSID="{065E4E00-61FD-46CE-9896-E16D86DA6482}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="4000"
+              DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="otros"
-              DTS:DTSID="{EAD5BF1B-F946-471D-83DD-3EEF69C54984}"
+              DTS:ObjectName="Unnamed  60"
+              DTS:DTSID="{3BD80150-4BE5-45AE-B602-2ECA4D53DF92}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -1874,12 +1874,12 @@
                               cachedName="Fecha envío buzón de pagos -seguimiento-"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha envío buzón de pagos -seguimiento-]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[UR]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[UR's]"
                               cachedCodepage="65001"
                               cachedDataType="str"
-                              cachedLength="400"
-                              cachedName="UR"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[UR]" />
+                              cachedLength="4000"
+                              cachedName="UR's"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[UR's]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Características]"
                               cachedCodepage="65001"
@@ -1923,12 +1923,12 @@
                               cachedName="Proveedor"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Proveedor]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Proveedor (NIF CIF) ]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Proveedor (NIF CIF)]"
                               cachedCodepage="65001"
                               cachedDataType="str"
                               cachedLength="400"
-                              cachedName="Proveedor (NIF CIF) "
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Proveedor (NIF CIF) ]" />
+                              cachedName="Proveedor (NIF CIF)"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Proveedor (NIF CIF)]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Nº proveedor SAP]"
                               cachedCodepage="65001"
@@ -1979,26 +1979,26 @@
                               cachedName="Retención"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Retención]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Suplidos otros]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Suplidos otros conceptos]"
                               cachedCodepage="65001"
                               cachedDataType="str"
                               cachedLength="400"
-                              cachedName="Suplidos otros"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Suplidos otros]" />
+                              cachedName="Suplidos otros conceptos"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Suplidos otros conceptos]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Otros suplidos]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Otros suplidos (fras adjuntas)]"
                               cachedCodepage="65001"
                               cachedDataType="str"
                               cachedLength="400"
-                              cachedName="Otros suplidos"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Otros suplidos]" />
+                              cachedName="Otros suplidos (fras adjuntas)"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Otros suplidos (fras adjuntas)]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[ Provisión]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Provisión]"
                               cachedCodepage="65001"
                               cachedDataType="str"
                               cachedLength="400"
-                              cachedName=" Provisión"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ Provisión]" />
+                              cachedName="Provisión"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Provisión]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Importe total]"
                               cachedCodepage="65001"
@@ -2042,12 +2042,12 @@
                               cachedName="Nº pedido"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Nº pedido]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Nº documento]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Nº Documento Aceptacion]"
                               cachedCodepage="65001"
                               cachedDataType="str"
                               cachedLength="400"
-                              cachedName="Nº documento"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Nº documento]" />
+                              cachedName="Nº Documento Aceptacion"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Nº Documento Aceptacion]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Fecha pago SAP]"
                               cachedCodepage="65001"
@@ -2062,13 +2062,6 @@
                               cachedLength="400"
                               cachedName="Fecha envío comprobante"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha envío comprobante]" />
-                            <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Fecha refacturación]"
-                              cachedCodepage="65001"
-                              cachedDataType="str"
-                              cachedLength="400"
-                              cachedName="Fecha refacturación"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha refacturación]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Tipo bloqueo]"
                               cachedCodepage="65001"
@@ -2098,12 +2091,12 @@
                               cachedName="Fecha fin bloqueo"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha fin bloqueo]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Baja petición motivo ]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Motivo baja]"
                               cachedCodepage="65001"
                               cachedDataType="str"
-                              cachedLength="400"
-                              cachedName="Baja petición motivo "
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Baja petición motivo ]" />
+                              cachedLength="4000"
+                              cachedName="Motivo baja"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Motivo baja]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Excepción SLA]"
                               cachedCodepage="65001"
@@ -2119,12 +2112,12 @@
                               cachedName="Fecha solicitud exención"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha solicitud exención]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Usuario solicitante ]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Usuario solicitante]"
                               cachedCodepage="65001"
                               cachedDataType="str"
                               cachedLength="400"
-                              cachedName="Usuario solicitante "
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Usuario solicitante ]" />
+                              cachedName="Usuario solicitante"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Usuario solicitante]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Motivo exención]"
                               cachedCodepage="65001"
@@ -2140,12 +2133,12 @@
                               cachedName="Fecha respuesta exención"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha respuesta exención]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Usuario SVH ]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Usuario SVH  aprobador exención]"
                               cachedCodepage="65001"
                               cachedDataType="str"
                               cachedLength="400"
-                              cachedName="Usuario SVH "
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Usuario SVH ]" />
+                              cachedName="Usuario SVH  aprobador exención"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Usuario SVH  aprobador exención]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Business Type]"
                               cachedCodepage="65001"
@@ -2161,19 +2154,26 @@
                               cachedName="Origen"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Origen]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[OBSERVACIONES SC]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Comentarios SC]"
                               cachedCodepage="65001"
                               cachedDataType="str"
                               cachedLength="4000"
-                              cachedName="OBSERVACIONES SC"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OBSERVACIONES SC]" />
+                              cachedName="Comentarios SC"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Comentarios SC]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[otros]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Otros SC]"
                               cachedCodepage="65001"
                               cachedDataType="str"
-                              cachedLength="4000"
-                              cachedName="otros"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[otros]" />
+                              cachedLength="400"
+                              cachedName="Otros SC"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Otros SC]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Unnamed  60]"
+                              cachedCodepage="65001"
+                              cachedDataType="str"
+                              cachedLength="400"
+                              cachedName="Unnamed  60"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Unnamed  60]" />
                           </inputColumns>
                           <externalMetadataColumns />
                         </input>
@@ -2564,20 +2564,20 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de UR]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de UR's]"
                               dataType="wstr"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
-                              length="400"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de UR]"
-                              name="Copia de UR"
+                              length="4000"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de UR's]"
+                              name="Copia de UR's"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
                                   containsID="true"
                                   dataType="System.Int32"
                                   description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[UR]}</property>
+                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[UR's]}</property>
                                 <property
                                   dataType="System.Boolean"
                                   description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -2724,7 +2724,7 @@
                                   containsID="true"
                                   dataType="System.Int32"
                                   description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Proveedor (NIF CIF) ]}</property>
+                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Proveedor (NIF CIF)]}</property>
                                 <property
                                   dataType="System.Boolean"
                                   description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -2879,20 +2879,20 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Suplidos otros]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Suplidos otros conceptos]"
                               dataType="wstr"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
                               length="400"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Suplidos otros]"
-                              name="Copia de Suplidos otros"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Suplidos otros conceptos]"
+                              name="Copia de Suplidos otros conceptos"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
                                   containsID="true"
                                   dataType="System.Int32"
                                   description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Suplidos otros]}</property>
+                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Suplidos otros conceptos]}</property>
                                 <property
                                   dataType="System.Boolean"
                                   description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -2900,20 +2900,20 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Otros suplidos]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Otros suplidos (fras adjuntas)]"
                               dataType="wstr"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
                               length="400"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Otros suplidos]"
-                              name="Copia de Otros suplidos"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Otros suplidos (fras adjuntas)]"
+                              name="Copia de Otros suplidos (fras adjuntas)"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
                                   containsID="true"
                                   dataType="System.Int32"
                                   description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Otros suplidos]}</property>
+                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Otros suplidos (fras adjuntas)]}</property>
                                 <property
                                   dataType="System.Boolean"
                                   description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -2921,20 +2921,20 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de  Provisión]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Provisión]"
                               dataType="wstr"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
                               length="400"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de  Provisión]"
-                              name="Copia de  Provisión"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Provisión]"
+                              name="Copia de Provisión"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
                                   containsID="true"
                                   dataType="System.Int32"
                                   description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ Provisión]}</property>
+                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Provisión]}</property>
                                 <property
                                   dataType="System.Boolean"
                                   description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -3068,20 +3068,20 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Nº documento]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Nº Documento Aceptacion]"
                               dataType="wstr"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
                               length="400"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Nº documento]"
-                              name="Copia de Nº documento"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Nº Documento Aceptacion]"
+                              name="Copia de Nº Documento Aceptacion"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
                                   containsID="true"
                                   dataType="System.Int32"
                                   description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Nº documento]}</property>
+                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Nº Documento Aceptacion]}</property>
                                 <property
                                   dataType="System.Boolean"
                                   description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -3124,27 +3124,6 @@
                                   dataType="System.Int32"
                                   description="Especifica la columna de entrada usada como origen de datos para la conversión."
                                   name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha envío comprobante]}</property>
-                                <property
-                                  dataType="System.Boolean"
-                                  description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
-                                  name="FastParse">false</property>
-                              </properties>
-                            </outputColumn>
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha refacturación]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              length="400"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha refacturación]"
-                              name="Copia de Fecha refacturación"
-                              truncationRowDisposition="FailComponent">
-                              <properties>
-                                <property
-                                  containsID="true"
-                                  dataType="System.Int32"
-                                  description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha refacturación]}</property>
                                 <property
                                   dataType="System.Boolean"
                                   description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -3236,20 +3215,20 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Baja petición motivo]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Motivo baja]"
                               dataType="wstr"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
-                              length="400"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Baja petición motivo]"
-                              name="Copia de Baja petición motivo"
+                              length="4000"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Motivo baja]"
+                              name="Copia de Motivo baja"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
                                   containsID="true"
                                   dataType="System.Int32"
                                   description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Baja petición motivo ]}</property>
+                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Motivo baja]}</property>
                                 <property
                                   dataType="System.Boolean"
                                   description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -3312,7 +3291,7 @@
                                   containsID="true"
                                   dataType="System.Int32"
                                   description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Usuario solicitante ]}</property>
+                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Usuario solicitante]}</property>
                                 <property
                                   dataType="System.Boolean"
                                   description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -3362,20 +3341,20 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Usuario SVH]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Usuario SVH  aprobador exención]"
                               dataType="wstr"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
                               length="400"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Usuario SVH]"
-                              name="Copia de Usuario SVH"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Usuario SVH  aprobador exención]"
+                              name="Copia de Usuario SVH  aprobador exención"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
                                   containsID="true"
                                   dataType="System.Int32"
                                   description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Usuario SVH ]}</property>
+                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Usuario SVH  aprobador exención]}</property>
                                 <property
                                   dataType="System.Boolean"
                                   description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -3425,20 +3404,20 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de OBSERVACIONES SC]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Comentarios SC]"
                               dataType="wstr"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
                               length="4000"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de OBSERVACIONES SC]"
-                              name="Copia de OBSERVACIONES SC"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Comentarios SC]"
+                              name="Copia de Comentarios SC"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
                                   containsID="true"
                                   dataType="System.Int32"
                                   description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OBSERVACIONES SC]}</property>
+                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Comentarios SC]}</property>
                                 <property
                                   dataType="System.Boolean"
                                   description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -3446,20 +3425,41 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de otros]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Otros SC]"
                               dataType="wstr"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
-                              length="4000"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de otros]"
-                              name="Copia de otros"
+                              length="400"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Otros SC]"
+                              name="Copia de Otros SC"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
                                   containsID="true"
                                   dataType="System.Int32"
                                   description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[otros]}</property>
+                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Otros SC]}</property>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                                  name="FastParse">false</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Unnamed  60]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              length="400"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Unnamed  60]"
+                              name="Copia de Unnamed  60"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Unnamed  60]}</property>
                                 <property
                                   dataType="System.Boolean"
                                   description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -3509,7 +3509,7 @@
                         <property
                           dataType="System.String"
                           description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
-                          name="OpenRowset">[PUPPY].[P14t_Peticiones]</property>
+                          name="OpenRowset">[HIGGS].[P14t_Peticiones]</property>
                         <property
                           dataType="System.String"
                           description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
@@ -3573,19 +3573,26 @@
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_DATOS]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1.Outputs[Salida de columna derivada].Columns[F_DATOS]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de otros]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Unnamed  60]"
                               cachedDataType="wstr"
-                              cachedLength="4000"
-                              cachedName="Copia de otros"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[otros]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de otros]" />
+                              cachedLength="400"
+                              cachedName="Copia de Unnamed  60"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Unnamed  60]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Unnamed  60]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de OBSERVACIONES SC]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Otros SC]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Otros SC"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Otros SC]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Otros SC]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Comentarios SC]"
                               cachedDataType="wstr"
                               cachedLength="4000"
-                              cachedName="Copia de OBSERVACIONES SC"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[OBSERVACIONES SC]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de OBSERVACIONES SC]" />
+                              cachedName="Copia de Comentarios SC"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Comentarios SC]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Comentarios SC]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Origen]"
                               cachedDataType="wstr"
@@ -3601,12 +3608,12 @@
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Business Type]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Business Type]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Usuario SVH]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Usuario SVH  aprobador exención]"
                               cachedDataType="wstr"
                               cachedLength="400"
-                              cachedName="Copia de Usuario SVH"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Usuario SVH]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Usuario SVH]" />
+                              cachedName="Copia de Usuario SVH  aprobador exención"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Usuario SVH  aprobador exención]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Usuario SVH  aprobador exención]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Fecha respuesta exención]"
                               cachedDataType="wstr"
@@ -3643,12 +3650,12 @@
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Excepción SLA]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Excepción SLA]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Baja petición motivo]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Motivo baja]"
                               cachedDataType="wstr"
-                              cachedLength="400"
-                              cachedName="Copia de Baja petición motivo"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Baja petición motivo]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Baja petición motivo]" />
+                              cachedLength="4000"
+                              cachedName="Copia de Motivo baja"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Motivo baja]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Motivo baja]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Fecha fin bloqueo]"
                               cachedDataType="wstr"
@@ -3678,13 +3685,6 @@
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Tipo bloqueo]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Tipo bloqueo]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Fecha refacturación]"
-                              cachedDataType="wstr"
-                              cachedLength="400"
-                              cachedName="Copia de Fecha refacturación"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha refacturación]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha refacturación]" />
-                            <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Fecha envío comprobante]"
                               cachedDataType="wstr"
                               cachedLength="400"
@@ -3699,12 +3699,12 @@
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha pago SAP]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha pago SAP]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Nº documento]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Nº Documento Aceptacion]"
                               cachedDataType="wstr"
                               cachedLength="400"
-                              cachedName="Copia de Nº documento"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nº documento]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Nº documento]" />
+                              cachedName="Copia de Nº Documento Aceptacion"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nº Documento Aceptacion]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Nº Documento Aceptacion]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Nº pedido]"
                               cachedDataType="wstr"
@@ -3748,26 +3748,26 @@
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Importe total]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Importe total]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de  Provisión]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Provisión]"
                               cachedDataType="wstr"
                               cachedLength="400"
-                              cachedName="Copia de  Provisión"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ Provisión]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de  Provisión]" />
+                              cachedName="Copia de Provisión"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Provisión]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Provisión]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Otros suplidos]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Otros suplidos (fras adjuntas)]"
                               cachedDataType="wstr"
                               cachedLength="400"
-                              cachedName="Copia de Otros suplidos"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Otros suplidos]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Otros suplidos]" />
+                              cachedName="Copia de Otros suplidos (fras adjuntas)"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Otros suplidos (fras adjuntas)]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Otros suplidos (fras adjuntas)]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Suplidos otros]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Suplidos otros conceptos]"
                               cachedDataType="wstr"
                               cachedLength="400"
-                              cachedName="Copia de Suplidos otros"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Suplidos otros]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Suplidos otros]" />
+                              cachedName="Copia de Suplidos otros conceptos"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Suplidos otros conceptos]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Suplidos otros conceptos]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Retención]"
                               cachedDataType="wstr"
@@ -3867,12 +3867,12 @@
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Características]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Características]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de UR]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de UR's]"
                               cachedDataType="wstr"
-                              cachedLength="400"
-                              cachedName="Copia de UR"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[UR]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de UR]" />
+                              cachedLength="4000"
+                              cachedName="Copia de UR's"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[UR's]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de UR's]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Fecha envío buzón de pagos -seguimiento-]"
                               cachedDataType="wstr"
@@ -4093,10 +4093,10 @@
                               length="400"
                               name="Fecha envío buzón de pagos -seguimiento-" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[UR]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[UR's]"
                               dataType="wstr"
                               length="400"
-                              name="UR" />
+                              name="UR's" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Características]"
                               dataType="wstr"
@@ -4168,20 +4168,20 @@
                               length="400"
                               name="Retención" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Suplidos otros]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Suplidos otros conceptos]"
                               dataType="wstr"
                               length="400"
-                              name="Suplidos otros" />
+                              name="Suplidos otros conceptos" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Otros suplidos]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Otros suplidos (fras adjuntas)]"
                               dataType="wstr"
                               length="400"
-                              name="Otros suplidos" />
+                              name="Otros suplidos (fras adjuntas)" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ Provisión]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Provisión]"
                               dataType="wstr"
                               length="400"
-                              name=" Provisión" />
+                              name="Provisión" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Importe total]"
                               dataType="wstr"
@@ -4213,10 +4213,10 @@
                               length="400"
                               name="Nº pedido" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nº documento]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nº Documento Aceptacion]"
                               dataType="wstr"
                               length="400"
-                              name="Nº documento" />
+                              name="Nº Documento Aceptacion" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha pago SAP]"
                               dataType="wstr"
@@ -4228,11 +4228,6 @@
                               length="400"
                               name="Fecha envío comprobante" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha refacturación]"
-                              dataType="wstr"
-                              length="400"
-                              name="Fecha refacturación" />
-                            <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Tipo bloqueo]"
                               dataType="wstr"
                               length="400"
@@ -4240,7 +4235,7 @@
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Descripción bloqueo]"
                               dataType="wstr"
-                              length="400"
+                              length="4000"
                               name="Descripción bloqueo" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha inicio bloqueo]"
@@ -4253,10 +4248,10 @@
                               length="400"
                               name="Fecha fin bloqueo" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Baja petición motivo]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Motivo baja]"
                               dataType="wstr"
-                              length="400"
-                              name="Baja petición motivo" />
+                              length="4000"
+                              name="Motivo baja" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Excepción SLA]"
                               dataType="wstr"
@@ -4283,10 +4278,10 @@
                               length="400"
                               name="Fecha respuesta exención" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Usuario SVH]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Usuario SVH  aprobador exención]"
                               dataType="wstr"
                               length="400"
-                              name="Usuario SVH" />
+                              name="Usuario SVH  aprobador exención" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Business Type]"
                               dataType="wstr"
@@ -4298,15 +4293,20 @@
                               length="400"
                               name="Origen" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[OBSERVACIONES SC]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Comentarios SC]"
                               dataType="wstr"
                               length="4000"
-                              name="OBSERVACIONES SC" />
+                              name="Comentarios SC" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[otros]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Otros SC]"
                               dataType="wstr"
-                              length="4000"
-                              name="otros" />
+                              length="400"
+                              name="Otros SC" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Unnamed  60]"
+                              dataType="wstr"
+                              length="400"
+                              name="Unnamed  60" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_DATOS]"
                               dataType="wstr"
@@ -4353,7 +4353,7 @@
                         <property
                           dataType="System.Boolean"
                           description="Especifica si las columnas de longitud cero se tratan como NULL."
-                          name="RetainNulls">true</property>
+                          name="RetainNulls">false</property>
                         <property
                           dataType="System.String"
                           description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
@@ -4362,8 +4362,8 @@
                       <connections>
                         <connection
                           refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Connections[FlatFileConnection]"
-                          connectionManagerID="Package.ConnectionManagers[p14t_puppy]"
-                          connectionManagerRefId="Package.ConnectionManagers[p14t_puppy]"
+                          connectionManagerID="Package.ConnectionManagers[p14t]"
+                          connectionManagerRefId="Package.ConnectionManagers[p14t]"
                           name="FlatFileConnection" />
                       </connections>
                       <outputs>
@@ -4768,15 +4768,15 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[UR]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[UR's]"
                               codePage="65001"
                               dataType="str"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[UR]"
-                              length="400"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[UR]"
-                              name="UR"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[UR's]"
+                              length="4000"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[UR's]"
+                              name="UR's"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
@@ -4922,15 +4922,15 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Proveedor (NIF CIF) ]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Proveedor (NIF CIF)]"
                               codePage="65001"
                               dataType="str"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Proveedor (NIF CIF) ]"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Proveedor (NIF CIF)]"
                               length="400"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Proveedor (NIF CIF) ]"
-                              name="Proveedor (NIF CIF) "
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Proveedor (NIF CIF)]"
+                              name="Proveedor (NIF CIF)"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
@@ -5098,15 +5098,15 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Suplidos otros]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Suplidos otros conceptos]"
                               codePage="65001"
                               dataType="str"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Suplidos otros]"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Suplidos otros conceptos]"
                               length="400"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Suplidos otros]"
-                              name="Suplidos otros"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Suplidos otros conceptos]"
+                              name="Suplidos otros conceptos"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
@@ -5120,15 +5120,15 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Otros suplidos]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Otros suplidos (fras adjuntas)]"
                               codePage="65001"
                               dataType="str"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Otros suplidos]"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Otros suplidos (fras adjuntas)]"
                               length="400"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Otros suplidos]"
-                              name="Otros suplidos"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Otros suplidos (fras adjuntas)]"
+                              name="Otros suplidos (fras adjuntas)"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
@@ -5142,15 +5142,15 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ Provisión]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Provisión]"
                               codePage="65001"
                               dataType="str"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ Provisión]"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Provisión]"
                               length="400"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ Provisión]"
-                              name=" Provisión"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Provisión]"
+                              name="Provisión"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
@@ -5296,15 +5296,15 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Nº documento]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Nº Documento Aceptacion]"
                               codePage="65001"
                               dataType="str"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Nº documento]"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Nº Documento Aceptacion]"
                               length="400"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Nº documento]"
-                              name="Nº documento"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Nº Documento Aceptacion]"
+                              name="Nº Documento Aceptacion"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
@@ -5349,28 +5349,6 @@
                               length="400"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha envío comprobante]"
                               name="Fecha envío comprobante"
-                              truncationRowDisposition="FailComponent">
-                              <properties>
-                                <property
-                                  dataType="System.Boolean"
-                                  description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
-                                  name="FastParse">false</property>
-                                <property
-                                  dataType="System.Boolean"
-                                  description="Indica si los datos están en formato binario."
-                                  name="UseBinaryFormat">false</property>
-                              </properties>
-                            </outputColumn>
-                            <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha refacturación]"
-                              codePage="65001"
-                              dataType="str"
-                              errorOrTruncationOperation="Conversión"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha refacturación]"
-                              length="400"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha refacturación]"
-                              name="Fecha refacturación"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
@@ -5472,15 +5450,15 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Baja petición motivo ]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Motivo baja]"
                               codePage="65001"
                               dataType="str"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Baja petición motivo ]"
-                              length="400"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Baja petición motivo ]"
-                              name="Baja petición motivo "
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Motivo baja]"
+                              length="4000"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Motivo baja]"
+                              name="Motivo baja"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
@@ -5538,15 +5516,15 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Usuario solicitante ]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Usuario solicitante]"
                               codePage="65001"
                               dataType="str"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Usuario solicitante ]"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Usuario solicitante]"
                               length="400"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Usuario solicitante ]"
-                              name="Usuario solicitante "
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Usuario solicitante]"
+                              name="Usuario solicitante"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
@@ -5604,15 +5582,15 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Usuario SVH ]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Usuario SVH  aprobador exención]"
                               codePage="65001"
                               dataType="str"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Usuario SVH ]"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Usuario SVH  aprobador exención]"
                               length="400"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Usuario SVH ]"
-                              name="Usuario SVH "
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Usuario SVH  aprobador exención]"
+                              name="Usuario SVH  aprobador exención"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
@@ -5670,15 +5648,15 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OBSERVACIONES SC]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Comentarios SC]"
                               codePage="65001"
                               dataType="str"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OBSERVACIONES SC]"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Comentarios SC]"
                               length="4000"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OBSERVACIONES SC]"
-                              name="OBSERVACIONES SC"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Comentarios SC]"
+                              name="Comentarios SC"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
@@ -5692,15 +5670,37 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[otros]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Otros SC]"
                               codePage="65001"
                               dataType="str"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[otros]"
-                              length="4000"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[otros]"
-                              name="otros"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Otros SC]"
+                              length="400"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Otros SC]"
+                              name="Otros SC"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                                  name="FastParse">false</property>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indica si los datos están en formato binario."
+                                  name="UseBinaryFormat">false</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Unnamed  60]"
+                              codePage="65001"
+                              dataType="str"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Unnamed  60]"
+                              length="400"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Unnamed  60]"
+                              name="Unnamed  60"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
@@ -5825,11 +5825,11 @@
                               length="400"
                               name="Fecha envío buzón de pagos -seguimiento-" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[UR]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[UR's]"
                               codePage="65001"
                               dataType="str"
-                              length="400"
-                              name="UR" />
+                              length="4000"
+                              name="UR's" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Características]"
                               codePage="65001"
@@ -5867,11 +5867,11 @@
                               length="400"
                               name="Proveedor" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Proveedor (NIF CIF) ]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Proveedor (NIF CIF)]"
                               codePage="65001"
                               dataType="str"
                               length="400"
-                              name="Proveedor (NIF CIF) " />
+                              name="Proveedor (NIF CIF)" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Nº proveedor SAP]"
                               codePage="65001"
@@ -5915,23 +5915,23 @@
                               length="400"
                               name="Retención" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Suplidos otros]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Suplidos otros conceptos]"
                               codePage="65001"
                               dataType="str"
                               length="400"
-                              name="Suplidos otros" />
+                              name="Suplidos otros conceptos" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Otros suplidos]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Otros suplidos (fras adjuntas)]"
                               codePage="65001"
                               dataType="str"
                               length="400"
-                              name="Otros suplidos" />
+                              name="Otros suplidos (fras adjuntas)" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ Provisión]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Provisión]"
                               codePage="65001"
                               dataType="str"
                               length="400"
-                              name=" Provisión" />
+                              name="Provisión" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Importe total]"
                               codePage="65001"
@@ -5969,11 +5969,11 @@
                               length="400"
                               name="Nº pedido" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Nº documento]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Nº Documento Aceptacion]"
                               codePage="65001"
                               dataType="str"
                               length="400"
-                              name="Nº documento" />
+                              name="Nº Documento Aceptacion" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha pago SAP]"
                               codePage="65001"
@@ -5986,12 +5986,6 @@
                               dataType="str"
                               length="400"
                               name="Fecha envío comprobante" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha refacturación]"
-                              codePage="65001"
-                              dataType="str"
-                              length="400"
-                              name="Fecha refacturación" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Tipo bloqueo]"
                               codePage="65001"
@@ -6017,11 +6011,11 @@
                               length="400"
                               name="Fecha fin bloqueo" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Baja petición motivo ]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Motivo baja]"
                               codePage="65001"
                               dataType="str"
-                              length="400"
-                              name="Baja petición motivo " />
+                              length="4000"
+                              name="Motivo baja" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Excepción SLA]"
                               codePage="65001"
@@ -6035,11 +6029,11 @@
                               length="400"
                               name="Fecha solicitud exención" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Usuario solicitante ]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Usuario solicitante]"
                               codePage="65001"
                               dataType="str"
                               length="400"
-                              name="Usuario solicitante " />
+                              name="Usuario solicitante" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Motivo exención]"
                               codePage="65001"
@@ -6053,11 +6047,11 @@
                               length="400"
                               name="Fecha respuesta exención" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Usuario SVH ]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Usuario SVH  aprobador exención]"
                               codePage="65001"
                               dataType="str"
                               length="400"
-                              name="Usuario SVH " />
+                              name="Usuario SVH  aprobador exención" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Business Type]"
                               codePage="65001"
@@ -6071,17 +6065,23 @@
                               length="400"
                               name="Origen" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OBSERVACIONES SC]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Comentarios SC]"
                               codePage="65001"
                               dataType="str"
                               length="4000"
-                              name="OBSERVACIONES SC" />
+                              name="Comentarios SC" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[otros]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Otros SC]"
                               codePage="65001"
                               dataType="str"
-                              length="4000"
-                              name="otros" />
+                              length="400"
+                              name="Otros SC" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Unnamed  60]"
+                              codePage="65001"
+                              dataType="str"
+                              length="400"
+                              name="Unnamed  60" />
                           </externalMetadataColumns>
                         </output>
                         <output
@@ -6999,47 +6999,35 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="175,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
-          TopLeft="375,476" />
-        <NodeLayout
-          Size="180,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
-          TopLeft="298,200" />
+          Size="168,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
+          TopLeft="261.000000397364,316.400000599225" />
         <NodeLayout
           Size="196,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"
-          TopLeft="334,112" />
+          TopLeft="232,133" />
         <NodeLayout
-          Size="168,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
-          TopLeft="261.000000397364,315.400000599225" />
+          Size="175,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
+          TopLeft="278,426" />
+        <NodeLayout
+          Size="180,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
+          TopLeft="246,220" />
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de archivo plano]"
-          TopLeft="432,154">
+          TopLeft="333,175">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-44,46"
+              EndConnector="0,45"
               Start="0,0"
-              End="-44,38.5">
+              End="0,37.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19"
-                    Point2="0,23"
-                    Point3="-4,23" />
-                  <mssgle:LineSegment
-                    End="-40,23" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-40,23"
-                    Point2="-44,23"
-                    Point3="-44,27" />
-                  <mssgle:LineSegment
-                    End="-44,38.5" />
+                    End="0,37.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7050,30 +7038,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de conversión de datos]"
-          TopLeft="388,242">
+          TopLeft="336,262">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-42.999999602636,73.400000599225"
+              EndConnector="9.00000039736398,54.400000599225"
               Start="0,0"
-              End="-42.999999602636,65.900000599225">
+              End="9.00000039736398,46.900000599225">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,32.7000002996125" />
+                    End="0,23.2000002996125" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,32.7000002996125"
-                    Point2="0,36.7000002996125"
-                    Point3="-4,36.7000002996125" />
+                    Point1="0,23.2000002996125"
+                    Point2="0,27.2000002996125"
+                    Point3="4,27.2000002996125" />
                   <mssgle:LineSegment
-                    End="-38.999999602636,36.7000002996125" />
+                    End="5.00000039736398,27.2000002996125" />
                   <mssgle:CubicBezierSegment
-                    Point1="-38.999999602636,36.7000002996125"
-                    Point2="-42.999999602636,36.7000002996125"
-                    Point3="-42.999999602636,40.7000002996125" />
+                    Point1="5.00000039736398,27.2000002996125"
+                    Point2="9.00000039736398,27.2000002996125"
+                    Point3="9.00000039736398,31.2000002996125" />
                   <mssgle:LineSegment
-                    End="-42.999999602636,65.900000599225" />
+                    End="9.00000039736398,46.900000599225" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7084,30 +7072,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de columna derivada]"
-          TopLeft="345.000000397364,357.400000599225">
+          TopLeft="345.000000397364,358.400000599225">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="117.499999602636,118.599999400775"
+              EndConnector="20.499999602636,67.599999400775"
               Start="0,0"
-              End="117.499999602636,111.099999400775">
+              End="20.499999602636,60.099999400775">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,55.2999997003875" />
+                    End="0,29.7999997003875" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,55.2999997003875"
-                    Point2="0,59.2999997003875"
-                    Point3="4,59.2999997003875" />
+                    Point1="0,29.7999997003875"
+                    Point2="0,33.7999997003875"
+                    Point3="4,33.7999997003875" />
                   <mssgle:LineSegment
-                    End="113.499999602636,59.2999997003875" />
+                    End="16.499999602636,33.7999997003875" />
                   <mssgle:CubicBezierSegment
-                    Point1="113.499999602636,59.2999997003875"
-                    Point2="117.499999602636,59.2999997003875"
-                    Point3="117.499999602636,63.2999997003875" />
+                    Point1="16.499999602636,33.7999997003875"
+                    Point2="20.499999602636,33.7999997003875"
+                    Point3="20.499999602636,37.7999997003875" />
                   <mssgle:LineSegment
-                    End="117.499999602636,111.099999400775" />
+                    End="20.499999602636,60.099999400775" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
