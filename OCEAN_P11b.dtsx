@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="OCEAN_P11b"
   DTS:PackageType="5"
-  DTS:VersionBuild="330"
-  DTS:VersionGUID="{ECD79BD3-1D33-4B90-B5D2-1B87CD47E8A9}">
+  DTS:VersionBuild="331"
+  DTS:VersionGUID="{5547F7F0-005C-4567-9D75-18D88952E639}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,11 +27,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADctresjINZYqxZUx7XGffAA8727vFsvI/yKY9PDoV1qAAAAAAOgAAAAAIAACAAAAAvMvIV75ETaGqhpg40+G0IE/cOHsAqjIbzosfIK0D5+CAAAABB7497yZ3z8mcXRDlIkqEILnaPe7lrSIwb+VINQf1OJ0AAAAB6StMV7IE6cRwEMFsYFlrtdZ3ldmWkrK1ZsriBMviuX3zE98a1vbesDQ+HfqZFtHOTULcIHiFXRpQcImZOiE4Y</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB7zxMTyF+vzhLsAMbMee1SqV03t+RuyBWAqmszLQIhiQAAAAAOgAAAAAIAACAAAAASDKseunTSlz8CECLfHuwh9gJlN+4vaNONXyE4YKBcEyAAAADl+LkP/iuL3FzyfI+mRH8EFk/ZTqfwinx8smenDClZtkAAAACVcusIlVT3PhY9SleTzcLvBpzKin/7Lh7ETLikd3PupbNzn3CW73HQsDH18yqwUZ/jlQqd049FBboR8traXrEQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,11 +46,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADSFwIv06ivE4S9Iz9da1ijL18To2omqfz0cTFV84Z9cwAAAAAOgAAAAAIAACAAAAB/OHLieuX7rOgn81YEE8qJID9IIejb2KLZ+q3RRAVm6SAAAABz3k8dWKacm9Ia/RdYVUdgt96oklBSGi03pnPLbM5DWkAAAAAcg/FrYTIl4lgC/TrxOR3qwRdQIokxsKCKsUabRlCgeU2V7skVWxf9UzemuNj8JqjuhHZMyVJBI4LWLjOShJWa</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADETkbCqTV5KSDEHyR0TaezBMeYDtYGUUPWc/Cg5I5D/AAAAAAOgAAAAAIAACAAAABfURNzfdjHD1dkQlICmczB3KsYR/hUpyJd5mBxk28mkCAAAADACffXDSdoGbaqZhsF7oMqx63FNKvCsNGF2m9DThjo1EAAAABEJ+rdpFOeaDns3Nhf/Ed2ncqxXmN9cYSR6b6Q1aef7GQsLiYAqeFwvnPafaeIMfnUA2get8px0IOrbt43+DLz</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -900,6 +900,8 @@
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{E8C8172A-F0AD-41CB-9247-334983B0F4A4}"
       DTS:ObjectName="p11b_v2">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::FilePath]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -909,7 +911,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="C:\Users\Ronny_Jara\OneDrive\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\OCEAN\P11b\OCEAN_P11b_Peticiones_20230504.csv">
+          DTS:ConnectionString="OCEAN_P02b_Peticiones_20230320.xlsx">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -9847,21 +9849,21 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="168,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
-          TopLeft="261.000000397364,315.400000599225" />
+          Size="196,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"
+          TopLeft="280,59" />
         <NodeLayout
           Size="180,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
           TopLeft="273,163" />
         <NodeLayout
+          Size="168,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
+          TopLeft="261.000000397364,315.400000599225" />
+        <NodeLayout
           Size="175,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
           TopLeft="271,391" />
-        <NodeLayout
-          Size="196,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"
-          TopLeft="280,59" />
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de archivo plano]"
           TopLeft="378,101">
