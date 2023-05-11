@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="OCEAN_P14t"
   DTS:PackageType="5"
-  DTS:VersionBuild="328"
-  DTS:VersionGUID="{E1361624-D0B8-4371-870A-3334858BDC62}">
+  DTS:VersionBuild="330"
+  DTS:VersionGUID="{67C09A8E-218E-4FDD-B9A8-CFA3A693FFB0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,11 +27,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABi/piPyJ1OCEY5/yp5t7PVQjOLbvxmSrsZ51lW4daVigAAAAAOgAAAAAIAACAAAAAmx2Zaw1btd6wfBo23CuKIF6ul1hBJ1m3TTlUYIBziKCAAAAA8FL7uPuuSGo/IBHF6aATemVIEEJq1tzKPTOl1/osK00AAAAD/eTrrEdBeQXeWW8HPtuqWltbrpWY1B9CEl2SS2mPBJ91RL7cz62rhygoH3CV/Wcu1+Lnekc33PzGaPoed9GzE</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACq9lj6YsnZ8gvOeUXBV4nNKK6/W0q7Cn3TMm8z+nU2+wAAAAAOgAAAAAIAACAAAABVYDNTVEJuSv5tr+VWOtnSAHE7Mb/4q9sdtTIXCI7JpiAAAAAZWPOybF37IJhbxnBzyCsh0UzbuKhKgi8BkxQ6Kmnh1UAAAADRwhjJe7EuSM3Tz3tAJftnmdc92rfP5WSsjJZvp/d8sLsLu2bOY2kySiq6dig9QMTGpKosbtopxoYYrPUL9wXu</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,11 +46,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABB0Ihbn9XnQaCTQLJWkRiEdwvDWCyVCFsiPaoa8uStIQAAAAAOgAAAAAIAACAAAAAk91YqWWOl9ogsmk1YlOwHD3oHm/fSq7JO9ezsGxIzTSAAAAB+bSCs4xXpQwVHfnGm83xA/liQXb2BeqPgXor5r1FOY0AAAAAZt+pm+EcqR48PZ935+kTcRvXZG/lJFsQhnsZAF/gYGcaI4RCkRnl6n3JaZ1EYH++jLNQ+Pln4lXPRWEnYrXTT</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADMGSnhlzYMcOIyK49a7xtQE1ni0xabygCgB9a5zEVU8AAAAAAOgAAAAAIAACAAAACDgA7pw0oEao3nEY5l4O9qMaooTCwudwI8F/rvs1bR0yAAAAA6Ll5QXBSLdDVMXPTQCJX5JdDHmArUtz4DhZENVoPPkEAAAADvV+YRsPf2G9DJ5zH43W+mgnZn71QdY2dI01EY+mfRppjtXaeUXAooHKy+S3KXe/jTiHzuDz+aNmIr5CynxelJ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -6117,7 +6117,7 @@
           DTS:refId="Package\Load file to DBO\Truncate table"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{794CB277-2DA4-419D-B6C7-FA9FA351A7B2}"
+          DTS:DTSID="{8b171a97-25d2-4351-93c9-def58dba00b3}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Truncate table"
@@ -6125,8 +6125,21 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{EBD406C5-7F15-4B64-9422-6D34B94747C6}"
-              SQLTask:SqlStatementSource="truncate table SVH_DBO.OCEAN.P14t_Peticiones" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:Connection="{73FB8848-56BD-44D3-B95D-18C9DAF33598}"
+              SQLTask:SqlStatementSource="BEGIN&#xA;DECLARE @NAME NVARCHAR(255) = ?;&#xA;DECLARE @PORTFOLIO  NVARCHAR(255) =?;&#xA;DECLARE @TABLA  NVARCHAR(255);&#xA;DECLARE @TRUNCATE  NVARCHAR(255);&#xA;--Nos quedmos ocn el nombre de la tabla&#xA;SET @TABLA = SUBSTRING( @NAME,CHARINDEX('_P', @NAME)+1, LEN(@NAME))&#xA;--Concatenamos la instruccion con la BBDD,el esquema Y NOMBRE DE LA TABLA&#xA;SET @TRUNCATE =' TRUNCATE TABLE '+'SVH_DBO.'+@PORTFOLIO+'.'+@TABLA&#xA;SELECT @TRUNCATE&#xA;--Ejecutamos truncate&#xA;EXECUTE SP_EXECUTESQL  @TRUNCATE&#xA;END" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="$Package::Name"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="1"
+                SQLTask:DtsVariableName="$Package::par_porfolio"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
@@ -6134,7 +6147,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file to DBO.PrecedenceConstraints[Restricción]"
           DTS:CreationName=""
-          DTS:DTSID="{59B599F6-08E6-4FF4-AA04-2927532DC737}"
+          DTS:DTSID="{653F0B17-04BC-4A05-B92D-B810D78BF5BA}"
           DTS:From="Package\Load file to DBO\Truncate table"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción"
@@ -6150,7 +6163,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file to DBO.PrecedenceConstraints[Restricción 2]"
           DTS:CreationName=""
-          DTS:DTSID="{314D0B2F-DED4-4FF9-A11F-295242CFC310}"
+          DTS:DTSID="{94C89F92-1EEC-47B2-8274-F51559E2BF46}"
           DTS:From="Package\Load file to DBO\Convertir EXCEL - CSV"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 2"
@@ -6646,32 +6659,6 @@
           Size="210,275"
           Id="Package\Load file to DBO\Search and load file"
           TopLeft="18.9999995032947,212.633333326446" />
-        <NodeLayout
-          Size="145,42"
-          Id="Package\Load file to DBO\Truncate table"
-          TopLeft="51.1666657063696,135.866666673554" />
-        <EdgeLayout
-          Id="Package\Load file to DBO.PrecedenceConstraints[Restricción]"
-          TopLeft="123.833332604832,177.866666673554">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,34.766666652892"
-              Start="0,0"
-              End="0,27.266666652892">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.266666652892" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Load file to DBO.PrecedenceConstraints[Restricción 1]"
           TopLeft="228.999999503295,350.133333326446">
@@ -6707,34 +6694,6 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load file to DBO.PrecedenceConstraints[Restricción 2]"
-          TopLeft="118.785715969782,113.466666054649">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-67.6190502634127,43.4000006189048"
-              Start="0,0"
-              End="-60.1190502634127,43.4000006189048">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,39.4000006189048" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,39.4000006189048"
-                    Point2="0,43.4000006189048"
-                    Point3="-4,43.4000006189048" />
-                  <mssgle:LineSegment
-                    End="-60.1190502634127,43.4000006189048" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Load file to DBO.PrecedenceConstraints[Restricción 3]"
           TopLeft="122.74999995033,563.133333326446">
           <EdgeLayout.Curve>
@@ -6748,6 +6707,66 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,26.5333326858942" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="149,42"
+          Id="Package\Load file to DBO\Truncate table"
+          TopLeft="32.9523826695627,161.266666426582" />
+        <EdgeLayout
+          Id="Package\Load file to DBO.PrecedenceConstraints[Restricción]"
+          TopLeft="181.952382669563,182.266666426582">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-57.952383166268,30.3666668998639"
+              Start="0,0"
+              End="-57.952383166268,22.8666668998639">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-53.952383166268,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-53.952383166268,0"
+                    Point2="-57.952383166268,0"
+                    Point3="-57.952383166268,4" />
+                  <mssgle:LineSegment
+                    End="-57.952383166268,22.8666668998639" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load file to DBO.PrecedenceConstraints[Restricción 2]"
+          TopLeft="118.785715969782,162.466666054649">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="63.1666666997804,14.1333337052663"
+              Start="0,0"
+              End="55.6666666997804,14.1333337052663">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.1333337052663" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.1333337052663"
+                    Point2="0,14.1333337052663"
+                    Point3="4,14.1333337052663" />
+                  <mssgle:LineSegment
+                    End="55.6666666997804,14.1333337052663" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
