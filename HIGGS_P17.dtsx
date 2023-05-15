@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="HIGGS_P17"
   DTS:PackageType="5"
-  DTS:VersionBuild="360"
-  DTS:VersionGUID="{91A88E4A-C6F8-43C0-A421-504CDBB3BADF}">
+  DTS:VersionBuild="361"
+  DTS:VersionGUID="{D59E861C-1FC9-483A-9E71-ECF48F9A854E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -31,7 +31,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADkD+AgZLosBewtlX5ZLE29WQEiWnvrFxbFKVfGI+VETwAAAAAOgAAAAAIAACAAAAAwWsmICZatt4+EAC9kSStpd6YFoPEGhaDOJOt7nem6viAAAABNA13KYyGQI7KrpXmFdwH8Y+lkRfFO4yzitNzpVQYsO0AAAABrin1lnGNgya7OomUNtF7HUWT5cOgQdc1+yLszFIk66oqlt6wqLda5U00yHuZkcqM8qlagz5aP/Whw+dyJPiVv</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABSEWZnmRH91Ggcpv5zIl3nYsrogcLo2t1JHi4Wh/K7mAAAAAAOgAAAAAIAACAAAAAyBelzU4x1h5LooFVF4J99959hOLLMR03K+L6F4mnUQSAAAAA+vBovwPsJWBubUjRkXv6dwbTaE4y3NB4WEOlGbjSGxUAAAAD1lJ9uQ1Iw2octr1tB5yTJV8crdiDpVVX4eoHP5w60qUGzudRHhxFZTkDDIS+BF8pFPbvgs50qKDpzhHkEuzzB</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -50,7 +50,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB662fcRg5WYdqgtSr27JzvZ1hbTeM6qh2iX5KuP4BofgAAAAAOgAAAAAIAACAAAAAOwvsmBXHYlUpzRjVS92G4zEcozZlKVx4V3ASZM+wcgiAAAACa4APRUemJhDd4/VobFWjORvl/IlrRa4bSGyQIJk7AP0AAAACD14FnVh8GN/tKsaC3IK56Vk9eVRuo32J0UMCwo39lxwyr8cT9/0Kq9KlNmwVQ6+phS/htxsB445wJszlt78Tw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAClHqODqjnT5Mr6QdXMr1lZrTzNg/wFN4B1ehFGNqkNngAAAAAOgAAAAAIAACAAAADKUW6ijGVEakwsEMzHuFWguwHki8tqOWdOd5vMwOJifCAAAADi7uWSnYJ42zu/L/AbWqbH0DYT3BWFDWPcRxbDJhIc8kAAAAC+hqzcC6Ih+3iBnNXbgT/JI9hGjFsGs12YZWJ2XPPtK9ZVFvn6NBvoCRXyJ+g2cQQkOUBOojQh16ERdq+YLPMZ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -2785,7 +2785,7 @@
                         <property
                           dataType="System.Boolean"
                           description="Especifica si las columnas de longitud cero se tratan como NULL."
-                          name="RetainNulls">false</property>
+                          name="RetainNulls">true</property>
                         <property
                           dataType="System.String"
                           description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
@@ -4533,7 +4533,7 @@
     design-time-name="Package\Load file to DBO\Search and load file\load to DBO">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="180,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
@@ -4581,9 +4581,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4617,9 +4615,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4653,9 +4649,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
