@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="maestro_GREEN"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{D90FC5F5-0616-4741-A2F0-A6574A81439B}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{056B9E8E-E801-459E-9839-8EBF90E8EBE4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -191,7 +191,6 @@
       DTS:refId="Package\P14t"
       DTS:CreationName="Microsoft.ExecutePackageTask"
       DTS:Description="Tarea Ejecutar paquete"
-      DTS:Disabled="True"
       DTS:DTSID="{B5F19482-8287-4DE9-9577-C131D6A207A6}"
       DTS:ExecutableType="Microsoft.ExecutePackageTask"
       DTS:LocaleID="-1"
@@ -243,7 +242,6 @@
       DTS:refId="Package\P20"
       DTS:CreationName="Microsoft.ExecutePackageTask"
       DTS:Description="Tarea Ejecutar paquete"
-      DTS:Disabled="True"
       DTS:DTSID="{B51A4D82-A02A-4E93-B80C-BAF3FF5BF720}"
       DTS:ExecutableType="Microsoft.ExecutePackageTask"
       DTS:LocaleID="-1"
@@ -261,7 +259,6 @@
       DTS:refId="Package\P21"
       DTS:CreationName="Microsoft.ExecutePackageTask"
       DTS:Description="Tarea Ejecutar paquete"
-      DTS:Disabled="True"
       DTS:DTSID="{0AF57055-8EAC-4420-B5FB-B112A8B6447F}"
       DTS:ExecutableType="Microsoft.ExecutePackageTask"
       DTS:LocaleID="-1"
@@ -741,6 +738,42 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 15]"
+          TopLeft="248,251">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="170,11"
+              Start="0,0"
+              End="162.5,11">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="81,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="81,0"
+                    Point2="85,0"
+                    Point3="85,4" />
+                  <mssgle:LineSegment
+                    End="85,7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="85,7"
+                    Point2="85,11"
+                    Point3="89,11" />
+                  <mssgle:LineSegment
+                    End="162.5,11" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="60.845546875,-16.3349609375,48.30890625,10.3349609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 2]"
           TopLeft="659,365">
           <EdgeLayout.Curve>
@@ -989,42 +1022,6 @@
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="-15.404453125,5,48.30890625,10.3349609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Restricción 15]"
-          TopLeft="248,251">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="170,11"
-              Start="0,0"
-              End="162.5,11">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="81,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="81,0"
-                    Point2="85,0"
-                    Point3="85,4" />
-                  <mssgle:LineSegment
-                    End="85,7" />
-                  <mssgle:CubicBezierSegment
-                    Point1="85,7"
-                    Point2="85,11"
-                    Point3="89,11" />
-                  <mssgle:LineSegment
-                    End="162.5,11" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="60.845546875,-16.3349609375,48.30890625,10.3349609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>

@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="HIGGS_P10_no_tiene_matriz"
   DTS:PackageType="5"
-  DTS:VersionBuild="347"
-  DTS:VersionGUID="{FEAC3872-4DF4-45EE-9D99-DCB6EDEC7072}">
+  DTS:VersionBuild="348"
+  DTS:VersionGUID="{4A3EE42B-5161-40BB-9CB9-C9C7588D8E0D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -31,7 +31,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAo8coctj0xw/QficsJ5dmQ2+f47HTuwgu01xubyctYxAAAAAAOgAAAAAIAACAAAABcFv7pCWlDZ+746+ruJDIVyRp7xH0iqhszO0ZYErfFDSAAAACfgkVlBWVGPK8HZuidi2z/3xe8IDnZAApH5B7j12x9i0AAAABL97VHxugVz5U166lLALdw4rQVGTuQVzPYgXyoTvMHVoAgQlwAg/v0WOB8sfulHyYi3eXubeKqT4P/gPdoEE3R</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAC9ripNRupDtatCO72Qc9qbMH4YMz8Ko4ExBgf6TyCqgAAAAAOgAAAAAIAACAAAAA0yczhP680MHmr3Z5afXpvDxuugBWhgt1HsJVOgbFltCAAAAAWCcoAL2AJfRZLGgJ5kFvoFJPjjT/dI7Mez08ZfCedtEAAAABVIC0q+bsJkRZQ19oDm20W8H+2fSlCTNSAgtAhFsvE3lCa1Pnrrb5FX/1OFM+KnQbqskIwk8wTxWh/zcUS7m7K</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -50,7 +50,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABb0Rn8BsaomFKP8S08DbctdOycSrLwUbxZhbdP+gU8lgAAAAAOgAAAAAIAACAAAABnIOpWvOo+PHp/awlmTNK5zJe6rzjGJ5BiEOI0i0sUqCAAAAB3SrD9Q9oWM0wfEb7i6nr4Mmu9ETIBcRtAx+dov3xw+EAAAABERZGwxrXm8YvtncoVOaXIhiMggxmHxWSu8g1oR1jIzJ4mKfC7GoN+RUNN4UsZAU2tVO2xCijwuiamzDqOfHuw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAgWFndYnXK1AGNuQ3QNetJzj542EWLFlsfjFAVkLIH0gAAAAAOgAAAAAIAACAAAACmlzPTANtyFqd0pSs945XrJTOJ3gg7YLNWYGK6LGXYpyAAAACdHB0iN4ipW2I+GLt826coRhoRanUH0HgOo/aa3JIC/kAAAABhx4Ln0r8swq4E8jVrjrW0h74x+eL9SMD6rRWC7wOKOh6d34LcmHEU1teTtdXkZs2lrBS7RRHD4EkLs913ZIux</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1165,7 +1165,220 @@
                         </output>
                       </outputs>
                     </component>
+                    <component
+                      refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
+                      componentClassID="Microsoft.DataConvert"
+                      contactInfo="Conversión de datos;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+                      description="Conversión de datos"
+                      name="Conversión de datos"
+                      usesDispositions="true">
+                      <inputs>
+                        <input
+                          refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos]"
+                          name="Entrada de conversión de datos">
+                          <externalMetadataColumns />
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos]"
+                          exclusionGroup="1"
+                          name="Salida de conversión de datos"
+                          synchronousInputId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos]">
+                          <externalMetadataColumns />
+                        </output>
+                        <output
+                          refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de error de conversión de datos]"
+                          exclusionGroup="1"
+                          isErrorOut="true"
+                          name="Salida de error de conversión de datos"
+                          synchronousInputId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
+                      refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
+                      componentClassID="Microsoft.OLEDBDestination"
+                      contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+                      description="Destino de OLE DB"
+                      name="Destino de OLE DB"
+                      usesDispositions="true"
+                      version="4">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                          name="CommandTimeout">0</property>
+                        <property
+                          dataType="System.String"
+                          description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                          name="OpenRowset"></property>
+                        <property
+                          dataType="System.String"
+                          description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                          name="OpenRowsetVariable"></property>
+                        <property
+                          dataType="System.String"
+                          description="Comando SQL para ejecutar."
+                          name="SqlCommand"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                          name="DefaultCodePage">1252</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                          name="AlwaysUseDefaultCodePage">false</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                          name="AccessMode"
+                          typeConverter="AccessMode">0</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                          name="FastLoadKeepIdentity">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                          name="FastLoadKeepNulls">false</property>
+                        <property
+                          dataType="System.String"
+                          description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                          name="FastLoadOptions"></property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                          name="FastLoadMaxInsertCommitSize">2147483647</property>
+                      </properties>
+                      <connections>
+                        <connection
+                          refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Connections[OleDbConnection]"
+                          description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                          name="OleDbConnection" />
+                      </connections>
+                      <inputs>
+                        <input
+                          refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+                          errorOrTruncationOperation="Insertar"
+                          errorRowDisposition="FailComponent"
+                          hasSideEffects="true"
+                          name="Entrada de destino de OLE DB">
+                          <externalMetadataColumns
+                            isUsed="True" />
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
+                          exclusionGroup="1"
+                          isErrorOut="true"
+                          name="Salida de error de destino de OLE DB"
+                          synchronousInputId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
+                      refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"
+                      componentClassID="Microsoft.FlatFileSource"
+                      contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+                      description="Origen de archivo plano"
+                      name="Origen de archivo plano"
+                      usesDispositions="true"
+                      version="1">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Especifica si las columnas de longitud cero se tratan como NULL."
+                          name="RetainNulls">false</property>
+                        <property
+                          dataType="System.String"
+                          description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
+                          name="FileNameColumnName"></property>
+                      </properties>
+                      <connections>
+                        <connection
+                          refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Connections[FlatFileConnection]"
+                          name="FlatFileConnection" />
+                      </connections>
+                      <outputs>
+                        <output
+                          refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano]"
+                          name="Salida de origen de archivo plano">
+                          <externalMetadataColumns
+                            isUsed="True" />
+                        </output>
+                        <output
+                          refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano]"
+                          isErrorOut="true"
+                          name="Salida de error de origen de archivo plano">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
                   </components>
+                  <paths>
+                    <path
+                      refId="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de columna derivada]"
+                      endId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+                      name="Salida de columna derivada"
+                      startId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1.Outputs[Salida de columna derivada]" />
+                    <path
+                      refId="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de conversión de datos]"
+                      endId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1.Inputs[Entrada de columna derivada]"
+                      name="Salida de conversión de datos"
+                      startId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos]" />
+                    <path
+                      refId="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de archivo plano]"
+                      endId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos]"
+                      name="Salida de origen de archivo plano"
+                      startId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano]" />
+                  </paths>
                 </pipeline>
               </DTS:ObjectData>
             </DTS:Executable>
@@ -2032,11 +2245,125 @@
     design-time-name="Package\Load file to DBO\Search and load file\load to DBO">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="168,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
           TopLeft="261.000000397364,313.400000599225" />
+        <NodeLayout
+          Size="180,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
+          TopLeft="167,186" />
+        <NodeLayout
+          Size="175,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
+          TopLeft="302,424" />
+        <EdgeLayout
+          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de columna derivada]"
+          TopLeft="345.000000397364,355.400000599225">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="44.499999602636,68.599999400775"
+              Start="0,0"
+              End="44.499999602636,61.099999400775">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.2999997003875" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.2999997003875"
+                    Point2="0,34.2999997003875"
+                    Point3="4,34.2999997003875" />
+                  <mssgle:LineSegment
+                    End="40.499999602636,34.2999997003875" />
+                  <mssgle:CubicBezierSegment
+                    Point1="40.499999602636,34.2999997003875"
+                    Point2="44.499999602636,34.2999997003875"
+                    Point3="44.499999602636,38.2999997003875" />
+                  <mssgle:LineSegment
+                    End="44.499999602636,61.099999400775" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de conversión de datos]"
+          TopLeft="257,228">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="88.000000397364,85.400000599225"
+              Start="0,0"
+              End="88.000000397364,77.900000599225">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.7000002996125" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,38.7000002996125"
+                    Point2="0,42.7000002996125"
+                    Point3="4,42.7000002996125" />
+                  <mssgle:LineSegment
+                    End="84.000000397364,42.7000002996125" />
+                  <mssgle:CubicBezierSegment
+                    Point1="84.000000397364,42.7000002996125"
+                    Point2="88.000000397364,42.7000002996125"
+                    Point3="88.000000397364,46.7000002996125" />
+                  <mssgle:LineSegment
+                    End="88.000000397364,77.900000599225" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="196,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"
+          TopLeft="270,71" />
+        <EdgeLayout
+          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de archivo plano]"
+          TopLeft="368,113">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-111,73"
+              Start="0,0"
+              End="-111,65.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.5"
+                    Point2="0,36.5"
+                    Point3="-4,36.5" />
+                  <mssgle:LineSegment
+                    End="-107,36.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-107,36.5"
+                    Point2="-111,36.5"
+                    Point3="-111,40.5" />
+                  <mssgle:LineSegment
+                    End="-111,65.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
