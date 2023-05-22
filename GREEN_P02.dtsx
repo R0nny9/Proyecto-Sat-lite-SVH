@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="GREEN_P02"
   DTS:PackageType="5"
-  DTS:VersionBuild="342"
-  DTS:VersionGUID="{0AE78884-2EEE-46DF-83F0-4F61DF1F6DE6}">
+  DTS:VersionBuild="344"
+  DTS:VersionGUID="{044F51F8-955F-4D5E-B57E-7E8DF9DEFDA8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -31,7 +31,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADWN6osV5nibyFZD7UxoT6NannMYKQJ/vHLjzosEwQCJQAAAAAOgAAAAAIAACAAAAAxL5ETUR0vOKKuD8vE/SF3ZHuO10ZD7YFRmIWhQACK/CAAAAByrGmx9muRwBl2LiIiILbSo3Yhuk7RlHCkhD1I6SlmEEAAAACkb2PUcQlRHT7bBZBBiZiqKoCdjdN+J91e3k5MbKE0DOOkf0xKSAzOebILCCWoI1xVWxsnXoLmZ6cgZ2lkjyWb</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAtrY2LigL3Gb5nmoy32iloLfM5hFKI7zhtyWMLdrnpygAAAAAOgAAAAAIAACAAAABegepLG03jsx/V11qusBEuL9b2F+L8VvWp7NzR3oxGZCAAAAAwIf++jEH/yuSWew6/Bwd1hqFzMC3iMOSb3DjWnBwc8kAAAAD2qKrjcwYnKby51Lr2V/3QGnks+VQIUlY5k2gY609pP37/Bx0q2vdgUYrtr+gI9sXio0rhsUAPv9CW+ZRO7mZi</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -50,7 +50,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB9UaCgk2salJKkTMvY2gIP90VgPmzMjYi9cW1RgGXpaAAAAAAOgAAAAAIAACAAAACvSzSV1lUsIeAckqCnfTZDlewJTuY8WYsomJ4wDbqwgyAAAABInHJRuczrloj27wjam4pnFdlZ6Vct1Fa7CTgWKUW55UAAAABAqlfKvECi0nmRe36lruVvAcx3V/7RGwFoKXoYDRs3QlVTPKQKPeR9X/sh4CZGgaLcaDt0DSfqjG4lNvaj1Jkg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABukl+gpWf6YNlySSmGjGiQnipsLOct8SmETLtcS/yZzgAAAAAOgAAAAAIAACAAAACsTu6/bpkk3gh3kViFkbKXPG4d2+J4zsp6FbxBd9mWDCAAAAB3BVoPq3usc+zeA3cCsIfteRDHEQ5iHFRtmjneLTBtfUAAAACIGq/LK/wfUF6R3QDjmkv4Gngos87SMw9ui4xP2Wwa61Jr6VZGECoVCUR18hUs2yNOrN9HUwoXroqkZJvAy2GJ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -590,18 +590,18 @@
       DTS:Namespace="User"
       DTS:ObjectName="var_convertcsv">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\Ronny_Jara\OneDrive\MISTRAL" "BUSINESS" "SOLUTIONS\Mistral" "-" "Servihabitat" "-" "Documentos\#Repository\DWH" "BAU" "Mistral-SVH\Code\Python\convertcsv.py OCEAN_P02b_Peticiones_20230320.xlsx C:\Users\Ronny_Jara\OneDrive\MISTRAL" "BUSINESS" "SOLUTIONS\Mistral" "-" "Servihabitat" "-" "Documentos\#Repository\DWH" "BAU" "Mistral-SVH\Data" "Sources\GREEN\P02\OLD\</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\Ronny_Jara\MISTRAL" "BUSINESS" "SOLUTIONS\Mistral" "-" "Servihabitat" "-" "Documentos\#Repository\DWH" "BAU" "Mistral-SVH\Code\Python\convertcsv.py OCEAN_P02b_Peticiones_20230320.xlsx C:\Users\Ronny_Jara\MISTRAL" "BUSINESS" "SOLUTIONS\Mistral" "-" "Servihabitat" "-" "Documentos\#Repository\DWH" "BAU" "Mistral-SVH\Data" "Sources\GREEN\P02\OLD\</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{AC807C44-F271-4C1E-91C7-E6459BAF834A}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="GETDATE()"
+      DTS:Expression="SUBSTRING( @[User::FilePath] ,23,8)"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="var_DATOS">
       <DTS:VariableValue
-        DTS:DataType="7">5/4/2023 12:20:25 PM</DTS:VariableValue>
+        DTS:DataType="8">20230320</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -622,7 +622,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="var_deleteOldFich">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\Ronny_Jara\OneDrive\MISTRAL" "BUSINESS" "SOLUTIONS\Mistral" "-" "Servihabitat" "-" "Documentos\#Repository\DWH" "BAU" "Mistral-SVH\Code\Python\deleteOldFiles.py OCEAN_P02b_Peticiones_20230320.xlsx</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\Ronny_Jara\MISTRAL" "BUSINESS" "SOLUTIONS\Mistral" "-" "Servihabitat" "-" "Documentos\#Repository\DWH" "BAU" "Mistral-SVH\Code\Python\deleteOldFiles.py OCEAN_P02b_Peticiones_20230320.xlsx</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -663,7 +663,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="var_moverFich">
       <DTS:VariableValue
-        DTS:DataType="8">C:\08_Python\moveFile.py C:\Users\Ronny_Jara\OneDrive\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\P02 C:\ORIGENES_PROCESADOS\P02 *GREEN_P02_Peticiones*</DTS:VariableValue>
+        DTS:DataType="8">C:\08_Python\moveFile.py C:\Users\Ronny_Jara\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\P02 C:\ORIGENES_PROCESADOS\P02 *GREEN_P02_Peticiones*</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -1290,7 +1290,7 @@
             <DTS:ObjectData>
               <ForEachFileEnumeratorProperties>
                 <FEFEProperty
-                  Folder="C:\Users\Ronny_Jara\OneDrive\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\GREEN\P02\" />
+                  Folder="C:\Users\Ronny_Jara\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\GREEN\P02\" />
                 <FEFEProperty
                   FileSpec="*GREEN_P02_Peticiones*.xlsx" />
                 <FEFEProperty
@@ -1320,7 +1320,7 @@
               <DTS:ObjectData>
                 <ExecuteProcessData
                   Executable="C:\Users\Ronny_Jara\AppData\Local\Microsoft\WindowsApps\python.exe"
-                  Arguments="C:\Users\Ronny_Jara\OneDrive\MISTRAL&quot; &quot;BUSINESS&quot; &quot;SOLUTIONS\Mistral&quot; &quot;-&quot; &quot;Servihabitat&quot; &quot;-&quot; &quot;Documentos\#Repository\DWH&quot; &quot;BAU&quot; &quot;Mistral-SVH\Code\Python\convertcsv.py OCEAN_P02b_Peticiones_20230320.xlsx C:\Users\Ronny_Jara\OneDrive\MISTRAL&quot; &quot;BUSINESS&quot; &quot;SOLUTIONS\Mistral&quot; &quot;-&quot; &quot;Servihabitat&quot; &quot;-&quot; &quot;Documentos\#Repository\DWH&quot; &quot;BAU&quot; &quot;Mistral-SVH\Data&quot; &quot;Sources\GREEN\P02\OLD\" />
+                  Arguments="C:\Users\Ronny_Jara\MISTRAL&quot; &quot;BUSINESS&quot; &quot;SOLUTIONS\Mistral&quot; &quot;-&quot; &quot;Servihabitat&quot; &quot;-&quot; &quot;Documentos\#Repository\DWH&quot; &quot;BAU&quot; &quot;Mistral-SVH\Code\Python\convertcsv.py OCEAN_P02b_Peticiones_20230320.xlsx C:\Users\Ronny_Jara\MISTRAL&quot; &quot;BUSINESS&quot; &quot;SOLUTIONS\Mistral&quot; &quot;-&quot; &quot;Servihabitat&quot; &quot;-&quot; &quot;Documentos\#Repository\DWH&quot; &quot;BAU&quot; &quot;Mistral-SVH\Data&quot; &quot;Sources\GREEN\P02\OLD\" />
               </DTS:ObjectData>
             </DTS:Executable>
           </DTS:Executables>
@@ -1352,7 +1352,7 @@
             <DTS:ObjectData>
               <ForEachFileEnumeratorProperties>
                 <FEFEProperty
-                  Folder="C:\Users\Ronny_Jara\OneDrive\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\GREEN\P02\" />
+                  Folder="C:\Users\Ronny_Jara\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\GREEN\P02\" />
                 <FEFEProperty
                   FileSpec="*GREEN_P02_Peticiones*" />
                 <FEFEProperty
@@ -1382,7 +1382,7 @@
               <DTS:ObjectData>
                 <ExecuteProcessData
                   Executable="C:\Users\Ronny_Jara\AppData\Local\Microsoft\WindowsApps\python.exe"
-                  Arguments="C:\Users\Ronny_Jara\OneDrive\MISTRAL&quot; &quot;BUSINESS&quot; &quot;SOLUTIONS\Mistral&quot; &quot;-&quot; &quot;Servihabitat&quot; &quot;-&quot; &quot;Documentos\#Repository\DWH&quot; &quot;BAU&quot; &quot;Mistral-SVH\Code\Python\deleteOldFiles.py OCEAN_P02b_Peticiones_20230320.xlsx" />
+                  Arguments="C:\Users\Ronny_Jara\MISTRAL&quot; &quot;BUSINESS&quot; &quot;SOLUTIONS\Mistral&quot; &quot;-&quot; &quot;Servihabitat&quot; &quot;-&quot; &quot;Documentos\#Repository\DWH&quot; &quot;BAU&quot; &quot;Mistral-SVH\Code\Python\deleteOldFiles.py OCEAN_P02b_Peticiones_20230320.xlsx" />
               </DTS:ObjectData>
             </DTS:Executable>
           </DTS:Executables>
@@ -1394,30 +1394,6 @@
               DTS:ValueIndex="0"
               DTS:VariableName="User::FilePath" />
           </DTS:ForEachVariableMappings>
-        </DTS:Executable>
-        <DTS:Executable
-          DTS:refId="Package\Load file to DBO\Eliminar fila de campos"
-          DTS:CreationName="Microsoft.ExecuteSQLTask"
-          DTS:Description="Tarea Ejecutar SQL"
-          DTS:Disabled="True"
-          DTS:DTSID="{FC04B903-B062-4BA1-80B3-A4AE507787E0}"
-          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-          DTS:LocaleID="-1"
-          DTS:ObjectName="Eliminar fila de campos"
-          DTS:ThreadHint="0">
-          <DTS:Variables />
-          <DTS:ObjectData>
-            <SQLTask:SqlTaskData
-              SQLTask:Connection="{DFFD3C13-7FE2-4AB7-92EC-E0D2AEA00FF5}"
-              SQLTask:SqlStatementSource="DELETE [SVH_DBO].[OCEAN].P02_Peticiones where  [Índice] is null or [Índice] = 'Índice'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
-              <SQLTask:ParameterBinding
-                SQLTask:ParameterName="0"
-                SQLTask:DtsVariableName="$Package::Name"
-                SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="130"
-                SQLTask:ParameterSize="-1" />
-            </SQLTask:SqlTaskData>
-          </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
           DTS:refId="Package\Load file to DBO\Search and load file"
@@ -1438,7 +1414,7 @@
             <DTS:ObjectData>
               <ForEachFileEnumeratorProperties>
                 <FEFEProperty
-                  Folder="C:\Users\Ronny_Jara\OneDrive\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\GREEN\P02\" />
+                  Folder="C:\Users\Ronny_Jara\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\GREEN\P02\" />
                 <FEFEProperty
                   FileSpec="*GREEN_P02_Peticiones*" />
                 <FEFEProperty
@@ -1529,13 +1505,13 @@
                                   containsID="true"
                                   dataType="System.String"
                                   description="Expresión de columna derivada"
-                                  name="Expression">(DT_WSTR,800)@[User::var_DATOS]</property>
+                                  name="Expression">(DT_WSTR,800)@[User::var_F_DATOS]</property>
                                 <property
                                   containsID="true"
                                   dataType="System.String"
                                   description="Expresión descriptiva de columna derivada"
                                   expressionType="Notify"
-                                  name="FriendlyExpression">(DT_WSTR,800)@[User::var_DATOS]</property>
+                                  name="FriendlyExpression">(DT_WSTR,800)@[User::var_F_DATOS]</property>
                               </properties>
                             </outputColumn>
                           </outputColumns>
@@ -4783,14 +4759,6 @@
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 2"
           DTS:To="Package\Load file to DBO\Truncate table" />
-        <DTS:PrecedenceConstraint
-          DTS:refId="Package\Load file to DBO.PrecedenceConstraints[Restricción 3]"
-          DTS:CreationName=""
-          DTS:DTSID="{18C82BF5-CEA4-4E4A-BD3C-A70184556ADE}"
-          DTS:From="Package\Load file to DBO\Elimina _csv"
-          DTS:LogicalAnd="True"
-          DTS:ObjectName="Restricción 3"
-          DTS:To="Package\Load file to DBO\Eliminar fila de campos" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
   </DTS:Executables>
@@ -5180,8 +5148,8 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="184,101"
-          Size="184,144"
+          PanelSize="204,57"
+          Size="204,100"
           Id="Package\Load file to DBO\Convertir EXCEL - CSV"
           TopLeft="26.7857159697823,18.4666660546492" />
         <NodeLayout
@@ -5194,11 +5162,7 @@
           PanelSize="168,56"
           Size="168,99"
           Id="Package\Load file to DBO\Elimina _csv"
-          TopLeft="39,464.133333326446" />
-        <NodeLayout
-          Size="193,42"
-          Id="Package\Load file to DBO\Eliminar fila de campos"
-          TopLeft="25.999999900659,597.16666601234" />
+          TopLeft="40,588.133333326446" />
         <NodeLayout
           Size="130,42"
           Id="Package\Load file to DBO\Search and load file\Fichero Origen"
@@ -5285,75 +5249,47 @@
           PanelSize="201,182"
           Size="201,225"
           Id="Package\Load file to DBO\Search and load file"
-          TopLeft="18.9999995032947,212.633333326446" />
-        <EdgeLayout
-          Id="Package\Load file to DBO.PrecedenceConstraints[Restricción 1]"
-          TopLeft="121.249999751647,437.633333326446">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,26.4999999999998"
-              Start="0,0"
-              End="0,18.9999999999998">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,18.9999999999998" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load file to DBO.PrecedenceConstraints[Restricción 3]"
-          TopLeft="122.74999995033,563.133333326446">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,34.0333326858942"
-              Start="0,0"
-              End="0,26.5333326858942">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.5333326858942" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="20.9999995032947,295.633333326446" />
         <NodeLayout
           Size="149,42"
           Id="Package\Load file to DBO\Truncate table"
           TopLeft="42.5,176.266666426582" />
         <EdgeLayout
           Id="Package\Load file to DBO.PrecedenceConstraints[Restricción]"
-          TopLeft="42.5,190.133333326446">
+          TopLeft="119.249999751647,218.266666426582">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="76.9999995032947,22.5"
+              EndConnector="0,77.3666668998641"
               Start="0,0"
-              End="76.9999995032947,15">
+              End="0,69.8666668998641">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="72.9999995032947,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="72.9999995032947,0"
-                    Point2="76.9999995032947,0"
-                    Point3="76.9999995032947,4" />
+                    End="0,69.8666668998641" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load file to DBO.PrecedenceConstraints[Restricción 1]"
+          TopLeft="122.749999751647,520.633333326446">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,67.5"
+              Start="0,0"
+              End="0,60">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="76.9999995032947,15" />
+                    End="0,60" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5364,30 +5300,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load file to DBO.PrecedenceConstraints[Restricción 2]"
-          TopLeft="210.785715969782,90.4666660546492">
+          TopLeft="128.785715969782,118.466666054649">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-19.2857159697823,106.800000371933"
+              EndConnector="-11.7857159697823,57.8000003719328"
               Start="0,0"
-              End="-11.7857159697823,106.800000371933">
+              End="-11.7857159697823,50.3000003719328">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="18.5,0" />
+                    End="0,24.9000001859664" />
                   <mssgle:CubicBezierSegment
-                    Point1="18.5,0"
-                    Point2="22.5,0"
-                    Point3="22.5,4" />
+                    Point1="0,24.9000001859664"
+                    Point2="0,28.9000001859664"
+                    Point3="-4,28.9000001859664" />
                   <mssgle:LineSegment
-                    End="22.5,102.800000371933" />
+                    End="-7.7857159697823,28.9000001859664" />
                   <mssgle:CubicBezierSegment
-                    Point1="22.5,102.800000371933"
-                    Point2="22.5,106.800000371933"
-                    Point3="18.5,106.800000371933" />
+                    Point1="-7.7857159697823,28.9000001859664"
+                    Point2="-11.7857159697823,28.9000001859664"
+                    Point3="-11.7857159697823,32.9000001859664" />
                   <mssgle:LineSegment
-                    End="-11.7857159697823,106.800000371933" />
+                    End="-11.7857159697823,50.3000003719328" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
