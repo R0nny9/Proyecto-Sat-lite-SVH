@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="PUPPY_P17"
   DTS:PackageType="5"
-  DTS:VersionBuild="352"
-  DTS:VersionGUID="{9A10261A-FED4-4078-96BB-15DEAFA6BEB7}">
+  DTS:VersionBuild="354"
+  DTS:VersionGUID="{96E84784-5C2C-4986-B37E-432C98A87AC7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,11 +27,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAFqX7WhnMuFg5obAVUoz40hGM2tCppw7oNEtUlZxDTdwAAAAAOgAAAAAIAACAAAAAp0MF0PoY78zARaCUC8xo1FLIAMhnonU2t2OPslseAJSAAAAA0AqFTV0SbrVjzdasPvudZPZFvQp8duFO2pV0Gvsdzb0AAAABf7AG7hjrucTifk6I7xyjYywVblD5qvdj0dGfvrX0vBBzZ3I+W0rCNwBAd/vAcvvzUeg7scOvyJoK9RgGbHhkD</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADhlBzsXI1GiHgkXvho7SpHuonOl2BP0uv+adgl03lGHgAAAAAOgAAAAAIAACAAAABFWMRs1ad/o280VKx4113FK/FFSiRjER9jEpfCxK4JiiAAAADhSas9SmnuiQ2yEUCzcUr5PGG9O2nMLHJwQudn2oly9EAAAACkIDElgklOXF1JmWApER+ljEQrcT++1NxELY2El31YYTZWjW1HfqkagpkODQeOog4N7nSgxyvrrO9aomdoFjat</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,18 +46,18 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=MBS-SERVER\SQLMISTRAL_SVH;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAzdGbRowBEAc5wszV2eF4NyzWUiSmM3BkEgnKGpJMrDgAAAAAOgAAAAAIAACAAAAB2dIFg+UF221WMskW8wny+ufo6V2b1xF7SQVlMreDFOyAAAACCkQfhE5PNhJwRrqjcDbyw0WNh6Hws+T75FMtjEjOTO0AAAAAHztd9GvuFp+oEegjLeiGysm9xl9Mvpvv7UZsKVA5qeGzL2AXDyRJT+Iy2MSInIr/cPGyFACktlAReVYqWy3v3</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA47491WF2wk+NyVxALQv9fAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADvqrdENrHw32OYhFgzxSOocAFacUcBGMsZghvMTNVCIgAAAAAOgAAAAAIAACAAAAA+Rc5XLzakV5BZdPQdegk9QvBTuHQzhJXnob2ycD6pQSAAAAAQ5ye0AkBgymqVvKVTyDZrsVLLnugxaqPk8F6uafVpFkAAAACUBTQPhOhhP2d5mU1I3GgiZ/bsVBVxC6JPi5rpB3A1bxvimaRgx9IAL0SLIocOBPDZL8WUYyOCdI06piPxyq9+</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[p17]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{2BB12F4B-93D7-438D-A9C2-58B8129907F0}"
+      DTS:DTSID="{A6AAF486-DBA1-4363-A21C-75D0054992F2}"
       DTS:ObjectName="p17">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::FilePath]</DTS:PropertyExpression>
@@ -79,7 +79,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Check salto"
-              DTS:DTSID="{C18E8626-8860-4F44-960C-D4B23BBA586C}"
+              DTS:DTSID="{904E345B-ACEF-4B00-8D1C-B0AF89D20292}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -88,7 +88,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ID Petición"
-              DTS:DTSID="{8D831361-DA80-4B67-B927-CDD823ECAB4D}"
+              DTS:DTSID="{1333E1A3-24F3-43B0-9CB0-218C6505EF63}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -97,7 +97,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ID contratos"
-              DTS:DTSID="{32808CA1-F115-4708-AE46-2546A2E1C9FF}"
+              DTS:DTSID="{E0C0296F-3C9A-41C9-8D48-0CD534BD505E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -106,7 +106,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Contrato"
-              DTS:DTSID="{CBFFB14F-7469-4384-A8AE-1261F7164DD2}"
+              DTS:DTSID="{5AAB1148-72DF-4174-9CAB-33742D735CD0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -115,7 +115,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Acreditado"
-              DTS:DTSID="{24AF527F-9E9C-4920-8449-992E9D194E7D}"
+              DTS:DTSID="{13A577BD-BBFA-4B08-8FF0-48B22DB19CC2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -124,7 +124,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ID Acreditado"
-              DTS:DTSID="{6B98EFB3-A003-4CC0-98AF-958C9DE5AAEE}"
+              DTS:DTSID="{EBB96A2A-44FD-4BD5-A9C6-21509CE3A347}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -133,7 +133,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="FR"
-              DTS:DTSID="{51D2296D-AD4A-4E2A-A25B-E6BC476BB7C9}"
+              DTS:DTSID="{65AE7B7F-AE72-4BF0-AB16-929B9921517F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -142,7 +142,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Gestor asignado"
-              DTS:DTSID="{B247C291-D466-4161-9AEA-19446584CBFB}"
+              DTS:DTSID="{D51DF2F0-20EE-473C-9CC2-A2D453DA0363}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -151,7 +151,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Operador asignado"
-              DTS:DTSID="{6CC404AE-8556-4F54-9843-B43A13D05B3A}"
+              DTS:DTSID="{68AC59AC-A942-4482-870C-967E7DE6EC4A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -160,7 +160,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Tipo solicitud"
-              DTS:DTSID="{9DBBC58F-BFCD-4835-BB0A-CA870686BBA9}"
+              DTS:DTSID="{9D68FB30-A1C1-4657-97B2-A39C2B032E4F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -169,7 +169,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Estado"
-              DTS:DTSID="{45C00BE6-9F99-4DED-A01E-D56E96B1FE25}"
+              DTS:DTSID="{A02EC4FC-8BB7-4C75-BBA2-325C91A5B44F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -178,7 +178,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha registro petición"
-              DTS:DTSID="{F6081BF5-5BB3-4899-BA5E-8BF46C9BE123}"
+              DTS:DTSID="{F90E2B6B-9606-4519-AAFB-97EA9D8BC648}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -187,7 +187,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha inicio petición"
-              DTS:DTSID="{EEA700EF-B1EA-4A85-869D-2BEB5CA7AE60}"
+              DTS:DTSID="{5BE633EA-1152-457F-BFA0-2229D253EEAB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -196,7 +196,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha fin petición"
-              DTS:DTSID="{AB1A824B-0109-4BF8-840D-5F9435D67502}"
+              DTS:DTSID="{B0AB3C10-9A84-42F7-8772-B1707EEDF9A6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -205,7 +205,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Requiere solicitud NS"
-              DTS:DTSID="{077D0486-C5FA-4E8C-A36A-D72DE7B01D85}"
+              DTS:DTSID="{B16E5B1C-7F56-4264-90B6-A7C225453D19}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -214,7 +214,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Id P10"
-              DTS:DTSID="{38E0DBF1-D280-4E97-8890-50BEC469E4E6}"
+              DTS:DTSID="{65CF9000-1AF5-4226-AFF4-C744AF840CE7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -223,7 +223,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha inicio NS"
-              DTS:DTSID="{55DF41EF-72B0-4F6C-B950-643661F27438}"
+              DTS:DTSID="{5398948F-7295-4DD7-85E6-6BFAF796CBF7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -232,7 +232,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha recepción NS"
-              DTS:DTSID="{FBB32324-30E0-4DE2-BC9D-54AF5166FD15}"
+              DTS:DTSID="{0CD772FF-D3DB-4610-BCEA-12A75210BEC1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -241,7 +241,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Prioridad"
-              DTS:DTSID="{96C65D1A-FF2D-43A5-A9A1-4046B8CDF82F}"
+              DTS:DTSID="{F9101122-611C-448F-A0A2-E482FCC3EDEC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -250,7 +250,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Tipo Bloqueo"
-              DTS:DTSID="{3826740F-6D96-4318-B68B-9784BC3EEED1}"
+              DTS:DTSID="{F01BC1C4-279E-43D3-8608-60010529848E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -259,7 +259,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Descripción bloqueo"
-              DTS:DTSID="{4192D1F5-B2FC-49BE-B367-28F09594EA1B}"
+              DTS:DTSID="{513EFB20-FFD7-4B24-B80D-47077C106C73}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -268,7 +268,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha inicio bloqueo"
-              DTS:DTSID="{64BF6F79-7A9E-48AD-BC83-CCA50BE29283}"
+              DTS:DTSID="{49FB32F9-0FF4-4DB7-8D8B-0518FB859F4E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -277,7 +277,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha fin bloqueo"
-              DTS:DTSID="{F76B289F-D947-489E-9557-874E8E911665}"
+              DTS:DTSID="{A480013A-B87A-4D7C-A231-537691FC724F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -286,7 +286,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha baja"
-              DTS:DTSID="{D420B159-3C0D-4A34-9CD9-95F5DB323E85}"
+              DTS:DTSID="{F48EE44C-5A7C-4300-8A05-F94F1D4E1172}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -295,7 +295,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Excepción SLA"
-              DTS:DTSID="{D88CF65B-0D9C-4DFF-9E54-CECD58D8FDBB}"
+              DTS:DTSID="{DB06DF29-2811-4F90-AD81-6F5CA90C3E53}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -304,7 +304,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha solicitud exención"
-              DTS:DTSID="{3B67C269-A4DD-49CD-8741-DD2EBDEF3AF2}"
+              DTS:DTSID="{E563B35C-8672-472B-A16C-DC6F07B89518}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -313,7 +313,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Usuario solicitante"
-              DTS:DTSID="{D58BA0BB-2381-4CC9-8F15-C30C152949E5}"
+              DTS:DTSID="{DB363146-2D2D-427A-A851-4EFD65776BB1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -322,7 +322,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Motivo exención"
-              DTS:DTSID="{B0B79FF5-0974-46B6-AE6C-1F063A743B09}"
+              DTS:DTSID="{AEE29893-CC20-483A-8168-69D1CAA77902}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -331,7 +331,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha respuesta exención"
-              DTS:DTSID="{AA64A344-502F-43E0-BAEA-F65246F0AA2B}"
+              DTS:DTSID="{B47F969D-9215-4F37-913F-827218569188}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -340,7 +340,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Usuario SVH"
-              DTS:DTSID="{9D51AD66-6E33-472F-B457-3D5B295C70A8}"
+              DTS:DTSID="{336BE57F-46D1-4249-A690-527C69952CA6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -349,7 +349,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Sanción Propuesta"
-              DTS:DTSID="{2E9C27A3-941E-406A-80BA-09BF9E4EAD09}"
+              DTS:DTSID="{01F41B1E-A10D-4F93-B8DE-A096C571BCD3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -358,7 +358,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha sanción"
-              DTS:DTSID="{C5606363-840E-43DE-BA50-57455FE32E14}"
+              DTS:DTSID="{20323C16-2881-4429-AC3B-879FAEAD1796}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -367,7 +367,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Hito propuesta SIREC"
-              DTS:DTSID="{158B24F0-ACAB-407F-BF9A-299B1B384C48}"
+              DTS:DTSID="{6DBF5AE3-BC4F-4024-B2C8-6294F689DACC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -376,7 +376,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Baja petición"
-              DTS:DTSID="{7361C5DE-C566-45F7-84D7-17DE1FC04F55}"
+              DTS:DTSID="{34A0D3E6-D8A5-4D90-8850-1976C3D40CD6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -385,7 +385,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha, usuario y motivo  baja"
-              DTS:DTSID="{A696A9C4-55EF-444E-8345-B54F713D837B}"
+              DTS:DTSID="{16322316-433A-4454-A9AF-08891BD21BD8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -394,7 +394,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="HITO PB"
-              DTS:DTSID="{0B8AD571-FD4B-4728-BFD7-7956922CB853}"
+              DTS:DTSID="{0EE82787-DE85-4659-BC5F-F18C9391E9AF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -403,7 +403,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Número propuesta SIREC"
-              DTS:DTSID="{2D67C175-5865-40E6-8B07-AFC349325F55}"
+              DTS:DTSID="{2C282869-D02D-4EE1-9A1F-A4B6C7150ADD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -412,7 +412,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Judicializado No judicializado"
-              DTS:DTSID="{6F63932C-C3ED-479A-9820-7E4F9A69638F}"
+              DTS:DTSID="{13D16F27-DF9B-4A63-BDA5-7F0FB0668C33}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -421,7 +421,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha fin Documentación judicial"
-              DTS:DTSID="{3BB36B5A-53C0-4E20-B0B1-559B884077FC}"
+              DTS:DTSID="{9FFF86EC-461C-416D-A6BC-883221B1C940}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -430,7 +430,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha fin Escrituras  Tasación"
-              DTS:DTSID="{86C91E0D-E88A-43C3-AA07-F89D02A4362F}"
+              DTS:DTSID="{C00EF57C-BA42-4DA8-9E5E-1B07B04B50F0}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -572,7 +572,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="var_convertcsv">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\Ronny_Jara\OneDrive\MISTRAL" "BUSINESS" "SOLUTIONS\Mistral" "-" "Servihabitat" "-" "Documentos\#Repository\DWH" "BAU" "Mistral-SVH\Code\Python\convertcsv.py OCEAN_P02b_Peticiones_20230320.xlsx C:\Users\Ronny_Jara\OneDrive\MISTRAL" "BUSINESS" "SOLUTIONS\Mistral" "-" "Servihabitat" "-" "Documentos\#Repository\DWH" "BAU" "Mistral-SVH\Data" "Sources\PUPPY\P17\OLD\</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\Ronny_Jara\MISTRAL" "BUSINESS" "SOLUTIONS\Mistral" "-" "Servihabitat" "-" "Documentos\#Repository\DWH" "BAU" "Mistral-SVH\Code\Python\convertcsv.py OCEAN_P02b_Peticiones_20230320.xlsx C:\Users\Ronny_Jara\MISTRAL" "BUSINESS" "SOLUTIONS\Mistral" "-" "Servihabitat" "-" "Documentos\#Repository\DWH" "BAU" "Mistral-SVH\Data" "Sources\PUPPY\P17\OLD\</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -602,7 +602,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="var_deleteOldFich">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\Ronny_Jara\OneDrive\MISTRAL" "BUSINESS" "SOLUTIONS\Mistral" "-" "Servihabitat" "-" "Documentos\#Repository\DWH" "BAU" "Mistral-SVH\Code\Python\deleteOldFiles.py OCEAN_P02b_Peticiones_20230320.xlsx</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\Ronny_Jara\MISTRAL" "BUSINESS" "SOLUTIONS\Mistral" "-" "Servihabitat" "-" "Documentos\#Repository\DWH" "BAU" "Mistral-SVH\Code\Python\deleteOldFiles.py OCEAN_P02b_Peticiones_20230320.xlsx</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -643,7 +643,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="var_moverFich">
       <DTS:VariableValue
-        DTS:DataType="8">C:\08_Python\moveFile.py C:\Users\Ronny_Jara\OneDrive\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\P17 C:\ORIGENES_PROCESADOS\P17 *PUPPY_P17_Peticiones*</DTS:VariableValue>
+        DTS:DataType="8">C:\08_Python\moveFile.py C:\Users\Ronny_Jara\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\P17 C:\ORIGENES_PROCESADOS\P17 *PUPPY_P17_Peticiones*</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -1270,7 +1270,7 @@
             <DTS:ObjectData>
               <ForEachFileEnumeratorProperties>
                 <FEFEProperty
-                  Folder="C:\Users\Ronny_Jara\OneDrive\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\PUPPY\P17\" />
+                  Folder="C:\Users\Ronny_Jara\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\PUPPY\P17\" />
                 <FEFEProperty
                   FileSpec="*PUPPY_P17_Peticiones*.xlsx" />
                 <FEFEProperty
@@ -1300,7 +1300,7 @@
               <DTS:ObjectData>
                 <ExecuteProcessData
                   Executable="C:\Users\Ronny_Jara\AppData\Local\Microsoft\WindowsApps\python.exe"
-                  Arguments="C:\Users\Ronny_Jara\OneDrive\MISTRAL&quot; &quot;BUSINESS&quot; &quot;SOLUTIONS\Mistral&quot; &quot;-&quot; &quot;Servihabitat&quot; &quot;-&quot; &quot;Documentos\#Repository\DWH&quot; &quot;BAU&quot; &quot;Mistral-SVH\Code\Python\convertcsv.py OCEAN_P02b_Peticiones_20230320.xlsx C:\Users\Ronny_Jara\OneDrive\MISTRAL&quot; &quot;BUSINESS&quot; &quot;SOLUTIONS\Mistral&quot; &quot;-&quot; &quot;Servihabitat&quot; &quot;-&quot; &quot;Documentos\#Repository\DWH&quot; &quot;BAU&quot; &quot;Mistral-SVH\Data&quot; &quot;Sources\PUPPY\P17\OLD\" />
+                  Arguments="C:\Users\Ronny_Jara\MISTRAL&quot; &quot;BUSINESS&quot; &quot;SOLUTIONS\Mistral&quot; &quot;-&quot; &quot;Servihabitat&quot; &quot;-&quot; &quot;Documentos\#Repository\DWH&quot; &quot;BAU&quot; &quot;Mistral-SVH\Code\Python\convertcsv.py OCEAN_P02b_Peticiones_20230320.xlsx C:\Users\Ronny_Jara\MISTRAL&quot; &quot;BUSINESS&quot; &quot;SOLUTIONS\Mistral&quot; &quot;-&quot; &quot;Servihabitat&quot; &quot;-&quot; &quot;Documentos\#Repository\DWH&quot; &quot;BAU&quot; &quot;Mistral-SVH\Data&quot; &quot;Sources\PUPPY\P17\OLD\" />
               </DTS:ObjectData>
             </DTS:Executable>
           </DTS:Executables>
@@ -1317,6 +1317,7 @@
           DTS:refId="Package\Load file to DBO\Elimina _csv"
           DTS:CreationName="STOCK:FOREACHLOOP"
           DTS:Description="Contenedor de bucles Foreach"
+          DTS:Disabled="True"
           DTS:DTSID="{3D9FB74D-E6B7-49E1-94E9-9FE125F43EAB}"
           DTS:ExecutableType="STOCK:FOREACHLOOP"
           DTS:LocaleID="-1"
@@ -1332,7 +1333,7 @@
             <DTS:ObjectData>
               <ForEachFileEnumeratorProperties>
                 <FEFEProperty
-                  Folder="C:\Users\Ronny_Jara\OneDrive\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\PUPPY\P17\" />
+                  Folder="C:\Users\Ronny_Jara\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\PUPPY\P17\" />
                 <FEFEProperty
                   FileSpec="*PUPPY_P17_Peticiones*" />
                 <FEFEProperty
@@ -1362,7 +1363,7 @@
               <DTS:ObjectData>
                 <ExecuteProcessData
                   Executable="C:\Users\Ronny_Jara\AppData\Local\Microsoft\WindowsApps\python.exe"
-                  Arguments="C:\Users\Ronny_Jara\OneDrive\MISTRAL&quot; &quot;BUSINESS&quot; &quot;SOLUTIONS\Mistral&quot; &quot;-&quot; &quot;Servihabitat&quot; &quot;-&quot; &quot;Documentos\#Repository\DWH&quot; &quot;BAU&quot; &quot;Mistral-SVH\Code\Python\deleteOldFiles.py OCEAN_P02b_Peticiones_20230320.xlsx" />
+                  Arguments="C:\Users\Ronny_Jara\MISTRAL&quot; &quot;BUSINESS&quot; &quot;SOLUTIONS\Mistral&quot; &quot;-&quot; &quot;Servihabitat&quot; &quot;-&quot; &quot;Documentos\#Repository\DWH&quot; &quot;BAU&quot; &quot;Mistral-SVH\Code\Python\deleteOldFiles.py OCEAN_P02b_Peticiones_20230320.xlsx" />
               </DTS:ObjectData>
             </DTS:Executable>
           </DTS:Executables>
@@ -1418,7 +1419,7 @@
             <DTS:ObjectData>
               <ForEachFileEnumeratorProperties>
                 <FEFEProperty
-                  Folder="C:\Users\Ronny_Jara\OneDrive\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\PUPPY\P17\" />
+                  Folder="C:\Users\Ronny_Jara\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\PUPPY\P17\" />
                 <FEFEProperty
                   FileSpec="*PUPPY_P17_Peticiones*" />
                 <FEFEProperty
@@ -2379,7 +2380,7 @@
                               dataType="wstr"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
-                              length="400"
+                              length="50"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha solicitud exención]"
                               name="Copia de Fecha solicitud exención"
                               truncationRowDisposition="FailComponent">
@@ -2896,7 +2897,7 @@
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Fecha solicitud exención]"
                               cachedDataType="wstr"
-                              cachedLength="400"
+                              cachedLength="50"
                               cachedName="Copia de Fecha solicitud exención"
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha solicitud exención]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha solicitud exención]" />
@@ -3181,7 +3182,7 @@
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Descripción bloqueo]"
                               dataType="wstr"
-                              length="400"
+                              length="4000"
                               name="Descripción bloqueo" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha inicio bloqueo]"
@@ -3206,7 +3207,7 @@
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha solicitud exención]"
                               dataType="wstr"
-                              length="400"
+                              length="50"
                               name="Fecha solicitud exención" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Usuario solicitante]"
@@ -5380,89 +5381,93 @@
     design-time-name="Package\Load file to DBO\Search and load file\load to DBO">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="175,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
-          TopLeft="270,490" />
-        <NodeLayout
-          Size="180,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
-          TopLeft="296,165" />
-        <NodeLayout
-          Size="196,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"
-          TopLeft="339,75" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="168,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
           TopLeft="261.000000397364,315.400000599225" />
+        <NodeLayout
+          Size="180,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
+          TopLeft="316,171" />
+        <NodeLayout
+          Size="175,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
+          TopLeft="283,469" />
+        <NodeLayout
+          Size="196,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"
+          TopLeft="351,71" />
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de archivo plano]"
-          TopLeft="437,117">
+          TopLeft="449,113">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-51,48"
+              EndConnector="-43,58"
               Start="0,0"
-              End="-51,40.5">
+              End="-43,50.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20" />
+                    End="0,25" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20"
-                    Point2="0,24"
-                    Point3="-4,24" />
+                    Point1="0,25"
+                    Point2="0,29"
+                    Point3="-4,29" />
                   <mssgle:LineSegment
-                    End="-47,24" />
+                    End="-39,29" />
                   <mssgle:CubicBezierSegment
-                    Point1="-47,24"
-                    Point2="-51,24"
-                    Point3="-51,28" />
+                    Point1="-39,29"
+                    Point2="-43,29"
+                    Point3="-43,33" />
                   <mssgle:LineSegment
-                    End="-51,40.5" />
+                    End="-43,50.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-35.23359375,34,27.4671875,9.7978515625"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de conversión de datos]"
-          TopLeft="386,207">
+          TopLeft="406,213">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-40.999999602636,108.400000599225"
+              EndConnector="-60.999999602636,102.400000599225"
               Start="0,0"
-              End="-40.999999602636,100.900000599225">
+              End="-60.999999602636,94.900000599225">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,50.2000002996125" />
+                    End="0,47.2000002996125" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,50.2000002996125"
-                    Point2="0,54.2000002996125"
-                    Point3="-4,54.2000002996125" />
+                    Point1="0,47.2000002996125"
+                    Point2="0,51.2000002996125"
+                    Point3="-4,51.2000002996125" />
                   <mssgle:LineSegment
-                    End="-36.999999602636,54.2000002996125" />
+                    End="-56.999999602636,51.2000002996125" />
                   <mssgle:CubicBezierSegment
-                    Point1="-36.999999602636,54.2000002996125"
-                    Point2="-40.999999602636,54.2000002996125"
-                    Point3="-40.999999602636,58.2000002996125" />
+                    Point1="-56.999999602636,51.2000002996125"
+                    Point2="-60.999999602636,51.2000002996125"
+                    Point3="-60.999999602636,55.2000002996125" />
                   <mssgle:LineSegment
-                    End="-40.999999602636,100.900000599225" />
+                    End="-60.999999602636,94.900000599225" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-44.233593551318,56.2000002996125,27.4671875,9.7978515625"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5471,26 +5476,26 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="12.499999602636,132.599999400775"
+              EndConnector="25.499999602636,111.599999400775"
               Start="0,0"
-              End="12.499999602636,125.099999400775">
+              End="25.499999602636,104.099999400775">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,62.2999997003875" />
+                    End="0,51.7999997003875" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,62.2999997003875"
-                    Point2="0,66.2999997003875"
-                    Point3="4,66.2999997003875" />
+                    Point1="0,51.7999997003875"
+                    Point2="0,55.7999997003875"
+                    Point3="4,55.7999997003875" />
                   <mssgle:LineSegment
-                    End="8.49999960263602,66.2999997003875" />
+                    End="21.499999602636,55.7999997003875" />
                   <mssgle:CubicBezierSegment
-                    Point1="8.49999960263602,66.2999997003875"
-                    Point2="12.499999602636,66.2999997003875"
-                    Point3="12.499999602636,70.2999997003875" />
+                    Point1="21.499999602636,55.7999997003875"
+                    Point2="25.499999602636,55.7999997003875"
+                    Point3="25.499999602636,59.7999997003875" />
                   <mssgle:LineSegment
-                    End="12.499999602636,125.099999400775" />
+                    End="25.499999602636,104.099999400775" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
