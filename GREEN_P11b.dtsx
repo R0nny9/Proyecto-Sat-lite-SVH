@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="GREEN_P11b"
   DTS:PackageType="5"
-  DTS:VersionBuild="355"
-  DTS:VersionGUID="{EA71572B-EBB8-4848-9B1F-A160341F4760}">
+  DTS:VersionBuild="356"
+  DTS:VersionGUID="{4F82F698-F85B-4018-9EF0-6F210F94ABBF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,11 +27,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=192.168.0.104,49170;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvdJT860n8kiTBJlUPrMcpgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAxLJclrraVS/XyjeID2pZvTk1F2dE3AghBNZzq/fsNYQAAAAAOgAAAAAIAACAAAACi9XsXq+b49plA8YeZmu2wpua6FQBsl1HdTUJcQ+Dq+CAAAAAixMFsryfJ/v5UFPE2tKzU34npQfS4pgjX/A+TmoUw10AAAABRUHcYPgSwKghM09cOhvJlRQhSP+JWxVD1DO/igwluIzY9jV0bhaH4hn+PrR0iwnlphdzCtdstsHGs7b8w4OI5</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvdJT860n8kiTBJlUPrMcpgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAACJk2IIBCvFDgt+5FJFtAilxHT2Yy3Wg2dMKu0bBwOVwAAAAAOgAAAAAIAACAAAADwlYCqiBcDclcT5XbRS4YTpqduXFKMvcpH08zqKmyNGSAAAAAN/1JgmmETCiCFd6y7RRjQQKUOJALqpXDVXeMAmcV6d0AAAACwsZncwnutKqbyi0nJIZQk/XKx+F9Zjg2EkCDH7l1dJh3wBJ6Q9eDRgukmeQ5UzDWJsHYcISoW3qfpUgH+YGc8</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,11 +46,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=192.168.0.104,49170;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvdJT860n8kiTBJlUPrMcpgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADDGXPF1FS9hiaAZcachhqJP95yHP8fqWmbxvN2f+6IuQAAAAAOgAAAAAIAACAAAAAfvtB+DN/d6gbJZYZ76L7WJ+m5szLwaidM7BLvrbm9lyAAAACsF58dkhqXghMal3m8I8jpmgxgW3e58k2rd2tEpCeYrkAAAAALCc1ZTRpj+Ff+SeHh2L9iWaNkNnDJL9SOHquw9RUsoigZ/AxRsj+RWkZ4D1FNrRxG2QsZemZYfic9+Jgb/DdE</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvdJT860n8kiTBJlUPrMcpgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAByAL/wmpJiyXA4MNmfoOpeE3S2mNsb4cIdkPyjlvq9OwAAAAAOgAAAAAIAACAAAAAAR1WsGzyY1jz5/ZouKfRj4SP5p7btLkCItnbProx81CAAAAARdkQDhJVBXTYCvcjXSNkv2PpScNWzuLS0GJGLhsTRskAAAAAtEv/v67hOf4oTyf6mY40HIFyusaCXoX5WjiGf0k0mmZNiEH63OkGR00Rhmt4CK5PqXpx3ZfcRP4LICWPJIv7b</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1695,7 +1695,7 @@
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[COMENTARIOS AAPP ]"
                               cachedCodepage="65001"
                               cachedDataType="str"
-                              cachedLength="4000"
+                              cachedLength="6000"
                               cachedName="COMENTARIOS AAPP "
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[COMENTARIOS AAPP ]" />
                             <inputColumn
@@ -3622,7 +3622,7 @@
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[COMENTARIOS AAPP ]"
-                              length="4000"
+                              length="6000"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[COMENTARIOS AAPP ]"
                               name="COMENTARIOS AAPP "
                               truncationRowDisposition="FailComponent">
@@ -3900,7 +3900,7 @@
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[COMENTARIOS AAPP ]"
                               codePage="65001"
                               dataType="str"
-                              length="4000"
+                              length="6000"
                               name="COMENTARIOS AAPP " />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha baja]"
