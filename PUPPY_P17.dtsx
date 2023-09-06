@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="PUPPY_P17"
   DTS:PackageType="5"
-  DTS:VersionBuild="357"
-  DTS:VersionGUID="{3A098343-9D2B-4FB1-B432-E76897682EF2}">
+  DTS:VersionBuild="359"
+  DTS:VersionGUID="{945625DC-8AAC-4E51-A771-0E0A2A03A90A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -31,7 +31,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvdJT860n8kiTBJlUPrMcpgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAMcGNVZ3mdEUfaXDgkKHeULIYdAwtABamdYLZEblYR9QAAAAAOgAAAAAIAACAAAAD/VK7pdUP6VPhmblhycwb9Mu1TxsI6hl3zw8q6cKiz9iAAAACL28MR76bMNXzw100WR5ereMKulNdIm/MVaOtwkbf3JEAAAACF2dwLx8GVUkDlHR2maF103t0gNiB6oXjjPZEyDINT0i68h0lL7u0ad4P1u2tA26eTyGxbD0k3uhvstWRMC9U8</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvdJT860n8kiTBJlUPrMcpgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD+XBfhoro0dZxWed/bylKOyX+rXjMFeAETKOM79STA7QAAAAAOgAAAAAIAACAAAACccOBI3tQ9X3/wl9M9E+UO2VHbRUQQCqsXpst0z/2RyiAAAAA+IlqtoVDspv2o08urhSnOtC8+/xvTUi/xuKKetvMfnEAAAAAUJIK6A6pPxhOwdIV+5QVjNzQbccLgx5omtcEpBcm9L+KwyvlszyEble93Bte+MXq49bIzdQUoF52of351H0Tr</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -50,7 +50,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvdJT860n8kiTBJlUPrMcpgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA6IEvT4oDS8co5r3TIONRu1Fe1MWNo48Bwyl0CwNFVjQAAAAAOgAAAAAIAACAAAADiJcKwSAmCODYRJ9uoZBlFV3WC3jOJEQT+DiWQRPpn6CAAAABELOVllqqLaGoT64FcN+yREO0d4CU/3NNYwzxoOepZsUAAAABjrkhIiOEnWtJYnxs+KCYYiOg5Mo4OqWuIUjViT4F3UAWzooJ6VVw/tpllPNJ9VmeYitfWEUwfXr6fRrkgdW+s</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvdJT860n8kiTBJlUPrMcpgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABUTxifug+8kyLa5aaGLiEPJ21XJII+3Ohz0XSUk+JnJQAAAAAOgAAAAAIAACAAAAAL8jEKzgw7f4hwkLIVpwyFoeJ4NRHroLLQB9FIoXfzQiAAAAD9yGLYfBI2MUnT1Xdpt3l2JVcvkAUEntln7IndYKIJiUAAAABEWErWK1XJs+HRF3OvupOz4WPIJzKsphVK0S9dm+2IAOny90FSJ2xmJXx4nCOkL0VjNcMBXuPugWrFRNqCz5t4</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -2836,7 +2836,7 @@
                         <property
                           dataType="System.Boolean"
                           description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
-                          name="FastLoadKeepNulls">false</property>
+                          name="FastLoadKeepNulls">true</property>
                         <property
                           dataType="System.String"
                           description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
@@ -2869,114 +2869,408 @@
                               cachedName="F_DATOS"
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_DATOS]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1.Outputs[Salida de columna derivada].Columns[F_DATOS]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Días PB sin bloqueos]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Días PB sin bloqueos"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Días PB sin bloqueos]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Días PB sin bloqueos]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Días Bloqueo]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Días Bloqueo"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Días Bloqueo]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Días Bloqueo]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Días Total PB]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Días Total PB"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Días Total PB]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Días Total PB]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Estado]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Estado"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Estado]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Estado]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Mes fin]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Mes fin"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Mes fin]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Mes fin]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Año fin]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Año fin"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Año fin]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Año fin]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Mes entrada]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Mes entrada"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Mes entrada]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Mes entrada]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Año entrada]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Año entrada"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Año entrada]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Año entrada]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Contador PB]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Contador PB"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Contador PB]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Contador PB]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de HITO PB]"
+                              cachedDataType="wstr"
+                              cachedLength="4000"
+                              cachedName="Copia de HITO PB"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[HITO PB]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de HITO PB]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Fecha, usuario y motivo  baja]"
+                              cachedDataType="wstr"
+                              cachedLength="4000"
+                              cachedName="Copia de Fecha, usuario y motivo  baja"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha, usuario y motivo  baja]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha, usuario y motivo  baja]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Baja petición]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Baja petición"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Baja petición]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Baja petición]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Comentarios -  Estado actual]"
+                              cachedDataType="wstr"
+                              cachedLength="4000"
+                              cachedName="Copia de Comentarios -  Estado actual"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Comentarios -  Estado actual]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Comentarios -  Estado actual]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Operador Asignado Equipo Propuesta]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Operador Asignado Equipo Propuesta"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Operador Asignado Equipo Propuesta]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Operador Asignado Equipo Propuesta]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Fecha entrega PB]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Fecha entrega PB"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha entrega PB]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha entrega PB]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Hito propuesta SIREC]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Hito propuesta SIREC"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Hito propuesta SIREC]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Hito propuesta SIREC]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Fecha sanción]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Fecha sanción"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha sanción]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha sanción]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Sanción Propuesta]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Sanción Propuesta"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Sanción Propuesta]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Sanción Propuesta]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Tipo Bloqueo]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Tipo Bloqueo"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Tipo Bloqueo]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Tipo Bloqueo]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Fecha fin bloqueo]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Fecha fin bloqueo"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha fin bloqueo]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha fin bloqueo]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Fecha inicio bloqueo]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Fecha inicio bloqueo"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha inicio bloqueo]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha inicio bloqueo]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Fecha fin Escrituras  Tasación]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Fecha fin Escrituras  Tasación"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha fin Escrituras  Tasación]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha fin Escrituras  Tasación]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Fecha fin Documentación judicial]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Fecha fin Documentación judicial"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha fin Documentación judicial]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha fin Documentación judicial]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Judicializado No judicializado]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Judicializado No judicializado"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Judicializado No judicializado]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Judicializado No judicializado]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de F  Recepción  Nota Simple Extractado]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de F  Recepción  Nota Simple Extractado"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F  Recepción  Nota Simple Extractado]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de F  Recepción  Nota Simple Extractado]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de F  Inicio Nota Simple Extractado]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de F  Inicio Nota Simple Extractado"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F  Inicio Nota Simple Extractado]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de F  Inicio Nota Simple Extractado]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Id P10]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Id P10"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Id P10]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Id P10]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de FR Colateral]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de FR Colateral"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[FR Colateral]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de FR Colateral]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Requiere solicitud NS]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Requiere solicitud NS"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Requiere solicitud NS]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Requiere solicitud NS]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Tipo solicitud]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Tipo solicitud"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Tipo solicitud]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Tipo solicitud]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Fecha de Registro de Solicitud]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Fecha de Registro de Solicitud"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha de Registro de Solicitud]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha de Registro de Solicitud]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Fecha Solicitud Propuesta]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Fecha Solicitud Propuesta"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha Solicitud Propuesta]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha Solicitud Propuesta]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Gestor]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Gestor"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Gestor ]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Gestor]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Contrato]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Contrato"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Contrato]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Contrato]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Número propuesta SIREC]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Número propuesta SIREC"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Número propuesta SIREC]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Número propuesta SIREC]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de DNI]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de DNI"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[DNI]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de DNI]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Acreditado]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Acreditado"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Acreditado]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Acreditado]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Prioridad]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Prioridad"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Prioridad]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Prioridad]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de ID contratos]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de ID contratos"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID contratos]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de ID contratos]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Comprobación salto]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Comprobación salto"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Comprobación salto]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Comprobación salto]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de ID Solicitud]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de ID Solicitud"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID Solicitud]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de ID Solicitud]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de &quot;Comprobación salto Comprobación salto ID Solicitud&quot;]"
+                              cachedDataType="wstr"
+                              cachedLength="4000"
+                              cachedName="Copia de &quot;Comprobación salto Comprobación salto ID Solicitud&quot;"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[&quot;Comprobación salto Comprobación salto ID Solicitud&quot;]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de &quot;Comprobación salto Comprobación salto ID Solicitud&quot;]" />
                           </inputColumns>
                           <externalMetadataColumns
                             isUsed="True">
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Check salto]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[&quot;Comprobación salto Comprobación salto ID Solicitud&quot;]"
                               dataType="wstr"
                               length="400"
-                              name="Check salto" />
+                              name="&quot;Comprobación salto Comprobación salto ID Solicitud&quot;" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID Petición]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID Solicitud]"
                               dataType="wstr"
                               length="400"
-                              name="ID Petición" />
+                              name="ID Solicitud" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Comprobación salto]"
+                              dataType="wstr"
+                              length="400"
+                              name="Comprobación salto" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID contratos]"
                               dataType="wstr"
                               length="400"
                               name="ID contratos" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Contrato]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Prioridad]"
                               dataType="wstr"
                               length="400"
-                              name="Contrato" />
+                              name="Prioridad" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Acreditado]"
                               dataType="wstr"
                               length="400"
                               name="Acreditado" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID Acreditado]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[DNI]"
                               dataType="wstr"
                               length="400"
-                              name="ID Acreditado" />
+                              name="DNI" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[FR]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Número propuesta SIREC]"
                               dataType="wstr"
                               length="400"
-                              name="FR" />
+                              name="Número propuesta SIREC" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Gestor asignado]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Contrato]"
                               dataType="wstr"
                               length="400"
-                              name="Gestor asignado" />
+                              name="Contrato" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Operador asignado]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Gestor ]"
                               dataType="wstr"
                               length="400"
-                              name="Operador asignado" />
+                              name="Gestor " />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha Solicitud Propuesta]"
+                              dataType="wstr"
+                              length="400"
+                              name="Fecha Solicitud Propuesta" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha de Registro de Solicitud]"
+                              dataType="wstr"
+                              length="400"
+                              name="Fecha de Registro de Solicitud" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Tipo solicitud]"
                               dataType="wstr"
                               length="400"
                               name="Tipo solicitud" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Estado]"
-                              dataType="wstr"
-                              length="400"
-                              name="Estado" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha registro petición]"
-                              dataType="wstr"
-                              length="400"
-                              name="Fecha registro petición" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha inicio petición]"
-                              dataType="wstr"
-                              length="400"
-                              name="Fecha inicio petición" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha fin petición]"
-                              dataType="wstr"
-                              length="400"
-                              name="Fecha fin petición" />
-                            <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Requiere solicitud NS]"
                               dataType="wstr"
                               length="400"
                               name="Requiere solicitud NS" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[FR Colateral]"
+                              dataType="wstr"
+                              length="400"
+                              name="FR Colateral" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Id P10]"
                               dataType="wstr"
                               length="400"
                               name="Id P10" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha inicio NS]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F  Inicio Nota Simple Extractado]"
                               dataType="wstr"
                               length="400"
-                              name="Fecha inicio NS" />
+                              name="F  Inicio Nota Simple Extractado" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha recepción NS]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F  Recepción  Nota Simple Extractado]"
                               dataType="wstr"
                               length="400"
-                              name="Fecha recepción NS" />
+                              name="F  Recepción  Nota Simple Extractado" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Prioridad]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Judicializado No judicializado]"
                               dataType="wstr"
                               length="400"
-                              name="Prioridad" />
+                              name="Judicializado No judicializado" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Tipo Bloqueo]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha fin Documentación judicial]"
                               dataType="wstr"
                               length="400"
-                              name="Tipo Bloqueo" />
+                              name="Fecha fin Documentación judicial" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Descripción bloqueo]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha fin Escrituras  Tasación]"
                               dataType="wstr"
-                              length="4000"
-                              name="Descripción bloqueo" />
+                              length="400"
+                              name="Fecha fin Escrituras  Tasación" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha inicio bloqueo]"
                               dataType="wstr"
@@ -2988,40 +3282,10 @@
                               length="400"
                               name="Fecha fin bloqueo" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha baja]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Tipo Bloqueo]"
                               dataType="wstr"
                               length="400"
-                              name="Fecha baja" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Excepción SLA]"
-                              dataType="wstr"
-                              length="400"
-                              name="Excepción SLA" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha solicitud exención]"
-                              dataType="wstr"
-                              length="50"
-                              name="Fecha solicitud exención" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Usuario solicitante]"
-                              dataType="wstr"
-                              length="400"
-                              name="Usuario solicitante" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Motivo exención]"
-                              dataType="wstr"
-                              length="4000"
-                              name="Motivo exención" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha respuesta exención]"
-                              dataType="wstr"
-                              length="400"
-                              name="Fecha respuesta exención" />
-                            <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Usuario SVH]"
-                              dataType="wstr"
-                              length="400"
-                              name="Usuario SVH" />
+                              name="Tipo Bloqueo" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Sanción Propuesta]"
                               dataType="wstr"
@@ -3038,6 +3302,21 @@
                               length="400"
                               name="Hito propuesta SIREC" />
                             <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha entrega PB]"
+                              dataType="wstr"
+                              length="400"
+                              name="Fecha entrega PB" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Operador Asignado Equipo Propuesta]"
+                              dataType="wstr"
+                              length="400"
+                              name="Operador Asignado Equipo Propuesta" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Comentarios -  Estado actual]"
+                              dataType="wstr"
+                              length="4000"
+                              name="Comentarios -  Estado actual" />
+                            <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Baja petición]"
                               dataType="wstr"
                               length="400"
@@ -3045,33 +3324,58 @@
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha, usuario y motivo  baja]"
                               dataType="wstr"
-                              length="400"
+                              length="4000"
                               name="Fecha, usuario y motivo  baja" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[HITO PB]"
                               dataType="wstr"
-                              length="400"
+                              length="4000"
                               name="HITO PB" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Número propuesta SIREC]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Contador PB]"
                               dataType="wstr"
                               length="400"
-                              name="Número propuesta SIREC" />
+                              name="Contador PB" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Judicializado No judicializado]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Año entrada]"
                               dataType="wstr"
                               length="400"
-                              name="Judicializado No judicializado" />
+                              name="Año entrada" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha fin Documentación judicial]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Mes entrada]"
                               dataType="wstr"
                               length="400"
-                              name="Fecha fin Documentación judicial" />
+                              name="Mes entrada" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha fin Escrituras  Tasación]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Año fin]"
                               dataType="wstr"
                               length="400"
-                              name="Fecha fin Escrituras  Tasación" />
+                              name="Año fin" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Mes fin]"
+                              dataType="wstr"
+                              length="400"
+                              name="Mes fin" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Estado]"
+                              dataType="wstr"
+                              length="400"
+                              name="Estado" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Días Total PB]"
+                              dataType="wstr"
+                              length="400"
+                              name="Días Total PB" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Días Bloqueo]"
+                              dataType="wstr"
+                              length="400"
+                              name="Días Bloqueo" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Días PB sin bloqueos]"
+                              dataType="wstr"
+                              length="400"
+                              name="Días PB sin bloqueos" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_DATOS]"
                               dataType="wstr"
@@ -5232,81 +5536,43 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="175.2,41.6"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
-          TopLeft="303.333332008786,392.066665888362" />
-        <NodeLayout
-          Size="168,41.6"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
-          TopLeft="261.000000397364,315.400000599225" />
-        <EdgeLayout
-          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de columna derivada]"
-          TopLeft="345.000000397364,357.000000599225">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="45.9333316114218,35.0666652891373"
-              Start="0,0"
-              End="45.9333316114218,27.5666652891373">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,13.5333326445686" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,13.5333326445686"
-                    Point2="0,17.5333326445686"
-                    Point3="4,17.5333326445686" />
-                  <mssgle:LineSegment
-                    End="41.9333316114218,17.5333326445686" />
-                  <mssgle:CubicBezierSegment
-                    Point1="41.9333316114218,17.5333326445686"
-                    Point2="45.9333316114218,17.5333326445686"
-                    Point3="45.9333316114218,21.5333326445686" />
-                  <mssgle:LineSegment
-                    End="45.9333316114218,27.5666652891373" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
           Size="188.8,41.6"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"
           TopLeft="319.999987284343,48.5333337190416" />
         <NodeLayout
           Size="173.6,41.6"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
-          TopLeft="275.833322372702,169.000001343091" />
+          TopLeft="278.333322273361,169.000001343091" />
+        <NodeLayout
+          Size="168,41.6"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
+          TopLeft="261.000000397364,315.400000599225" />
         <EdgeLayout
-          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de conversión de datos]"
-          TopLeft="362.633322372702,210.600001343091">
+          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de archivo plano]"
+          TopLeft="414.399987284343,90.1333337190416">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-17.633321975338,104.799999256134"
+              EndConnector="-49.2666650109821,78.8666676240493"
               Start="0,0"
-              End="-17.633321975338,97.2999992561336">
+              End="-49.2666650109821,71.3666676240493">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,48.3999996280668" />
+                    End="0,35.4333338120247" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,48.3999996280668"
-                    Point2="0,52.3999996280668"
-                    Point3="-4,52.3999996280668" />
+                    Point1="0,35.4333338120247"
+                    Point2="0,39.4333338120247"
+                    Point3="-4,39.4333338120247" />
                   <mssgle:LineSegment
-                    End="-13.633321975338,52.3999996280668" />
+                    End="-45.2666650109821,39.4333338120247" />
                   <mssgle:CubicBezierSegment
-                    Point1="-13.633321975338,52.3999996280668"
-                    Point2="-17.633321975338,52.3999996280668"
-                    Point3="-17.633321975338,56.3999996280668" />
+                    Point1="-45.2666650109821,39.4333338120247"
+                    Point2="-49.2666650109821,39.4333338120247"
+                    Point3="-49.2666650109821,43.4333338120247" />
                   <mssgle:LineSegment
-                    End="-17.633321975338,97.2999992561336" />
+                    End="-49.2666650109821,71.3666676240493" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5316,31 +5582,57 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de archivo plano]"
-          TopLeft="414.399987284343,90.1333337190416">
+          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de conversión de datos]"
+          TopLeft="365.133322273361,210.600001343091">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-51.766664911641,78.8666676240498"
+              EndConnector="-20.1333218759969,104.799999256134"
               Start="0,0"
-              End="-51.766664911641,71.3666676240498">
+              End="-20.1333218759969,97.299999256134">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,35.4333338120249" />
+                    End="0,48.399999628067" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,35.4333338120249"
-                    Point2="0,39.4333338120249"
-                    Point3="-4,39.4333338120249" />
+                    Point1="0,48.399999628067"
+                    Point2="0,52.399999628067"
+                    Point3="-4,52.399999628067" />
                   <mssgle:LineSegment
-                    End="-47.766664911641,39.4333338120249" />
+                    End="-16.1333218759969,52.399999628067" />
                   <mssgle:CubicBezierSegment
-                    Point1="-47.766664911641,39.4333338120249"
-                    Point2="-51.766664911641,39.4333338120249"
-                    Point3="-51.766664911641,43.4333338120249" />
+                    Point1="-16.1333218759969,52.399999628067"
+                    Point2="-20.1333218759969,52.399999628067"
+                    Point3="-20.1333218759969,56.399999628067" />
                   <mssgle:LineSegment
-                    End="-51.766664911641,71.3666676240498" />
+                    End="-20.1333218759969,97.299999256134" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="168.8,41.6"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
+          TopLeft="265.833322770066,416.000003306071" />
+        <EdgeLayout
+          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de columna derivada]"
+          TopLeft="347.616661583715,357.000000599225">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.0000027068461"
+              Start="0,0"
+              End="0,51.5000027068461">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.5000027068461" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

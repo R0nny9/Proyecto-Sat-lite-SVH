@@ -1,0 +1,1676 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="8/28/2023 9:57:37 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="MBS-VMORENO"
+  DTS:CreatorName="MBS-VMORENO\Vicente_Moreno"
+  DTS:DTSID="{B31664CF-CD39-4240-B427-7F867D7060F8}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
+  DTS:LocaleID="3082"
+  DTS:ObjectName="Package2"
+  DTS:PackageType="5"
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{1FFE95BE-7912-4F86-8630-62A007502270}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[192.168.0.104,49170.SVH_CORE.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{A90E3CED-295C-47D9-A5FD-8AE75844FB17}"
+      DTS:ObjectName="192.168.0.104,49170.SVH_CORE.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=192.168.0.104,49170;User ID=sa;Initial Catalog=SVH_CORE;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsjeJGH0G70u+T680C9/7BAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACy0X5WNwpQ3CPDqGhayTowZ5jnZ3MMYMtoRdwwQSRnSQAAAAAOgAAAAAIAACAAAAA9W4iSxEpv1BV3//JLIsDuB0I+M5ip7WrEzDLOKRLbRiAAAAAMqKiLkb4IQw1omJPrQxNGrRY7ZM8v5sSIvpq8Lybym0AAAAB50mshc2GuWqcfOrGgnROtvONx/2PNDSsarHeURKEYhy2/tzaZEy0KuPBRBPiJi/5PxUwE23348E2ZyLuqfKbM</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[192.168.0.104,49170.SVH_DBO.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{A51EC1C4-8E64-4143-A04B-1C09F6E9D8A7}"
+      DTS:ObjectName="192.168.0.104,49170.SVH_DBO.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=192.168.0.104,49170;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsjeJGH0G70u+T680C9/7BAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADt9PGmtq/leay4gUygbT/iYTvrM3KZP+BtBlvWdd5ufgAAAAAOgAAAAAIAACAAAADi7+LsDR+VRy9J/V4KrYMNmrM/O+0M5T7PtAywkOSoGyAAAACaLHHhXLMKU2f3cGKsljwjdSCItdDyqzgXxWDwUGC1H0AAAACa204K+5oeifnIz/Qju+t3qKkGqOB/gt+XTXUNF02eS0X1AnMpDIZ40hTm4jReJHr3iUq+VhbjZ5eZh8zswzE4</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{D39594D4-1249-4A9F-9F7A-D94A6F4B51F5}"
+      DTS:ObjectName="Administrador de conexiones con Excel">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Vicente_Moreno\OneDrive - MISTRAL BUSINESS SOLUTIONS\#Repository\DWH BAU Mistral-SVH\Data Sources\Otros\Matriz Incidencias Calidad\SLA Calidad_20230828.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Flujo de datos"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{18AF283A-9F7B-4A3F-882D-89A82A7E7CA8}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Flujo de datos">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Tarea Flujo de datos\Columna derivada"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Columna derivada;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Crea nuevos valores de columna aplicando expresiones a las columnas de entrada de la transformación. Crea nuevas columnas o sobrescribe las columnas existentes. Por ejemplo, se concatenan los valores de las columnas 'nombre' y 'apellidos' para crear una columna 'nombre completo'."
+              name="Columna derivada"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Tarea Flujo de datos\Columna derivada.Inputs[Entrada de columna derivada]"
+                  description="Entrada en la transformación Columna derivada"
+                  name="Entrada de columna derivada">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada]"
+                  description="Salida predeterminada de la transformación Columna derivada"
+                  exclusionGroup="1"
+                  name="Salida de columna derivada"
+                  synchronousInputId="Package\Tarea Flujo de datos\Columna derivada.Inputs[Entrada de columna derivada]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada].Columns[Fecha_Datos]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Cálculo"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada].Columns[Fecha_Datos]"
+                      name="Fecha_Datos"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expresión de columna derivada"
+                          name="Expression">[GETDATE]()</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expresión descriptiva de columna derivada"
+                          expressionType="Notify"
+                          name="FriendlyExpression">GETDATE()</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Tarea Flujo de datos\Columna derivada.Outputs[Salida de error de columna derivada]"
+                  description="Salida de error de la transformación Columna derivada"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de columna derivada"
+                  synchronousInputId="Package\Tarea Flujo de datos\Columna derivada.Inputs[Entrada de columna derivada]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos\Destino de OLE DB"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino de OLE DB"
+              name="Destino de OLE DB"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[dbo].[Matriz_Incidencias_Calidad]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos\Destino de OLE DB.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[192.168.0.104,49170.SVH_DBO.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[192.168.0.104,49170.SVH_DBO.sa]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+                  errorOrTruncationOperation="Insertar"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Id incidencia proveedor]"
+                      cachedDataType="r8"
+                      cachedName="Id incidencia proveedor"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Id incidencia proveedor]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Id incidencia proveedor]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Código proceso]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Código proceso"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Código proceso]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Código proceso]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Proceso afectado]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Proceso afectado"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Proceso afectado]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Proceso afectado]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Proceso afectado (I)]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Proceso afectado (I)"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Proceso afectado (I)]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Proceso afectado (I)]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Subtarea]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Subtarea"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Subtarea]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Subtarea]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[ID petición matriz proceso]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="ID petición matriz proceso"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID petición matriz proceso]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ID petición matriz proceso]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[ID petición (SIREC)]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="ID petición (SIREC)"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID petición (SIREC)]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ID petición (SIREC)]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Fecha fin petición]"
+                      cachedDataType="date"
+                      cachedName="Fecha fin petición"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha fin petición]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Fecha fin petición]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Cliente]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Cliente"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Cliente]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Cliente]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Cliente tabulado]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Cliente tabulado"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Cliente tabulado]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Cliente tabulado]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Acreditado]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Acreditado"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Acreditado]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Acreditado]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Contrato]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Contrato"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Contrato]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Contrato]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Proveedor incidencia]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Proveedor incidencia"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Proveedor incidencia]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Proveedor incidencia]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Fecha incidencia proveedor]"
+                      cachedDataType="date"
+                      cachedName="Fecha incidencia proveedor"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha incidencia proveedor]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Fecha incidencia proveedor]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Fecha detección incidencia SVH]"
+                      cachedDataType="date"
+                      cachedName="Fecha detección incidencia SVH"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha detección incidencia SVH]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Fecha detección incidencia SVH]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Técnico SVH que lo detecta]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Técnico SVH que lo detecta"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Técnico SVH que lo detecta]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Técnico SVH que lo detecta]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Grado importancia _1=Muy grave_2=Grave_3=Leve]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Grado importancia _1=Muy grave_2=Grave_3=Leve"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Grado importancia _1=Muy grave_2=Grave_3=Leve]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Grado importancia _1=Muy grave_2=Grave_3=Leve]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Grado importancia _1=Muy grave_2=Grave_3=Leve_(I)]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Grado importancia _1=Muy grave_2=Grave_3=Leve_(I)"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Grado importancia _1=Muy grave_2=Grave_3=Leve_(I)]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Grado importancia _1=Muy grave_2=Grave_3=Leve_(I)]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Tipo incidencia]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Tipo incidencia"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Tipo incidencia]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Tipo incidencia]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Descripción incidencia]"
+                      cachedDataType="nText"
+                      cachedName="Descripción incidencia"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Descripción incidencia]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Descripción incidencia]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Descripción situación proveedor]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Descripción situación proveedor"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Descripción situación proveedor]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Descripción situación proveedor]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Fecha resolución incidencia]"
+                      cachedDataType="date"
+                      cachedName="Fecha resolución incidencia"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha resolución incidencia]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Fecha resolución incidencia]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Procedimentado en la Guia Operativa (Si/No)]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Procedimentado en la Guia Operativa (Si/No)"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Procedimentado en la Guia Operativa (Si/No)]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Procedimentado en la Guia Operativa (Si/No)]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Fecha incorporación Guia Operativa aclaración]"
+                      cachedDataType="date"
+                      cachedName="Fecha incorporación Guia Operativa aclaración"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha incorporación Guia Operativa aclaración]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Fecha incorporación Guia Operativa aclaración]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Año incidencia]"
+                      cachedDataType="r8"
+                      cachedName="Año incidencia"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Año incidencia]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Año incidencia]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Mes incidencia]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Mes incidencia"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Mes incidencia]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Mes incidencia]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Año detección incidencia SVH]"
+                      cachedDataType="r8"
+                      cachedName="Año detección incidencia SVH"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Año detección incidencia SVH]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Año detección incidencia SVH]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Mes detección incidencia SVH]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Mes detección incidencia SVH"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Mes detección incidencia SVH]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Mes detección incidencia SVH]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Baja]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Baja"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Baja]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Baja]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Usuario y motivo]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Usuario y motivo"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Usuario y motivo]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Usuario y motivo]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[¿Aplica incidencia SLA calidad?]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="¿Aplica incidencia SLA calidad?"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[¿Aplica incidencia SLA calidad?]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[¿Aplica incidencia SLA calidad?]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[ERROR TIPIFICADO]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="ERROR TIPIFICADO"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ERROR TIPIFICADO]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ERROR TIPIFICADO]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[ERROR TIPIFICADO (I)]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="ERROR TIPIFICADO (I)"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ERROR TIPIFICADO (I)]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ERROR TIPIFICADO (I)]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Área que detecta la incidencia]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Área que detecta la incidencia"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Área que detecta la incidencia]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Área que detecta la incidencia]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Report de Negocio]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Report de Negocio"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Report de Negocio]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Report de Negocio]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Mes/Año detección]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Mes/Año detección"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Mes/Año detección]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Mes/Año detección]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[F37]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="F37"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F37]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F37]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Fecha_Datos]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Fecha_Datos"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha_Datos]"
+                      lineageId="Package\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada].Columns[Fecha_Datos]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Id incidencia proveedor]"
+                      dataType="wstr"
+                      length="255"
+                      name="Id incidencia proveedor" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Código proceso]"
+                      dataType="wstr"
+                      length="255"
+                      name="Código proceso" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Proceso afectado]"
+                      dataType="wstr"
+                      length="255"
+                      name="Proceso afectado" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Proceso afectado (I)]"
+                      dataType="wstr"
+                      length="255"
+                      name="Proceso afectado (I)" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Subtarea]"
+                      dataType="wstr"
+                      length="255"
+                      name="Subtarea" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID petición matriz proceso]"
+                      dataType="wstr"
+                      length="255"
+                      name="ID petición matriz proceso" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID petición (SIREC)]"
+                      dataType="wstr"
+                      length="255"
+                      name="ID petición (SIREC)" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha fin petición]"
+                      dataType="dbTimeStamp"
+                      name="Fecha fin petición" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Cliente]"
+                      dataType="wstr"
+                      length="255"
+                      name="Cliente" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Cliente tabulado]"
+                      dataType="wstr"
+                      length="255"
+                      name="Cliente tabulado" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Acreditado]"
+                      dataType="wstr"
+                      length="255"
+                      name="Acreditado" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Contrato]"
+                      dataType="wstr"
+                      length="255"
+                      name="Contrato" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Proveedor incidencia]"
+                      dataType="wstr"
+                      length="255"
+                      name="Proveedor incidencia" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha incidencia proveedor]"
+                      dataType="dbTimeStamp"
+                      name="Fecha incidencia proveedor" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha detección incidencia SVH]"
+                      dataType="dbTimeStamp"
+                      name="Fecha detección incidencia SVH" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Técnico SVH que lo detecta]"
+                      dataType="wstr"
+                      length="255"
+                      name="Técnico SVH que lo detecta" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Grado importancia _1=Muy grave_2=Grave_3=Leve]"
+                      dataType="wstr"
+                      length="255"
+                      name="Grado importancia _1=Muy grave_2=Grave_3=Leve" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Grado importancia _1=Muy grave_2=Grave_3=Leve_(I)]"
+                      dataType="wstr"
+                      length="255"
+                      name="Grado importancia _1=Muy grave_2=Grave_3=Leve_(I)" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Tipo incidencia]"
+                      dataType="wstr"
+                      length="255"
+                      name="Tipo incidencia" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Descripción incidencia]"
+                      dataType="nText"
+                      name="Descripción incidencia" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Descripción situación proveedor]"
+                      dataType="wstr"
+                      length="255"
+                      name="Descripción situación proveedor" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha resolución incidencia]"
+                      dataType="dbTimeStamp"
+                      name="Fecha resolución incidencia" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Procedimentado en la Guia Operativa (Si/No)]"
+                      dataType="wstr"
+                      length="255"
+                      name="Procedimentado en la Guia Operativa (Si/No)" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha incorporación Guia Operativa aclaración]"
+                      dataType="dbTimeStamp"
+                      name="Fecha incorporación Guia Operativa aclaración" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Año incidencia]"
+                      dataType="wstr"
+                      length="255"
+                      name="Año incidencia" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Mes incidencia]"
+                      dataType="wstr"
+                      length="255"
+                      name="Mes incidencia" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Año detección incidencia SVH]"
+                      dataType="r8"
+                      name="Año detección incidencia SVH" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Mes detección incidencia SVH]"
+                      dataType="wstr"
+                      length="255"
+                      name="Mes detección incidencia SVH" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Baja]"
+                      dataType="wstr"
+                      length="255"
+                      name="Baja" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Usuario y motivo]"
+                      dataType="wstr"
+                      length="255"
+                      name="Usuario y motivo" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[¿Aplica incidencia SLA calidad?]"
+                      dataType="wstr"
+                      length="255"
+                      name="¿Aplica incidencia SLA calidad?" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ERROR TIPIFICADO]"
+                      dataType="wstr"
+                      length="255"
+                      name="ERROR TIPIFICADO" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ERROR TIPIFICADO (I)]"
+                      dataType="wstr"
+                      length="255"
+                      name="ERROR TIPIFICADO (I)" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Área que detecta la incidencia]"
+                      dataType="wstr"
+                      length="255"
+                      name="Área que detecta la incidencia" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Report de Negocio]"
+                      dataType="wstr"
+                      length="255"
+                      name="Report de Negocio" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Mes/Año detección]"
+                      dataType="wstr"
+                      length="255"
+                      name="Mes/Año detección" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F37]"
+                      dataType="wstr"
+                      length="255"
+                      name="F37" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha_Datos]"
+                      dataType="dbTimeStamp"
+                      name="Fecha_Datos" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de OLE DB"
+                  synchronousInputId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos\Origen de Excel"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Origen de Excel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Origen de Excel"
+              name="Origen de Excel"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">Detalle$</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="Variable que contiene el comando SQL para ejecutar."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="La asignación de parámetros del comando SQL a variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos\Origen de Excel.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel]"
+                  name="Salida de origen de Excel">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Id incidencia proveedor]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Id incidencia proveedor]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Id incidencia proveedor]"
+                      name="Id incidencia proveedor"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Código proceso]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Código proceso]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Código proceso]"
+                      name="Código proceso"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Proceso afectado]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Proceso afectado]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Proceso afectado]"
+                      name="Proceso afectado"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Proceso afectado (I)]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Proceso afectado (I)]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Proceso afectado (I)]"
+                      name="Proceso afectado (I)"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Subtarea]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Subtarea]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Subtarea]"
+                      name="Subtarea"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ID petición matriz proceso]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[ID petición matriz proceso]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ID petición matriz proceso]"
+                      name="ID petición matriz proceso"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ID petición (SIREC)]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[ID petición (SIREC)]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ID petición (SIREC)]"
+                      name="ID petición (SIREC)"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Fecha fin petición]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Fecha fin petición]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Fecha fin petición]"
+                      name="Fecha fin petición"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Cliente]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Cliente]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Cliente]"
+                      name="Cliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Cliente tabulado]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Cliente tabulado]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Cliente tabulado]"
+                      name="Cliente tabulado"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Acreditado]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Acreditado]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Acreditado]"
+                      name="Acreditado"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Contrato]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Contrato]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Contrato]"
+                      name="Contrato"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Proveedor incidencia]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Proveedor incidencia]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Proveedor incidencia]"
+                      name="Proveedor incidencia"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Fecha incidencia proveedor]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Fecha incidencia proveedor]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Fecha incidencia proveedor]"
+                      name="Fecha incidencia proveedor"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Fecha detección incidencia SVH]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Fecha detección incidencia SVH]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Fecha detección incidencia SVH]"
+                      name="Fecha detección incidencia SVH"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Técnico SVH que lo detecta]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Técnico SVH que lo detecta]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Técnico SVH que lo detecta]"
+                      name="Técnico SVH que lo detecta"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Grado importancia _1=Muy grave_2=Grave_3=Leve]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Grado importancia _1=Muy grave_2=Grave_3=Leve]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Grado importancia _1=Muy grave_2=Grave_3=Leve]"
+                      name="Grado importancia _1=Muy grave_2=Grave_3=Leve"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Grado importancia _1=Muy grave_2=Grave_3=Leve_(I)]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Grado importancia _1=Muy grave_2=Grave_3=Leve_(I)]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Grado importancia _1=Muy grave_2=Grave_3=Leve_(I)]"
+                      name="Grado importancia _1=Muy grave_2=Grave_3=Leve_(I)"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Tipo incidencia]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Tipo incidencia]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Tipo incidencia]"
+                      name="Tipo incidencia"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Descripción incidencia]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Descripción incidencia]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Descripción incidencia]"
+                      name="Descripción incidencia"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Descripción situación proveedor]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Descripción situación proveedor]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Descripción situación proveedor]"
+                      name="Descripción situación proveedor"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Fecha resolución incidencia]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Fecha resolución incidencia]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Fecha resolución incidencia]"
+                      name="Fecha resolución incidencia"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Procedimentado en la Guia Operativa (Si/No)]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Procedimentado en la Guia Operativa (Si/No)]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Procedimentado en la Guia Operativa (Si/No)]"
+                      name="Procedimentado en la Guia Operativa (Si/No)"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Fecha incorporación Guia Operativa aclaración]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Fecha incorporación Guia Operativa aclaración]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Fecha incorporación Guia Operativa aclaración]"
+                      name="Fecha incorporación Guia Operativa aclaración"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Año incidencia]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Año incidencia]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Año incidencia]"
+                      name="Año incidencia"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Mes incidencia]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Mes incidencia]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Mes incidencia]"
+                      name="Mes incidencia"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Año detección incidencia SVH]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Año detección incidencia SVH]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Año detección incidencia SVH]"
+                      name="Año detección incidencia SVH"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Mes detección incidencia SVH]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Mes detección incidencia SVH]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Mes detección incidencia SVH]"
+                      name="Mes detección incidencia SVH"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Baja]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Baja]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Baja]"
+                      name="Baja"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Usuario y motivo]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Usuario y motivo]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Usuario y motivo]"
+                      name="Usuario y motivo"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[¿Aplica incidencia SLA calidad?]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[¿Aplica incidencia SLA calidad?]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[¿Aplica incidencia SLA calidad?]"
+                      name="¿Aplica incidencia SLA calidad?"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ERROR TIPIFICADO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[ERROR TIPIFICADO]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ERROR TIPIFICADO]"
+                      name="ERROR TIPIFICADO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ERROR TIPIFICADO (I)]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[ERROR TIPIFICADO (I)]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ERROR TIPIFICADO (I)]"
+                      name="ERROR TIPIFICADO (I)"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Área que detecta la incidencia]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Área que detecta la incidencia]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Área que detecta la incidencia]"
+                      name="Área que detecta la incidencia"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Report de Negocio]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Report de Negocio]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Report de Negocio]"
+                      name="Report de Negocio"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Mes/Año detección]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Mes/Año detección]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Mes/Año detección]"
+                      name="Mes/Año detección"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F37]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F37]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[F37]"
+                      name="F37"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Id incidencia proveedor]"
+                      dataType="r8"
+                      name="Id incidencia proveedor" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Código proceso]"
+                      dataType="wstr"
+                      length="255"
+                      name="Código proceso" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Proceso afectado]"
+                      dataType="wstr"
+                      length="255"
+                      name="Proceso afectado" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Proceso afectado (I)]"
+                      dataType="wstr"
+                      length="255"
+                      name="Proceso afectado (I)" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Subtarea]"
+                      dataType="wstr"
+                      length="255"
+                      name="Subtarea" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[ID petición matriz proceso]"
+                      dataType="wstr"
+                      length="255"
+                      name="ID petición matriz proceso" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[ID petición (SIREC)]"
+                      dataType="wstr"
+                      length="255"
+                      name="ID petición (SIREC)" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Fecha fin petición]"
+                      dataType="date"
+                      name="Fecha fin petición" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Cliente]"
+                      dataType="wstr"
+                      length="255"
+                      name="Cliente" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Cliente tabulado]"
+                      dataType="wstr"
+                      length="255"
+                      name="Cliente tabulado" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Acreditado]"
+                      dataType="wstr"
+                      length="255"
+                      name="Acreditado" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Contrato]"
+                      dataType="wstr"
+                      length="255"
+                      name="Contrato" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Proveedor incidencia]"
+                      dataType="wstr"
+                      length="255"
+                      name="Proveedor incidencia" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Fecha incidencia proveedor]"
+                      dataType="date"
+                      name="Fecha incidencia proveedor" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Fecha detección incidencia SVH]"
+                      dataType="date"
+                      name="Fecha detección incidencia SVH" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Técnico SVH que lo detecta]"
+                      dataType="wstr"
+                      length="255"
+                      name="Técnico SVH que lo detecta" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Grado importancia _1=Muy grave_2=Grave_3=Leve]"
+                      dataType="wstr"
+                      length="255"
+                      name="Grado importancia _1=Muy grave_2=Grave_3=Leve" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Grado importancia _1=Muy grave_2=Grave_3=Leve_(I)]"
+                      dataType="wstr"
+                      length="255"
+                      name="Grado importancia _1=Muy grave_2=Grave_3=Leve_(I)" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Tipo incidencia]"
+                      dataType="wstr"
+                      length="255"
+                      name="Tipo incidencia" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Descripción incidencia]"
+                      dataType="nText"
+                      name="Descripción incidencia" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Descripción situación proveedor]"
+                      dataType="wstr"
+                      length="255"
+                      name="Descripción situación proveedor" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Fecha resolución incidencia]"
+                      dataType="date"
+                      name="Fecha resolución incidencia" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Procedimentado en la Guia Operativa (Si/No)]"
+                      dataType="wstr"
+                      length="255"
+                      name="Procedimentado en la Guia Operativa (Si/No)" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Fecha incorporación Guia Operativa aclaración]"
+                      dataType="date"
+                      name="Fecha incorporación Guia Operativa aclaración" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Año incidencia]"
+                      dataType="r8"
+                      name="Año incidencia" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Mes incidencia]"
+                      dataType="wstr"
+                      length="255"
+                      name="Mes incidencia" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Año detección incidencia SVH]"
+                      dataType="r8"
+                      name="Año detección incidencia SVH" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Mes detección incidencia SVH]"
+                      dataType="wstr"
+                      length="255"
+                      name="Mes detección incidencia SVH" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Baja]"
+                      dataType="wstr"
+                      length="255"
+                      name="Baja" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Usuario y motivo]"
+                      dataType="wstr"
+                      length="255"
+                      name="Usuario y motivo" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[¿Aplica incidencia SLA calidad?]"
+                      dataType="wstr"
+                      length="255"
+                      name="¿Aplica incidencia SLA calidad?" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[ERROR TIPIFICADO]"
+                      dataType="wstr"
+                      length="255"
+                      name="ERROR TIPIFICADO" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[ERROR TIPIFICADO (I)]"
+                      dataType="wstr"
+                      length="255"
+                      name="ERROR TIPIFICADO (I)" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Área que detecta la incidencia]"
+                      dataType="wstr"
+                      length="255"
+                      name="Área que detecta la incidencia" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Report de Negocio]"
+                      dataType="wstr"
+                      length="255"
+                      name="Report de Negocio" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Mes/Año detección]"
+                      dataType="wstr"
+                      length="255"
+                      name="Mes/Año detección" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F37]"
+                      dataType="wstr"
+                      length="255"
+                      name="F37" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de Excel">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Id incidencia proveedor]"
+                      dataType="r8"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Id incidencia proveedor]"
+                      name="Id incidencia proveedor" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Código proceso]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Código proceso]"
+                      name="Código proceso" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Proceso afectado]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Proceso afectado]"
+                      name="Proceso afectado" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Proceso afectado (I)]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Proceso afectado (I)]"
+                      name="Proceso afectado (I)" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Subtarea]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Subtarea]"
+                      name="Subtarea" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ID petición matriz proceso]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ID petición matriz proceso]"
+                      name="ID petición matriz proceso" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ID petición (SIREC)]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ID petición (SIREC)]"
+                      name="ID petición (SIREC)" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Fecha fin petición]"
+                      dataType="date"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Fecha fin petición]"
+                      name="Fecha fin petición" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Cliente]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Cliente]"
+                      name="Cliente" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Cliente tabulado]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Cliente tabulado]"
+                      name="Cliente tabulado" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Acreditado]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Acreditado]"
+                      name="Acreditado" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Contrato]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Contrato]"
+                      name="Contrato" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Proveedor incidencia]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Proveedor incidencia]"
+                      name="Proveedor incidencia" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Fecha incidencia proveedor]"
+                      dataType="date"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Fecha incidencia proveedor]"
+                      name="Fecha incidencia proveedor" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Fecha detección incidencia SVH]"
+                      dataType="date"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Fecha detección incidencia SVH]"
+                      name="Fecha detección incidencia SVH" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Técnico SVH que lo detecta]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Técnico SVH que lo detecta]"
+                      name="Técnico SVH que lo detecta" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Grado importancia _1=Muy grave_2=Grave_3=Leve]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Grado importancia _1=Muy grave_2=Grave_3=Leve]"
+                      name="Grado importancia _1=Muy grave_2=Grave_3=Leve" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Grado importancia _1=Muy grave_2=Grave_3=Leve_(I)]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Grado importancia _1=Muy grave_2=Grave_3=Leve_(I)]"
+                      name="Grado importancia _1=Muy grave_2=Grave_3=Leve_(I)" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Tipo incidencia]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Tipo incidencia]"
+                      name="Tipo incidencia" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Descripción incidencia]"
+                      dataType="nText"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Descripción incidencia]"
+                      name="Descripción incidencia" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Descripción situación proveedor]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Descripción situación proveedor]"
+                      name="Descripción situación proveedor" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Fecha resolución incidencia]"
+                      dataType="date"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Fecha resolución incidencia]"
+                      name="Fecha resolución incidencia" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Procedimentado en la Guia Operativa (Si/No)]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Procedimentado en la Guia Operativa (Si/No)]"
+                      name="Procedimentado en la Guia Operativa (Si/No)" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Fecha incorporación Guia Operativa aclaración]"
+                      dataType="date"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Fecha incorporación Guia Operativa aclaración]"
+                      name="Fecha incorporación Guia Operativa aclaración" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Año incidencia]"
+                      dataType="r8"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Año incidencia]"
+                      name="Año incidencia" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Mes incidencia]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Mes incidencia]"
+                      name="Mes incidencia" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Año detección incidencia SVH]"
+                      dataType="r8"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Año detección incidencia SVH]"
+                      name="Año detección incidencia SVH" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Mes detección incidencia SVH]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Mes detección incidencia SVH]"
+                      name="Mes detección incidencia SVH" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Baja]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Baja]"
+                      name="Baja" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Usuario y motivo]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Usuario y motivo]"
+                      name="Usuario y motivo" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[¿Aplica incidencia SLA calidad?]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[¿Aplica incidencia SLA calidad?]"
+                      name="¿Aplica incidencia SLA calidad?" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ERROR TIPIFICADO]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ERROR TIPIFICADO]"
+                      name="ERROR TIPIFICADO" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ERROR TIPIFICADO (I)]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ERROR TIPIFICADO (I)]"
+                      name="ERROR TIPIFICADO (I)" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Área que detecta la incidencia]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Área que detecta la incidencia]"
+                      name="Área que detecta la incidencia" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Report de Negocio]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Report de Negocio]"
+                      name="Report de Negocio" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Mes/Año detección]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Mes/Año detección]"
+                      name="Mes/Año detección" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F37]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[F37]"
+                      name="F37" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Tarea Flujo de datos.Paths[Salida de columna derivada]"
+              endId="Package\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+              name="Salida de columna derivada"
+              startId="Package\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada]" />
+            <path
+              refId="Package\Tarea Flujo de datos.Paths[Salida de origen de Excel]"
+              endId="Package\Tarea Flujo de datos\Columna derivada.Inputs[Entrada de columna derivada]"
+              name="Salida de origen de Excel"
+              startId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="173.6,41.6"
+          Id="Package\Tarea Flujo de datos"
+          TopLeft="275.499989271164,182.30000140508" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Tarea Flujo de datos">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="152,41.6"
+          Id="Package\Tarea Flujo de datos\Origen de Excel"
+          TopLeft="310,86" />
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Tarea Flujo de datos\Columna derivada"
+          TopLeft="292,198" />
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de origen de Excel]"
+          TopLeft="386,127.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-12.8,70.4"
+              Start="0,0"
+              End="-12.8,62.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.2" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.2"
+                    Point2="0,35.2"
+                    Point3="-4,35.2" />
+                  <mssgle:LineSegment
+                    End="-8.80000000000001,35.2" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-8.80000000000001,35.2"
+                    Point2="-12.8,35.2"
+                    Point3="-12.8,39.2" />
+                  <mssgle:LineSegment
+                    End="-12.8,62.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="168.8,41.6"
+          Id="Package\Tarea Flujo de datos\Destino de OLE DB"
+          TopLeft="297.499988178413,312.000002479553" />
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de columna derivada]"
+          TopLeft="373.2,239.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="8.69998817841264,72.4000024795533"
+              Start="0,0"
+              End="8.69998817841264,64.9000024795533">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.2000012397766" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.2000012397766"
+                    Point2="0,36.2000012397766"
+                    Point3="4,36.2000012397766" />
+                  <mssgle:LineSegment
+                    End="4.69998817841264,36.2000012397766" />
+                  <mssgle:CubicBezierSegment
+                    Point1="4.69998817841264,36.2000012397766"
+                    Point2="8.69998817841264,36.2000012397766"
+                    Point3="8.69998817841264,40.2000012397766" />
+                  <mssgle:LineSegment
+                    End="8.69998817841264,64.9000024795533" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tarea Flujo de datos\Origen de Excel">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tarea Flujo de datos\Destino de OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
