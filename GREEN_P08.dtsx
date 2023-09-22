@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="GREEN_P08"
   DTS:PackageType="5"
-  DTS:VersionBuild="350"
-  DTS:VersionGUID="{060E0ECD-3CF2-4509-A70C-74CC9A8C4B7C}">
+  DTS:VersionBuild="352"
+  DTS:VersionGUID="{C5D14DE2-DA2A-4225-B082-8965C006C627}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -760,11 +760,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=192.168.0.104,49170;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsjeJGH0G70u+T680C9/7BAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADMvIqjcpoFRHH8rjiii+D0uJ5y9rH34d97fORT/uj3awAAAAAOgAAAAAIAACAAAAAoFOWwxeB1UFWGLjH/bIeDB2ytgdEy0hYqffby/Pu9wSAAAAC8gjruWKG7o47hyiQuz93rSHzfKPR4cvVc1jrDMBpGCkAAAADhq4mbJtP8KoChL+rkqYPwZo4TIJTwgKW0PP2SjLNo6eyyUq7xKgBahlutUp1oMi1ZdThSgArfOXMz3qGyGfFD</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsjeJGH0G70u+T680C9/7BAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC1Vx201CI4bPJEUKIp2Zhw4qEo5cYxgM8ATm3SsTSjRgAAAAAOgAAAAAIAACAAAABBgUevNUrHaqujZzb4XJmFGBmlQ56XSwI2mqJtHuirviAAAABz6ZXPuPHxEohncKlq95dWyyO/ptT+iWszg+qGcMI1FUAAAABZjTuRRtZOAPm/pQZwHXLQWS3VSvCT8p5fh7vq60jBFamCywHF/VeWsvFyO0zbxpyBg8n4qlt4bQI5H8pSpzSN</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -779,11 +779,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=192.168.0.104,49170;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsjeJGH0G70u+T680C9/7BAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACdRp311OpF4guFUG+J2KlkYVBAgtOrVtt4IA3h9qaq9AAAAAAOgAAAAAIAACAAAABouMnPleQqTyrMnjOa5CWQ5tQL5nAr40XY8spwobyCeiAAAAAMPRB1wT7QA8cBCE62FQRnpicRX7p3K63HUs9ugDJTa0AAAAAlqVaNkZ/VaTZB3T60u4kcNns2dbmTGKas/DJagm8hRjlMOUjH8hwZ3+nvJlRfh39ALhVSUNZcjmVb9RlbYURC</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsjeJGH0G70u+T680C9/7BAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAChmx7yAdlaCayKM/kXn4mZFr3xAJAgXI9PeES5WY9LIQAAAAAOgAAAAAIAACAAAADXzRl3hxX2rk0YDTAHsabpbp/J8MtDYgrdfh897WLWcSAAAACDMgg0sdmg3/K4XqQh9sLJEg56j+JZL6YtsZB2LTESM0AAAADv0gSgrU+bF1Rw+U48/nS4HX099D/Gk58WAjKwjo93xXEoLWTDAD0fjeThPiErAqJETNGpi967SsL7HyJuXvG3</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -2550,6 +2550,32 @@
                           refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1.Inputs[Entrada de columna derivada]"
                           description="Entrada en la transformación Columna derivada"
                           name="Entrada de columna derivada">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1.Inputs[Entrada de columna derivada].Columns[Copia de Importe de cancelación]"
+                              cachedDataType="wstr"
+                              cachedLength="400"
+                              cachedName="Copia de Importe de cancelación"
+                              errorOrTruncationOperation="Cálculo"
+                              errorRowDisposition="FailComponent"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Importe de cancelación]"
+                              truncationRowDisposition="FailComponent"
+                              usageType="readWrite">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Expresión de columna derivada"
+                                  name="Expression">[REPLACE]([REPLACE]([REPLACE](#{Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Importe de cancelación]}," ",""),".",""),",",".")</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Expresión descriptiva de columna derivada"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">REPLACE(REPLACE(REPLACE([Copia de Importe de cancelación]," ",""),".",""),",",".")</property>
+                              </properties>
+                            </inputColumn>
+                          </inputColumns>
                           <externalMetadataColumns />
                         </input>
                       </inputs>
@@ -5511,476 +5537,397 @@
                             isUsed="True">
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Check salto]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Check salto" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID Minuta (único)]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="ID Minuta (único)" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID Petición]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="ID Petición" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID Minuta (subsanación)]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="ID Minuta (subsanación)" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID SIREC]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="ID SIREC" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nº Operación SIREC]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Nº Operación SIREC" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Contrato]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Contrato" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Acreditado]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Acreditado" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID Acreditado]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="ID Acreditado" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Tipo de operación]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Tipo de operación" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Estado]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Estado" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Subestado]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Subestado" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[&quot;Fecha Notificación firma  Fecha petición inscripción&quot;]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="&quot;Fecha Notificación firma  Fecha petición inscripción&quot;" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha prevista Firma]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Fecha prevista Firma" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha firma (inicio petición)]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Fecha firma (inicio petición)" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha aplazamiento]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Fecha aplazamiento" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha recepción Sanción PBC]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Fecha recepción Sanción PBC" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha recepción Sanción Sirec Hudsons]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Fecha recepción Sanción Sirec Hudsons" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha recepción cheque-just ingreso]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Fecha recepción cheque-just ingreso" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha recepción completa Documentación]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Fecha recepción completa Documentación" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha Cotejo Copia Simple]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Fecha Cotejo Copia Simple" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha envío plantilla Cancelación (fin petición)]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Fecha envío plantilla Cancelación (fin petición)" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Operador asignado]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Operador asignado" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nº Fincas]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Nº Fincas" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Deuda]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Deuda" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Importe carta de pago]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Importe carta de pago" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Importe de cancelación]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Importe de cancelación" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Importe de quita]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Importe de quita" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Importe remanente]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Importe remanente" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Asistencia a firma   Inscripción RP]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Asistencia a firma   Inscripción RP" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha recepción Certificado deuda]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Fecha recepción Certificado deuda" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha comunicación AA DD  (P 06_MR_Novaciones)]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Fecha comunicación AA DD  (P 06_MR_Novaciones)" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID SIREC (P 06_MR_Novaciones)]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="ID SIREC (P 06_MR_Novaciones)" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Indicencias detectadas CloSing]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="4000"
                               name="Indicencias detectadas CloSing" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha detección incidencia CloSing]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Fecha detección incidencia CloSing" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Ratificación ]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Ratificación " />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Estado de la ratificación]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Estado de la ratificación" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Estado Fra  Ratificación]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Estado Fra  Ratificación" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Incidencia técnica Gestoría]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Incidencia técnica Gestoría" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Comentarios incidencia técnica gestoría]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="4000"
                               name="Comentarios incidencia técnica gestoría" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[¿Se han detectado cambios Minuta vs escritura?]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="¿Se han detectado cambios Minuta vs escritura?" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[¿Requiere subsanación?]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="¿Requiere subsanación?" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha firma subsanación]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Fecha firma subsanación" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Mes facturación]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Mes facturación" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha  retirada título]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Fecha  retirada título" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha liquidación  impuestos]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Fecha liquidación  impuestos" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha justificante Registro]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Fecha justificante Registro" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha recepción documentación física]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Fecha recepción documentación física" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha recepción copia simple]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Fecha recepción copia simple" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Envío de llaves al centro de guardia y custodio]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Envío de llaves al centro de guardia y custodio" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ReviSión del inmueble]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="ReviSión del inmueble" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Firma Acuerdo Privado Previo (Daciones)]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Firma Acuerdo Privado Previo (Daciones)" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[SLA1]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="SLA1" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[SLA2]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="SLA2" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[SLA3]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="SLA3" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[SLA4]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="SLA4" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[SLA6]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="SLA6" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[SLA7]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="SLA7" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha fin]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Fecha fin" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha, usuario y motivo  baja]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="4000"
                               name="Fecha, usuario y motivo  baja" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Cierre minuta SiREC]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Cierre minuta SiREC" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Estado petición]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Estado petición" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Excepción SLA]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Excepción SLA" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha solicitud exención]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Fecha solicitud exención" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Usuario solicitante]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Usuario solicitante" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Motivo exención]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="4000"
                               name="Motivo exención" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha respuesta exención]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Fecha respuesta exención" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Usuario SVH]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Usuario SVH" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[tipo bloqueo]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="4000"
                               name="tipo bloqueo" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha Inicio Bloqueo]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Fecha Inicio Bloqueo" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha fin Bloqueo]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Fecha fin Bloqueo" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Observaciones operador]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="4000"
                               name="Observaciones operador" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[BuSiness Type]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="BuSiness Type" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Provisión Fondo]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Provisión Fondo" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Factura PF         ( Si No)]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Factura PF         ( Si No)" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Estado Factura PF ]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Estado Factura PF " />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Gestoría]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Gestoría" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Entidad Bancaria]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="Entidad Bancaria" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[UR]"
-                              codePage="1252"
-                              dataType="str"
+                              dataType="wstr"
                               length="400"
                               name="UR" />
                             <externalMetadataColumn
