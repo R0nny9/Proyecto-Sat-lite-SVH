@@ -11,8 +11,9 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="PUPPY_P17"
   DTS:PackageType="5"
-  DTS:VersionBuild="362"
-  DTS:VersionGUID="{675D69E0-39EC-4E5C-97DD-A5168B34C310}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="364"
+  DTS:VersionGUID="{17582977-4B17-467D-B513-991FE0F5AC9E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,8 +31,7 @@
           DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAw3ZsqpK0zE2XB/QKbRcLbQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAjuZCEVhPKSqTNwSVujyGd2R7KFGwpwRGOx3eRD9tUIAAAAAAOgAAAAAIAACAAAAAJan7bwBnlGwRP4wYR6qtdLqwleK6bbUd+5qlWketrByAAAADbCXg47UztLRF1DxVDC+cM4ggYqIpeFgtYgROfDFKmZ0AAAACBNzHF9058glAgcJ35kfjioeFOsax5ZCjsJ2IQ7HLyx1KUY73orViDEqQc1dD3IKW65A6o8IO7xg3SKhp4Sqtn</DTS:Password>
+            Sensitive="1"></DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -49,8 +49,7 @@
           DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAw3ZsqpK0zE2XB/QKbRcLbQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAApJXqbYXjAYrXWzDFAt7cmKPjMkmQf6q0Z2YKBQG1HfAAAAAAOgAAAAAIAACAAAAC/uBtJI/I+xFnl1sMg97POz/YyhD1Lo3lIyuR8+F/3LyAAAAAO/8IYxQsPAN2AsFIZ9ijRw4QZ/TNCW/67/cDFFQwciEAAAABxBCUTBWbQUSIaRT3Vekh2grKzPXLBX8OjIdik/b+CkCuV9cR8Sfd1XJ672hC2nrQ0uSzgvRV721yc16OXIdY8</DTS:Password>
+            Sensitive="1"></DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -5844,6 +5843,7 @@
           DTS:refId="Package.EventHandlers[OnError]\LogFail"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
+          DTS:Disabled="True"
           DTS:DTSID="{ED2C0AF5-46F7-4683-8D17-9233279808D4}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
@@ -6537,21 +6537,21 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="168,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
-          TopLeft="396.666666997803,312.533333925671" />
-        <NodeLayout
-          Size="196,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"
-          TopLeft="383,143" />
+          Size="175,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
+          TopLeft="383,410" />
         <NodeLayout
           Size="180,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
           TopLeft="395,216" />
         <NodeLayout
-          Size="175,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
-          TopLeft="383,410" />
+          Size="196,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"
+          TopLeft="383,143" />
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
+          TopLeft="396.666666997803,312.533333925671" />
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de archivo plano]"
           TopLeft="483,185">

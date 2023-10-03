@@ -11,8 +11,9 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Matriz Incidencias"
   DTS:PackageType="5"
-  DTS:VersionBuild="355"
-  DTS:VersionGUID="{3F17D572-F7B8-41F8-B798-3E9CAE54CA18}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="356"
+  DTS:VersionGUID="{11DE3A0D-E3DA-4E93-A97D-D19260FCF10A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -49,7 +50,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Vicente_Moreno\OneDrive - MISTRAL BUSINESS SOLUTIONS\#Repository\DWH BAU Mistral-SVH\Data Sources\Otros\Matriz Incidencias Calidad\SLA Calidad_20230828.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Vicente_Moreno\OneDrive - MISTRAL BUSINESS SOLUTIONS\#Repository\DWH BAU Mistral-SVH\Data Sources\Otros\Matriz Incidencias Calidad\SLA Calidad_20230828.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -61,12 +62,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=192.168.0.104,49170;User ID=sa;Initial Catalog=SVH_CORE;Provider=SQLNCLI11.1;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsjeJGH0G70u+T680C9/7BAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC+HEmpTRpHXbNPZsDTvOKYeO6T0UND9bOwxqv4/NJtgwAAAAAOgAAAAAIAACAAAABrBlupl7aRnMzruDxc/NtyVQQLRDM2/fBD8dg1G3UPASAAAADWIjyVv3Xslr7MUaawYRJrABtZpdYZe5kNwJ52EG4P80AAAAA8kIFLYNUfq6WAzjj74K8JWCD3db84LTOTrRL9ttO6w/QtNzLo0ju2NZRM4x8FqDZCjFruH7M7UOauGRzcAIzb</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=192.168.0.104,49170;User ID=sa;Initial Catalog=SVH_CORE;Provider=SQLNCLI11.1;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -205,7 +201,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="var_convertcsv">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\Vicente_Moreno\OneDrive" "-" "MISTRAL" "BUSINESS" "SOLUTIONS\#Repository\DWH" "BAU" "Mistral-SVH\Code\Python\convertcsv.py OCEAN_P02b_Peticiones_20230320.xlsx C:\Users\Vicente_Moreno\OneDrive" "-" "MISTRAL" "BUSINESS" "SOLUTIONS\#Repository\DWH" "BAU" "Mistral-SVH\Data" "Sources\GREEN\P02\OLD\</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\Ronny_Jara\MISTRAL" "BUSINESS" "SOLUTIONS\Mistral" "-" "Servihabitat" "-" "Documentos\#Repository\DWH" "BAU" "Mistral-SVH\Code\Python\convertcsv.py OCEAN_P02b_Peticiones_20230320.xlsx C:\Users\Ronny_Jara\MISTRAL" "BUSINESS" "SOLUTIONS\Mistral" "-" "Servihabitat" "-" "Documentos\#Repository\DWH" "BAU" "Mistral-SVH\Data" "Sources\GREEN\P02\OLD\</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -237,7 +233,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="var_deleteOldFich">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\Vicente_Moreno\OneDrive" "-" "MISTRAL" "BUSINESS" "SOLUTIONS\#Repository\DWH" "BAU" "Mistral-SVH\Code\Python\deleteOldFiles.py OCEAN_P02b_Peticiones_20230320.xlsx</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\Ronny_Jara\MISTRAL" "BUSINESS" "SOLUTIONS\Mistral" "-" "Servihabitat" "-" "Documentos\#Repository\DWH" "BAU" "Mistral-SVH\Code\Python\deleteOldFiles.py OCEAN_P02b_Peticiones_20230320.xlsx</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -278,7 +274,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="var_moverFich">
       <DTS:VariableValue
-        DTS:DataType="8">C:\08_Python\moveFile.py C:\Users\Vicente_Moreno\OneDrive - MISTRAL BUSINESS SOLUTIONS\#Repository\DWH BAU Mistral-SVH\Data Sources\P02 C:\ORIGENES_PROCESADOS\P02 *GREEN_P02_Peticiones*</DTS:VariableValue>
+        DTS:DataType="8">C:\08_Python\moveFile.py C:\Users\Ronny_Jara\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\P02 C:\ORIGENES_PROCESADOS\P02 *GREEN_P02_Peticiones*</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -589,7 +585,7 @@
             <DTS:ObjectData>
               <ForEachFileEnumeratorProperties>
                 <FEFEProperty
-                  Folder="C:\Users\Vicente_Moreno\OneDrive - MISTRAL BUSINESS SOLUTIONS\#Repository\DWH BAU Mistral-SVH\Data Sources\GREEN\P02\" />
+                  Folder="C:\Users\Ronny_Jara\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\GREEN\P02\" />
                 <FEFEProperty
                   FileSpec="*GREEN_P02_Peticiones*" />
                 <FEFEProperty
@@ -2263,15 +2259,15 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="113.6,41.6"
+          Size="114,42"
           Id="Package\Load file log END\CLOSE"
           TopLeft="57.6666664679846,143.599999986224" />
         <NodeLayout
-          Size="172.8,41.6"
+          Size="173,42"
           Id="Package\Load file log END\DaysOfDeleteDays"
           TopLeft="28,67.5" />
         <NodeLayout
-          Size="155.2,41.6"
+          Size="155,42"
           Id="Package\Load file log END\TotalRowCount"
           TopLeft="37,5.5" />
         <EdgeLayout
@@ -2333,16 +2329,16 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="214.4,195.2"
-          Size="214.4,238.4"
+          PanelSize="214,195"
+          Size="214,238"
           Id="Package\Load file log END"
           TopLeft="592.531762810925,575.465871487798" />
         <NodeLayout
-          Size="127.2,41.6"
+          Size="127,42"
           Id="Package\Load file log START\INI -RunID"
           TopLeft="19.3939394270531,6.04545309904893" />
         <NodeLayout
-          Size="120.8,41.6"
+          Size="121,42"
           Id="Package\Load file log START\OpenLog"
           TopLeft="15.3333330021963,70.8333321279949" />
         <EdgeLayout
@@ -2370,20 +2366,20 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="153.6,118.4"
-          Size="153.6,160.8"
+          PanelSize="154,118"
+          Size="154,161"
           Id="Package\Load file log START"
           TopLeft="70.9523826695627,621.324601333634" />
         <NodeLayout
-          Size="129.6,41.6"
+          Size="130,42"
           Id="Package\Load file to DBO\Search and load file\Fichero Origen"
           TopLeft="41.5833337472545,8" />
         <NodeLayout
-          Size="135.2,41.6"
+          Size="135,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO"
           TopLeft="38,134.133333326446" />
         <NodeLayout
-          Size="131.2,41.6"
+          Size="131,42"
           Id="Package\Load file to DBO\Search and load file\Source file"
           TopLeft="41.2500003642507,69.9999999999999" />
         <EdgeLayout
@@ -2457,15 +2453,15 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="200.8,230.4"
-          Size="200.8,273.6"
+          PanelSize="201,231"
+          Size="201,274"
           Id="Package\Load file to DBO\Search and load file"
           TopLeft="25.1666660043929,102.077776232649" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="248.8,742.4"
-          Size="248.8,785.6"
+          PanelSize="249,743"
+          Size="249,786"
           Id="Package\Load file to DBO"
           TopLeft="304.289682350462,385.19999977369" />
         <EdgeLayout

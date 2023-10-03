@@ -11,8 +11,9 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="DedicacionesMistral"
   DTS:PackageType="5"
-  DTS:VersionBuild="35"
-  DTS:VersionGUID="{CA7F59CF-E693-48EF-9188-45AA868FF99C}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="36"
+  DTS:VersionGUID="{00DDCE80-834B-498A-97FC-01F77DE65D08}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,8 +31,7 @@
           DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsjeJGH0G70u+T680C9/7BAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAXY4OPrOBqzxuDiLhXEpFFAXSsPzwArAhXMY5mxuLzNQAAAAAOgAAAAAIAACAAAACdPMECCiIeArQ6NZVBkBuvN7mNhKg+UB9phH9N/cj/cCAAAACPrzGtUV/V9TfuXh2E26WK/XBM7wVKAZdhgdEsrdet2UAAAADDzDyoxhzv0oAE0xhyP6FhvnTZYsLPlsd6uLLd9UR1Xi0V1/FQfk0B26L8RktFZzT4/dMxyXVc+Z189Hf2njDD</DTS:Password>
+            Sensitive="1"></DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -44,7 +44,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Vicente_Moreno\OneDrive - MISTRAL BUSINESS SOLUTIONS\#Repository\DWH BAU Mistral-SVH\Data Sources\Otros\Dedicaciones Mistral\DEDICACIONES MISTRAL AGOSTO.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Vicente_Moreno\OneDrive - MISTRAL BUSINESS SOLUTIONS\#Repository\DWH BAU Mistral-SVH\Data Sources\Otros\Dedicaciones Mistral\DEDICACIONES MISTRAL AGOSTO.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -61,8 +61,7 @@
           DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsjeJGH0G70u+T680C9/7BAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAOtPT7xG0WHVyScPn/9c572rwgdwgs7PsUxzYy3CCZawAAAAAOgAAAAAIAACAAAADh09UQM3rh0wfDBLrPs5PYicoW5yxVxFcTw2WTUIrv3CAAAABuzR0cH8xARS2PFFHhxZNAkycBO1JED3bLLR0jZEOyY0AAAAB0DWfDueph8KHrL3cFK3E8MqrL2/L6PeEHz84hSKhXGWeuhWKwzreEFMWoajVG4u+TY45yQx6qfXmAS0HiuodT</DTS:Password>
+            Sensitive="1"></DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -168,7 +167,7 @@
             <DTS:ObjectData>
               <ForEachFileEnumeratorProperties>
                 <FEFEProperty
-                  Folder="C:\Users\Vicente_Moreno\OneDrive - MISTRAL BUSINESS SOLUTIONS\#Repository\DWH BAU Mistral-SVH\Data Sources\\Otros/Dedicaciones Mistral/" />
+                  Folder="C:\Users\Ronny_Jara\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\\Otros/Dedicaciones Mistral/" />
                 <FEFEProperty
                   FileSpec="*DEDICACIONES*" />
                 <FEFEProperty
@@ -3295,10 +3294,6 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="161,42"
-          Id="Package\Contenedor de secuencias\Busca fichero en ruta\Horas Vicente"
-          TopLeft="58.2777756805775,11.1111118733442" />
-        <NodeLayout
           Size="162,42"
           Id="Package\Contenedor de secuencias\Busca fichero en ruta\Horas Ricardo"
           TopLeft="58.2777756805775,113.111111873344" />
@@ -3306,6 +3301,10 @@
           Size="155,42"
           Id="Package\Contenedor de secuencias\Busca fichero en ruta\Horas Ronny"
           TopLeft="58.2777756805775,215.111111873344" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Contenedor de secuencias\Busca fichero en ruta\Horas Vicente"
+          TopLeft="58.2777756805775,11.1111118733442" />
         <EdgeLayout
           Id="Package\Contenedor de secuencias\Busca fichero en ruta.PrecedenceConstraints[Restricción]"
           TopLeft="139.027775680577,53.1111118733442">
@@ -3586,132 +3585,6 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Contenedor de secuencias\Busca fichero en ruta\Horas Vicente">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="184,42"
-          Id="Package\Contenedor de secuencias\Busca fichero en ruta\Horas Vicente\Columna derivada"
-          TopLeft="161,207" />
-        <NodeLayout
-          Size="192,42"
-          Id="Package\Contenedor de secuencias\Busca fichero en ruta\Horas Vicente\Destino de OLE DB"
-          TopLeft="199.166658752495,313.733335826662" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Contenedor de secuencias\Busca fichero en ruta\Horas Vicente\Origen de Excel"
-          TopLeft="178.333326247004,100.333334090975" />
-        <EdgeLayout
-          Id="Package\Contenedor de secuencias\Busca fichero en ruta\Horas Vicente.Paths[Salida de origen de Excel]"
-          TopLeft="263.833326247004,142.333334090975">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-10.8333262470036,64.6666659090254"
-              Start="0,0"
-              End="-10.8333262470036,57.1666659090254">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.3333329545127" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28.3333329545127"
-                    Point2="0,32.3333329545127"
-                    Point3="-4,32.3333329545127" />
-                  <mssgle:LineSegment
-                    End="-6.83332624700358,32.3333329545127" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-6.83332624700358,32.3333329545127"
-                    Point2="-10.8333262470036,32.3333329545127"
-                    Point3="-10.8333262470036,36.3333329545127" />
-                  <mssgle:LineSegment
-                    End="-10.8333262470036,57.1666659090254" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Contenedor de secuencias\Busca fichero en ruta\Horas Vicente.Paths[Salida de columna derivada]"
-          TopLeft="253,249">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="42.1666587524946,64.7333358266619"
-              Start="0,0"
-              End="42.1666587524946,57.2333358266619">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.3666679133309" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28.3666679133309"
-                    Point2="0,32.3666679133309"
-                    Point3="4,32.3666679133309" />
-                  <mssgle:LineSegment
-                    End="38.1666587524946,32.3666679133309" />
-                  <mssgle:CubicBezierSegment
-                    Point1="38.1666587524946,32.3666679133309"
-                    Point2="42.1666587524946,32.3666679133309"
-                    Point3="42.1666587524946,36.3666679133309" />
-                  <mssgle:LineSegment
-                    End="42.1666587524946,57.2333358266619" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <DtsEventHandler
-    design-time-name="Package\Load file log START\INI -RunID.EventHandlers[OnError]">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="153,42"
-          Id="Package\Load file log START\INI -RunID.EventHandlers[OnError]\ERROR RunID"
-          TopLeft="241,133" />
-      </GraphLayout>
-    </LayoutInfo>
-  </DtsEventHandler>
-  <PipelineComponentMetadata
-    design-time-name="Package\Contenedor de secuencias\Busca fichero en ruta\Horas Vicente\Destino de OLE DB">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Contenedor de secuencias\Busca fichero en ruta\Horas Vicente\Origen de Excel">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
     design-time-name="Package\Contenedor de secuencias\Busca fichero en ruta\Horas Ricardo">
     <LayoutInfo>
       <GraphLayout
@@ -3913,5 +3786,131 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Contenedor de secuencias\Busca fichero en ruta\Horas Vicente">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="184,42"
+          Id="Package\Contenedor de secuencias\Busca fichero en ruta\Horas Vicente\Columna derivada"
+          TopLeft="161,207" />
+        <NodeLayout
+          Size="192,42"
+          Id="Package\Contenedor de secuencias\Busca fichero en ruta\Horas Vicente\Destino de OLE DB"
+          TopLeft="199.166658752495,313.733335826662" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Contenedor de secuencias\Busca fichero en ruta\Horas Vicente\Origen de Excel"
+          TopLeft="178.333326247004,100.333334090975" />
+        <EdgeLayout
+          Id="Package\Contenedor de secuencias\Busca fichero en ruta\Horas Vicente.Paths[Salida de origen de Excel]"
+          TopLeft="263.833326247004,142.333334090975">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-10.8333262470036,64.6666659090254"
+              Start="0,0"
+              End="-10.8333262470036,57.1666659090254">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.3333329545127" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.3333329545127"
+                    Point2="0,32.3333329545127"
+                    Point3="-4,32.3333329545127" />
+                  <mssgle:LineSegment
+                    End="-6.83332624700358,32.3333329545127" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-6.83332624700358,32.3333329545127"
+                    Point2="-10.8333262470036,32.3333329545127"
+                    Point3="-10.8333262470036,36.3333329545127" />
+                  <mssgle:LineSegment
+                    End="-10.8333262470036,57.1666659090254" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Contenedor de secuencias\Busca fichero en ruta\Horas Vicente.Paths[Salida de columna derivada]"
+          TopLeft="253,249">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="42.1666587524946,64.7333358266619"
+              Start="0,0"
+              End="42.1666587524946,57.2333358266619">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.3666679133309" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.3666679133309"
+                    Point2="0,32.3666679133309"
+                    Point3="4,32.3666679133309" />
+                  <mssgle:LineSegment
+                    End="38.1666587524946,32.3666679133309" />
+                  <mssgle:CubicBezierSegment
+                    Point1="38.1666587524946,32.3666679133309"
+                    Point2="42.1666587524946,32.3666679133309"
+                    Point3="42.1666587524946,36.3666679133309" />
+                  <mssgle:LineSegment
+                    End="42.1666587524946,57.2333358266619" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Contenedor de secuencias\Busca fichero en ruta\Horas Vicente\Destino de OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Contenedor de secuencias\Busca fichero en ruta\Horas Vicente\Origen de Excel">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <DtsEventHandler
+    design-time-name="Package\Load file log START\INI -RunID.EventHandlers[OnError]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="153,42"
+          Id="Package\Load file log START\INI -RunID.EventHandlers[OnError]\ERROR RunID"
+          TopLeft="241,133" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>

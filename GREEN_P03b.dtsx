@@ -11,8 +11,9 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="GREEN_P03"
   DTS:PackageType="5"
-  DTS:VersionBuild="360"
-  DTS:VersionGUID="{213EA798-8BAB-470D-96B1-F4F574F9E741}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="361"
+  DTS:VersionGUID="{6699A3C8-9251-4382-9E08-D83CF3A9C480}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,8 +31,7 @@
           DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_DBO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAw3ZsqpK0zE2XB/QKbRcLbQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB3kXycvNbgPczLjCR1Wk7UYnAW2ZNvUmU/M9aBrmhFDgAAAAAOgAAAAAIAACAAAAB0iHTPCTN5ILtXtrdsMhjGf4Rg353pbFzLdvEn8KqSIyAAAACdNZCujX8sPu1pAPk98rPKvQkiYulP7xawAfsEddePEUAAAADayyVON7/2WYw4f46SLs4G5+6xrdJJ42ch4vizfh7oEcoL40QvYjVnG03Wwc7Tumc/2ILmeyV/nFGsVzQxnDuo</DTS:Password>
+            Sensitive="1"></DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -49,8 +49,7 @@
           DTS:ConnectionString="Data Source=87.221.166.160,49170;User ID=sa;Initial Catalog=SVH_STG;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAw3ZsqpK0zE2XB/QKbRcLbQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADzMm6w3s45CnOPvVgpedGfH3Ngz0xBr2Xm3YQRZbBO1wAAAAAOgAAAAAIAACAAAAAgu70K4IG2oeJOs+7qWlfwcU4/cDY4jCva8b4+zbxEnCAAAAAGqnAGVk7zNSqHWgSRYSiCtBCbPRhdtnCPATAhYoxWnUAAAADimp+XCZEid/XmCnRGg+eVjeuJvBYUVRBUEtosT+qkzERtwhSLMPoYzVxP5I9TPth2vOuPhfbf7VDmZMiOdqwJ</DTS:Password>
+            Sensitive="1"></DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -502,7 +501,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="var_DATOS">
       <DTS:VariableValue
-        DTS:DataType="7">10/2/2023 4:54:12 PM</DTS:VariableValue>
+        DTS:DataType="7">10/3/2023 9:16:47 AM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -4322,47 +4321,13 @@
           Id="Package\Load file to DBO\Search and load file\Fichero Origen"
           TopLeft="52,8" />
         <NodeLayout
-          Size="131,42"
-          Id="Package\Load file to DBO\Search and load file\Source file"
-          TopLeft="41.2500003642507,69.9999999999999" />
-        <EdgeLayout
-          Id="Package\Load file to DBO\Search and load file.PrecedenceConstraints[Restricción 1]"
-          TopLeft="182,29">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-9.7499996357493,56.3333333333332"
-              Start="0,0"
-              End="-2.2499996357493,56.3333333333332">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="18.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="18.5,0"
-                    Point2="22.5,0"
-                    Point3="22.5,4" />
-                  <mssgle:LineSegment
-                    End="22.5,52.3333333333332" />
-                  <mssgle:CubicBezierSegment
-                    Point1="22.5,52.3333333333332"
-                    Point2="22.5,56.3333333333332"
-                    Point3="18.5,56.3333333333332" />
-                  <mssgle:LineSegment
-                    End="-2.2499996357493,56.3333333333332" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
           Size="139,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO"
           TopLeft="38,134.133333326446" />
+        <NodeLayout
+          Size="131,42"
+          Id="Package\Load file to DBO\Search and load file\Source file"
+          TopLeft="41.2500003642507,69.9999999999999" />
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file.PrecedenceConstraints[Restricción]"
           TopLeft="41.2500003642507,90.9999999999999">
@@ -4389,6 +4354,40 @@
                     Point3="-21.7500003642507,64.1333333264461" />
                   <mssgle:LineSegment
                     End="-10.7500003642507,64.1333333264461" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load file to DBO\Search and load file.PrecedenceConstraints[Restricción 1]"
+          TopLeft="182,29">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-9.7499996357493,56.3333333333332"
+              Start="0,0"
+              End="-2.2499996357493,56.3333333333332">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="18.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.5,0"
+                    Point2="22.5,0"
+                    Point3="22.5,4" />
+                  <mssgle:LineSegment
+                    End="22.5,52.3333333333332" />
+                  <mssgle:CubicBezierSegment
+                    Point1="22.5,52.3333333333332"
+                    Point2="22.5,56.3333333333332"
+                    Point3="18.5,56.3333333333332" />
+                  <mssgle:LineSegment
+                    End="-2.2499996357493,56.3333333333332" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
