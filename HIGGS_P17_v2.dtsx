@@ -5,22 +5,22 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="MBS-RALVARO"
   DTS:CreatorName="MBS-RALVARO\Ricardo_Alvaro"
-  DTS:DTSID="{9F3E3CE9-B9FA-4023-AE6D-A2E8FDA2E417}"
+  DTS:DTSID="{FDFE884D-8336-457C-BC09-7476F0B8394B}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.180"
   DTS:LocaleID="3082"
-  DTS:ObjectName="HIGGS_P17"
+  DTS:ObjectName="HIGGS_P17_v2"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
   DTS:VersionBuild="382"
-  DTS:VersionGUID="{11BA1962-A145-40E9-BA0D-0E5B146612FD}">
+  DTS:VersionGUID="{0F18EB7D-A17A-43ED-81F8-1AA173A32885}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[MBS-RJARA.SVH_DBO]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{680AE1AF-9B4A-4C80-B0B9-DA788F662A44}"
+      DTS:DTSID="{C07F868E-4D7B-4F20-BED9-ED66AB9FE7D2}"
       DTS:ObjectName="MBS-RJARA.SVH_DBO">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[$Project::Conn_BBDD_DBO]</DTS:PropertyExpression>
@@ -38,7 +38,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[MBS-RJARA.SVH_STG]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{C2E095FF-409A-481F-ACF5-4306EB2CD9DB}"
+      DTS:DTSID="{795834EA-933C-496E-8BD5-7C928D7EAA75}"
       DTS:ObjectName="MBS-RJARA.SVH_STG">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[$Project::Conn_BBDD_STG]</DTS:PropertyExpression>
@@ -56,7 +56,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[p17]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{B4A8651A-6ACA-4122-9F30-F1F4853A8B7B}"
+      DTS:DTSID="{E885F829-0FDF-4123-A740-6D784FE8F5E7}"
       DTS:ObjectName="p17">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::FilePath]</DTS:PropertyExpression>
@@ -78,7 +78,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Check salto"
-              DTS:DTSID="{F7642952-AE93-4E3E-9D2E-2C61B59F3205}"
+              DTS:DTSID="{057AA230-ED0E-4AAF-9148-68D8CDB443FC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -87,7 +87,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ID Petición"
-              DTS:DTSID="{2E1C720C-7A7C-478F-B592-D40381D7A650}"
+              DTS:DTSID="{2EFA994C-7CA8-40B1-BF3E-763E5E5A5D07}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -96,7 +96,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Comprobación salto"
-              DTS:DTSID="{4FE0910B-1A7C-4FFA-85DB-3531C9F384A3}"
+              DTS:DTSID="{590FBC59-4D99-4420-B52A-044A9CD9995B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -105,7 +105,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ID contratos"
-              DTS:DTSID="{5D2A0EB9-60B9-4061-9876-3DB412E8156A}"
+              DTS:DTSID="{62FF974C-24A8-40A6-AAA4-A5B48825DBE1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -114,7 +114,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Tipo de solicitud"
-              DTS:DTSID="{D3224990-7380-4527-BE9A-C596341C3EBF}"
+              DTS:DTSID="{546BFCD5-D156-4B6C-9774-AAA0DC788CC8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -123,7 +123,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Acreditado"
-              DTS:DTSID="{1EFE37EF-4D2A-4BAB-B2C4-134C5FA40FA7}"
+              DTS:DTSID="{5C2EECB8-F413-4DAC-88B5-0D787A49C73A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -132,7 +132,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ID Acreditado"
-              DTS:DTSID="{819481F2-78A1-4905-AEA3-1E620874761E}"
+              DTS:DTSID="{E3FAAC9B-E44B-4EA2-8FAB-A011FA202031}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -141,7 +141,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Contrato"
-              DTS:DTSID="{BD621C7B-CBF5-48FA-A676-EBC46C96C4CB}"
+              DTS:DTSID="{8A9F8B85-1739-49C8-A16F-ECB3E1975D9D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -150,7 +150,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Gestor"
-              DTS:DTSID="{07CF5DC5-A86A-4506-9DAB-88966AA36738}"
+              DTS:DTSID="{A4208F3C-C5F1-419D-97A9-7D6205CED49D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -159,7 +159,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Operador asignado"
-              DTS:DTSID="{D540EB43-8B76-4FA5-816A-43B5EDA11925}"
+              DTS:DTSID="{06F8A4FD-1EEA-4D94-889E-ED11487FC355}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -167,8 +167,8 @@
               DTS:MaximumWidth="4000"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="ID Sirec"
-              DTS:DTSID="{D176D5B3-01FF-4E19-9424-6EDCA40D8C54}"
+              DTS:ObjectName="ID SIREC"
+              DTS:DTSID="{271D58E3-49E5-428F-8A81-3C220D7835EC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -177,7 +177,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Tipo petición"
-              DTS:DTSID="{FF0DF425-0FA7-4A2F-9F9E-0AD1EEBE2708}"
+              DTS:DTSID="{A436F997-5BAD-4486-9367-546CA77D3EBD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -186,7 +186,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Estado"
-              DTS:DTSID="{72442A47-54B6-4939-9FA2-B8428B76BC87}"
+              DTS:DTSID="{A2DB6724-745F-40B6-B7FE-AB3D724741B2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -195,7 +195,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha inicio petición"
-              DTS:DTSID="{1A1EF6C5-E3CE-48BD-8568-9CB9DCFFE821}"
+              DTS:DTSID="{E704F15F-87AB-4489-B42D-0B58DB97709B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -204,7 +204,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha registro petición"
-              DTS:DTSID="{F0519218-D340-44DB-A39B-7F9CBB60BB04}"
+              DTS:DTSID="{55C28DCF-504A-40B3-B82B-26C267C75C25}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -213,7 +213,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha fin petición"
-              DTS:DTSID="{CEC3125C-D876-44B0-9961-29E32522AFBD}"
+              DTS:DTSID="{3895C351-B9EF-4597-9F56-C6351F9CC132}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -222,7 +222,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Requiere solicitud NS"
-              DTS:DTSID="{DA844074-140B-4D7D-8A6D-DE41CF1BD9A3}"
+              DTS:DTSID="{64062570-3FD2-4362-AEBF-2314D66D8FED}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -231,7 +231,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Id P10"
-              DTS:DTSID="{7511F377-A4B3-4EB2-A46D-DEAB8C161D66}"
+              DTS:DTSID="{4E086C18-B115-4DA4-BF90-10FBE5660551}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -240,7 +240,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Finca colateral"
-              DTS:DTSID="{EB30AAEC-3419-45FD-9671-9D6CD7C9DE81}"
+              DTS:DTSID="{BDA845EF-48FE-48C8-9FC8-FA80470D5A5C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -249,7 +249,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha inicio NS Solvencia Extractado"
-              DTS:DTSID="{77292251-4D32-4C4A-9D41-B5A609E24721}"
+              DTS:DTSID="{FE4C3BC7-4703-41C6-99C8-0552FE4C3E9A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -258,7 +258,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha recepción NS Solvencia Extractado"
-              DTS:DTSID="{1E5B8CCE-4CC4-4BA5-959C-EFFB6D30E3AA}"
+              DTS:DTSID="{B8B83313-0E03-475B-AD57-93D0B3C632A0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -267,7 +267,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha inicio Solvencia"
-              DTS:DTSID="{99A8C825-56F2-4AB7-9B20-7E043715CC32}"
+              DTS:DTSID="{25375290-762C-4483-925D-0C22FEEA2A06}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -276,7 +276,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha recepción Solvencia"
-              DTS:DTSID="{7A9D01F5-1922-4821-BC64-483D2AB4A176}"
+              DTS:DTSID="{BCA5297A-B4BF-431A-9FD6-BF5FA804FC1F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -285,7 +285,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="días trámite Solvencia"
-              DTS:DTSID="{3D867C17-CC48-453D-BB95-95B5887BBB46}"
+              DTS:DTSID="{23B660CE-F965-49FF-94CF-ED74121D58F6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -294,7 +294,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha inicio NS"
-              DTS:DTSID="{1B0B7F7E-E429-46A2-B534-ED3A95556CD8}"
+              DTS:DTSID="{8B16089D-DA32-435A-9602-DA96FCEA106C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -303,7 +303,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha recepción NS"
-              DTS:DTSID="{C465FBBF-AAF6-44D0-AF8B-10620F77A9CB}"
+              DTS:DTSID="{4A6F3ACF-6537-4FED-8B1D-594F98657F9C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -312,7 +312,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="días trámite NS"
-              DTS:DTSID="{9B3020CD-1096-45F5-B6A0-2973F03B493C}"
+              DTS:DTSID="{DD1D006E-FBB4-416C-A331-1B52133F333B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -321,7 +321,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha inicio Extractado"
-              DTS:DTSID="{BBDFEEB5-F7CF-4409-B212-84826BA5D417}"
+              DTS:DTSID="{0C14C260-9E51-495F-ABD3-68EFBE80B79C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -330,7 +330,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha Recepción Extractado"
-              DTS:DTSID="{D51C1DDD-FFAD-44E8-BCA2-DA4DBAA651AE}"
+              DTS:DTSID="{8E524001-EC9D-416A-9AF0-9652E18FDF52}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -339,7 +339,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="días trámite Extractado"
-              DTS:DTSID="{8E94D285-2D4F-4905-B060-5DB34682EF56}"
+              DTS:DTSID="{7C6545AA-F996-461E-B7D6-347A59AFCA48}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -348,7 +348,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha descarga informa"
-              DTS:DTSID="{04BEDFDF-344B-45BB-9679-BE29E92A20E6}"
+              DTS:DTSID="{8A61AC56-4576-4CDA-B729-8B42BA06867E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -357,7 +357,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha solicitud Cert  Deuda"
-              DTS:DTSID="{588F0E9F-A3D4-4C49-940F-41A825AB8E55}"
+              DTS:DTSID="{96630A0B-5ED9-4032-9D7F-4DCE5CCF7895}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -366,7 +366,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha obtención Cert  Deuda"
-              DTS:DTSID="{6A0C7326-19D1-4C8C-9550-23D421A8A5B4}"
+              DTS:DTSID="{AE05C6EA-0F46-4D5A-B968-1EC2355A6431}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -375,7 +375,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ID P03"
-              DTS:DTSID="{70858FD1-B555-44AB-B98F-B3637FE3D8EB}"
+              DTS:DTSID="{A99EB856-6BFD-4A7B-9C23-A18A56E621F7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -384,7 +384,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha gestión Template"
-              DTS:DTSID="{A7EEBEC7-2310-4458-8453-04558570D763}"
+              DTS:DTSID="{8AEF49F8-4DB6-40D4-A96F-6E028C1A6533}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -393,7 +393,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha subida documentación SIREC"
-              DTS:DTSID="{E70010BE-A3E5-4C00-A4CF-341460D2C524}"
+              DTS:DTSID="{E9F997D7-14F5-4906-A254-2F7608F2E9BC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -402,7 +402,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha avance Prop  Elaboración"
-              DTS:DTSID="{8B620D71-802E-4099-9B32-B7E92E8C149D}"
+              DTS:DTSID="{AA53BF7F-AA23-4377-A046-801A91FC9C0E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -410,8 +410,35 @@
               DTS:MaximumWidth="4000"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Fecha generación Comité "
-              DTS:DTSID="{4F579B1C-13E3-4A30-B0E0-112748624299}"
+              DTS:ObjectName="Fecha avance Prop  Pdte  Team Leader"
+              DTS:DTSID="{708859BC-E9CC-4490-AAB7-49659BDEC14F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="4000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fecha avance Prop  Pdte  Sanción Propietario"
+              DTS:DTSID="{E676A533-6418-4211-AECC-ABC74234527D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="4000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fecha avance Prop  Con Sanción Propietario"
+              DTS:DTSID="{CE24F55B-BAA5-49D8-A9E8-C3A6F9AF0F49}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="4000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fecha desistimiento propuesta"
+              DTS:DTSID="{E5F13DF7-1796-490D-8799-3F8C7D2AA837}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -420,7 +447,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Tipo bloqueo"
-              DTS:DTSID="{B250E8FB-9EA9-44AE-8688-1E407C082CCA}"
+              DTS:DTSID="{CFF3C565-57C7-4D66-A493-18A3AD2CF638}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -429,7 +456,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Descripción bloqueo"
-              DTS:DTSID="{6DD0BB3E-572F-448D-B062-44425A851238}"
+              DTS:DTSID="{0AE9C1F5-A7A7-4235-9BFB-FB5F676D3DF4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -438,7 +465,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha inicio bloqueo"
-              DTS:DTSID="{22FB8919-C6E5-44A0-8B7B-8C412944B89F}"
+              DTS:DTSID="{A69270DB-B497-4903-8137-2C923E928746}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -447,7 +474,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha fin bloqueo"
-              DTS:DTSID="{6AC9DDBB-654F-49E5-A084-6470375F466C}"
+              DTS:DTSID="{1D1A5372-1374-4FB8-8CA4-CABDD4E2E203}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -456,7 +483,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha Baja"
-              DTS:DTSID="{43C9CDCE-C453-4808-91D5-A93FC430CF0E}"
+              DTS:DTSID="{F7E4D11F-33A5-407E-B53C-B6EF62634073}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -465,7 +492,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha, usuario y motivo  baja"
-              DTS:DTSID="{D23CC0A1-4FC1-4501-910E-0D0766E9A0A6}"
+              DTS:DTSID="{9C1E8445-7303-46BA-904C-E3ADF7C6D57F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -474,7 +501,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Excepción SLA"
-              DTS:DTSID="{8EA3D264-BA83-4D5F-B63B-4D3687F46FB6}"
+              DTS:DTSID="{ABBD6A19-AAFE-4220-A2DD-A3B5368BB75B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -483,7 +510,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha solicitud exención"
-              DTS:DTSID="{0BC6ABD7-5D75-4A2A-82F3-8B80889AD693}"
+              DTS:DTSID="{101345A9-64D5-494B-81CE-D08CDA712262}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -492,7 +519,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Usuario solicitante"
-              DTS:DTSID="{F794F071-2A32-4B29-B43A-65D3D4E8138F}"
+              DTS:DTSID="{E0576162-79D0-42EF-BC25-ADA127A221C7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -501,7 +528,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Motivo exención"
-              DTS:DTSID="{B83BFDB9-2E33-4D13-B205-D8BFCB011DD8}"
+              DTS:DTSID="{54A04A7D-3B93-44FB-B3B0-1FF3FA05A8F6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -510,7 +537,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha respuesta exención"
-              DTS:DTSID="{0350B0A2-BA25-4C9F-8658-14A523E39197}"
+              DTS:DTSID="{237C70CC-A235-490D-9E43-AFE04EF5F91B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -519,7 +546,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Usuario SVH"
-              DTS:DTSID="{4B1437AA-94A4-4BCF-867C-CC86AB467405}"
+              DTS:DTSID="{331D2BFB-5E89-44C3-989D-7E2935E8A623}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -528,7 +555,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Días para tramitar"
-              DTS:DTSID="{4D07CA9A-C872-407C-9D41-F646CF690925}"
+              DTS:DTSID="{4A6C0428-B349-4274-8C16-A76DC0D59EA4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -537,7 +564,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Días gestión"
-              DTS:DTSID="{F60DA5BA-3D47-41B6-ABE8-024EB61AFF9F}"
+              DTS:DTSID="{5979F5CB-F946-445D-8B89-AFC83C9731CB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -546,7 +573,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Dias bloqueado"
-              DTS:DTSID="{511DD79E-D61E-470B-82D8-5DAAC478148D}"
+              DTS:DTSID="{91ADB796-E2E8-4953-B455-EA578BB186BA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -555,7 +582,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Días reales"
-              DTS:DTSID="{0C5A5A55-2249-441C-9E34-3B0491197E64}"
+              DTS:DTSID="{1CB794C2-A190-4F01-8E2E-C2D156A45567}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -564,7 +591,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha validación"
-              DTS:DTSID="{B1AF1715-E966-43B6-B428-38DA75774761}"
+              DTS:DTSID="{E6192BF9-5FE7-4734-87E4-84DD5933CAED}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -573,7 +600,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Expediente validado"
-              DTS:DTSID="{FC22194F-5F8A-458D-90F2-F9912295C997}"
+              DTS:DTSID="{A0CE0A4B-A1CC-49AE-8814-F8C852ED2C48}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -584,7 +611,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{DFEFEE22-EF39-4DE1-B077-C4CC84B8B674}"
+      DTS:DTSID="{88DC5753-853D-4AE9-B376-1B838A39CA24}"
       DTS:ObjectName="Name">
       <DTS:Property
         DTS:DataType="8"
@@ -593,7 +620,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{8CE5C20D-704A-4952-838B-8D6047766CC4}"
+      DTS:DTSID="{A58D50AB-6503-471E-8995-510FEDF212EC}"
       DTS:ObjectName="PackageName">
       <DTS:Property
         DTS:DataType="8"
@@ -602,7 +629,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{774CBAF7-5EC4-4C70-ACB7-5203AC9A0151}"
+      DTS:DTSID="{F43EF348-E07D-49E0-8C7C-12B434110253}"
       DTS:ObjectName="par_porfolio">
       <DTS:Property
         DTS:DataType="8"
@@ -611,7 +638,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{C6A021FB-591A-44D6-93C2-623267D902F8}"
+      DTS:DTSID="{D4E8E1B9-C927-4900-804E-14EF57222F64}"
       DTS:ObjectName="par_RunGUID">
       <DTS:Property
         DTS:DataType="8"
@@ -621,7 +648,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{FCCE2794-DCF6-4B14-A688-82A28BF8F27F}"
+      DTS:DTSID="{9042B3CC-177E-4404-A724-87BB0F85F1BF}"
       DTS:ObjectName="par_rutaOLD">
       <DTS:Property
         DTS:DataType="8"
@@ -630,7 +657,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{A6E99D7E-1A64-4A85-9B8E-A645A2573B6E}"
+      DTS:DTSID="{00B0A934-1546-4AA5-95EF-ECCAE1BABFA0}"
       DTS:ObjectName="ReportingPeriod">
       <DTS:Property
         DTS:DataType="8"
@@ -640,7 +667,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{250BBEA6-FA70-413C-B1A5-6A2CCC907D92}"
+      DTS:DTSID="{54DD8292-8C74-48B3-BA07-70EEEE6836AD}"
       DTS:ObjectName="ruta_carpeta">
       <DTS:Property
         DTS:DataType="8"
@@ -649,7 +676,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{D4DDDA3E-54BB-42C5-A612-D537AA85CDA3}"
+      DTS:DTSID="{30AA3892-781B-4436-AA60-CD20FDA8F8F6}"
       DTS:ObjectName="var_ficheroEsperado">
       <DTS:Property
         DTS:DataType="8"
@@ -659,7 +686,7 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{2FB7F8F1-8301-479A-85D8-78D340D84F5D}"
+      DTS:DTSID="{A36B26A0-0E04-4131-8226-B46A3DAD2C61}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[User::FilePath]"
       DTS:IncludeInDebugDump="2345"
@@ -670,7 +697,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{AC095CD9-A8C9-4B0A-8067-BB641C49B81C}"
+      DTS:DTSID="{7E55F6E3-1EC3-4F2F-92EB-D08E70EF9703}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="FilePath">
@@ -679,7 +706,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{BD607C9F-35CB-486F-AA49-069B733DFE0F}"
+      DTS:DTSID="{7F8E1093-A86C-4866-AE41-3C6C529FB48E}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="RunGUID">
@@ -689,7 +716,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{D8A31FD6-144E-4E82-B448-A463B8B3571B}"
+      DTS:DTSID="{1E60DB3B-B922-414C-9618-65C386D460FE}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="RunID">
@@ -699,7 +726,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{AE502499-5924-4893-ABD3-6732E62E0FE2}"
+      DTS:DTSID="{FBC0A165-2E10-4F48-8CF4-C199A3979340}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="TotalRowCount">
@@ -708,7 +735,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{07005796-26A4-441C-A8BA-AD63077698BD}"
+      DTS:DTSID="{FEE7A17F-F03C-4C74-8B38-7B169D13A883}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="replace(@[$Project::par_convertcsv],&quot; &quot; ,&quot;\&quot; \&quot;&quot;)  +&quot; &quot;+replace(@[User::FilePath],&quot; &quot; ,&quot;\&quot; \&quot;&quot;)  +&quot; &quot;+replace(@[$Project::par_rutaExcel],&quot; &quot; ,&quot;\&quot; \&quot;&quot;)+ @[$Package::par_porfolio]+&quot;\\&quot;+ @[$Package::ruta_carpeta] +&quot;\\&quot;+@[$Package::par_rutaOLD]+&quot;\\&quot;"
       DTS:IncludeInDebugDump="2345"
@@ -719,7 +746,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{370DF3B0-26A4-4A67-B081-19710B43ED7E}"
+      DTS:DTSID="{E893BCE1-D4C0-42FD-9904-3298151929DC}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="var_DATOS">
@@ -728,7 +755,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{DF8B84FD-F412-4D43-BD22-EFCEFEFDD27F}"
+      DTS:DTSID="{7414B1CC-28DF-408F-9452-C77920C5F980}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="var_DaysDeleteOldFile">
@@ -738,7 +765,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{70C7C73C-1AFC-414A-A4F7-612C84E69BB8}"
+      DTS:DTSID="{D0D6B0C7-3713-4EF4-BD21-D36B72C614EE}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="replace( @[$Project::par_deleteOldFile] ,&quot; &quot; ,&quot;\&quot; \&quot;&quot;) +&quot; &quot;+replace( @[User::FilePath] ,&quot; &quot; ,&quot;\&quot; \&quot;&quot;)"
       DTS:IncludeInDebugDump="2345"
@@ -749,7 +776,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{9ADB7111-01A5-4FCA-A632-DA87E30090F9}"
+      DTS:DTSID="{1A5F8D84-CB06-49E7-9558-2C603D1C0E3A}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="var_FICHERO_ORIGEN">
@@ -759,7 +786,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{CE9DF1F4-B68B-4FDB-B899-9594E387C912}"
+      DTS:DTSID="{BAA576B4-6D0A-464A-A90E-3AD1B01599C1}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="var_F_CARGA">
@@ -769,7 +796,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{7A842B34-4456-4A2E-ADA4-D048BE9A1B1E}"
+      DTS:DTSID="{3F234329-0141-41EA-973C-544A0C67DA77}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="var_F_DATOS">
@@ -779,7 +806,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{C7593410-4414-4F53-A801-9C3E1874267B}"
+      DTS:DTSID="{D125ABF6-8F0A-4A2F-ADE2-34234B2735B8}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[$Project::par_moveFich] +&quot; &quot;+@[$Project::Ruta]+ @[$Package::ruta_carpeta] +&quot; &quot;+ @[$Project::par_ruta_Procesados]+ @[$Package::ruta_carpeta] +&quot; &quot;+@[$Package::var_ficheroEsperado]"
       DTS:IncludeInDebugDump="2345"
@@ -794,7 +821,7 @@
       DTS:refId="Package\Load dbo to STG"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Contenedor de secuencias"
-      DTS:DTSID="{F32979E8-78B3-4356-AB75-293C627A9D35}"
+      DTS:DTSID="{B0D0CEBC-5D5B-41F0-B617-86ACB2BED39A}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Load dbo to STG">
@@ -804,7 +831,7 @@
           DTS:refId="Package\Load dbo to STG\Asigna Validaciones"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{0DB1F199-4D0D-46EC-A16C-6B553FF9F600}"
+          DTS:DTSID="{8CA37197-7E8A-435D-896D-677541560516}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Asigna Validaciones"
@@ -812,7 +839,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{C2E095FF-409A-481F-ACF5-4306EB2CD9DB}"
+              SQLTask:Connection="{795834EA-933C-496E-8BD5-7C928D7EAA75}"
               SQLTask:SqlStatementSource="EXECUTE [SVH_STG].[dbo].[p_Asigna_Validaciones]&#xA;@PackageName=?,&#xA;@RUNID=?&#xA;                    " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -833,7 +860,7 @@
           DTS:refId="Package\Load dbo to STG\CLOSE"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{394695DB-A7C8-4BF8-9C4C-CAD5D6351677}"
+          DTS:DTSID="{6A2530C6-8D08-40F6-BA6F-24556F5B6268}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="CLOSE"
@@ -841,7 +868,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{C2E095FF-409A-481F-ACF5-4306EB2CD9DB}"
+              SQLTask:Connection="{795834EA-933C-496E-8BD5-7C928D7EAA75}"
               SQLTask:SqlStatementSource="EXECUTE [SVH_STG].[dbo].[CloseLog]&#xA;@PackageName=?,       &#xA;@RunID = ? , &#xA;@PackageRunResult = ?,&#xA;@TotalRowCount  = ?,&#xA;@ExecPeriod  = ? &#xA;                    " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -880,7 +907,7 @@
           DTS:refId="Package\Load dbo to STG\INI -RunID"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{37DCEEDA-EAA7-4045-8F50-1C09DB206A8A}"
+          DTS:DTSID="{3169362E-BB3E-4F5E-BC29-34DA1766C3D9}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="INI -RunID"
@@ -890,7 +917,7 @@
             <DTS:EventHandler
               DTS:refId="Package\Load dbo to STG\INI -RunID.EventHandlers[OnError]"
               DTS:CreationName="OnError"
-              DTS:DTSID="{8DF43576-FE69-4AA9-A343-017B63C07569}"
+              DTS:DTSID="{23345486-F8CB-429D-BE29-63278081DDFD}"
               DTS:EventID="0"
               DTS:EventName="OnError"
               DTS:LocaleID="-1">
@@ -898,7 +925,7 @@
                 <DTS:Variable
                   DTS:CreationName=""
                   DTS:Description="La propiedad de propagación del evento"
-                  DTS:DTSID="{3B7EA852-A554-4001-AC93-9D986E7CB432}"
+                  DTS:DTSID="{13A383F5-2F46-45F0-A25B-ABBCEF1BDBDF}"
                   DTS:IncludeInDebugDump="6789"
                   DTS:Namespace="System"
                   DTS:ObjectName="Propagate">
@@ -911,7 +938,7 @@
                   DTS:refId="Package\Load dbo to STG\INI -RunID.EventHandlers[OnError]\ERROR RunID"
                   DTS:CreationName="Microsoft.ExecuteSQLTask"
                   DTS:Description="Tarea Ejecutar SQL"
-                  DTS:DTSID="{9CCED66D-40EA-4A40-B48D-E1D9D4B3B03A}"
+                  DTS:DTSID="{F5248E23-980E-4381-885B-953558B638AB}"
                   DTS:ExecutableType="Microsoft.ExecuteSQLTask"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="ERROR RunID"
@@ -919,7 +946,7 @@
                   <DTS:Variables />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
-                      SQLTask:Connection="{680AE1AF-9B4A-4C80-B0B9-DA788F662A44}"
+                      SQLTask:Connection="{C07F868E-4D7B-4F20-BED9-ED66AB9FE7D2}"
                       SQLTask:SqlStatementSource="EXEC [SVH_STG].[dbo].[PROCESO_LOG_ERRORES] &#xA;  @PROCESO=?,&#xA;  @RUNID=?,&#xA;  @TIPO_ERROR =1" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
                       <SQLTask:ParameterBinding
                         SQLTask:ParameterName="0"
@@ -941,7 +968,7 @@
           </DTS:EventHandlers>
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{C2E095FF-409A-481F-ACF5-4306EB2CD9DB}"
+              SQLTask:Connection="{795834EA-933C-496E-8BD5-7C928D7EAA75}"
               SQLTask:SqlStatementSource="SELECT max(RunID)  RunID FROM [SVH_DBO].[dbo].[Workflow_Logging]"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -960,7 +987,7 @@
           DTS:refId="Package\Load dbo to STG\load DBO to STG"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{3E65A23F-2775-443B-A974-96E80EF31562}"
+          DTS:DTSID="{34E9C4C8-6CDE-40A0-B6D6-52C929A1AC83}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="load DBO to STG"
@@ -968,7 +995,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{C2E095FF-409A-481F-ACF5-4306EB2CD9DB}"
+              SQLTask:Connection="{795834EA-933C-496E-8BD5-7C928D7EAA75}"
               SQLTask:SqlStatementSource="EXECUTE [SVH_DBO].[dbo].[p_Load_DBO_to_STG]&#xA;@Name=?,&#xA;@PackageName=?,&#xA;@Proceso  = 'P02'  &#xA;                    " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="1"
@@ -989,7 +1016,7 @@
           DTS:refId="Package\Load dbo to STG\OpenLog Validaciones"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{B896861F-7E8F-4FEA-9B51-23B293EB0AB4}"
+          DTS:DTSID="{4A3EC213-3CAB-48DD-BF44-7BD9324B9FD7}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="OpenLog Validaciones"
@@ -997,7 +1024,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{C2E095FF-409A-481F-ACF5-4306EB2CD9DB}"
+              SQLTask:Connection="{795834EA-933C-496E-8BD5-7C928D7EAA75}"
               SQLTask:BypassPrepare="False"
               SQLTask:SqlStatementSource="EXECUTE  [SVH_STG].[DBO].[OpenLog]&#xA; @PackageName = ?,&#xA; @RunID = ?,&#xA;@Name=?,&#xA;@Descrip = 'Validaciones STG'&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
@@ -1025,7 +1052,7 @@
           DTS:refId="Package\Load dbo to STG\Validaciones"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{5718BC3C-3E79-4C73-94A8-76F5170F5E3E}"
+          DTS:DTSID="{EFEB857C-8E22-466A-A31B-75FF259C2B5C}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Validaciones"
@@ -1033,7 +1060,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{C2E095FF-409A-481F-ACF5-4306EB2CD9DB}"
+              SQLTask:Connection="{795834EA-933C-496E-8BD5-7C928D7EAA75}"
               SQLTask:SqlStatementSource="EXECUTE [SVH_STG].[dbo].[p_PROCESO_VALIDACION]&#xA;@PackageName=?&#xA;                    " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -1049,7 +1076,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load dbo to STG.PrecedenceConstraints[Restricción]"
           DTS:CreationName=""
-          DTS:DTSID="{7FB3770A-44C5-4342-9B75-354B9C974804}"
+          DTS:DTSID="{8B61A96B-67F2-45A3-9562-D546594B5E2B}"
           DTS:From="Package\Load dbo to STG\load DBO to STG"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción"
@@ -1057,7 +1084,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load dbo to STG.PrecedenceConstraints[Restricción 1]"
           DTS:CreationName=""
-          DTS:DTSID="{F1E35E9C-A113-4866-9B77-40A26BF45194}"
+          DTS:DTSID="{6F6A060E-ABB2-4B54-A820-25B62BFF5334}"
           DTS:From="Package\Load dbo to STG\INI -RunID"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 1"
@@ -1065,7 +1092,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load dbo to STG.PrecedenceConstraints[Restricción 2]"
           DTS:CreationName=""
-          DTS:DTSID="{D913704A-296D-474B-8796-2A944D7A7D91}"
+          DTS:DTSID="{BD980B82-60F7-45B0-A11E-75650C371BF8}"
           DTS:From="Package\Load dbo to STG\OpenLog Validaciones"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 2"
@@ -1073,7 +1100,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load dbo to STG.PrecedenceConstraints[Restricción 3]"
           DTS:CreationName=""
-          DTS:DTSID="{8456AFD2-D734-4F9D-A115-4DFEAD9BFF7C}"
+          DTS:DTSID="{9524B078-84E2-434B-9277-DC2F79E5B3E9}"
           DTS:From="Package\Load dbo to STG\Validaciones"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 3"
@@ -1081,7 +1108,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load dbo to STG.PrecedenceConstraints[Restricción 4]"
           DTS:CreationName=""
-          DTS:DTSID="{E991F43C-FE33-43A2-98B9-3ECB089D8709}"
+          DTS:DTSID="{779C521A-E143-4486-8B98-404D46095395}"
           DTS:From="Package\Load dbo to STG\CLOSE"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 4"
@@ -1092,7 +1119,7 @@
       DTS:refId="Package\Load file log END"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Contenedor de secuencias"
-      DTS:DTSID="{B88AA9B4-AEB1-4222-A477-6BE6D9F4F58B}"
+      DTS:DTSID="{F8405643-0126-4FA8-9182-830A947BB305}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Load file log END">
@@ -1102,7 +1129,7 @@
           DTS:refId="Package\Load file log END\CLOSE"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{90CCEE16-E49D-4AC7-B387-CA77B57EDE40}"
+          DTS:DTSID="{95ECF7E0-2E3F-4676-ABAD-2BFAB5CBAC68}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="CLOSE"
@@ -1110,7 +1137,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{C2E095FF-409A-481F-ACF5-4306EB2CD9DB}"
+              SQLTask:Connection="{795834EA-933C-496E-8BD5-7C928D7EAA75}"
               SQLTask:SqlStatementSource="EXECUTE [SVH_DBO].[dbo].[CloseLog]&#xA;@PackageName=?,       &#xA;@RunID = ? , &#xA;@PackageRunResult = ?,&#xA;@TotalRowCount  = ?,&#xA;@ExecPeriod  = ? &#xA;                    " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -1150,7 +1177,7 @@
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
           DTS:Disabled="True"
-          DTS:DTSID="{4A68762D-CCAC-4A0B-897C-E1F9D5C46CBE}"
+          DTS:DTSID="{81BC0C4D-3E68-4E3E-ACA0-2F9FC8938179}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="DaysOfDeleteDays"
@@ -1159,7 +1186,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{C2E095FF-409A-481F-ACF5-4306EB2CD9DB}"
+              SQLTask:Connection="{795834EA-933C-496E-8BD5-7C928D7EAA75}"
               SQLTask:SqlStatementSource="select DAYS_DELET_OLD_FILES from [SVH_STG].[dbo].[INVENTARIO_PROCESOS] WHERE PROCESO = ?"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -1178,7 +1205,7 @@
           DTS:refId="Package\Load file log END\TotalRowCount"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{99D8BAEA-7FB8-4FF3-B4E0-70BB83220BB4}"
+          DTS:DTSID="{9C7E9479-65B4-42E2-A1FB-29DEA5855E7F}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="TotalRowCount"
@@ -1186,7 +1213,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{C2E095FF-409A-481F-ACF5-4306EB2CD9DB}"
+              SQLTask:Connection="{795834EA-933C-496E-8BD5-7C928D7EAA75}"
               SQLTask:SqlStatementSource="  EXECUTE [SVH_DBO].[dbo].[P_CONTEO_REGISTROS] &#xA; @PROCESO = ?,&#xA;@ENTORNO_BBDD=?"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -1212,7 +1239,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file log END.PrecedenceConstraints[Restricción]"
           DTS:CreationName=""
-          DTS:DTSID="{D828B274-145F-497D-9418-D1AAFA6DC62D}"
+          DTS:DTSID="{9A882F69-46D2-4499-B83D-67A190427B56}"
           DTS:From="Package\Load file log END\TotalRowCount"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción"
@@ -1220,7 +1247,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file log END.PrecedenceConstraints[Restricción 1]"
           DTS:CreationName=""
-          DTS:DTSID="{D1B25861-F0AE-4D4F-93E4-8C78EE9264B9}"
+          DTS:DTSID="{F95B2E29-E139-420B-9C40-4FCDD9F48487}"
           DTS:From="Package\Load file log END\DaysOfDeleteDays"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 1"
@@ -1231,14 +1258,14 @@
       DTS:refId="Package\Load file log START"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Contenedor de secuencias"
-      DTS:DTSID="{4E9443C4-8C5A-4239-AA09-B07BAE0D2BDF}"
+      DTS:DTSID="{A4298502-A94D-49F9-9532-D458B5565D94}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Load file log START">
       <DTS:Variables>
         <DTS:Variable
           DTS:CreationName=""
-          DTS:DTSID="{379FFD30-E2D4-4E10-833A-9F4F5FF1600F}"
+          DTS:DTSID="{B63B9FEF-6CCA-48F4-877A-3A4C7F63D159}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="User"
           DTS:ObjectName="F_CARGA">
@@ -1247,7 +1274,7 @@
         </DTS:Variable>
         <DTS:Variable
           DTS:CreationName=""
-          DTS:DTSID="{3CF6D38F-21F3-46F2-AA8D-FB8B2DB45064}"
+          DTS:DTSID="{2EB56E23-4000-4346-A0F3-D7B23D181886}"
           DTS:IncludeInDebugDump="2345"
           DTS:Namespace="User"
           DTS:ObjectName="var_ROW_ID">
@@ -1260,7 +1287,7 @@
           DTS:refId="Package\Load file log START\INI -RunID"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{4EF5B9CE-AC82-4F74-855E-B107F2ACEA78}"
+          DTS:DTSID="{6949779C-D369-4A27-8200-D47530D8DD0C}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="INI -RunID"
@@ -1270,7 +1297,7 @@
             <DTS:EventHandler
               DTS:refId="Package\Load file log START\INI -RunID.EventHandlers[OnError]"
               DTS:CreationName="OnError"
-              DTS:DTSID="{0C7EDFB7-1446-4D54-83CB-BE7AE0EE7EF5}"
+              DTS:DTSID="{1E98DC71-0F9C-496E-AFAE-89C83F1DD113}"
               DTS:EventID="0"
               DTS:EventName="OnError"
               DTS:LocaleID="-1">
@@ -1278,7 +1305,7 @@
                 <DTS:Variable
                   DTS:CreationName=""
                   DTS:Description="La propiedad de propagación del evento"
-                  DTS:DTSID="{8B8A75AE-E048-4410-9B62-780BCE0E7EF6}"
+                  DTS:DTSID="{F6A00332-CC63-452D-ACF3-DB857AD28075}"
                   DTS:IncludeInDebugDump="6789"
                   DTS:Namespace="System"
                   DTS:ObjectName="Propagate">
@@ -1291,7 +1318,7 @@
                   DTS:refId="Package\Load file log START\INI -RunID.EventHandlers[OnError]\ERROR RunID"
                   DTS:CreationName="Microsoft.ExecuteSQLTask"
                   DTS:Description="Tarea Ejecutar SQL"
-                  DTS:DTSID="{56603191-9F3E-43D8-B74F-8EB38DBFFD2D}"
+                  DTS:DTSID="{A863920E-2964-4A40-8E40-7760B749B975}"
                   DTS:ExecutableType="Microsoft.ExecuteSQLTask"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="ERROR RunID"
@@ -1299,7 +1326,7 @@
                   <DTS:Variables />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
-                      SQLTask:Connection="{680AE1AF-9B4A-4C80-B0B9-DA788F662A44}"
+                      SQLTask:Connection="{C07F868E-4D7B-4F20-BED9-ED66AB9FE7D2}"
                       SQLTask:SqlStatementSource="EXEC [SVH_STG].[dbo].[PROCESO_LOG_ERRORES] &#xA;&#x9; @PROCESO=?,&#xA;&#x9; @RUNID=?,&#xA;&#x9; @TIPO_ERROR =1" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
                       <SQLTask:ParameterBinding
                         SQLTask:ParameterName="0"
@@ -1321,7 +1348,7 @@
           </DTS:EventHandlers>
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{C2E095FF-409A-481F-ACF5-4306EB2CD9DB}"
+              SQLTask:Connection="{795834EA-933C-496E-8BD5-7C928D7EAA75}"
               SQLTask:SqlStatementSource="SELECT max(RunID)+1  RunID FROM [SVH_DBO].[dbo].[Workflow_Logging]"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -1340,7 +1367,7 @@
           DTS:refId="Package\Load file log START\OpenLog"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{D91443ED-C367-471E-BB66-87AD90BAE775}"
+          DTS:DTSID="{FABD1C2E-D21A-4E5F-84F6-ED3D4D11A229}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="OpenLog"
@@ -1348,7 +1375,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{C2E095FF-409A-481F-ACF5-4306EB2CD9DB}"
+              SQLTask:Connection="{795834EA-933C-496E-8BD5-7C928D7EAA75}"
               SQLTask:BypassPrepare="False"
               SQLTask:SqlStatementSource="EXECUTE  [SVH_DBO].[DBO].[OpenLog]&#xA; @PackageName = ?,&#xA; @RunID = ?,&#xA;@Name=?,&#xA;@Descrip = 'Carga de fichero excel a dbo'&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
@@ -1377,7 +1404,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file log START.PrecedenceConstraints[Restricción 2]"
           DTS:CreationName=""
-          DTS:DTSID="{A9E69880-49AF-46A3-B184-303E1971D9AD}"
+          DTS:DTSID="{27CA029E-6FFE-46EF-8156-AE3BB8F0A2DF}"
           DTS:From="Package\Load file log START\INI -RunID"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 2"
@@ -1388,7 +1415,7 @@
       DTS:refId="Package\Load file to DBO"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Contenedor de secuencias"
-      DTS:DTSID="{4111C271-81C3-45FD-A460-7AAAD770EECA}"
+      DTS:DTSID="{43D70968-56B2-4B0B-BB67-765EC37FDB71}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Load file to DBO">
@@ -1398,13 +1425,13 @@
           DTS:refId="Package\Load file to DBO\Convertir EXCEL - CSV"
           DTS:CreationName="STOCK:FOREACHLOOP"
           DTS:Description="Contenedor de bucles Foreach"
-          DTS:DTSID="{AD35C503-7C72-4862-BEED-2E1403685733}"
+          DTS:DTSID="{3409B3CC-744C-4ED1-8116-3FA062CFBE7F}"
           DTS:ExecutableType="STOCK:FOREACHLOOP"
           DTS:LocaleID="-1"
           DTS:ObjectName="Convertir EXCEL - CSV">
           <DTS:ForEachEnumerator
             DTS:CreationName="Microsoft.ForEachFileEnumerator"
-            DTS:DTSID="{819C2BEC-090D-4870-B7AA-39AC7F07DD29}"
+            DTS:DTSID="{FA067D97-19A1-49CF-8077-8146A0D1828C}"
             DTS:ObjectName="{46BB39FE-F109-4863-8D19-B62A444433E6}">
             <DTS:PropertyExpression
               DTS:Name="Directory">@[$Project::Ruta]+ @[$Package::par_porfolio]+"\\"+@[$Package::ruta_carpeta]+"\\"</DTS:PropertyExpression>
@@ -1429,7 +1456,7 @@
               DTS:refId="Package\Load file to DBO\Convertir EXCEL - CSV\Convertir CSV"
               DTS:CreationName="Microsoft.ExecuteProcess"
               DTS:Description="Tarea Ejecutar proceso"
-              DTS:DTSID="{91C74913-16CD-4D7D-A726-99500B37E2EF}"
+              DTS:DTSID="{3DB8B215-4A64-446E-BEE8-EA34EAAC8EEA}"
               DTS:ExecutableType="Microsoft.ExecuteProcess"
               DTS:LocaleID="-1"
               DTS:ObjectName="Convertir CSV"
@@ -1450,8 +1477,8 @@
           <DTS:ForEachVariableMappings>
             <DTS:ForEachVariableMapping
               DTS:CreationName=""
-              DTS:DTSID="{8F67525C-1354-4847-BECD-2BC80E18A299}"
-              DTS:ObjectName="{8F67525C-1354-4847-BECD-2BC80E18A299}"
+              DTS:DTSID="{DD153532-78D3-4BE3-996F-53D2E3AB121D}"
+              DTS:ObjectName="{DD153532-78D3-4BE3-996F-53D2E3AB121D}"
               DTS:ValueIndex="0"
               DTS:VariableName="User::FilePath" />
           </DTS:ForEachVariableMappings>
@@ -1460,13 +1487,13 @@
           DTS:refId="Package\Load file to DBO\Elimina _csv"
           DTS:CreationName="STOCK:FOREACHLOOP"
           DTS:Description="Contenedor de bucles Foreach"
-          DTS:DTSID="{2B7040F4-96AB-4CF7-A54B-53C9B372D1F1}"
+          DTS:DTSID="{5272AD91-5096-4E9D-82A7-D04EA382027E}"
           DTS:ExecutableType="STOCK:FOREACHLOOP"
           DTS:LocaleID="-1"
           DTS:ObjectName="Elimina _csv">
           <DTS:ForEachEnumerator
             DTS:CreationName="Microsoft.ForEachFileEnumerator"
-            DTS:DTSID="{ADC165D0-96E1-433D-A141-2423D285A1CE}"
+            DTS:DTSID="{09C5BC81-B1C0-4596-903C-B9A8C779CCBF}"
             DTS:ObjectName="{46BB39FE-F109-4863-8D19-B62A444433E6}">
             <DTS:PropertyExpression
               DTS:Name="Directory">@[$Project::Ruta]+ @[$Package::par_porfolio] +"\\"+@[$Package::ruta_carpeta]+"\\"</DTS:PropertyExpression>
@@ -1491,7 +1518,7 @@
               DTS:refId="Package\Load file to DBO\Elimina _csv\Delete Old Files"
               DTS:CreationName="Microsoft.ExecuteProcess"
               DTS:Description="Tarea Ejecutar proceso"
-              DTS:DTSID="{C9490673-A078-4A31-AD63-93114B4A92AD}"
+              DTS:DTSID="{EE0708E5-64D6-4BC7-B1D7-26DE87FFA6F1}"
               DTS:ExecutableType="Microsoft.ExecuteProcess"
               DTS:LocaleID="-1"
               DTS:ObjectName="Delete Old Files"
@@ -1512,8 +1539,8 @@
           <DTS:ForEachVariableMappings>
             <DTS:ForEachVariableMapping
               DTS:CreationName=""
-              DTS:DTSID="{6A3924A4-B4B9-4FA7-A1E4-A947BB661FB5}"
-              DTS:ObjectName="{320D9172-523A-49C1-9E93-77FC514AF10A}"
+              DTS:DTSID="{86294690-12AF-4FAC-8922-EE2C26DB43E8}"
+              DTS:ObjectName="{F2078A58-0C6A-48F2-B986-EBA4882DB838}"
               DTS:ValueIndex="0"
               DTS:VariableName="User::FilePath" />
           </DTS:ForEachVariableMappings>
@@ -1523,7 +1550,7 @@
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
           DTS:Disabled="True"
-          DTS:DTSID="{41DD8309-5695-4C33-BF88-7668FF71646F}"
+          DTS:DTSID="{98E4EFBF-9153-4ABE-9B06-642D05F87979}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Eliminar fila de campos"
@@ -1531,7 +1558,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{680AE1AF-9B4A-4C80-B0B9-DA788F662A44}"
+              SQLTask:Connection="{C07F868E-4D7B-4F20-BED9-ED66AB9FE7D2}"
               SQLTask:SqlStatementSource="DELETE [SVH_DBO].[OCEAN].P02_Peticiones where  [Índice] is null or [Índice] = 'Índice'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -1546,13 +1573,13 @@
           DTS:refId="Package\Load file to DBO\Search and load file"
           DTS:CreationName="STOCK:FOREACHLOOP"
           DTS:Description="Contenedor de bucles Foreach"
-          DTS:DTSID="{D86F3985-33DD-4C32-8375-96FAD80C0255}"
+          DTS:DTSID="{1D188B24-BB09-4CF1-9CF2-C83791F752B9}"
           DTS:ExecutableType="STOCK:FOREACHLOOP"
           DTS:LocaleID="-1"
           DTS:ObjectName="Search and load file">
           <DTS:ForEachEnumerator
             DTS:CreationName="Microsoft.ForEachFileEnumerator"
-            DTS:DTSID="{1B23AD5A-5338-4479-8FF4-65E1CD22090B}"
+            DTS:DTSID="{7F799940-A151-4344-B822-ECB1C0003CE0}"
             DTS:ObjectName="{46BB39FE-F109-4863-8D19-B62A444433E6}">
             <DTS:PropertyExpression
               DTS:Name="Directory">@[$Project::Ruta]+ @[$Package::par_porfolio] +"\\"+@[$Package::ruta_carpeta]+"\\"</DTS:PropertyExpression>
@@ -1577,7 +1604,7 @@
               DTS:refId="Package\Load file to DBO\Search and load file\Fichero Origen"
               DTS:CreationName="Microsoft.ExecuteSQLTask"
               DTS:Description="Tarea Ejecutar SQL"
-              DTS:DTSID="{74646901-1CF0-4D39-BECC-A56E3476A569}"
+              DTS:DTSID="{5D81E46C-337F-42D2-9DDE-A1B30BC0E018}"
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Fichero Origen"
@@ -1585,7 +1612,7 @@
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
-                  SQLTask:Connection="{680AE1AF-9B4A-4C80-B0B9-DA788F662A44}"
+                  SQLTask:Connection="{C07F868E-4D7B-4F20-BED9-ED66AB9FE7D2}"
                   SQLTask:SqlStatementSource="BEGIN&#xA;DECLARE  @F_DATOS NVARCHAR(255) = ?;&#xA;SET @F_DATOS = REPLACE(@F_DATOS,'.csv','')&#xA;SET @F_DATOS = SUBSTRING(@F_DATOS,LEN(@F_DATOS)-7,LEN(@F_DATOS ));&#xA;SELECT  @F_DATOS F_DATOS ;&#xA;END"
                   SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
                   <SQLTask:ResultBinding
@@ -1605,7 +1632,7 @@
               DTS:CreationName="Microsoft.Pipeline"
               DTS:DelayValidation="True"
               DTS:Description="Tarea Flujo de datos"
-              DTS:DTSID="{2F6DA46F-14E1-4C97-922D-C63DD7E07870}"
+              DTS:DTSID="{F3965E99-F823-4BFC-B10D-64004EF12848}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="load to DBO"
@@ -1772,12 +1799,12 @@
                               cachedName="Operador asignado"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Operador asignado]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[ID Sirec]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[ID SIREC]"
                               cachedCodepage="65001"
                               cachedDataType="str"
                               cachedLength="4000"
-                              cachedName="ID Sirec"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ID Sirec]" />
+                              cachedName="ID SIREC"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ID SIREC]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Tipo petición]"
                               cachedCodepage="65001"
@@ -1961,12 +1988,33 @@
                               cachedName="Fecha avance Prop  Elaboración"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha avance Prop  Elaboración]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Fecha generación Comité ]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Fecha avance Prop  Pdte  Team Leader]"
                               cachedCodepage="65001"
                               cachedDataType="str"
                               cachedLength="4000"
-                              cachedName="Fecha generación Comité "
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha generación Comité ]" />
+                              cachedName="Fecha avance Prop  Pdte  Team Leader"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha avance Prop  Pdte  Team Leader]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Fecha avance Prop  Pdte  Sanción Propietario]"
+                              cachedCodepage="65001"
+                              cachedDataType="str"
+                              cachedLength="4000"
+                              cachedName="Fecha avance Prop  Pdte  Sanción Propietario"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha avance Prop  Pdte  Sanción Propietario]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Fecha avance Prop  Con Sanción Propietario]"
+                              cachedCodepage="65001"
+                              cachedDataType="str"
+                              cachedLength="4000"
+                              cachedName="Fecha avance Prop  Con Sanción Propietario"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha avance Prop  Con Sanción Propietario]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Fecha desistimiento propuesta]"
+                              cachedCodepage="65001"
+                              cachedDataType="str"
+                              cachedLength="4000"
+                              cachedName="Fecha desistimiento propuesta"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha desistimiento propuesta]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[Tipo bloqueo]"
                               cachedCodepage="65001"
@@ -2315,20 +2363,20 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de ID Sirec]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de ID SIREC]"
                               dataType="wstr"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
                               length="4000"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de ID Sirec]"
-                              name="Copia de ID Sirec"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de ID SIREC]"
+                              name="Copia de ID SIREC"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
                                   containsID="true"
                                   dataType="System.Int32"
                                   description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ID Sirec]}</property>
+                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ID SIREC]}</property>
                                 <property
                                   dataType="System.Boolean"
                                   description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -2882,20 +2930,83 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha generación Comité]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha avance Prop  Pdte  Team Leader]"
                               dataType="wstr"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
                               length="4000"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha generación Comité]"
-                              name="Copia de Fecha generación Comité"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha avance Prop  Pdte  Team Leader]"
+                              name="Copia de Fecha avance Prop  Pdte  Team Leader"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
                                   containsID="true"
                                   dataType="System.Int32"
                                   description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha generación Comité ]}</property>
+                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha avance Prop  Pdte  Team Leader]}</property>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                                  name="FastParse">false</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha avance Prop  Pdte  Sanción Propietario]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              length="4000"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha avance Prop  Pdte  Sanción Propietario]"
+                              name="Copia de Fecha avance Prop  Pdte  Sanción Propietario"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha avance Prop  Pdte  Sanción Propietario]}</property>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                                  name="FastParse">false</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha avance Prop  Con Sanción Propietario]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              length="4000"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha avance Prop  Con Sanción Propietario]"
+                              name="Copia de Fecha avance Prop  Con Sanción Propietario"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha avance Prop  Con Sanción Propietario]}</property>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                                  name="FastParse">false</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha desistimiento propuesta]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              length="4000"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha desistimiento propuesta]"
+                              name="Copia de Fecha desistimiento propuesta"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                                  name="SourceInputColumnLineageID">#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha desistimiento propuesta]}</property>
                                 <property
                                   dataType="System.Boolean"
                                   description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -3387,6 +3498,13 @@
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[F_DATOS]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1.Outputs[Salida de columna derivada].Columns[F_DATOS]" />
                             <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Expediente validado]"
+                              cachedDataType="wstr"
+                              cachedLength="4000"
+                              cachedName="Copia de Expediente validado"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Unnamed  56]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Expediente validado]" />
+                            <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Días reales]"
                               cachedDataType="wstr"
                               cachedLength="4000"
@@ -3498,6 +3616,34 @@
                               cachedName="Copia de Tipo bloqueo"
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Tipo bloqueo]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Tipo bloqueo]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Fecha desistimiento propuesta]"
+                              cachedDataType="wstr"
+                              cachedLength="4000"
+                              cachedName="Copia de Fecha desistimiento propuesta"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha desistimiento propuesta]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha desistimiento propuesta]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Fecha avance Prop  Con Sanción Propietario]"
+                              cachedDataType="wstr"
+                              cachedLength="4000"
+                              cachedName="Copia de Fecha avance Prop  Con Sanción Propietario"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha avance Prop  Con Sanción Propietario]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha avance Prop  Con Sanción Propietario]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Fecha avance Prop  Pdte  Sanción Propietario]"
+                              cachedDataType="wstr"
+                              cachedLength="4000"
+                              cachedName="Copia de Fecha avance Prop  Pdte  Sanción Propietario"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha avance Prop  Pdte  Sanción Propietario]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha avance Prop  Pdte  Sanción Propietario]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Fecha avance Prop  Pdte  Team Leader]"
+                              cachedDataType="wstr"
+                              cachedLength="4000"
+                              cachedName="Copia de Fecha avance Prop  Pdte  Team Leader"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha avance Prop  Pdte  Team Leader]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Fecha avance Prop  Pdte  Team Leader]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Fecha avance Prop  Elaboración]"
                               cachedDataType="wstr"
@@ -3674,12 +3820,12 @@
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Tipo petición]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Tipo petición]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de ID Sirec]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de ID SIREC]"
                               cachedDataType="wstr"
                               cachedLength="4000"
-                              cachedName="Copia de ID Sirec"
+                              cachedName="Copia de ID SIREC"
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID SIREC]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de ID Sirec]" />
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de ID SIREC]" />
                             <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Operador asignado]"
                               cachedDataType="wstr"
@@ -3737,19 +3883,19 @@
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Comprobación salto]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Comprobación salto]" />
                             <inputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de ID Petición]"
-                              cachedDataType="wstr"
-                              cachedLength="4000"
-                              cachedName="Copia de ID Petición"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID Petición]"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de ID Petición]" />
-                            <inputColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de Check salto]"
                               cachedDataType="wstr"
                               cachedLength="4000"
                               cachedName="Copia de Check salto"
                               externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Check salto]"
                               lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de Check salto]" />
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de ID Petición]"
+                              cachedDataType="wstr"
+                              cachedLength="4000"
+                              cachedName="Copia de ID Petición"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID Petición]"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de ID Petición]" />
                           </inputColumns>
                           <externalMetadataColumns
                             isUsed="True">
@@ -4323,15 +4469,15 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ID Sirec]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ID SIREC]"
                               codePage="65001"
                               dataType="str"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ID Sirec]"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ID SIREC]"
                               length="4000"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ID Sirec]"
-                              name="ID Sirec"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ID SIREC]"
+                              name="ID SIREC"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
@@ -4917,15 +5063,81 @@
                               </properties>
                             </outputColumn>
                             <outputColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha generación Comité ]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha avance Prop  Pdte  Team Leader]"
                               codePage="65001"
                               dataType="str"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha generación Comité ]"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha avance Prop  Pdte  Team Leader]"
                               length="4000"
-                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha generación Comité ]"
-                              name="Fecha generación Comité "
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha avance Prop  Pdte  Team Leader]"
+                              name="Fecha avance Prop  Pdte  Team Leader"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                                  name="FastParse">false</property>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indica si los datos están en formato binario."
+                                  name="UseBinaryFormat">false</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha avance Prop  Pdte  Sanción Propietario]"
+                              codePage="65001"
+                              dataType="str"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha avance Prop  Pdte  Sanción Propietario]"
+                              length="4000"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha avance Prop  Pdte  Sanción Propietario]"
+                              name="Fecha avance Prop  Pdte  Sanción Propietario"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                                  name="FastParse">false</property>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indica si los datos están en formato binario."
+                                  name="UseBinaryFormat">false</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha avance Prop  Con Sanción Propietario]"
+                              codePage="65001"
+                              dataType="str"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha avance Prop  Con Sanción Propietario]"
+                              length="4000"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha avance Prop  Con Sanción Propietario]"
+                              name="Fecha avance Prop  Con Sanción Propietario"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                                  name="FastParse">false</property>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indica si los datos están en formato binario."
+                                  name="UseBinaryFormat">false</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha desistimiento propuesta]"
+                              codePage="65001"
+                              dataType="str"
+                              errorOrTruncationOperation="Conversión"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha desistimiento propuesta]"
+                              length="4000"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha desistimiento propuesta]"
+                              name="Fecha desistimiento propuesta"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
@@ -5398,11 +5610,11 @@
                               length="4000"
                               name="Operador asignado" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ID Sirec]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ID SIREC]"
                               codePage="65001"
                               dataType="str"
                               length="4000"
-                              name="ID Sirec" />
+                              name="ID SIREC" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Tipo petición]"
                               codePage="65001"
@@ -5560,11 +5772,29 @@
                               length="4000"
                               name="Fecha avance Prop  Elaboración" />
                             <externalMetadataColumn
-                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha generación Comité ]"
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha avance Prop  Pdte  Team Leader]"
                               codePage="65001"
                               dataType="str"
                               length="4000"
-                              name="Fecha generación Comité " />
+                              name="Fecha avance Prop  Pdte  Team Leader" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha avance Prop  Pdte  Sanción Propietario]"
+                              codePage="65001"
+                              dataType="str"
+                              length="4000"
+                              name="Fecha avance Prop  Pdte  Sanción Propietario" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha avance Prop  Con Sanción Propietario]"
+                              codePage="65001"
+                              dataType="str"
+                              length="4000"
+                              name="Fecha avance Prop  Con Sanción Propietario" />
+                            <externalMetadataColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fecha desistimiento propuesta]"
+                              codePage="65001"
+                              dataType="str"
+                              length="4000"
+                              name="Fecha desistimiento propuesta" />
                             <externalMetadataColumn
                               refId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Tipo bloqueo]"
                               codePage="65001"
@@ -5729,7 +5959,7 @@
               DTS:refId="Package\Load file to DBO\Search and load file\Source file"
               DTS:CreationName="Microsoft.ExecuteSQLTask"
               DTS:Description="Tarea Ejecutar SQL"
-              DTS:DTSID="{9147B3C5-665B-4F7F-8389-7D000640D16D}"
+              DTS:DTSID="{DB78DE8B-2B81-43EB-B222-D7AA4A244DB1}"
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Source file"
@@ -5737,7 +5967,7 @@
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
-                  SQLTask:Connection="{680AE1AF-9B4A-4C80-B0B9-DA788F662A44}"
+                  SQLTask:Connection="{C07F868E-4D7B-4F20-BED9-ED66AB9FE7D2}"
                   SQLTask:SqlStatementSource="select ? FICHERO_ORIGEN"
                   SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
                   <SQLTask:ResultBinding
@@ -5757,7 +5987,7 @@
             <DTS:PrecedenceConstraint
               DTS:refId="Package\Load file to DBO\Search and load file.PrecedenceConstraints[Restricción]"
               DTS:CreationName=""
-              DTS:DTSID="{0AF5697D-7385-436B-8773-BC07D0928F5F}"
+              DTS:DTSID="{8A6B07ED-81C0-467B-9566-9FB9815D9A61}"
               DTS:From="Package\Load file to DBO\Search and load file\Source file"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Restricción"
@@ -5765,7 +5995,7 @@
             <DTS:PrecedenceConstraint
               DTS:refId="Package\Load file to DBO\Search and load file.PrecedenceConstraints[Restricción 1]"
               DTS:CreationName=""
-              DTS:DTSID="{2A0F85B5-B208-4B86-8FD5-2BB1358B5687}"
+              DTS:DTSID="{ACD1DB2E-9868-4BF0-940E-C53AA59CCC7C}"
               DTS:From="Package\Load file to DBO\Search and load file\Fichero Origen"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Restricción 1"
@@ -5774,8 +6004,8 @@
           <DTS:ForEachVariableMappings>
             <DTS:ForEachVariableMapping
               DTS:CreationName=""
-              DTS:DTSID="{320D9172-523A-49C1-9E93-77FC514AF10A}"
-              DTS:ObjectName="{320D9172-523A-49C1-9E93-77FC514AF10A}"
+              DTS:DTSID="{F2078A58-0C6A-48F2-B986-EBA4882DB838}"
+              DTS:ObjectName="{F2078A58-0C6A-48F2-B986-EBA4882DB838}"
               DTS:ValueIndex="0"
               DTS:VariableName="User::FilePath" />
           </DTS:ForEachVariableMappings>
@@ -5784,7 +6014,7 @@
           DTS:refId="Package\Load file to DBO\Truncate table"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{F7CA8470-126E-4875-AC86-881122A64636}"
+          DTS:DTSID="{D268D556-6D80-4FAA-8AC4-37050348A1C0}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Truncate table"
@@ -5792,7 +6022,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{C2E095FF-409A-481F-ACF5-4306EB2CD9DB}"
+              SQLTask:Connection="{795834EA-933C-496E-8BD5-7C928D7EAA75}"
               SQLTask:SqlStatementSource="BEGIN&#xA;DECLARE @NAME NVARCHAR(255) = ?;&#xA;DECLARE @PORTFOLIO  NVARCHAR(255) =?;&#xA;DECLARE @TABLA  NVARCHAR(255);&#xA;DECLARE @TRUNCATE  NVARCHAR(255);&#xA;--Nos quedmos ocn el nombre de la tabla&#xA;SET @TABLA = SUBSTRING( @NAME,CHARINDEX('_P', @NAME)+1, LEN(@NAME))&#xA;--Concatenamos la instruccion con la BBDD,el esquema Y NOMBRE DE LA TABLA&#xA;SET @TRUNCATE =' TRUNCATE TABLE '+'SVH_DBO.'+@PORTFOLIO+'.'+@TABLA&#xA;SELECT @TRUNCATE&#xA;--Ejecutamos truncate&#xA;EXECUTE SP_EXECUTESQL  @TRUNCATE&#xA;END" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -5814,7 +6044,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file to DBO.PrecedenceConstraints[Restricción]"
           DTS:CreationName=""
-          DTS:DTSID="{89C4DB92-6404-42CF-BAA7-B9915CFA14CE}"
+          DTS:DTSID="{42EFF9E7-1C04-4456-B8B1-25DC477CBB9B}"
           DTS:From="Package\Load file to DBO\Truncate table"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción"
@@ -5822,7 +6052,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file to DBO.PrecedenceConstraints[Restricción 1]"
           DTS:CreationName=""
-          DTS:DTSID="{2C71FCA0-DDE1-417C-B048-359089FFDC1B}"
+          DTS:DTSID="{FFDCB37F-8EEF-4B5D-8390-70FB7935439D}"
           DTS:From="Package\Load file to DBO\Search and load file"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 1"
@@ -5830,7 +6060,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file to DBO.PrecedenceConstraints[Restricción 2]"
           DTS:CreationName=""
-          DTS:DTSID="{7B9104DA-7F5C-4558-B71F-AA6F20B71A74}"
+          DTS:DTSID="{817ADC54-5411-4093-A8C3-D19437FF2C8D}"
           DTS:From="Package\Load file to DBO\Convertir EXCEL - CSV"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 2"
@@ -5838,7 +6068,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file to DBO.PrecedenceConstraints[Restricción 3]"
           DTS:CreationName=""
-          DTS:DTSID="{C37DFC28-05AF-4AD0-97EC-6EE7FF391B30}"
+          DTS:DTSID="{FFE6578C-77D0-4C2D-BFCC-79C11F8F3494}"
           DTS:From="Package\Load file to DBO\Elimina _csv"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 3"
@@ -5850,7 +6080,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
       DTS:CreationName=""
-      DTS:DTSID="{2C92D119-F81C-441E-AF86-D403D863794D}"
+      DTS:DTSID="{ED91D660-E387-4D87-8AE2-E1085BF8FFD3}"
       DTS:From="Package\Load file log START"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 3"
@@ -5858,7 +6088,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción]"
       DTS:CreationName=""
-      DTS:DTSID="{62A33473-92EB-480A-87DC-38954FD01570}"
+      DTS:DTSID="{49B0527A-1A91-43E8-AB42-E1766D9107D0}"
       DTS:From="Package\Load file to DBO"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción"
@@ -5866,7 +6096,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
       DTS:CreationName=""
-      DTS:DTSID="{D6F166DC-447D-4153-B1E5-11B85BF01D28}"
+      DTS:DTSID="{D16EDA04-BEE5-4FAA-93EA-EDA1F35667C8}"
       DTS:From="Package\Load file log END"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 1"
@@ -5876,7 +6106,7 @@
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnError]"
       DTS:CreationName="OnError"
-      DTS:DTSID="{741E69BB-A5B5-47F8-83D5-B335C4F85477}"
+      DTS:DTSID="{BD388E6C-D73F-42AC-BAB3-022CC51EF262}"
       DTS:EventID="0"
       DTS:EventName="OnError"
       DTS:LocaleID="-1">
@@ -5884,7 +6114,7 @@
         <DTS:Variable
           DTS:CreationName=""
           DTS:Description="La propiedad de propagación del evento"
-          DTS:DTSID="{CD34E0A2-527A-4034-B4D9-1198079273CB}"
+          DTS:DTSID="{D15D7BD0-48AF-4C24-A999-AE79D67EBAB4}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="System"
           DTS:ObjectName="Propagate">
@@ -5897,14 +6127,14 @@
           DTS:refId="Package.EventHandlers[OnError]\LogFail"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{5DC66827-389E-4362-9FF7-BB71A90F9292}"
+          DTS:DTSID="{1BB601F1-724A-4BD6-9748-10D19652D383}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="LogFail">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{C2E095FF-409A-481F-ACF5-4306EB2CD9DB}"
+              SQLTask:Connection="{795834EA-933C-496E-8BD5-7C928D7EAA75}"
               SQLTask:SqlStatementSource="BEGIN TRY&#xA;&#xA;EXECUTE [SVH_STG].[dbo].[CloseLog]&#xA;@PackageName=?,&#xA;@RunGUID = ? , &#xA;@PackageRunResult = ?,&#xA;@TotalRowCount  = ?, &#xA;@ExecPeriod  = ?, &#xA;@ErrorDescription = ?&#xA;&#xA;END TRY&#xA;&#xA;BEGIN CATCH&#xA;&#xA;EXEC [SVH_STG].[dbo].[PROCESO_LOG_ERRORES] &#xA;@p_PROCESO=?, &#xA;@RUNID=?,&#xA;@TIPO_ERROR =10&#xA;&#xA;RAISERROR ('Error en el objeto LogFail del paquete SISS' ,18,1);&#xA;&#xA;END CATCH" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -6594,89 +6824,75 @@
     design-time-name="Package\Load file to DBO\Search and load file\load to DBO">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="168,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
           TopLeft="320.166666898462,288.666667252117" />
         <NodeLayout
-          Size="175,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
-          TopLeft="373,369" />
+          Size="180,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
+          TopLeft="322,130" />
         <NodeLayout
           Size="196,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"
-          TopLeft="400,135" />
+          TopLeft="292,71" />
         <NodeLayout
-          Size="180,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
-          TopLeft="397,216" />
+          Size="175,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
+          TopLeft="298,398" />
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de archivo plano]"
-          TopLeft="498,177">
+          TopLeft="390,113">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-11,39"
+              EndConnector="-68,38"
               Start="0,0"
-              End="-11,31.5">
+              End="-60.5,38">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.5" />
+                    End="0,34" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,15.5"
-                    Point2="0,19.5"
-                    Point3="-4,19.5" />
+                    Point1="0,34"
+                    Point2="0,38"
+                    Point3="-4,38" />
                   <mssgle:LineSegment
-                    End="-7,19.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-7,19.5"
-                    Point2="-11,19.5"
-                    Point3="-11,23.5" />
-                  <mssgle:LineSegment
-                    End="-11,31.5" />
+                    End="-60.5,38" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-55.33947265625,43,46.1789453125,11.453125"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de conversión de datos]"
-          TopLeft="487,258">
+          TopLeft="408.083333449231,172">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-82.833333101538,30.666667252117"
+              EndConnector="0,116.666667252117"
               Start="0,0"
-              End="-82.833333101538,23.166667252117">
+              End="0,109.166667252117">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,11.3333336260585" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,11.3333336260585"
-                    Point2="0,15.3333336260585"
-                    Point3="-4,15.3333336260585" />
-                  <mssgle:LineSegment
-                    End="-78.833333101538,15.3333336260585" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-78.833333101538,15.3333336260585"
-                    Point2="-82.833333101538,15.3333336260585"
-                    Point3="-82.833333101538,19.3333336260585" />
-                  <mssgle:LineSegment
-                    End="-82.833333101538,23.166667252117" />
+                    End="0,109.166667252117" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-23.08947265625,48.8567711260585,46.1789453125,11.453125"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6685,32 +6901,34 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="56.333333101538,38.333332747883"
+              EndConnector="-18.666666898462,67.333332747883"
               Start="0,0"
-              End="56.333333101538,30.833332747883">
+              End="-18.666666898462,59.833332747883">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.1666663739415" />
+                    End="0,29.6666663739415" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,15.1666663739415"
-                    Point2="0,19.1666663739415"
-                    Point3="4,19.1666663739415" />
+                    Point1="0,29.6666663739415"
+                    Point2="0,33.6666663739415"
+                    Point3="-4,33.6666663739415" />
                   <mssgle:LineSegment
-                    End="52.333333101538,19.1666663739415" />
+                    End="-14.666666898462,33.6666663739415" />
                   <mssgle:CubicBezierSegment
-                    Point1="52.333333101538,19.1666663739415"
-                    Point2="56.333333101538,19.1666663739415"
-                    Point3="56.333333101538,23.1666663739415" />
+                    Point1="-14.666666898462,33.6666663739415"
+                    Point2="-18.666666898462,33.6666663739415"
+                    Point3="-18.666666898462,37.6666663739415" />
                   <mssgle:LineSegment
-                    End="56.333333101538,30.833332747883" />
+                    End="-18.666666898462,59.833332747883" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-32.422806105481,38.6666663739415,46.1789453125,11.453125"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
