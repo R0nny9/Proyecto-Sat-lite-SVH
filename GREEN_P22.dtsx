@@ -12,8 +12,8 @@
   DTS:ObjectName="GREEN_P22"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="369"
-  DTS:VersionGUID="{BEB0A05B-BE63-41AD-BBC9-DE16188D5A0E}">
+  DTS:VersionBuild="370"
+  DTS:VersionGUID="{E90E4193-2421-401D-ACBC-A68B883FE177}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1273,6 +1273,82 @@
                 <pipeline
                   version="1">
                   <components>
+                    <component
+                      refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada"
+                      componentClassID="Microsoft.DerivedColumn"
+                      contactInfo="Columna derivada;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+                      description="Crea nuevos valores de columna aplicando expresiones a las columnas de entrada de la transformación. Crea nuevas columnas o sobrescribe las columnas existentes. Por ejemplo, se concatenan los valores de las columnas 'nombre' y 'apellidos' para crear una columna 'nombre completo'."
+                      name="Columna derivada"
+                      usesDispositions="true">
+                      <inputs>
+                        <input
+                          refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Inputs[Entrada de columna derivada]"
+                          description="Entrada en la transformación Columna derivada"
+                          name="Entrada de columna derivada">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Inputs[Entrada de columna derivada].Columns[F  prevista adjudicación]"
+                              cachedCodepage="65001"
+                              cachedDataType="str"
+                              cachedLength="400"
+                              cachedName="F  prevista adjudicación"
+                              errorOrTruncationOperation="Cálculo"
+                              errorRowDisposition="FailComponent"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[F  prevista adjudicación]"
+                              truncationRowDisposition="FailComponent"
+                              usageType="readWrite">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Expresión de columna derivada"
+                                  name="Expression">[REPLACE](#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[F  prevista adjudicación]},"N/D","")</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Expresión descriptiva de columna derivada"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">REPLACE([F  prevista adjudicación],"N/D","")</property>
+                              </properties>
+                            </inputColumn>
+                          </inputColumns>
+                          <externalMetadataColumns />
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Outputs[Salida de columna derivada]"
+                          description="Salida predeterminada de la transformación Columna derivada"
+                          exclusionGroup="1"
+                          name="Salida de columna derivada"
+                          synchronousInputId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Inputs[Entrada de columna derivada]">
+                          <externalMetadataColumns />
+                        </output>
+                        <output
+                          refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Outputs[Salida de error de columna derivada]"
+                          description="Salida de error de la transformación Columna derivada"
+                          exclusionGroup="1"
+                          isErrorOut="true"
+                          name="Salida de error de columna derivada"
+                          synchronousInputId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Inputs[Entrada de columna derivada]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
                     <component
                       refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
                       componentClassID="Microsoft.DerivedColumn"
@@ -2809,13 +2885,18 @@
                       name="Salida de columna derivada"
                       startId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1.Outputs[Salida de columna derivada]" />
                     <path
+                      refId="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de columna derivada1]"
+                      endId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos]"
+                      name="Salida de columna derivada"
+                      startId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Outputs[Salida de columna derivada]" />
+                    <path
                       refId="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de conversión de datos]"
                       endId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1.Inputs[Entrada de columna derivada]"
                       name="Salida de conversión de datos"
                       startId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos]" />
                     <path
                       refId="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de archivo plano]"
-                      endId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos]"
+                      endId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Inputs[Entrada de columna derivada]"
                       name="Salida de origen de archivo plano"
                       startId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano]" />
                   </paths>
@@ -3685,77 +3766,37 @@
     design-time-name="Package\Load file to DBO\Search and load file\load to DBO">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="196,41.6"
+          Size="196,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"
-          TopLeft="230,177" />
+          TopLeft="243,42" />
         <NodeLayout
-          Size="175.2,41.6"
+          Size="175,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
           TopLeft="247,479" />
         <NodeLayout
-          Size="180,41.6"
+          Size="180,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
-          TopLeft="361,262" />
+          TopLeft="261,208" />
         <NodeLayout
-          Size="168,41.6"
+          Size="168,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
           TopLeft="261.000000397364,315.400000599225" />
         <EdgeLayout
-          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de archivo plano]"
-          TopLeft="328,219">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="123,43"
-              Start="0,0"
-              End="123,35.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17.5"
-                    Point2="0,21.5"
-                    Point3="4,21.5" />
-                  <mssgle:LineSegment
-                    End="119,21.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="119,21.5"
-                    Point2="123,21.5"
-                    Point3="123,25.5" />
-                  <mssgle:LineSegment
-                    End="123,35.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de conversión de datos]"
-          TopLeft="361,283">
+          TopLeft="348.000000198682,250">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-15.999999602636,32.400000599225"
+              EndConnector="0,65.400000599225"
               Start="0,0"
-              End="-15.999999602636,24.900000599225">
+              End="0,57.900000599225">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-11.999999602636,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-11.999999602636,0"
-                    Point2="-15.999999602636,0"
-                    Point3="-15.999999602636,4" />
-                  <mssgle:LineSegment
-                    End="-15.999999602636,24.900000599225" />
+                    End="0,57.900000599225" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3790,6 +3831,78 @@
                     Point3="-10.500000397364,64.7999997003875" />
                   <mssgle:LineSegment
                     End="-10.500000397364,114.099999400775" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada"
+          TopLeft="231,133" />
+        <EdgeLayout
+          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de archivo plano]"
+          TopLeft="341,84">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-26,49"
+              Start="0,0"
+              End="-26,41.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.5"
+                    Point2="0,24.5"
+                    Point3="-4,24.5" />
+                  <mssgle:LineSegment
+                    End="-22,24.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-22,24.5"
+                    Point2="-26,24.5"
+                    Point3="-26,28.5" />
+                  <mssgle:LineSegment
+                    End="-26,41.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de columna derivada1]"
+          TopLeft="315,175">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="36,33"
+              Start="0,0"
+              End="36,25.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.5"
+                    Point2="0,16.5"
+                    Point3="4,16.5" />
+                  <mssgle:LineSegment
+                    End="32,16.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="32,16.5"
+                    Point2="36,16.5"
+                    Point3="36,20.5" />
+                  <mssgle:LineSegment
+                    End="36,25.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
