@@ -12,8 +12,8 @@
   DTS:ObjectName="GREEN_P03"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="362"
-  DTS:VersionGUID="{60F3B399-924A-400E-9C01-EE8901D34038}">
+  DTS:VersionBuild="364"
+  DTS:VersionGUID="{827C67FE-EEB6-44F2-8D64-19E3585D4A49}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -501,7 +501,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="var_DATOS">
       <DTS:VariableValue
-        DTS:DataType="7">10/24/2023 8:52:09 AM</DTS:VariableValue>
+        DTS:DataType="7">3/4/2024 4:21:10 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -3973,7 +3973,7 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{3E98D084-353B-400D-84DD-52B263765415}"
-              SQLTask:SqlStatementSource="BEGIN TRY&#xA;&#xA;EXECUTE [SVH_STG].[dbo].[CloseLog]&#xA;@PackageName=?,&#xA;@RunGUID = ? , &#xA;@PackageRunResult = ?,&#xA;@TotalRowCount  = ?, &#xA;@ExecPeriod  = ?, &#xA;@ErrorDescription = ?&#xA;&#xA;END TRY&#xA;&#xA;BEGIN CATCH&#xA;&#xA;EXEC [SVH_STG].[dbo].[PROCESO_LOG_ERRORES] &#xA;@p_PROCESO=?, &#xA;@RUNID=?,&#xA;@TIPO_ERROR =10&#xA;&#xA;RAISERROR ('Error en el objeto LogFail del paquete SISS' ,18,1);&#xA;&#xA;END CATCH" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              SQLTask:SqlStatementSource="BEGIN &#xA;&#xA;EXECUTE [SVH_STG].[dbo].[CloseLog]&#xA;@PackageName=?,&#xA;@RunGUID = ? , &#xA;@PackageRunResult = ?,&#xA;@TotalRowCount  = ?, &#xA;@ExecPeriod  = ?, &#xA;@ErrorDescription = ?&#xA;&#xA;END &#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
                 SQLTask:DtsVariableName="$Package::PackageName"
@@ -3982,7 +3982,7 @@
                 SQLTask:ParameterSize="-1" />
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="1"
-                SQLTask:DtsVariableName="User::RunGUID"
+                SQLTask:DtsVariableName="User::RunID"
                 SQLTask:ParameterDirection="Input"
                 SQLTask:DataType="130"
                 SQLTask:ParameterSize="-1" />
@@ -4644,6 +4644,14 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="196,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"
+          TopLeft="263,208" />
+        <NodeLayout
+          Size="180,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
+          TopLeft="240,253" />
+        <NodeLayout
           Size="168,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
           TopLeft="261.000000397364,315.400000599225" />
@@ -4651,42 +4659,6 @@
           Size="175,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
           TopLeft="278,394" />
-        <NodeLayout
-          Size="180,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
-          TopLeft="240,253" />
-        <NodeLayout
-          Size="196,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"
-          TopLeft="263,208" />
-        <EdgeLayout
-          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de archivo plano]"
-          TopLeft="263,229">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="67,24"
-              Start="0,0"
-              End="67,16.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="63,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="63,0"
-                    Point2="67,0"
-                    Point3="67,4" />
-                  <mssgle:LineSegment
-                    End="67,16.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de conversión de datos]"
           TopLeft="240,274">
@@ -4747,6 +4719,34 @@
                     Point3="20.499999602636,22.2999997003875" />
                   <mssgle:LineSegment
                     End="20.499999602636,29.099999400775" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de archivo plano]"
+          TopLeft="263,229">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="67,24"
+              Start="0,0"
+              End="67,16.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="63,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="63,0"
+                    Point2="67,0"
+                    Point3="67,4" />
+                  <mssgle:LineSegment
+                    End="67,16.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
