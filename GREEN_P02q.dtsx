@@ -12,8 +12,8 @@
   DTS:ObjectName="GREEN_P02"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="354"
-  DTS:VersionGUID="{69FC61FD-BE34-4282-9602-C6F076075497}">
+  DTS:VersionBuild="357"
+  DTS:VersionGUID="{DE68645B-6A28-41A5-95D0-EA5B4D197DE0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -58,6 +58,8 @@
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{D6066C8B-9CE3-458B-8139-A86C4D47634D}"
       DTS:ObjectName="p02q">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::FilePath]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -67,7 +69,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="C:\Users\Ronny_Jara\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\GREEN\P02q\GREEN_P02q_Peticiones_20230116.csv">
+          DTS:ConnectionString="OCEAN_P02b_Peticiones_20230320.xlsx">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1717,6 +1719,307 @@
                 <pipeline
                   version="1">
                   <components>
+                    <component
+                      refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada"
+                      componentClassID="Microsoft.DerivedColumn"
+                      contactInfo="Columna derivada;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+                      description="Crea nuevos valores de columna aplicando expresiones a las columnas de entrada de la transformación. Crea nuevas columnas o sobrescribe las columnas existentes. Por ejemplo, se concatenan los valores de las columnas 'nombre' y 'apellidos' para crear una columna 'nombre completo'."
+                      name="Columna derivada"
+                      usesDispositions="true">
+                      <inputs>
+                        <input
+                          refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Inputs[Entrada de columna derivada]"
+                          description="Entrada en la transformación Columna derivada"
+                          name="Entrada de columna derivada">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Inputs[Entrada de columna derivada].Columns[Fecha solicitud tracto a Notaría - CAIXABANK]"
+                              cachedCodepage="65001"
+                              cachedDataType="str"
+                              cachedLength="4000"
+                              cachedName="Fecha solicitud tracto a Notaría - CAIXABANK"
+                              errorOrTruncationOperation="Cálculo"
+                              errorRowDisposition="FailComponent"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha solicitud tracto a Notaría - CAIXABANK]"
+                              truncationRowDisposition="FailComponent"
+                              usageType="readWrite">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Expresión de columna derivada"
+                                  name="Expression">[REPLACE](#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha solicitud tracto a Notaría - CAIXABANK]},"No","")</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Expresión descriptiva de columna derivada"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">REPLACE([Fecha solicitud tracto a Notaría - CAIXABANK],"No","")</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Inputs[Entrada de columna derivada].Columns[Fecha solicitud tracto a Notaría - BANKIA]"
+                              cachedCodepage="65001"
+                              cachedDataType="str"
+                              cachedLength="4000"
+                              cachedName="Fecha solicitud tracto a Notaría - BANKIA"
+                              errorOrTruncationOperation="Cálculo"
+                              errorRowDisposition="FailComponent"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha solicitud tracto a Notaría - BANKIA]"
+                              truncationRowDisposition="FailComponent"
+                              usageType="readWrite">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Expresión de columna derivada"
+                                  name="Expression">[REPLACE](#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha solicitud tracto a Notaría - BANKIA]},"No","")</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Expresión descriptiva de columna derivada"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">REPLACE([Fecha solicitud tracto a Notaría - BANKIA],"No","")</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Inputs[Entrada de columna derivada].Columns[Fecha presentación registro - BANKIA]"
+                              cachedCodepage="65001"
+                              cachedDataType="str"
+                              cachedLength="4000"
+                              cachedName="Fecha presentación registro - BANKIA"
+                              errorOrTruncationOperation="Cálculo"
+                              errorRowDisposition="FailComponent"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha presentación registro - BANKIA]"
+                              truncationRowDisposition="FailComponent"
+                              usageType="readWrite">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Expresión de columna derivada"
+                                  name="Expression">[REPLACE](#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha presentación registro - BANKIA]},"No","")</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Expresión descriptiva de columna derivada"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">REPLACE([Fecha presentación registro - BANKIA],"No","")</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Inputs[Entrada de columna derivada].Columns[Fecha FRA]"
+                              cachedCodepage="65001"
+                              cachedDataType="str"
+                              cachedLength="4000"
+                              cachedName="Fecha FRA"
+                              errorOrTruncationOperation="Cálculo"
+                              errorRowDisposition="FailComponent"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha FRA]"
+                              truncationRowDisposition="FailComponent"
+                              usageType="readWrite">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Expresión de columna derivada"
+                                  name="Expression">[REPLACE](#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha FRA]},"No","")</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Expresión descriptiva de columna derivada"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">REPLACE([Fecha FRA],"No","")</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Inputs[Entrada de columna derivada].Columns[Fecha emisión factura contabilidad]"
+                              cachedCodepage="65001"
+                              cachedDataType="str"
+                              cachedLength="4000"
+                              cachedName="Fecha emisión factura contabilidad"
+                              errorOrTruncationOperation="Cálculo"
+                              errorRowDisposition="FailComponent"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha emisión factura contabilidad]"
+                              truncationRowDisposition="FailComponent"
+                              usageType="readWrite">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Expresión de columna derivada"
+                                  name="Expression">[REPLACE](#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha emisión factura contabilidad]},"No","")</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Expresión descriptiva de columna derivada"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">REPLACE([Fecha emisión factura contabilidad],"No","")</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Inputs[Entrada de columna derivada].Columns[Fecha presentación registro - CAIXABANK]"
+                              cachedCodepage="65001"
+                              cachedDataType="str"
+                              cachedLength="4000"
+                              cachedName="Fecha presentación registro - CAIXABANK"
+                              errorOrTruncationOperation="Cálculo"
+                              errorRowDisposition="FailComponent"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha presentación registro - CAIXABANK]"
+                              truncationRowDisposition="FailComponent"
+                              usageType="readWrite">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Expresión de columna derivada"
+                                  name="Expression">[REPLACE](#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha presentación registro - CAIXABANK]},"No","")</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Expresión descriptiva de columna derivada"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">REPLACE([Fecha presentación registro - CAIXABANK],"No","")</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Inputs[Entrada de columna derivada].Columns[Fecha FRA 1]"
+                              cachedCodepage="65001"
+                              cachedDataType="str"
+                              cachedLength="4000"
+                              cachedName="Fecha FRA 1"
+                              errorOrTruncationOperation="Cálculo"
+                              errorRowDisposition="FailComponent"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha FRA 1]"
+                              truncationRowDisposition="FailComponent"
+                              usageType="readWrite">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Expresión de columna derivada"
+                                  name="Expression">[REPLACE](#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha FRA 1]},"No","")</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Expresión descriptiva de columna derivada"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">REPLACE([Fecha FRA 1],"No","")</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Inputs[Entrada de columna derivada].Columns[Fecha emisión factura contabilidad 1]"
+                              cachedCodepage="65001"
+                              cachedDataType="str"
+                              cachedLength="4000"
+                              cachedName="Fecha emisión factura contabilidad 1"
+                              errorOrTruncationOperation="Cálculo"
+                              errorRowDisposition="FailComponent"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha emisión factura contabilidad 1]"
+                              truncationRowDisposition="FailComponent"
+                              usageType="readWrite">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Expresión de columna derivada"
+                                  name="Expression">[REPLACE](#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha emisión factura contabilidad 1]},"No","")</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Expresión descriptiva de columna derivada"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">REPLACE([Fecha emisión factura contabilidad 1],"No","")</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Inputs[Entrada de columna derivada].Columns[Fecha envío factura Notaría (GESTIÓN BANKIA)]"
+                              cachedCodepage="65001"
+                              cachedDataType="str"
+                              cachedLength="4000"
+                              cachedName="Fecha envío factura Notaría (GESTIÓN BANKIA)"
+                              errorOrTruncationOperation="Cálculo"
+                              errorRowDisposition="FailComponent"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha envío factura Notaría (GESTIÓN BANKIA)]"
+                              truncationRowDisposition="FailComponent"
+                              usageType="readWrite">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Expresión de columna derivada"
+                                  name="Expression">[REPLACE](#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha envío factura Notaría (GESTIÓN BANKIA)]},"No","")</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Expresión descriptiva de columna derivada"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">REPLACE([Fecha envío factura Notaría (GESTIÓN BANKIA)],"No","")</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Inputs[Entrada de columna derivada].Columns[Fecha FRA Notaría BANKIA]"
+                              cachedCodepage="65001"
+                              cachedDataType="str"
+                              cachedLength="4000"
+                              cachedName="Fecha FRA Notaría BANKIA"
+                              errorOrTruncationOperation="Cálculo"
+                              errorRowDisposition="FailComponent"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha FRA Notaría BANKIA]"
+                              truncationRowDisposition="FailComponent"
+                              usageType="readWrite">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Expresión de columna derivada"
+                                  name="Expression">[REPLACE](#{Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fecha FRA Notaría BANKIA]},"No","")</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Expresión descriptiva de columna derivada"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">REPLACE([Fecha FRA Notaría BANKIA],"No","")</property>
+                              </properties>
+                            </inputColumn>
+                          </inputColumns>
+                          <externalMetadataColumns />
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Outputs[Salida de columna derivada]"
+                          description="Salida predeterminada de la transformación Columna derivada"
+                          exclusionGroup="1"
+                          name="Salida de columna derivada"
+                          synchronousInputId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Inputs[Entrada de columna derivada]">
+                          <externalMetadataColumns />
+                        </output>
+                        <output
+                          refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Outputs[Salida de error de columna derivada]"
+                          description="Salida de error de la transformación Columna derivada"
+                          exclusionGroup="1"
+                          isErrorOut="true"
+                          name="Salida de error de columna derivada"
+                          synchronousInputId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Inputs[Entrada de columna derivada]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
                     <component
                       refId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
                       componentClassID="Microsoft.DerivedColumn"
@@ -6789,13 +7092,18 @@
                       name="Salida de columna derivada"
                       startId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1.Outputs[Salida de columna derivada]" />
                     <path
+                      refId="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de columna derivada1]"
+                      endId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos]"
+                      name="Salida de columna derivada"
+                      startId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Outputs[Salida de columna derivada]" />
+                    <path
                       refId="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de conversión de datos]"
                       endId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1.Inputs[Entrada de columna derivada]"
                       name="Salida de conversión de datos"
                       startId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Outputs[Salida de conversión de datos]" />
                     <path
                       refId="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de archivo plano]"
-                      endId="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos.Inputs[Entrada de conversión de datos]"
+                      endId="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada.Inputs[Entrada de columna derivada]"
                       name="Salida de origen de archivo plano"
                       startId="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano.Outputs[Salida de origen de archivo plano]" />
                   </paths>
@@ -7637,15 +7945,7 @@
     design-time-name="Package\Load file to DBO\Search and load file\load to DBO">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="168,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
-          TopLeft="261.000000397364,314.400000599225" />
-        <NodeLayout
-          Size="196,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"
-          TopLeft="254,129" />
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="180,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
@@ -7654,40 +7954,14 @@
           Size="175,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
           TopLeft="305,389" />
-        <EdgeLayout
-          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de archivo plano]"
-          TopLeft="352,171">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="71,49"
-              Start="0,0"
-              End="71,41.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.5"
-                    Point2="0,24.5"
-                    Point3="4,24.5" />
-                  <mssgle:LineSegment
-                    End="67,24.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="67,24.5"
-                    Point2="71,24.5"
-                    Point3="71,28.5" />
-                  <mssgle:LineSegment
-                    End="71,41.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
+          TopLeft="261.000000397364,314.400000599225" />
+        <NodeLayout
+          Size="196,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"
+          TopLeft="290,12" />
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de conversión de datos]"
           TopLeft="423,262">
@@ -7748,6 +8022,78 @@
                     Point3="47.499999602636,20.2999997003875" />
                   <mssgle:LineSegment
                     End="47.499999602636,25.099999400775" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada"
+          TopLeft="284,118" />
+        <EdgeLayout
+          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de archivo plano]"
+          TopLeft="388,54">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-20,64"
+              Start="0,0"
+              End="-20,56.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28"
+                    Point2="0,32"
+                    Point3="-4,32" />
+                  <mssgle:LineSegment
+                    End="-16,32" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-16,32"
+                    Point2="-20,32"
+                    Point3="-20,36" />
+                  <mssgle:LineSegment
+                    End="-20,56.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de columna derivada1]"
+          TopLeft="368,160">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="55,60"
+              Start="0,0"
+              End="55,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="4,30" />
+                  <mssgle:LineSegment
+                    End="51,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="51,30"
+                    Point2="55,30"
+                    Point3="55,34" />
+                  <mssgle:LineSegment
+                    End="55,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
