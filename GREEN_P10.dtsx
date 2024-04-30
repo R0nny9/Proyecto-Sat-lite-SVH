@@ -12,8 +12,8 @@
   DTS:ObjectName="GREEN_P10"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="350"
-  DTS:VersionGUID="{AE621D58-3321-4A8A-987C-0617F017F157}">
+  DTS:VersionBuild="351"
+  DTS:VersionGUID="{4CCDB99E-A3CF-4BED-A51B-2E3A2F1F2468}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -871,7 +871,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="var_convertcsv">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\Vicente_Moreno\OneDrive" "-" "MISTRAL" "BUSINESS" "SOLUTIONS\#Repository\DWH" "BAU" "Mistral-SVH\Code\Python\convertcsv.py OCEAN_P02b_Peticiones_20230320.xlsx C:\Users\Vicente_Moreno\OneDrive" "-" "MISTRAL" "BUSINESS" "SOLUTIONS\#Repository\DWH" "BAU" "Mistral-SVH\Data" "Sources\GREEN\P10\OLD\</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\Ronny_Jara\MISTRAL" "BUSINESS" "SOLUTIONS\Mistral" "-" "Servihabitat" "-" "Documentos\#Repository\DWH" "BAU" "Mistral-SVH\Code\Python\convertcsv.py OCEAN_P02b_Peticiones_20230320.xlsx C:\Users\Ronny_Jara\MISTRAL" "BUSINESS" "SOLUTIONS\Mistral" "-" "Servihabitat" "-" "Documentos\#Repository\DWH" "BAU" "Mistral-SVH\Data" "Sources\GREEN\P10\OLD\</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -901,7 +901,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="var_deleteOldFich">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\Vicente_Moreno\OneDrive" "-" "MISTRAL" "BUSINESS" "SOLUTIONS\#Repository\DWH" "BAU" "Mistral-SVH\Code\Python\deleteOldFiles.py OCEAN_P02b_Peticiones_20230320.xlsx</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\Ronny_Jara\MISTRAL" "BUSINESS" "SOLUTIONS\Mistral" "-" "Servihabitat" "-" "Documentos\#Repository\DWH" "BAU" "Mistral-SVH\Code\Python\deleteOldFiles.py OCEAN_P02b_Peticiones_20230320.xlsx</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -942,7 +942,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="var_moverFich">
       <DTS:VariableValue
-        DTS:DataType="8">C:\08_Python\moveFile.py C:\Users\Vicente_Moreno\OneDrive - MISTRAL BUSINESS SOLUTIONS\#Repository\DWH BAU Mistral-SVH\Data Sources\P10 C:\ORIGENES_PROCESADOS\P10 *GREEN_P10_Peticiones*</DTS:VariableValue>
+        DTS:DataType="8">C:\08_Python\moveFile.py C:\Users\Ronny_Jara\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\P10 C:\ORIGENES_PROCESADOS\P10 *GREEN_P10_Peticiones*</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -998,7 +998,7 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{562EBDCA-C5D4-440E-B785-B72DCCDC3B80}"
-              SQLTask:SqlStatementSource="EXECUTE [SVH_STG].[dbo].[CloseLog]&#xA;@PackageName=?,       &#xA;@RunID = ? , &#xA;@PackageRunResult = ?,&#xA;@TotalRowCount  = ?,&#xA;@ExecPeriod  = ? &#xA;                    " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              SQLTask:SqlStatementSource="EXECUTE [SVH_DBO].[dbo].[CloseLog]&#xA;@PackageName=?,       &#xA;@RunID = ? , &#xA;@PackageRunResult = ?,&#xA;@TotalRowCount  = ?,&#xA;@ExecPeriod  = ? &#xA;                    " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
                 SQLTask:DtsVariableName="$Package::PackageName"
@@ -1569,7 +1569,7 @@
             <DTS:ObjectData>
               <ForEachFileEnumeratorProperties>
                 <FEFEProperty
-                  Folder="C:\Users\Vicente_Moreno\OneDrive - MISTRAL BUSINESS SOLUTIONS\#Repository\DWH BAU Mistral-SVH\Data Sources\GREEN\P10\" />
+                  Folder="C:\Users\Ronny_Jara\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\GREEN\P10\" />
                 <FEFEProperty
                   FileSpec="*GREEN_P10_Peticiones*.xlsx" />
                 <FEFEProperty
@@ -1598,8 +1598,8 @@
                 DTS:Name="Executable">@[$Project::par_Python_EXEC]</DTS:PropertyExpression>
               <DTS:ObjectData>
                 <ExecuteProcessData
-                  Executable="C:\Users\Vicente_Moreno\AppData\Local\Microsoft\WindowsApps\python.exe"
-                  Arguments="C:\Users\Vicente_Moreno\OneDrive&quot; &quot;-&quot; &quot;MISTRAL&quot; &quot;BUSINESS&quot; &quot;SOLUTIONS\#Repository\DWH&quot; &quot;BAU&quot; &quot;Mistral-SVH\Code\Python\convertcsv.py OCEAN_P02b_Peticiones_20230320.xlsx C:\Users\Vicente_Moreno\OneDrive&quot; &quot;-&quot; &quot;MISTRAL&quot; &quot;BUSINESS&quot; &quot;SOLUTIONS\#Repository\DWH&quot; &quot;BAU&quot; &quot;Mistral-SVH\Data&quot; &quot;Sources\GREEN\P10\OLD\" />
+                  Executable="C:\Users\Ronny_Jara\AppData\Local\Microsoft\WindowsApps\python.exe"
+                  Arguments="C:\Users\Ronny_Jara\MISTRAL&quot; &quot;BUSINESS&quot; &quot;SOLUTIONS\Mistral&quot; &quot;-&quot; &quot;Servihabitat&quot; &quot;-&quot; &quot;Documentos\#Repository\DWH&quot; &quot;BAU&quot; &quot;Mistral-SVH\Code\Python\convertcsv.py OCEAN_P02b_Peticiones_20230320.xlsx C:\Users\Ronny_Jara\MISTRAL&quot; &quot;BUSINESS&quot; &quot;SOLUTIONS\Mistral&quot; &quot;-&quot; &quot;Servihabitat&quot; &quot;-&quot; &quot;Documentos\#Repository\DWH&quot; &quot;BAU&quot; &quot;Mistral-SVH\Data&quot; &quot;Sources\GREEN\P10\OLD\" />
               </DTS:ObjectData>
             </DTS:Executable>
           </DTS:Executables>
@@ -1631,7 +1631,7 @@
             <DTS:ObjectData>
               <ForEachFileEnumeratorProperties>
                 <FEFEProperty
-                  Folder="C:\Users\Vicente_Moreno\OneDrive - MISTRAL BUSINESS SOLUTIONS\#Repository\DWH BAU Mistral-SVH\Data Sources\GREEN\P10\" />
+                  Folder="C:\Users\Ronny_Jara\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\GREEN\P10\" />
                 <FEFEProperty
                   FileSpec="*GREEN_P10_Peticiones*" />
                 <FEFEProperty
@@ -1660,8 +1660,8 @@
                 DTS:Name="Executable">@[$Project::par_Python_EXEC]</DTS:PropertyExpression>
               <DTS:ObjectData>
                 <ExecuteProcessData
-                  Executable="C:\Users\Vicente_Moreno\AppData\Local\Microsoft\WindowsApps\python.exe"
-                  Arguments="C:\Users\Vicente_Moreno\OneDrive&quot; &quot;-&quot; &quot;MISTRAL&quot; &quot;BUSINESS&quot; &quot;SOLUTIONS\#Repository\DWH&quot; &quot;BAU&quot; &quot;Mistral-SVH\Code\Python\deleteOldFiles.py OCEAN_P02b_Peticiones_20230320.xlsx" />
+                  Executable="C:\Users\Ronny_Jara\AppData\Local\Microsoft\WindowsApps\python.exe"
+                  Arguments="C:\Users\Ronny_Jara\MISTRAL&quot; &quot;BUSINESS&quot; &quot;SOLUTIONS\Mistral&quot; &quot;-&quot; &quot;Servihabitat&quot; &quot;-&quot; &quot;Documentos\#Repository\DWH&quot; &quot;BAU&quot; &quot;Mistral-SVH\Code\Python\deleteOldFiles.py OCEAN_P02b_Peticiones_20230320.xlsx" />
               </DTS:ObjectData>
             </DTS:Executable>
           </DTS:Executables>
@@ -1717,7 +1717,7 @@
             <DTS:ObjectData>
               <ForEachFileEnumeratorProperties>
                 <FEFEProperty
-                  Folder="C:\Users\Vicente_Moreno\OneDrive - MISTRAL BUSINESS SOLUTIONS\#Repository\DWH BAU Mistral-SVH\Data Sources\GREEN\P10\" />
+                  Folder="C:\Users\Ronny_Jara\MISTRAL BUSINESS SOLUTIONS\Mistral - Servihabitat - Documentos\#Repository\DWH BAU Mistral-SVH\Data Sources\GREEN\P10\" />
                 <FEFEProperty
                   FileSpec="*GREEN_P10_Peticiones*" />
                 <FEFEProperty
