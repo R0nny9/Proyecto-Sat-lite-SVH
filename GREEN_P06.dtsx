@@ -12,8 +12,8 @@
   DTS:ObjectName="GREEN_P06"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="351"
-  DTS:VersionGUID="{1F36FE21-E64F-4425-ADEA-FB422DAC438C}">
+  DTS:VersionBuild="352"
+  DTS:VersionGUID="{B41E8201-F364-4089-A937-0E15D16E65B7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -4317,7 +4317,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{F995D652-962C-4DFC-9E40-2B8A6A94B110}"
+              SQLTask:Connection="{97464AB9-FE3E-4646-B8CB-12F66AFE22DA}"
               SQLTask:SqlStatementSource=" EXEC svh_core.dbo.p_VALIDA_MATRIZ_EN_RUTA ?, ?, ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -4869,6 +4869,10 @@
           Size="145,42"
           Id="Package\Load file to DBO\Truncate table"
           TopLeft="51.1666657063696,135.866666673554" />
+        <NodeLayout
+          Size="228,42"
+          Id="Package\Load file to DBO\Valida existencia fichero Excel"
+          TopLeft="17.9523826695627,545.266666426582" />
         <EdgeLayout
           Id="Package\Load file to DBO.PrecedenceConstraints[Restricción]"
           TopLeft="121.583332604832,177.866666673554">
@@ -4883,6 +4887,28 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,27.266666652892" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load file to DBO.PrecedenceConstraints[Restricción 1]"
+          TopLeft="127.976191086429,486.633333326446">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,58.6333331001361"
+              Start="0,0"
+              End="0,51.1333331001361">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.1333331001361" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4939,32 +4965,6 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,26.5333326858942" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="228,42"
-          Id="Package\Load file to DBO\Valida existencia fichero Excel"
-          TopLeft="17.9523826695627,545.266666426582" />
-        <EdgeLayout
-          Id="Package\Load file to DBO.PrecedenceConstraints[Restricción 1]"
-          TopLeft="127.976191086429,486.633333326446">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,58.6333331001361"
-              Start="0,0"
-              End="0,51.1333331001361">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,51.1333331001361" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
