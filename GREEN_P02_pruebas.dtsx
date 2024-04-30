@@ -12,8 +12,8 @@
   DTS:ObjectName="GREEN_P02_pruebas"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="344"
-  DTS:VersionGUID="{05CFAECD-7CB6-4F78-BAB2-2F331715D78D}">
+  DTS:VersionBuild="345"
+  DTS:VersionGUID="{4A088628-7F12-4A08-B471-3578CA0787A2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -600,7 +600,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="var_DATOS">
       <DTS:VariableValue
-        DTS:DataType="7">10/3/2023 9:17:15 AM</DTS:VariableValue>
+        DTS:DataType="7">4/29/2024 5:21:42 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -4844,15 +4844,15 @@
           DTS:refId="Package.EventHandlers[OnError]\LogFail"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{0ABADE83-C6B6-42C6-A6D3-62336F2E373D}"
+          DTS:DTSID="{74d4d019-fe97-4378-a3b8-b452a60b59a6}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="LogFail">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{2B921AC2-862C-47CC-AA6A-8014E958AC53}"
-              SQLTask:SqlStatementSource="BEGIN TRY&#xA;&#xA;EXECUTE [SVH_STG].[dbo].[CloseLog]&#xA;@PackageName=?,&#xA;@RunGUID = ? , &#xA;@PackageRunResult = ?,&#xA;@TotalRowCount  = ?, &#xA;@ExecPeriod  = ?, &#xA;@ErrorDescription = ?&#xA;&#xA;END TRY&#xA;&#xA;BEGIN CATCH&#xA;&#xA;EXEC [SVH_STG].[dbo].[PROCESO_LOG_ERRORES] &#xA;@p_PROCESO=?, &#xA;@RUNID=?,&#xA;@TIPO_ERROR =10&#xA;&#xA;RAISERROR ('Error en el objeto LogFail del paquete SISS' ,18,1);&#xA;&#xA;END CATCH" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              SQLTask:Connection="{5683D5DE-40BE-4254-8E0C-344CEFB3B054}"
+              SQLTask:SqlStatementSource="EXECUTE [SVH_DBO].[dbo].[CloseLog]&#xA;@PackageName=?,&#xA;@RunID = ? , &#xA;@PackageRunResult = ?,&#xA;@TotalRowCount  = ?, &#xA;@ExecPeriod  = ?, &#xA;@ErrorDescription = ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
                 SQLTask:DtsVariableName="$Package::PackageName"
@@ -4861,7 +4861,7 @@
                 SQLTask:ParameterSize="-1" />
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="1"
-                SQLTask:DtsVariableName="User::RunGUID"
+                SQLTask:DtsVariableName="User::RunID"
                 SQLTask:ParameterDirection="Input"
                 SQLTask:DataType="130"
                 SQLTask:ParameterSize="-1" />
@@ -4886,18 +4886,6 @@
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="5"
                 SQLTask:DtsVariableName="System::ErrorDescription"
-                SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="130"
-                SQLTask:ParameterSize="-1" />
-              <SQLTask:ParameterBinding
-                SQLTask:ParameterName="6"
-                SQLTask:DtsVariableName="$Package::PackageName"
-                SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="130"
-                SQLTask:ParameterSize="-1" />
-              <SQLTask:ParameterBinding
-                SQLTask:ParameterName="7"
-                SQLTask:DtsVariableName="User::RunGUID"
                 SQLTask:ParameterDirection="Input"
                 SQLTask:DataType="130"
                 SQLTask:ParameterSize="-1" />
@@ -5547,7 +5535,7 @@
     design-time-name="Package\Load file to DBO\Search and load file\load to DBO">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="180,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
@@ -5595,7 +5583,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5629,7 +5619,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5663,7 +5655,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

@@ -12,8 +12,8 @@
   DTS:ObjectName="OCEAN_P02b"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="330"
-  DTS:VersionGUID="{B206B1E3-63A2-4DD6-902F-BEBFCEC94842}">
+  DTS:VersionBuild="331"
+  DTS:VersionGUID="{33C277CA-25CD-4BF6-99B2-5F6C61D19BE2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -357,7 +357,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="var_DATOS">
       <DTS:VariableValue
-        DTS:DataType="7">10/3/2023 9:00:39 AM</DTS:VariableValue>
+        DTS:DataType="7">4/29/2024 6:31:30 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -2765,15 +2765,15 @@
           DTS:refId="Package.EventHandlers[OnError]\LogFail"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:DTSID="{53A2DD64-78B8-434C-AAC3-A09D8976CB2C}"
+          DTS:DTSID="{c1573468-d7f0-480a-b60a-84b8fac515eb}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="LogFail">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{BFAF9AFC-DF61-4C15-83EF-2AD21F954A10}"
-              SQLTask:SqlStatementSource="BEGIN TRY&#xA;&#xA;EXECUTE [SVH_STG].[dbo].[CloseLog]&#xA;@PackageName=?,&#xA;@RunGUID = ? , &#xA;@PackageRunResult = ?,&#xA;@TotalRowCount  = ?, &#xA;@ExecPeriod  = ?, &#xA;@ErrorDescription = ?&#xA;&#xA;END TRY&#xA;&#xA;BEGIN CATCH&#xA;&#xA;EXEC [SVH_STG].[dbo].[PROCESO_LOG_ERRORES] &#xA;@p_PROCESO=?, &#xA;@RUNID=?,&#xA;@TIPO_ERROR =10&#xA;&#xA;RAISERROR ('Error en el objeto LogFail del paquete SISS' ,18,1);&#xA;&#xA;END CATCH" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              SQLTask:Connection="{F7960A9C-5014-4924-826A-514E688AD7D6}"
+              SQLTask:SqlStatementSource="EXECUTE [SVH_DBO].[dbo].[CloseLog]&#xA;@PackageName=?,&#xA;@RunID = ? , &#xA;@PackageRunResult = ?,&#xA;@TotalRowCount  = ?, &#xA;@ExecPeriod  = ?, &#xA;@ErrorDescription = ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
                 SQLTask:DtsVariableName="$Package::PackageName"
@@ -2782,7 +2782,7 @@
                 SQLTask:ParameterSize="-1" />
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="1"
-                SQLTask:DtsVariableName="User::RunGUID"
+                SQLTask:DtsVariableName="User::RunID"
                 SQLTask:ParameterDirection="Input"
                 SQLTask:DataType="130"
                 SQLTask:ParameterSize="-1" />
@@ -2807,18 +2807,6 @@
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="5"
                 SQLTask:DtsVariableName="System::ErrorDescription"
-                SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="130"
-                SQLTask:ParameterSize="-1" />
-              <SQLTask:ParameterBinding
-                SQLTask:ParameterName="6"
-                SQLTask:DtsVariableName="$Package::PackageName"
-                SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="130"
-                SQLTask:ParameterSize="-1" />
-              <SQLTask:ParameterBinding
-                SQLTask:ParameterName="7"
-                SQLTask:DtsVariableName="User::RunGUID"
                 SQLTask:ParameterDirection="Input"
                 SQLTask:DataType="130"
                 SQLTask:ParameterSize="-1" />

@@ -12,8 +12,8 @@
   DTS:ObjectName="GREEN_P02"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="371"
-  DTS:VersionGUID="{2D81FBD3-6CE7-409D-923A-34EF4609A261}">
+  DTS:VersionBuild="385"
+  DTS:VersionGUID="{40444F1E-83C8-48FE-BC59-DDD532B8C655}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -4661,8 +4661,7 @@
           DTS:refId="Package\Load file to DBO\Valida existencia fichero Excel"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
-          DTS:Disabled="True"
-          DTS:DTSID="{F41F5283-5539-4F25-B00A-D9F3D3FA2B02}"
+          DTS:DTSID="{fe47813a-077f-44a2-b1cf-e1a5936f110b}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Valida existencia fichero Excel"
@@ -4672,31 +4671,25 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{A4079821-CED2-4E3D-B6CE-876172275F71}"
-              SQLTask:SqlStatementSource="&#xA;BEGIN&#xA;declare @a nvarchar(4000)&#xA;DECLARE @SQL_INSERT NVARCHAR(4000) &#xA;DECLARE @SQL_SELECT NVARCHAR(4000) &#xA;DECLARE @SQL_STRING NVARCHAR(4000) &#xA;set @a=?&#xA;IF LEN(@a) = 0 OR @a IS NULL or @a=''&#xA;    BEGIN&#xA;SET @SQL_INSERT = N' INSERT INTO [SVH_DBO].[dbo].[Validaciones_Errores]&#xA;           (&#x9;&#xA;&#x9;&#x9; [ID_CONTROL]&#xA;        ,[PROCESO]&#xA;        ,[TIPO_VALIDACION]&#xA;        ,[ESTADO_VALIDACION]&#xA;&#x9;&#x9;,[DESC_VALIDACION]&#xA;        ,[TABLA]&#xA;        ,[ID_CAMPO]&#xA;        ,[REFERENCIA_MATRIZ]&#xA;        ,[VALOR_REFERENCIA_MATRIZ]&#xA;        ,[VALOR_ERRONEO]&#xA;&#x9;&#x9;,[F_EJECUCION]&#xA;&#x9;&#x9;,[RUNID]&#xA;&#x9;&#x9;,[FICHERO_ORIGEN]&#xA;&#x9;&#x9;   )' ;&#xA;&#x9;&#x9;   &#xA;&#x9;&#x9;SET @SQL_SELECT = N' SELECT '&#xA;&#x9;&#x9;&#x9;+''''+'13037'+''''+', '&#xA;&#x9;&#x9;&#x9;+''''+?+''''+', '&#xA;&#x9;&#x9;&#x9;+''''+'Fichero'+''''+', '&#xA;&#x9;&#x9;&#x9;+''''+'Impacto Alto'+''''+', '&#xA;&#x9;&#x9;&#x9;+''''+'No se ha encontrado la matriz Excel en la ruta'+''''+', '&#xA;&#x9;&#x9;&#x9;+''''+'-'+''''+', '&#xA;&#x9;&#x9;&#x9;+''''+'-'+''''+', '&#xA;&#x9;&#x9;&#x9;+''''+'-'+''''+', '&#xA;&#x9;&#x9;&#x9;+''''+'-'+''''+', '&#xA;&#x9;&#x9;&#x9;+''''+'-'+''''+', '&#xA;&#x9;&#x9;&#x9;+N'GETDATE()'+', '&#xA;&#x9;&#x9;&#x9;+''''+?+''''+', '&#xA;&#x9;&#x9;&#x9;+''''+?+''''&#xA;&#x9;&#x9;&#x9;;&#xA;&#x9;SET @SQL_STRING = @SQL_INSERT + @SQL_SELECT;&#xA;&#x9;&#xA;&#x9;EXECUTE SP_EXECUTESQL  @SQL_STRING;&#xA;        RAISERROR('NO se encontró la matriz Excel, en la ruta ', 16, 1);&#xA;return;&#xA;    END&#xA;    ELSE&#xA;    BEGIN&#xA;       &#xA;        PRINT 'Se encontró la matriz Excel en la ruta ' + @a&#xA;    END&#xA;&#xA;END" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              SQLTask:SqlStatementSource=" EXEC svh_core.dbo.p_VALIDA_MATRIZ_EN_RUTA ?, ?, ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
                 SQLTask:DtsVariableName="User::FilePath"
                 SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="130"
-                SQLTask:ParameterSize="4000" />
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="1"
                 SQLTask:DtsVariableName="$Package::PackageName"
                 SQLTask:ParameterDirection="Input"
                 SQLTask:DataType="130"
-                SQLTask:ParameterSize="4000" />
+                SQLTask:ParameterSize="-1" />
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="2"
-                SQLTask:DtsVariableName="$Package::PackageName"
-                SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="130"
-                SQLTask:ParameterSize="4000" />
-              <SQLTask:ParameterBinding
-                SQLTask:ParameterName="3"
                 SQLTask:DtsVariableName="User::RunID"
                 SQLTask:ParameterDirection="Input"
                 SQLTask:DataType="130"
-                SQLTask:ParameterSize="4000" />
+                SQLTask:ParameterSize="-1" />
             </SQLTask:SqlTaskData>
           </DTS:ObjectData>
         </DTS:Executable>
@@ -4713,27 +4706,27 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file to DBO.PrecedenceConstraints[Restricción 1]"
           DTS:CreationName=""
-          DTS:DTSID="{E4FEDDC5-B60B-43B7-8E05-52B19C4F1C7C}"
+          DTS:DTSID="{DF2A1A81-F79A-4FDC-AD56-A63C0F93272E}"
           DTS:From="Package\Load file to DBO\Search and load file"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 1"
-          DTS:To="Package\Load file to DBO\Elimina _csv" />
+          DTS:To="Package\Load file to DBO\Valida existencia fichero Excel" />
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file to DBO.PrecedenceConstraints[Restricción 2]"
           DTS:CreationName=""
-          DTS:DTSID="{596F6800-DC83-40BD-BD7E-1A6FFFEF43D5}"
+          DTS:DTSID="{0397449E-F378-4DA5-9E8E-ED8FEF44C4EE}"
           DTS:From="Package\Load file to DBO\Convertir EXCEL - CSV"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 2"
-          DTS:To="Package\Load file to DBO\Valida existencia fichero Excel" />
+          DTS:To="Package\Load file to DBO\Truncate table" />
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file to DBO.PrecedenceConstraints[Restricción 3]"
           DTS:CreationName=""
-          DTS:DTSID="{73468AE7-0EA8-4E5E-9973-F0AB05E4CE71}"
+          DTS:DTSID="{32AB3D1A-7D6D-408F-AFBE-5C2B29FBBD9E}"
           DTS:From="Package\Load file to DBO\Valida existencia fichero Excel"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 3"
-          DTS:To="Package\Load file to DBO\Truncate table" />
+          DTS:To="Package\Load file to DBO\Elimina _csv" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
   </DTS:Executables>
@@ -4796,7 +4789,7 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{A4079821-CED2-4E3D-B6CE-876172275F71}"
-              SQLTask:SqlStatementSource="BEGIN TRY&#xA;&#xA;EXECUTE [SVH_STG].[dbo].[CloseLog]&#xA;@PackageName=?,&#xA;@RunGUID = ? , &#xA;@PackageRunResult = ?,&#xA;@TotalRowCount  = ?, &#xA;@ExecPeriod  = ?, &#xA;@ErrorDescription = ?&#xA;&#xA;END TRY&#xA;&#xA;BEGIN CATCH&#xA;&#xA;EXEC [SVH_STG].[dbo].[PROCESO_LOG_ERRORES] &#xA;@p_PROCESO=?, &#xA;@RUNID=?,&#xA;@TIPO_ERROR =10&#xA;&#xA;RAISERROR ('Error en el objeto LogFail del paquete SISS' ,18,1);&#xA;&#xA;END CATCH" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              SQLTask:SqlStatementSource="EXECUTE [SVH_DBO].[dbo].[CloseLog]&#xA;@PackageName=?,&#xA;@RunID = ? , &#xA;@PackageRunResult = ?,&#xA;@TotalRowCount  = ?, &#xA;@ExecPeriod  = ?, &#xA;@ErrorDescription = ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
                 SQLTask:DtsVariableName="$Package::PackageName"
@@ -4805,7 +4798,7 @@
                 SQLTask:ParameterSize="-1" />
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="1"
-                SQLTask:DtsVariableName="User::RunGUID"
+                SQLTask:DtsVariableName="User::RunID"
                 SQLTask:ParameterDirection="Input"
                 SQLTask:DataType="130"
                 SQLTask:ParameterSize="-1" />
@@ -4830,18 +4823,6 @@
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="5"
                 SQLTask:DtsVariableName="System::ErrorDescription"
-                SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="130"
-                SQLTask:ParameterSize="-1" />
-              <SQLTask:ParameterBinding
-                SQLTask:ParameterName="6"
-                SQLTask:DtsVariableName="$Package::PackageName"
-                SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="130"
-                SQLTask:ParameterSize="-1" />
-              <SQLTask:ParameterBinding
-                SQLTask:ParameterName="7"
-                SQLTask:DtsVariableName="User::RunGUID"
                 SQLTask:ParameterDirection="Input"
                 SQLTask:DataType="130"
                 SQLTask:ParameterSize="-1" />
@@ -5119,14 +5100,14 @@
         <NodeLayout
           Size="149,42"
           Id="Package\Load file to DBO\Convertir EXCEL - CSV\Convertir CSV"
-          TopLeft="58.6000003642511,13.4087301036286" />
+          TopLeft="57.6000003642511,23.4087301036286" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="243,70"
-          Size="243,113"
+          PanelSize="226,102"
+          Size="226,145"
           Id="Package\Load file to DBO\Convertir EXCEL - CSV"
-          TopLeft="24.7857159697823,5.5" />
+          TopLeft="48.7857159697823,28.5" />
         <NodeLayout
           Size="157,42"
           Id="Package\Load file to DBO\Elimina _csv\Delete Old Files"
@@ -5134,48 +5115,48 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="168,56"
-          Size="168,99"
+          PanelSize="238,103"
+          Size="238,146"
           Id="Package\Load file to DBO\Elimina _csv"
-          TopLeft="40,588.133333326446" />
+          TopLeft="75,742.133333326446" />
         <NodeLayout
           Size="130,42"
           Id="Package\Load file to DBO\Search and load file\Fichero Origen"
-          TopLeft="52,8" />
+          TopLeft="54,20" />
         <NodeLayout
           Size="135,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO"
-          TopLeft="38,134.133333326446" />
+          TopLeft="56,146.133333326446" />
         <NodeLayout
           Size="131,42"
           Id="Package\Load file to DBO\Search and load file\Source file"
-          TopLeft="41.2500003642507,69.9999999999999" />
+          TopLeft="54.2500003642507,93.9999999999999" />
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file.PrecedenceConstraints[Restricción]"
-          TopLeft="172.250000364251,96.6666666666665">
+          TopLeft="54.2500003642507,115">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0.749999635749305,58.4666666597793"
+              EndConnector="1.7499996357493,52.1333333264462"
               Start="0,0"
-              End="8.2499996357493,58.4666666597793">
+              End="-5.7500003642507,52.1333333264462">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="19.2499996357493,0" />
+                    End="-18.5,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="19.2499996357493,0"
-                    Point2="23.2499996357493,0"
-                    Point3="23.2499996357493,4" />
+                    Point1="-18.5,0"
+                    Point2="-22.5,0"
+                    Point3="-22.5,4" />
                   <mssgle:LineSegment
-                    End="23.2499996357493,54.4666666597793" />
+                    End="-22.5,48.1333333264462" />
                   <mssgle:CubicBezierSegment
-                    Point1="23.2499996357493,54.4666666597793"
-                    Point2="23.2499996357493,58.4666666597793"
-                    Point3="19.2499996357493,58.4666666597793" />
+                    Point1="-22.5,48.1333333264462"
+                    Point2="-22.5,52.1333333264462"
+                    Point3="-18.5,52.1333333264462" />
                   <mssgle:LineSegment
-                    End="8.2499996357493,58.4666666597793" />
+                    End="-5.7500003642507,52.1333333264462" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5186,30 +5167,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file.PrecedenceConstraints[Restricción 1]"
-          TopLeft="182,29">
+          TopLeft="119.375000182125,62">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-9.7499996357493,56.3333333333332"
+              EndConnector="0,31.9999999999999"
               Start="0,0"
-              End="-2.2499996357493,56.3333333333332">
+              End="0,24.4999999999999">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="18.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="18.5,0"
-                    Point2="22.5,0"
-                    Point3="22.5,4" />
-                  <mssgle:LineSegment
-                    End="22.5,52.3333333333332" />
-                  <mssgle:CubicBezierSegment
-                    Point1="22.5,52.3333333333332"
-                    Point2="22.5,56.3333333333332"
-                    Point3="18.5,56.3333333333332" />
-                  <mssgle:LineSegment
-                    End="-2.2499996357493,56.3333333333332" />
+                    End="0,24.4999999999999" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5221,32 +5190,44 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="210,231"
-          Size="210,274"
+          PanelSize="241,215"
+          Size="241,258"
           Id="Package\Load file to DBO\Search and load file"
-          TopLeft="20.9999995032947,295.633333326446" />
+          TopLeft="57.9999995032947,305" />
         <NodeLayout
           Size="149,42"
           Id="Package\Load file to DBO\Truncate table"
-          TopLeft="45.5,223.266666426582" />
+          TopLeft="79.5,238.266666426582" />
         <NodeLayout
           Size="228,42"
           Id="Package\Load file to DBO\Valida existencia fichero Excel"
-          TopLeft="47,155" />
+          TopLeft="60.5,602.5" />
         <EdgeLayout
           Id="Package\Load file to DBO.PrecedenceConstraints[Restricción]"
-          TopLeft="122.999999751647,265.266666426582">
+          TopLeft="154,280.266666426582">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,30.366666899864"
+              EndConnector="24.4999995032947,24.733333573418"
               Start="0,0"
-              End="0,22.866666899864">
+              End="24.4999995032947,17.233333573418">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22.866666899864" />
+                    End="0,8.366666786709" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8.366666786709"
+                    Point2="0,12.366666786709"
+                    Point3="4,12.366666786709" />
+                  <mssgle:LineSegment
+                    End="20.4999995032947,12.366666786709" />
+                  <mssgle:CubicBezierSegment
+                    Point1="20.4999995032947,12.366666786709"
+                    Point2="24.4999995032947,12.366666786709"
+                    Point3="24.4999995032947,16.366666786709" />
+                  <mssgle:LineSegment
+                    End="24.4999995032947,17.233333573418" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5257,24 +5238,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load file to DBO.PrecedenceConstraints[Restricción 1]"
-          TopLeft="125.999999503295,569.633333326446">
+          TopLeft="176.499999751647,563">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="82.0000004967053,67.9999999999999"
+              EndConnector="0,39.5"
               Start="0,0"
-              End="74.5000004967053,67.9999999999999">
+              End="0,32">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,63.9999999999999" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,63.9999999999999"
-                    Point2="0,67.9999999999999"
-                    Point3="4,67.9999999999999" />
-                  <mssgle:LineSegment
-                    End="74.5000004967053,67.9999999999999" />
+                    End="0,32" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5285,30 +5260,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load file to DBO.PrecedenceConstraints[Restricción 2]"
-          TopLeft="146.285715969782,118.5">
+          TopLeft="157.892857984891,173.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="14.7142840302177,36.5"
+              EndConnector="0,64.766666426582"
               Start="0,0"
-              End="14.7142840302177,29">
+              End="0,57.266666426582">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,14.25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,14.25"
-                    Point2="0,18.25"
-                    Point3="4,18.25" />
-                  <mssgle:LineSegment
-                    End="10.7142840302177,18.25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="10.7142840302177,18.25"
-                    Point2="14.7142840302177,18.25"
-                    Point3="14.7142840302177,22.25" />
-                  <mssgle:LineSegment
-                    End="14.7142840302177,29" />
+                    End="0,57.266666426582" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5319,30 +5282,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load file to DBO.PrecedenceConstraints[Restricción 3]"
-          TopLeft="161,197">
+          TopLeft="174.5,644.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-41,27.266666426582"
+              EndConnector="19.5,97.633333326446"
               Start="0,0"
-              End="-41,19.766666426582">
+              End="19.5,90.133333326446">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,9.633333213291" />
+                    End="0,44.816666663223" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,9.633333213291"
-                    Point2="0,13.633333213291"
-                    Point3="-4,13.633333213291" />
+                    Point1="0,44.816666663223"
+                    Point2="0,48.816666663223"
+                    Point3="4,48.816666663223" />
                   <mssgle:LineSegment
-                    End="-37,13.633333213291" />
+                    End="15.5,48.816666663223" />
                   <mssgle:CubicBezierSegment
-                    Point1="-37,13.633333213291"
-                    Point2="-41,13.633333213291"
-                    Point3="-41,17.633333213291" />
+                    Point1="15.5,48.816666663223"
+                    Point2="19.5,48.816666663223"
+                    Point3="19.5,52.816666663223" />
                   <mssgle:LineSegment
-                    End="-41,19.766666426582" />
+                    End="19.5,90.133333326446" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5354,8 +5317,8 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="314,757"
-          Size="314,800"
+          PanelSize="345,943"
+          Size="345,986"
           Id="Package\Load file to DBO"
           TopLeft="304.289682350462,321.266666426582" />
         <EdgeLayout
@@ -5364,9 +5327,9 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="79.3372996808993,19.442065092948"
+              EndConnector="79.3372996808993,112.442065092948"
               Start="0,0"
-              End="71.8372996808993,19.442065092948">
+              End="71.8372996808993,112.442065092948">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -5377,13 +5340,13 @@
                     Point2="39.6686498404496,0"
                     Point3="39.6686498404496,4" />
                   <mssgle:LineSegment
-                    End="39.6686498404496,15.442065092948" />
+                    End="39.6686498404496,108.442065092948" />
                   <mssgle:CubicBezierSegment
-                    Point1="39.6686498404496,15.442065092948"
-                    Point2="39.6686498404496,19.442065092948"
-                    Point3="43.6686498404496,19.442065092948" />
+                    Point1="39.6686498404496,108.442065092948"
+                    Point2="39.6686498404496,112.442065092948"
+                    Point3="43.6686498404496,112.442065092948" />
                   <mssgle:LineSegment
-                    End="71.8372996808993,19.442065092948" />
+                    End="71.8372996808993,112.442065092948" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5394,24 +5357,24 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="618.289682350462,721.266666426582">
+          TopLeft="649.289682350462,835.965871487798">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="81.2420804604629,92.199205061216"
+              EndConnector="50.2420804604629,-22.5"
               Start="0,0"
-              End="81.2420804604629,84.699205061216">
+              End="50.2420804604629,-15">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="77.2420804604629,0" />
+                    End="46.2420804604629,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="77.2420804604629,0"
-                    Point2="81.2420804604629,0"
-                    Point3="81.2420804604629,4" />
+                    Point1="46.2420804604629,0"
+                    Point2="50.2420804604629,0"
+                    Point3="50.2420804604629,-4" />
                   <mssgle:LineSegment
-                    End="81.2420804604629,84.699205061216" />
+                    End="50.2420804604629,-15" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5497,19 +5460,23 @@
     design-time-name="Package\Load file to DBO\Search and load file\load to DBO">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="177,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
-          TopLeft="261.000000397364,314.400000599225" />
+          Size="175,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
+          TopLeft="307,449" />
+        <NodeLayout
+          Size="180,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
+          TopLeft="331,210" />
         <NodeLayout
           Size="196,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"
           TopLeft="274,124" />
         <NodeLayout
-          Size="180,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
-          TopLeft="331,210" />
+          Size="177,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
+          TopLeft="261.000000397364,314.400000599225" />
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de origen de archivo plano]"
           TopLeft="372,166">
@@ -5541,7 +5508,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5575,13 +5544,11 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="175,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
-          TopLeft="307,449" />
         <EdgeLayout
           Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de columna derivada]"
           TopLeft="349.500000397364,356.400000599225">
@@ -5613,7 +5580,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
