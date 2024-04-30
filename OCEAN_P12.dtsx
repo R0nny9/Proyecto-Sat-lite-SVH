@@ -12,8 +12,8 @@
   DTS:ObjectName="OCEAN_P12"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="335"
-  DTS:VersionGUID="{6A566382-8628-44A0-8BA0-5672904BF501}">
+  DTS:VersionBuild="336"
+  DTS:VersionGUID="{D471D828-7699-4BA1-861E-AD58C3955D81}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -599,7 +599,7 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{60D26F9E-A124-4959-A863-7DD250F18F63}"
-              SQLTask:SqlStatementSource="EXECUTE [SVH_STG].[dbo].[CloseLog]&#xA;@PackageName=?,       &#xA;@RunID = ? , &#xA;@PackageRunResult = ?,&#xA;@TotalRowCount  = ?,&#xA;@ExecPeriod  = ? &#xA;                    " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              SQLTask:SqlStatementSource="EXECUTE [SVH_DBO].[dbo].[CloseLog]&#xA;@PackageName=?,       &#xA;@RunID = ? , &#xA;@PackageRunResult = ?,&#xA;@TotalRowCount  = ?,&#xA;@ExecPeriod  = ? &#xA;                    " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
                 SQLTask:DtsVariableName="$Package::PackageName"
@@ -4607,91 +4607,23 @@
     design-time-name="Package\Load file to DBO\Search and load file\load to DBO">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="180,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
-          TopLeft="335.999999205271,205.666667252117" />
-        <NodeLayout
-          Size="168,42"
-          Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
-          TopLeft="261.000000397364,315.400000599225" />
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="196,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Origen de archivo plano"
           TopLeft="387,47" />
         <NodeLayout
+          Size="168,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada 1"
+          TopLeft="261.000000397364,315.400000599225" />
+        <NodeLayout
           Size="175,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Destino de OLE DB"
           TopLeft="237,391" />
-        <EdgeLayout
-          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de columna derivada]"
-          TopLeft="345.000000397364,357.400000599225">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-20.500000397364,33.599999400775"
-              Start="0,0"
-              End="-20.500000397364,26.099999400775">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,12.7999997003875" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,12.7999997003875"
-                    Point2="0,16.7999997003875"
-                    Point3="-4,16.7999997003875" />
-                  <mssgle:LineSegment
-                    End="-16.500000397364,16.7999997003875" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-16.500000397364,16.7999997003875"
-                    Point2="-20.500000397364,16.7999997003875"
-                    Point3="-20.500000397364,20.7999997003875" />
-                  <mssgle:LineSegment
-                    End="-20.500000397364,26.099999400775" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de conversión de datos]"
-          TopLeft="425.999999205271,247.666667252117">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-80.9999988079075,67.7333333471083"
-              Start="0,0"
-              End="-80.9999988079075,60.2333333471083">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.8666666735541" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,29.8666666735541"
-                    Point2="0,33.8666666735541"
-                    Point3="-4,33.8666666735541" />
-                  <mssgle:LineSegment
-                    End="-76.9999988079075,33.8666666735541" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-76.9999988079075,33.8666666735541"
-                    Point2="-80.9999988079075,33.8666666735541"
-                    Point3="-80.9999988079075,37.8666666735541" />
-                  <mssgle:LineSegment
-                    End="-80.9999988079075,60.2333333471083" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="180,42"
+          Id="Package\Load file to DBO\Search and load file\load to DBO\Conversión de datos"
+          TopLeft="335.999999205271,205.666667252117" />
         <NodeLayout
           Size="184,42"
           Id="Package\Load file to DBO\Search and load file\load to DBO\Columna derivada"
@@ -4727,7 +4659,45 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de conversión de datos]"
+          TopLeft="425.999999205271,247.666667252117">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-80.9999988079075,67.7333333471083"
+              Start="0,0"
+              End="-80.9999988079075,60.2333333471083">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.8666666735541" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.8666666735541"
+                    Point2="0,33.8666666735541"
+                    Point3="-4,33.8666666735541" />
+                  <mssgle:LineSegment
+                    End="-76.9999988079075,33.8666666735541" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-76.9999988079075,33.8666666735541"
+                    Point2="-80.9999988079075,33.8666666735541"
+                    Point3="-80.9999988079075,37.8666666735541" />
+                  <mssgle:LineSegment
+                    End="-80.9999988079075,60.2333333471083" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4749,7 +4719,45 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load file to DBO\Search and load file\load to DBO.Paths[Salida de columna derivada]"
+          TopLeft="345.000000397364,357.400000599225">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-20.500000397364,33.599999400775"
+              Start="0,0"
+              End="-20.500000397364,26.099999400775">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.7999997003875" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.7999997003875"
+                    Point2="0,16.7999997003875"
+                    Point3="-4,16.7999997003875" />
+                  <mssgle:LineSegment
+                    End="-16.500000397364,16.7999997003875" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-16.500000397364,16.7999997003875"
+                    Point2="-20.500000397364,16.7999997003875"
+                    Point3="-20.500000397364,20.7999997003875" />
+                  <mssgle:LineSegment
+                    End="-20.500000397364,26.099999400775" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
