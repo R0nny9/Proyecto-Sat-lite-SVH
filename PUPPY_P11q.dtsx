@@ -12,8 +12,8 @@
   DTS:ObjectName="PUPPY_P11q"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="359"
-  DTS:VersionGUID="{2984354C-F52B-42E7-BA0E-7ED40D975DB7}">
+  DTS:VersionBuild="360"
+  DTS:VersionGUID="{F9D4E640-9626-4737-B085-9838D7A988CC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -3361,6 +3361,42 @@
             </SQLTask:SqlTaskData>
           </DTS:ObjectData>
         </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Load file to DBO\Valida existencia fichero Excel"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Tarea Ejecutar SQL"
+          DTS:DTSID="{365acc0a-fb14-4c5b-9411-22d9fc783937}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Valida existencia fichero Excel"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{907A8B97-D77C-44CC-94FF-4884DAD180EC}"
+              SQLTask:SqlStatementSource=" EXEC svh_core.dbo.p_VALIDA_MATRIZ_EN_RUTA ?, ?, ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::FilePath"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="1"
+                SQLTask:DtsVariableName="$Package::PackageName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="2"
+                SQLTask:DtsVariableName="User::RunID"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
       </DTS:Executables>
       <DTS:PrecedenceConstraints>
         <DTS:PrecedenceConstraint
@@ -3398,10 +3434,18 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Load file to DBO.PrecedenceConstraints[Restricción 4]"
           DTS:CreationName=""
-          DTS:DTSID="{80359520-A2F6-44D0-AF55-A475E3761F30}"
+          DTS:DTSID="{D1B0D62D-3A7C-4207-8044-275D9D43AFA5}"
           DTS:From="Package\Load file to DBO\Search and load file"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 4"
+          DTS:To="Package\Load file to DBO\Valida existencia fichero Excel" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Load file to DBO.PrecedenceConstraints[Restricción 5]"
+          DTS:CreationName=""
+          DTS:DTSID="{8A3929EB-0CCF-4093-9138-7640886C0222}"
+          DTS:From="Package\Load file to DBO\Valida existencia fichero Excel"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Restricción 5"
           DTS:To="Package\Load file to DBO\Elimina _csv" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
@@ -3794,11 +3838,11 @@
           PanelSize="168,56"
           Size="168,99"
           Id="Package\Load file to DBO\Elimina _csv"
-          TopLeft="50,665.133333326446" />
+          TopLeft="58,761.133333326446" />
         <NodeLayout
           Size="193,42"
           Id="Package\Load file to DBO\Eliminar fila de campos"
-          TopLeft="34.999999900659,784.16666601234" />
+          TopLeft="42.999999900659,880.16666601234" />
         <NodeLayout
           Size="130,42"
           Id="Package\Load file to DBO\Search and load file\Fichero Origen"
@@ -4024,11 +4068,11 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load file to DBO.PrecedenceConstraints[Restricción 3]"
-          TopLeft="218,714.633333326446">
+          TopLeft="226,810.633333326446">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="9.99999990065899,90.533332685894"
+              EndConnector="9.99999990065896,90.533332685894"
               Start="0,0"
               End="17.499999900659,90.533332685894">
               <mssgle:Curve.Segments>
@@ -4056,32 +4100,58 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="228,42"
+          Id="Package\Load file to DBO\Valida existencia fichero Excel"
+          TopLeft="49.9523826695627,671.266666426582" />
         <EdgeLayout
           Id="Package\Load file to DBO.PrecedenceConstraints[Restricción 4]"
-          TopLeft="160.499999503295,641.633333326446">
+          TopLeft="162.226191086429,641.633333326446">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-26.4999995032947,23.4999999999999"
+              EndConnector="0,29.633333100136"
               Start="0,0"
-              End="-26.4999995032947,15.9999999999999">
+              End="0,22.133333100136">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,7.74999999999994" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,7.74999999999994"
-                    Point2="0,11.7499999999999"
-                    Point3="-4,11.7499999999999" />
+                    End="0,22.133333100136" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load file to DBO.PrecedenceConstraints[Restricción 5]"
+          TopLeft="163.952382669563,713.266666426582">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-21.9523826695627,47.8666668998638"
+              Start="0,0"
+              End="-21.9523826695627,40.3666668998638">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="-22.4999995032947,11.7499999999999" />
+                    End="0,19.9333334499319" />
                   <mssgle:CubicBezierSegment
-                    Point1="-22.4999995032947,11.7499999999999"
-                    Point2="-26.4999995032947,11.7499999999999"
-                    Point3="-26.4999995032947,15.7499999999999" />
+                    Point1="0,19.9333334499319"
+                    Point2="0,23.9333334499319"
+                    Point3="-4,23.9333334499319" />
                   <mssgle:LineSegment
-                    End="-26.4999995032947,15.9999999999999" />
+                    End="-17.9523826695627,23.9333334499319" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-17.9523826695627,23.9333334499319"
+                    Point2="-21.9523826695627,23.9333334499319"
+                    Point3="-21.9523826695627,27.9333334499319" />
+                  <mssgle:LineSegment
+                    End="-21.9523826695627,40.3666668998638" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4093,8 +4163,8 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="319,924"
-          Size="319,967"
+          PanelSize="319,977"
+          Size="319,1020"
           Id="Package\Load file to DBO"
           TopLeft="304.289682350462,154.266666426582" />
         <EdgeLayout
@@ -4103,9 +4173,9 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="79.3372996808993,-64.057934907052"
+              EndConnector="79.3372996808993,-37.557934907052"
               Start="0,0"
-              End="71.8372996808993,-64.057934907052">
+              End="71.8372996808993,-37.557934907052">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -4116,13 +4186,13 @@
                     Point2="39.6686498404496,0"
                     Point3="39.6686498404496,-4" />
                   <mssgle:LineSegment
-                    End="39.6686498404496,-60.057934907052" />
+                    End="39.6686498404496,-33.557934907052" />
                   <mssgle:CubicBezierSegment
-                    Point1="39.6686498404496,-60.057934907052"
-                    Point2="39.6686498404496,-64.057934907052"
-                    Point3="43.6686498404496,-64.057934907052" />
+                    Point1="39.6686498404496,-33.557934907052"
+                    Point2="39.6686498404496,-37.557934907052"
+                    Point3="43.6686498404496,-37.557934907052" />
                   <mssgle:LineSegment
-                    End="71.8372996808993,-64.057934907052" />
+                    End="71.8372996808993,-37.557934907052" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4133,13 +4203,13 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="623.289682350462,637.766666426582">
+          TopLeft="623.289682350462,664.266666426582">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="37.2420804604629,55.699205061216"
+              EndConnector="37.2420804604629,29.199205061216"
               Start="0,0"
-              End="29.7420804604629,55.699205061216">
+              End="29.7420804604629,29.199205061216">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -4150,13 +4220,13 @@
                     Point2="18.6210402302315,0"
                     Point3="18.6210402302315,4" />
                   <mssgle:LineSegment
-                    End="18.6210402302315,51.699205061216" />
+                    End="18.6210402302315,25.199205061216" />
                   <mssgle:CubicBezierSegment
-                    Point1="18.6210402302315,51.699205061216"
-                    Point2="18.6210402302315,55.699205061216"
-                    Point3="22.6210402302315,55.699205061216" />
+                    Point1="18.6210402302315,25.199205061216"
+                    Point2="18.6210402302315,29.199205061216"
+                    Point3="22.6210402302315,29.199205061216" />
                   <mssgle:LineSegment
-                    End="29.7420804604629,55.699205061216" />
+                    End="29.7420804604629,29.199205061216" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
