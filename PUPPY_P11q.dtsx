@@ -12,8 +12,8 @@
   DTS:ObjectName="PUPPY_P11q"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="360"
-  DTS:VersionGUID="{F9D4E640-9626-4737-B085-9838D7A988CC}">
+  DTS:VersionBuild="361"
+  DTS:VersionGUID="{043ADA65-C1C4-4191-BF7A-53F17EA5E9D5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -455,6 +455,7 @@
           DTS:refId="Package\Load dbo to STG\CLOSE"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Tarea Ejecutar SQL"
+          DTS:Disabled="True"
           DTS:DTSID="{BBFA3440-37B2-4578-A4EF-484D1DC9C799}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
@@ -3964,6 +3965,10 @@
           Size="198,42"
           Id="Package\Load file to DBO\Truncate table_temporal"
           TopLeft="73.9523826695627,192.266666426582" />
+        <NodeLayout
+          Size="228,42"
+          Id="Package\Load file to DBO\Valida existencia fichero Excel"
+          TopLeft="49.9523826695627,671.266666426582" />
         <EdgeLayout
           Id="Package\Load file to DBO.PrecedenceConstraints[Restricción]"
           TopLeft="128.66666570637,168.866666673554">
@@ -4100,10 +4105,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="228,42"
-          Id="Package\Load file to DBO\Valida existencia fichero Excel"
-          TopLeft="49.9523826695627,671.266666426582" />
         <EdgeLayout
           Id="Package\Load file to DBO.PrecedenceConstraints[Restricción 4]"
           TopLeft="162.226191086429,641.633333326446">
